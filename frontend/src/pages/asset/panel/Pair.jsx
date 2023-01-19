@@ -1,119 +1,70 @@
 import * as React from "react";
 const Pair = ({selected}) => (
   <svg
+    id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={98}
-    height={98}
+    x="0px"
+    y="0px"
     viewBox="0 0 98 98"
+    style={{
+      enableBackground: "new 0 0 98 98",
+    }}
+    xmlSpace="preserve"
+   
   >
-    <defs>
-      <rect id="b" width={90} height={90} rx={6} />
-      <filter
-        id="a"
-        width="115.6%"
-        height="115.6%"
-        x="-7.8%"
-        y="-5.6%"
-        filterUnits="objectBoundingBox"
-      >
-        <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
-        <feMorphology in="SourceAlpha" radius={1} result="shadowInner" />
-        <feOffset dy={2} in="shadowInner" result="shadowInner" />
-        <feComposite
-          in="shadowOffsetOuter1"
-          in2="shadowInner"
-          operator="out"
-          result="shadowOffsetOuter1"
-        />
-        <feGaussianBlur
-          in="shadowOffsetOuter1"
-          result="shadowBlurOuter1"
-          stdDeviation={2}
-        />
-        <feColorMatrix
-          in="shadowBlurOuter1"
-          values="0 0 0 0 0.901960784 0 0 0 0 0.925490196 0 0 0 0 0.952941176 0 0 0 0.472792832 0"
-        />
-      </filter>
-    </defs>
-    <g fill="none" fillRule="evenodd">
+    <style type="text/css">
+      {
+        "\n\t.st0{fill-rule:evenodd;clip-rule:evenodd;fill:none;}\n\t.st1{fill:none;stroke:#C6CBCC;}\n\t.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#818387;}\n\t.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#F6F6F5;stroke:#9B9B9B;stroke-width:0.6479;}\n\t.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#F3F5F7;}\n\t.st5{fill:none;stroke:#9B9B9B;stroke-width:0.4859;}\n\t.st6{fill:none;stroke:#9B9B9B;stroke-width:1.1338;stroke-linecap:round;}\n\t.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#CECECE;stroke:#BABABA;stroke-width:1.2958;}\n\t.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#D8D8D8;stroke:#BABABA;stroke-width:1.2958;}\n"
+      }
+    </style>
+    <g>
       <g transform="translate(4 2)">
-        <use fill="#000" filter="url(#a)" xlinkHref="#b" />
-        <rect
-          width={89}
-          height={89}
-          x={0.5}
-          y={0.5}
-          stroke="#C6CBCC"
-          strokeLinejoin="square"
-          rx={6}
-        />
-      </g>
-      <g fill="#818387" transform="translate(29 15.404)">
-        <path d="M1.021.51h37.767v1H1.021z" />
-        <circle cx={0.868} cy={0.868} r={1} />
-        <circle cx={38.762} cy={0.868} r={1} />
-      </g>
-      <path
-        fill="#F6F6F5"
-        stroke={selected ? "#B68D40" : "#9B9B9B"}
-        strokeWidth={0.4}
-        d="M34.814 19.814h27.16v29.201h-27.16z"
-      />
-      <path fill="#F3F5F7" d="M48.904 21.655h11.228v25.518H48.904z" />
-      <path
-        stroke={selected ? "#B68D40" : "#9B9B9B"}
-        strokeWidth={0.3}
-        d="M49.054 20.785h11.949v27.26H49.054z"
-      />
-      <path
-        stroke={selected ? "#B68D40" : "#9B9B9B"}
-        strokeWidth={0.3}
-        d="M48.904 21.656h11.228v25.518M48.904 47.174h11.228"
-      />
-      <path fill="#F3F5F7" d="M36.655 21.655h11.228v25.518H36.655z" />
-      <path
-        stroke={selected ? "#B68D40" : "#9B9B9B"}
-        strokeLinecap="round"
-        strokeWidth={0.7}
-        d="M35.92 20.967l.735.688"
-      />
-      <path
-        stroke={selected ? "#B68D40" : "#9B9B9B"}
-        strokeWidth={0.3}
-        d="M47.884 21.656H36.656v25.518"
-      />
-      <path
-        stroke={selected ? "#B68D40" : "#9B9B9B"}
-        strokeLinecap="round"
-        strokeWidth={0.7}
-        d="M36.655 47.174l-.765.765"
-      />
-      <path
-        stroke={selected ? "#B68D40" : "#9B9B9B"}
-        strokeWidth={0.3}
-        d="M36.655 47.191h11.229M35.785 20.785h11.949v27.26H35.785z"
-      />
-      <path
-        stroke={selected ? "#B68D40" : "#9B9B9B"}
-        strokeLinecap="round"
-        strokeWidth={0.7}
-        d="M60.927 20.887l-.794.768M60.132 47.174l.794.765"
-      />
-      <g stroke="#BABABA" strokeWidth={0.8}>
-        <path fill="#CECECE" d="M32.909 15.444h10.428v45.948H32.909z" />
+        <g>
+          <path
+            id="b"
+            className="st0"
+            d="M6,2h78c3.3,0,6,2.7,6,6v78c0,3.3-2.7,6-6,6H6c-3.3,0-6-2.7-6-6V8C0,4.7,2.7,2,6,2z"
+          />
+        </g>
         <path
-          fill="#D8D8D8"
-          d="M32.909 15.233v46.269c.54.17.949.254 1.217.254.27 0 .679-.084 1.218-.254V15.233c-.25-.261-.646-.397-1.218-.397-.57 0-.967.136-1.217.397zM40.902 15.233v46.27c.53.17.94.253 1.217.253.277 0 .687-.084 1.218-.253v-46.27c-.25-.261-.647-.397-1.218-.397s-.967.136-1.217.397zM36.905 15.233v46.27c.532.17.941.253 1.218.253.276 0 .685-.084 1.217-.253v-46.27c-.25-.261-.646-.397-1.217-.397-.571 0-.968.136-1.218.397z"
+          className="st1"
+          d="M6.5,2.5h77c3.3,0,6,2.7,6,6v77c0,3.3-2.7,6-6,6h-77c-3.3,0-6-2.7-6-6v-77C0.5,5.2,3.2,2.5,6.5,2.5z"
         />
       </g>
-      <g stroke="#BABABA" strokeWidth={0.8}>
-        <path fill="#CECECE" d="M53.961 15.444H64.39v45.948H53.961z" />
+      <g>
+        <g transform="translate(29 15.404)">
+          <path className="st2" d="M-10.6-2.7h61.2V-1h-61.2V-2.7z" />
+          <circle className="st2" cx={-10.9} cy={-2.1} r={1.6} />
+          <circle className="st2" cx={50.5} cy={-2.1} r={1.6} />
+        </g>
+        <path className="st3" d="M26.1,19.1h44v47.3h-44V19.1z" />
+        <path className="st4" d="M49,22h18.2v41.3H49V22z" />
+        <path className="st5" d="M49.2,20.6h19.4v44.2H49.2V20.6z" />
+        <path className="st5" d="M49,22h18.2v41.3 M49,63.4h18.2" />
+        <path className="st4" d="M29.1,22h18.2v41.3H29.1V22z" />
+        <path className="st6" d="M27.9,20.9l1.2,1.1" />
+        <path className="st5" d="M47.3,22H29.1v41.3" />
+        <path className="st6" d="M29.1,63.4l-1.2,1.2" />
         <path
-          fill="#D8D8D8"
-          d="M53.961 15.233v46.269c.54.17.95.254 1.218.254.269 0 .678-.084 1.218-.254V15.233c-.25-.261-.647-.397-1.218-.397s-.967.136-1.218.397zM61.954 15.233v46.27c.532.17.94.253 1.218.253.277 0 .686-.084 1.217-.253v-46.27c-.25-.261-.646-.397-1.217-.397-.571 0-.968.136-1.218.397zM57.958 15.233v46.27c.532.17.94.253 1.217.253.277 0 .686-.084 1.218-.253v-46.27c-.25-.261-.646-.397-1.218-.397-.57 0-.967.136-1.217.397z"
+          className="st5"
+          d="M29.1,63.4h18.2 M27.7,20.6h19.4v44.2H27.7V20.6z"
         />
+        <path className="st6" d="M68.4,20.8L67.1,22 M67.1,63.4l1.3,1.2" />
+        <g>
+          <path className="st7" d="M23.1,12h16.9v74.4H23.1V12z" />
+          <path
+            className="st8"
+            d="M23.1,11.6v74.9c0.9,0.3,1.5,0.4,2,0.4c0.4,0,1.1-0.1,2-0.4V11.6c-0.4-0.4-1-0.6-2-0.6 C24.1,11,23.5,11.2,23.1,11.6z M36,11.6v74.9c0.9,0.3,1.5,0.4,2,0.4s1.1-0.1,2-0.4V11.6c-0.4-0.4-1-0.6-2-0.6S36.4,11.2,36,11.6z  M29.5,11.6v74.9c0.9,0.3,1.5,0.4,2,0.4c0.4,0,1.1-0.1,2-0.4V11.6c-0.4-0.4-1-0.6-2-0.6S29.9,11.2,29.5,11.6z"
+          />
+        </g>
+        <g>
+          <path className="st7" d="M57.2,12H74v74.4H57.2V12z" />
+          <path
+            className="st8"
+            d="M57.2,11.6v74.9c0.9,0.3,1.5,0.4,2,0.4c0.4,0,1.1-0.1,2-0.4V11.6c-0.4-0.4-1-0.6-2-0.6S57.6,11.2,57.2,11.6z  M70.1,11.6v74.9c0.9,0.3,1.5,0.4,2,0.4c0.4,0,1.1-0.1,2-0.4V11.6c-0.4-0.4-1-0.6-2-0.6C71.1,11,70.5,11.2,70.1,11.6z M63.6,11.6 v74.9c0.9,0.3,1.5,0.4,2,0.4s1.1-0.1,2-0.4V11.6c-0.4-0.4-1-0.6-2-0.6C64.7,11,64,11.2,63.6,11.6z"
+          />
+        </g>
       </g>
     </g>
   </svg>

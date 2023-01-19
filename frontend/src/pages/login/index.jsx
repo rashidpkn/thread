@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Navbar from '../common/Navbar'
 // import google from '../asset/icon/google.png'
@@ -13,6 +13,10 @@ function Login() {
         console.log('failed:', err);
       };
       const clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
+      const [cre, setCre] = useState({
+        email:'',
+        password:''
+      })
     return (
         <div className="">
             <Navbar/>   
@@ -24,7 +28,7 @@ function Login() {
                     <div className="space-y-2">
                         <label htmlFor="">Email</label>
                         <div className="">
-                            <input required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='Email' type="email" />
+                            <input onChange={e=>setCre({...cre,email:e.target.value})} required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='Email' type="email" />
                         </div>
                     </div>
 
@@ -32,7 +36,7 @@ function Login() {
                     <div className="space-y-2">
                         <label htmlFor="">Password</label>
                         <div className="">
-                            <input required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='password' type="password" />
+                            <input onChange={e=>setCre({...cre,password:e.target.value})} required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='password' type="password" />
                         </div>
                     </div>
                     <div className="flex justify-between items-center">

@@ -23,18 +23,18 @@ function Style() {
                 <p className='text-center'>Single or Pair panel ?</p>
             </div>
             <div className="flex justify-center gap-5">
-                <div onClick={() => dispatch(setPanel('Single'))} className={`flex flex-col justify-center items-center relative w-18 h-18 border rounded-md ${panel === 'Single' && 'border-[#B68D40]'}`}> <Single selected={panel===  'Single'} /> <p className='absolute -bottom-6 left-7'>Single</p> </div>
-                <div onClick={() => dispatch(setPanel('Pair'))}   className={`flex flex-col justify-center items-center relative w-18 h-18 border rounded-md ${panel === 'Pair'   && 'border-[#B68D40]'}`}>  <Pair  selected={panel === 'Pair'  } /> <p className='absolute -bottom-6 left-7'>Pair</p> </div>
+                <div onClick={() => dispatch(setPanel('Single'))} className={`flex flex-col justify-center items-center relative w-20 h-20  rounded-md `}> <Single selected={panel===  'Single'} /> <p className='absolute -bottom-6 left-7'>Single</p> </div>
+                <div onClick={() => dispatch(setPanel('Pair'))}   className={`flex flex-col justify-center items-center relative w-20 h-20  rounded-md `}>  <Pair  selected={panel === 'Pair'  } /> <p className='absolute -bottom-6 left-7'>Pair</p> </div>
             </div>
             <div className="">
                 <p className='text-center mt-5'>What look are you going for?</p>
             </div>
             <div className="flex justify-center gap-7    flex-wrap">
-                <div onClick={() => { dispatch(setLook('Double')) }} className={`${look === 'Double' && 'border-[#B68D40]'} w-18 h-18 border rounded-md flex justify-center items-center relative`}><Double selected={look==='Double'} /> <p className='absolute -bottom-6 left-7'>Double</p> </div>
-                <div onClick={() => { dispatch(setLook('Eyelet')) }} className={`${look === 'Eyelet' && 'border-[#B68D40]'} w-18 h-18 border rounded-md flex justify-center items-center relative`}><Eyelet selected={look==='Eyelet'} /> <p className='absolute -bottom-6 left-7'>Eyelet</p> </div>
-                <div onClick={() => { dispatch(setLook('Pencil')) }} className={`${look === 'Pencil' && 'border-[#B68D40]'} w-18 h-18 border rounded-md flex justify-center items-center relative`}><Pencil selected={look==='Pencil'} /> <p className='absolute -bottom-6 left-7'>Pencil</p> </div>
-                <div onClick={() => { dispatch(setLook('Goblet')) }} className={`${look === 'Goblet' && 'border-[#B68D40]'} w-18 h-18 border rounded-md flex justify-center items-center relative`}><Goblet selected={look==='Goblet'} /> <p className='absolute -bottom-6 left-7'>Goblet</p> </div>
-                <div onClick={() => { dispatch(setLook('Triple')) }} className={`${look === 'Triple' && 'border-[#B68D40]'} w-18 h-18 border rounded-md flex justify-center items-center relative`}><Triple selected={look==='Triple'} /> <p className='absolute -bottom-6 left-7'>Triple</p> </div>
+                <div onClick={() => { dispatch(setLook('Double')) }} className={`w-20 h-20  rounded-md flex justify-center items-center relative flex-shrink-0`}><Double selected={look==='Double'} /> <p className='absolute -bottom-6 left-6'>Double</p> </div>
+                <div onClick={() => { dispatch(setLook('Eyelet')) }} className={`w-20 h-20  rounded-md flex justify-center items-center relative flex-shrink-0`}><Eyelet selected={look==='Eyelet'} /> <p className='absolute -bottom-6 left-6'>Eyelet</p> </div>
+                <div onClick={() => { dispatch(setLook('Pencil')) }} className={`w-20 h-20  rounded-md flex justify-center items-center relative flex-shrink-0`}><Pencil selected={look==='Pencil'} /> <p className='absolute -bottom-6 left-6'>Pencil</p> </div>
+                <div onClick={() => { dispatch(setLook('Goblet')) }} className={`w-20 h-20  rounded-md flex justify-center items-center relative flex-shrink-0`}><Goblet selected={look==='Goblet'} /> <p className='absolute -bottom-6 left-6'>Goblet</p> </div>
+                <div onClick={() => { dispatch(setLook('Triple')) }} className={`w-20 h-20  rounded-md flex justify-center items-center relative flex-shrink-0`}><Triple selected={look==='Triple'} /> <p className='absolute -bottom-6 left-6'>Triple</p> </div>
             </div>
             <div className="absolute w-full bottom-2 flex justify-between px-3 items-center">
 

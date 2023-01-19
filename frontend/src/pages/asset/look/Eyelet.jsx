@@ -1,70 +1,67 @@
 import * as React from "react";
 const Eyelet = ({selected}) => (
   <svg
+    id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={98}
-    height={98}
+    x={0}
+    y={0}
     viewBox="0 0 98 98"
+    style={{
+      enableBackground: "new 0 0 98 98",
+    }}
+    xmlSpace="preserve"
     
   >
-    <defs>
-      <rect id="b" width={90} height={90} rx={6} />
-      <filter
-        id="a"
-        width="115.6%"
-        height="115.6%"
-        x="-7.8%"
-        y="-5.6%"
-        filterUnits="objectBoundingBox"
-      >
-        <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
-        <feMorphology in="SourceAlpha" radius={1} result="shadowInner" />
-        <feOffset dy={2} in="shadowInner" result="shadowInner" />
-        <feComposite
-          in="shadowOffsetOuter1"
-          in2="shadowInner"
-          operator="out"
-          result="shadowOffsetOuter1"
-        />
-        <feGaussianBlur
-          in="shadowOffsetOuter1"
-          result="shadowBlurOuter1"
-          stdDeviation={2}
-        />
-        <feColorMatrix
-          in="shadowBlurOuter1"
-          values="0 0 0 0 0.901960784 0 0 0 0 0.925490196 0 0 0 0 0.952941176 0 0 0 0.472792832 0"
-        />
-      </filter>
-    </defs>
-    <g fill="none" fillRule="evenodd">
-      <g stroke={selected  ? '#B68d40' : "#979797"} transform="translate(24 19)">
-        <g strokeWidth={0.8}>
-          <path fill="#CECECE" d="M.4 2.095h49.2v37.336H.4z" />
-          <path
-            fill="#D8D8D8"
-            d="M.4 2.006V39.43h13.607V2.006C12.625.944 10.358.4 7.203.4 4.05.4 1.781.944.4 2.006zM35.993 2.006V39.43H49.6V2.006C48.219.944 45.951.4 42.797.4c-3.155 0-5.422.544-6.804 1.606zM18.197 2.006V39.43h13.606V2.006C30.422.944 28.155.4 25 .4s-5.422.544-6.803 1.606z"
-          />
-        </g>
-        <ellipse cx={11.441} cy={9.746} fill="#FFF" rx={1.271} ry={4.661} />
-        <ellipse cx={29.237} cy={9.746} fill="#FFF" rx={1.271} ry={4.661} />
-        <ellipse cx={20.763} cy={9.746} fill="#FFF" rx={1.271} ry={4.661} />
-        <ellipse cx={38.559} cy={9.746} fill="#FFF" rx={1.271} ry={4.661} />
-      </g>
-      <g transform="translate(4 2)">
-        <use fill="#000" filter="url(#a)" xlinkHref="#b" />
-        <rect
-          width={89}
-          height={89}
-          x={0.5}
-          y={0.5}
-          stroke="#C6CBCC"
-          strokeLinejoin="square"
-          rx={6}
-        />
-      </g>
+    <style>
+      {
+        "\n    .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;stroke:#979797;stroke-width:1.4747}\n  "
+      }
+    </style>
+    <g transform="translate(24 19)">
+      <path
+        d="M-11 5.5h72V61h-72V5.5z"
+        style={{
+          fillRule: "evenodd",
+          clipRule: "evenodd",
+          fill: "#cecece",
+          stroke: "#979797",
+          strokeWidth: 1.1797,
+        }}
+      />
+      <path
+        d="M-11 5.4V61H8.9V5.4C6.9 3.8 3.6 3-1 3c-4.7 0-8 .8-10 2.4zm52.1 0V61H61V5.4C59 3.8 55.7 3 51 3c-4.6 0-7.9.8-9.9 2.4zM15 5.4V61h20V5.4C32.9 3.8 29.6 3 25 3s-7.9.8-10 2.4z"
+        style={{
+          fillRule: "evenodd",
+          clipRule: "evenodd",
+          fill: "#d8d8d8",
+          stroke: "#979797",
+          strokeWidth: 1.1797,
+        }}
+      />
+      <ellipse className="st2" cx={5.2} cy={16.9} rx={1.9} ry={6.9} />
+      <ellipse className="st2" cx={31.2} cy={16.9} rx={1.9} ry={6.9} />
+      <ellipse className="st2" cx={18.8} cy={16.9} rx={1.9} ry={6.9} />
+      <ellipse className="st2" cx={44.8} cy={16.9} rx={1.9} ry={6.9} />
     </g>
+    <g transform="translate(4 2)">
+      <path
+        id="b"
+        d="M6 2h78c3.3 0 6 2.7 6 6v78c0 3.3-2.7 6-6 6H6c-3.3 0-6-2.7-6-6V8c0-3.3 2.7-6 6-6z"
+        style={{
+          fillRule: "evenodd",
+          clipRule: "evenodd",
+          fill: "none",
+        }}
+      />
+    </g>
+    <path
+      d="M6.5 2.5h77c3.3 0 6 2.7 6 6v77c0 3.3-2.7 6-6 6h-77c-3.3 0-6-2.7-6-6v-77c0-3.3 2.7-6 6-6z"
+      style={{
+        fill: "none",
+        stroke: "#c6cbcc",
+      }}
+      transform="translate(4 2)"
+    />
   </svg>
 );
 export default Eyelet;

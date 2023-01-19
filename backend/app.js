@@ -7,7 +7,9 @@ var cors = require('cors')
 var users = require('./routes/users');
 var pay = require('./routes/pay');
 const { join } = require('path');
+const sequelize = require('./database');
 
+sequelize.sync({alter:true})
 
 var app = express();
 
@@ -25,7 +27,7 @@ app.use(cors({
 app.use('/',express.static(path.join(__dirname,'Home')))
 app.use(express.static(path.join(__dirname,'build')))
 
-app.use('/api/v1/users', users);
+app.use('/user', users);
 
 app.use('/pay',pay)
 

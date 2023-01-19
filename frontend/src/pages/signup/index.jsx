@@ -2,6 +2,9 @@ import React from 'react'
 import Navbar from '../common/Navbar'
 import { setFname, setLname, setPhone, setState, setAddress, setEmail, setZipCode, setPassword } from '../../redux/slice/user'
 import { useSelector, useDispatch } from 'react-redux'
+import axios from 'axios'
+import backendIP from '../../backendIP'
+import { useNavigate } from 'react-router-dom'
 
 function SignUp() {
 
@@ -32,11 +35,21 @@ function SignUp() {
   ]
   const dispatch = useDispatch()
   const { fname, lname, phone, state, address, email, zipCode, password, } = useSelector(state => state.user)
+  const navigate = useNavigate()
   return (
     <div className="">
       <Navbar />
       <div className="flex justify-center items-center mt-10">
-        <form onSubmit={e => { e.preventDefault(); }} className="space-y-2 w-96 lg:w-[450px] ">
+        <form onSubmit={e => { 
+          e.preventDefault();
+          axios.post(`${backendIP}/user/signup`,{fname, lname, phone, state, address, email, zipCode, password}).then(res=>{
+            if(res.data?.status){
+              navigate('/cart')
+            }else{
+              window.alert(res.data.reason)
+            }
+          })
+         }} className="space-y-2 w-96 lg:w-[450px] ">
 
           <div className="flex justify-between gap-[10%] flex-wrap">
             <div className="w-full lg:w-[50%] space-y-2">
@@ -80,7 +93,7 @@ function SignUp() {
             </div>
             <div className="w-full lg:w-[40%] space-y-2">
               <label className='text-lg' htmlFor="">Zip code</label>
-              <input min={111111} max={999999} value={zipCode} onChange={e => { dispatch(setZipCode(e.target.value)); e.target.setCustomValidity('Zip Code Must Contain 6 digit') }} required className='h-10 w-full rounded-xl border outline-none border-[#BABCBB] pl-3' type={"number"} />
+              <input value={zipCode} onChange={e => { dispatch(setZipCode(e.target.value));  }} required className='h-10 w-full rounded-xl border outline-none border-[#BABCBB] pl-3' type={"number"} />
             </div>
           </div>
 
