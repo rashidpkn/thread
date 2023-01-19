@@ -15,7 +15,7 @@ export function Pencil(props) {
   const {fabricPath} = useSelector(state=>state.fabric.fabricType)
   const normals = useLoader(THREE.TextureLoader,fabricPath)
 
-  const { nodes, materials } = useGLTF('/Pencil.gltf')
+  const { nodes, materials } = useGLTF('/model/Pencil.gltf')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.polySurface198.geometry} material={materials.blinn1} />

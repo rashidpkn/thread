@@ -7,7 +7,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Room(props) {
-  const { nodes, materials } = useGLTF('/room_bg01.gltf')
+  const { nodes, materials } = useGLTF('/model/room_bg01.gltf')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Cube019.geometry} material={materials.BG} />

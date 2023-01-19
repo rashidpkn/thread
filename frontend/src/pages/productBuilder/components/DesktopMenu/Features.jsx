@@ -1,3 +1,4 @@
+import { KeyboardBackspace } from '@mui/icons-material'
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -13,7 +14,7 @@ function Features() {
     <div className='space-y-5'>
       <div className="p-5 w-full flex items-center justify-between gap-5">
         <div className="">
-          <button className={`${(selector === 1 || selector === 3) && 'hidden'} text-[#B68D40]`} onClick={() => setSelector(selector - 1)}>Back</button>
+          {/* <button className={`${(selector === 1 || selector === 3) && 'hidden'} text-[#B68D40]`} onClick={() => setSelector(selector - 1)}>Back</button> */}
         </div>
         <p className='font-medium'>Features</p>
         <div className="">
@@ -41,6 +42,7 @@ function Features() {
           <div className="flex justify-center items-center">
             <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(2)}>Pole/Track</button>
           </div>
+          <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => dispatch(setMenu(3)) }><KeyboardBackspace/> Back</button>
         </div>
       }
 
@@ -56,6 +58,7 @@ function Features() {
           <div className="flex justify-center items-center">
             <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(3)}>Accessories</button>
           </div>
+          <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => setSelector(1) }><KeyboardBackspace/> Back</button>
         </div>
       }
 
@@ -81,7 +84,7 @@ function Features() {
             <div onClick={() => dispatch(setCorded('300cm-400cm'))} className="flex justify-center items-center gap-1"> <input checked={corded === '300cm-400cm' ? true : false} type={'checkbox'} />  <button className='bg-[#B68D40] w-36 h-10 rounded-xl'>300cm-400cm</button> </div>
           </div>
           <div className="flex justify-between items-center px-5">
-            <button className='h-12 px-3  rounded-md ' onClick={() => setSelector(2)}>Back</button>
+            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => setSelector(2)}><KeyboardBackspace/> Back</button>
             <Link to={'/estimate'}>
               <button className={` h-8 w-20 rounded-md bg-[#B68D40] text-white`} >Estimate</button>
             </Link>

@@ -13,7 +13,7 @@ export function Double(props) {
   const {fabricPath} = useSelector(state=>state.fabric.fabricType)
   const normals = useLoader(THREE.TextureLoader,fabricPath)
 
-  const { nodes, materials } = useGLTF('/Double.gltf')
+  const { nodes, materials } = useGLTF('/model/Double.gltf')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.pTorus10.geometry} material={materials.blinn5} position={[13.45, 0, 0]} />

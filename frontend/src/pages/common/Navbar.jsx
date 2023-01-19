@@ -17,7 +17,9 @@ function Navbar() {
           <li className='cursor-pointer'>About Us</li>
           <li className='cursor-pointer'>Contact Us</li>
         </ul>
-        <AddShoppingCartOutlined fontSize='large' />
+        <Link to={'/cart'}>
+          <AddShoppingCartOutlined fontSize='large' />
+        </Link>
       </nav>
 
       <nav className='h-20 w-full flex lg:hidden justify-between items-center px-5'>

@@ -15,6 +15,7 @@ import dBay from '../../../asset/measurment/dBay.png'
 import dFlat from '../../../asset/measurment/dFlat.png'
 import dInside from '../../../asset/measurment/dInside.png'
 import dOutSide from '../../../asset/measurment/dOutside.png'
+import { KeyboardBackspace } from '@mui/icons-material'
 
 Preload([Bay,Flat,Inside,OutSide,dBay,dFlat,dInside,dOutSide])
 
@@ -31,7 +32,7 @@ function Measure() {
     <div className='space-y-5'>
       <div className="p-5 w-full flex items-center justify-between gap-5">
         <div className=''>
-          <button className={`${selector !== 2 && 'hidden'} text-[#B68D40]`}  onClick={() => selector !==1 && setSelector(selector-1)}>Back</button>
+          {/* <button className={`${selector !== 2 && 'hidden'} text-[#B68D40]`}  onClick={() => selector !==1 && setSelector(selector-1)}>Back</button> */}
         </div>
         <p className='font-medium text-center'>Get Your Measurements</p>
         <div className=""></div>
@@ -76,7 +77,9 @@ function Measure() {
           <div className="flex justify-center items-center">
             <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(2) }>Name your room</button>
           </div>
-
+          <div className="flex  items-center px-5">
+            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() =>dispatch(setMenu(1)) }> <KeyboardBackspace/> Back</button>
+          </div>
         </div>
       }
 
@@ -102,6 +105,11 @@ function Measure() {
           <div className="flex justify-center items-center">
             <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(3) }>Add Measurment</button>
           </div>
+
+          <div className="flex  items-center px-5">
+            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => setSelector(1) }> <KeyboardBackspace/> Back</button>
+          </div>
+
         </div>
       }
 
@@ -127,9 +135,10 @@ function Measure() {
 
           </div>
           <div className="flex justify-between items-center px-5">
-            <button className='h-12 px-3  rounded-md ' onClick={() => setSelector(2) }>Back</button>
-            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => dispatch(setMenu(3))}>Next</button>
+            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => setSelector(2) }><KeyboardBackspace/> Back</button>
+            <button className='h-8 w-20 rounded-3xl bg-[#B68D40] text-white' onClick={() => dispatch(setMenu(3))}>Next</button>
           </div>
+          
         </div>
       }
 

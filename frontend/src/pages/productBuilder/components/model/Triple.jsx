@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux'
 import * as THREE from 'three'
 
 export function Triple(props) {
-  const { nodes, materials } = useGLTF('/Triple.gltf')
+  const { nodes, materials } = useGLTF('/model/Triple.gltf')
 
   const {fabricPath} = useSelector(state=>state.fabric.fabricType)
   const normals = useLoader(THREE.TextureLoader,fabricPath)

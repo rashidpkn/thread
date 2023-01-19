@@ -37,7 +37,7 @@ function Login() {
                     </div>
                     <div className="flex justify-between items-center">
                         <p className='text-lg font-light text-[#03A1FA]'>Forgot Password ?</p>
-                        <p className='text-lg font-light text-[#03A1FA]'><Link to={'signup'}> Sign Up </Link></p>
+                        <p className='text-lg font-light text-[#03A1FA]'><Link to={'/signup'}> Sign Up </Link></p>
                         <button type="submit" className='h-12 w-28 bg-[#B68D40] rounded-md  text-white'>Login</button>
                     </div>
                 </form>

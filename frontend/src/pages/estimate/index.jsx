@@ -16,8 +16,6 @@ function Estimate() {
             <Navbar />
             <div className="gap-y-5 flex flex-col items-center justify-center">
                 <h2 className='text-2xl text-center mt-5 font-medium'>Estimate</h2>
-
-
                 <div className="px-10 space-y-3 text-lg font-medium relative left-16">
                     <div className="flex">  <p className='w-64 text-xl'>Fabric          </p>  <p className='ml-16 flex justify-center items-center gap-3'><div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }}></div> {name}</p>  </div>
                     <div className="flex">  <p className='w-64 text-xl'>Item            </p>  <p className='ml-16'>{item}</p>  </div>

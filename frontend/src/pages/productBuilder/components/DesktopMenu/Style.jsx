@@ -1,3 +1,4 @@
+import { KeyboardBackspace } from '@mui/icons-material'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setLook, setPanel  } from '../../../../redux/slice/fabric'
@@ -35,8 +36,8 @@ function Style() {
           <div onClick={()=>{dispatch(setLook('Triple'))}} className={`${look === 'Triple' && 'border-[#B68D40]' } w-24 h-24 border rounded-md flex justify-center items-center`}><Triple selected={look==='Triple'} /></div>
         </div>
         <div className="flex justify-between items-center px-5">
-            <button className='h-12 px-3  rounded-md ' onClick={() => dispatch(setMenu(2)) }>Back</button>
-            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => dispatch(setMenu(4))}>Next</button>
+            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => dispatch(setMenu(2)) }><KeyboardBackspace/> Back</button>
+            <button className='h-8 w-20 rounded-3xl bg-[#B68D40] text-white' onClick={() => dispatch(setMenu(4))}>Next</button>
           </div>
     </div>
   )
