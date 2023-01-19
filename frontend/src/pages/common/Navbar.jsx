@@ -7,7 +7,10 @@ function Navbar() {
   return (
     <div className=' border-b shadow-md w-full text-[#B68D40] text-lg'>
       <nav className='h-20 w-full hidden lg:flex justify-between items-center px-20'>
-        <img src="/image/common/logo.svg" width={100} alt="" />
+      <a href="https://my-thread.co.uk">
+          <img src="/image/common/logo.svg" width={100} alt="" />
+      </a>
+        
         <ul className='flex gap-8'>
           <li className='cursor-pointer'>Curtain</li>
           <li className='cursor-pointer'><Link to={'/productbuilder'}> Customise Curtains </Link></li>
@@ -19,7 +22,10 @@ function Navbar() {
 
       <nav className='h-20 w-full flex lg:hidden justify-between items-center px-5'>
         <MenuOutlined className='cursor-pointer' onClick={()=>setShowMenu(!showMenu)} />
-        <img src="/image/common/logo.svg" width={100} alt="" />
+        <a href="https://my-thread.co.uk">
+          <img src="/image/common/logo.svg" width={100} alt="" />
+        </a>
+        
         <div className="flex gap-3">
           <LocalPhone />
           <Email />
