@@ -16,10 +16,10 @@ function Style() {
   const {panel,look} = useSelector(state=>state.fabric.style)
   return (
     <div className='space-y-5'>
-      <div className="p-5 w-full flex items-center justify-between gap-5">
-            <button className='text-[#B68D40]' onClick={()=>dispatch(setMenu(2))}>Back</button>
+      <div className="p-5 w-full flex items-center justify-center gap-5">
+            {/* <button className='text-[#B68D40]' onClick={()=>dispatch(setMenu(2))}>Back</button> */}
             <p className='font-medium'>Choose Your Style</p>
-            <button className='h-8 w-20 rounded-3xl bg-[#B68D40] text-white' onClick={()=>dispatch(setMenu(4))}>Next</button>
+            {/* <button className='h-8 w-20 rounded-3xl bg-[#B68D40] text-white' onClick={()=>dispatch(setMenu(4))}>Next</button> */}
         </div>
         <p className='text-center font-medium'>Single or Pair panel?</p>
         <div className="flex justify-center gap-5">
@@ -34,6 +34,10 @@ function Style() {
           <div onClick={()=>{dispatch(setLook('Goblet'))}} className={`${look === 'Goblet' && 'border-[#B68D40]' } w-24 h-24 border rounded-md flex justify-center items-center`}><Goblet selected={look==='Goblet'} /></div>
           <div onClick={()=>{dispatch(setLook('Triple'))}} className={`${look === 'Triple' && 'border-[#B68D40]' } w-24 h-24 border rounded-md flex justify-center items-center`}><Triple selected={look==='Triple'} /></div>
         </div>
+        <div className="flex justify-between items-center px-5">
+            <button className='h-12 px-3  rounded-md ' onClick={() => dispatch(setMenu(2)) }>Back</button>
+            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => dispatch(setMenu(4))}>Next</button>
+          </div>
     </div>
   )
 }

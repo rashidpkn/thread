@@ -1,9 +1,20 @@
-import React, {  useState } from 'react'
+import React, {  useState,Suspense } from 'react'
+import { Canvas } from '@react-three/fiber'
+// import { NavigateBeforeOutlined, NavigateNextOutlined, ShoppingCart } from '@mui/icons-material'
+// import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
+import {  PerspectiveCamera } from '@react-three/drei'
+
 import Navbar from '../common/Navbar'
 import {  useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import axios from 'axios'
 import backendIP from '../../backendIP'
+import { Double } from '../productBuilder/components/model/Double'
+import { Eyelet } from '../productBuilder/components/model/Eyelet'
+import { Pencil } from '../productBuilder/components/model/Pencil'
+import { Goblet } from '../productBuilder/components/model/Goblet'
+import { Triple } from '../productBuilder/components/model/Triple'
+import { Room } from '../productBuilder/components/Room'
 
 
 
@@ -14,7 +25,7 @@ function CheckOut() {
   const { panel, look } = useSelector(state => state.fabric.style)
   const { lining, poleAndTrack } = useSelector(state => state.fabric.feature)
   const { glide, corded } = useSelector(state => state.fabric.feature.accessories)
-  const { price } = useSelector(state => state.fabric)
+  const { price,wallColor } = useSelector(state => state.fabric)
 
   const [email, setEmail] = useState('')
   const navigate = useNavigate()
@@ -24,7 +35,33 @@ function CheckOut() {
       <Navbar />
       <div className="gap-y-5 flex flex-col items-center justify-center">
         <h2 className='text-2xl text-center mt-5 font-medium'>Checkout</h2>
-        <div className="h-72 w-96 bg-black"></div>
+        <div className="h-72 w-96">
+        <Canvas>
+          <PerspectiveCamera makeDefault position={[0, 0, 14]} />
+          
+          <ambientLight intensity={0.5}/>
+          <directionalLight position={[-1,5,2]}/>
+          <Suspense fallback={null}>
+
+            <Room wallColor={wallColor}/>
+            {
+              look === 'Double' &&  <Double />
+            }
+            {
+              look === 'Eyelet' && <Eyelet/>
+            }
+            {
+              look === 'Pencil' && <Pencil/>
+            }
+            {
+              look === 'Goblet' && <Goblet/>
+            }
+            {
+              look === 'Triple' && <Triple />
+            }
+          </Suspense>
+        </Canvas>
+        </div>
         <div className="space-y-3 text-lg font-medium relative left-8 lg:left-16">
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Fabric          </p>  <p className='lg:ml-16 flex justify-center items-center gap-3'><div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }}></div> {name}</p>   </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Item            </p>  <p className='lg:ml-16'>{item}</p>  </div>

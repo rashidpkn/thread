@@ -8,6 +8,7 @@ function Estimate() {
     const {width,height,roomName} = useSelector(state=>state.fabric.measure)
     const {panel,type} = useSelector(state=>state.fabric.style)
     const {lining} = useSelector(state=>state.fabric.feature)
+    const {price} = useSelector(state=>state.fabric)
 
     return (
         <div className='space-y-5   pb-10'>
@@ -20,9 +21,9 @@ function Estimate() {
                 <div className="flex ">  <p className='w-40'>Panel          </p>     <p>{panel}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Style           </p>    <p>{type}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Features        </p>    <p>{lining}</p>  </div>
-                <div className="flex ">  <p className='w-40'>Making Price    </p>    <p>{999}</p>  </div>
-                <div className="flex ">  <p className='w-40'>Accessories     </p>    <p>{999}</p>  </div>
-                <div className="flex ">  <p className='w-40'>Boxed &  Postage</p>    <p>{999}</p>  </div>
+                <div className="flex ">  <p className='w-40'>Making Price    </p>    <p>{price}</p>  </div>
+                <div className="flex ">  <p className='w-40'>Accessories     </p>    <p>{price}</p>  </div>
+                <div className="flex ">  <p className='w-40'>Boxed &  Postage</p>    <p>{price + 30}</p>  </div>
             </div>
             <div className="flex justify-center items-center gap-10">
                 <Link to={'/login'}>

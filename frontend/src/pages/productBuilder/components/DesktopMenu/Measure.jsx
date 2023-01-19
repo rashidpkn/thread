@@ -30,18 +30,21 @@ function Measure() {
   return (
     <div className='space-y-5'>
       <div className="p-5 w-full flex items-center justify-between gap-5">
-        <button className='text-[#B68D40]' onClick={() => dispatch(setMenu(1))}>Back</button>
-        <p className='font-medium'>Get Your Measurements</p>
-        <button className='h-8 w-20 rounded-3xl bg-[#B68D40] text-white' onClick={() => dispatch(setMenu(3))}>Next</button>
+        <div className=''>
+          <button className={`${selector !== 2 && 'hidden'} text-[#B68D40]`}  onClick={() => selector !==1 && setSelector(selector-1)}>Back</button>
+        </div>
+        <p className='font-medium text-center'>Get Your Measurements</p>
+        <div className=""></div>
+        {/* <button className='h-8 w-20 rounded-3xl bg-[#B68D40] text-white' onClick={() => dispatch(setMenu(3))}>Next</button> */}
       </div>
       {/* <div className="w-full px-5">
             <button className='h-12 w-full border border-[#b68d40] rounded-md hover:text-[#B68D40]'>Add a new measurements</button>
         </div> */}
 
       <div className="flex justify-center gap-5">
-        <button onClick={() => setSelector(1)} className={`${selector === 1 && 'text-[#B68D40]'}`} >Curtain/Blinds</button>
-        <button onClick={() => setSelector(2)} className={`${selector === 2 && 'text-[#B68D40]'}`} >Room Name</button>
-        <button onClick={() => setSelector(3)} className={`${selector === 3 && 'text-[#B68D40]'}`} >Measurment</button>
+        <button onClick={() => setSelector(1)} className={`${selector === 1 ? 'text-[#B68D40]' : 'hidden' }  `} >Curtain/Blinds</button>
+        <button onClick={() => setSelector(2)} className={`${selector === 2 ? 'text-[#B68D40]' : 'hidden' }  `} >Room Name</button>
+        <button onClick={() => setSelector(3)} className={`${selector === 3 ? 'text-[#B68D40]' : 'hidden' }  `} >Measurment</button>
       </div>
       {
         selector === 1 && <div className="space-y-3">
@@ -70,6 +73,9 @@ function Measure() {
               </div>
             </div>
           }
+          <div className="flex justify-center items-center">
+            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(2) }>Name your room</button>
+          </div>
 
         </div>
       }
@@ -91,6 +97,10 @@ function Measure() {
           <p className='text-center font-medium'>Give this window a name!</p>
           <div className="flex justify-center px-10">
             <input  onChange={e => dispatch(setRoomName(e.target.value))} disabled={room === 'Other Rooms' ? false : true} value={roomName} className='bg-[#122620]/30 h-12 pl-2 w-full rounded-md' placeholder='Bedrooms' type="text" />
+          </div>
+
+          <div className="flex justify-center items-center">
+            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(3) }>Add Measurment</button>
           </div>
         </div>
       }
@@ -116,7 +126,10 @@ function Measure() {
             </div>
 
           </div>
-
+          <div className="flex justify-between items-center px-5">
+            <button className='h-12 px-3  rounded-md ' onClick={() => setSelector(2) }>Back</button>
+            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => dispatch(setMenu(3))}>Next</button>
+          </div>
         </div>
       }
 

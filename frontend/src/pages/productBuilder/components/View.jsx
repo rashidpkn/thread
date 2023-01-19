@@ -74,7 +74,8 @@ const Selector = () => {
       <div className="flex justify-between lg:justify-center items-center">
         <div className="text-[#b68d40] lg:hidden" onClick={() => { dispatch(setMenu(1)) }}><NavigateBeforeOutlined /></div>
         <div className="p-1 rounded-full border-2 border-[#B68D40]">
-          <div className='bg-cover rounded-full w-9 h-9 ' onClick={() => { dispatch(setMenu(6)) }} style={{ backgroundColor: color }} ></div>
+          <div className='bg-cover rounded-full w-9 h-9 hidden lg:block'  style={{ backgroundColor: color }} ></div>
+          <div className='bg-cover rounded-full w-9 h-9 block lg:hidden' onClick={() => { dispatch(setMenu(6)) }} style={{ backgroundColor: color }} ></div>
         </div>
         <div className="text-[#b68d40] lg:hidden" onClick={() => { dispatch(setMenu(1)) }} ><NavigateNextOutlined /></div>
       </div>
