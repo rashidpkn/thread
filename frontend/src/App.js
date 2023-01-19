@@ -8,7 +8,7 @@ import ProductBuilder from './pages/productBuilder'
 import SignUp from './pages/signup'
 
 
-import { GoogleLogin } from 'react-google-login';
+// import { GoogleLogin } from 'react-google-login';
 import { gapi } from 'gapi-script';
 const clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
 

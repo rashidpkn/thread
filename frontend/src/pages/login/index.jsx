@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Navbar from '../common/Navbar'
-import google from '../asset/icon/google.png'
+// import google from '../asset/icon/google.png'
 import GoogleLogin from 'react-google-login'
 function Login() {
     const navigate = useNavigate()

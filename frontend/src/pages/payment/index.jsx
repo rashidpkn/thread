@@ -118,7 +118,7 @@ const PaymentCard = () => {
                         onChange={(e) => setEmail(e.target.value)}
                     />
                     <PaymentElement className="payment-element" options={paymentElementOptions} />
-                    <button className='paynow' disabled={isLoading || !stripe || !elements} id="submit">
+                    <button className='paynow h-12 w-24 bg-[#B68D40] rounded-xl mt-5 text-white' disabled={isLoading || !stripe || !elements} id="submit">
                         <span id="button-text">
                             {isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}
                         </span>
