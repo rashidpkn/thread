@@ -1,0 +1,44 @@
+import { KeyboardBackspace } from '@mui/icons-material'
+import React from 'react'
+import { useDispatch } from 'react-redux'
+import { setHeight, setIsPole, setWidth } from '../../../../../redux/slice/fabric'
+
+function Pole({ setSelector }) {
+    // const { isPole, height, width } = useSelector(state => state.fabric.measure)
+    const dispatch = useDispatch()
+    return (
+        <div className='space-y-3 relative h-full'>
+            <h2 className='text-2xl text-center'>Now lets get some <br /> measurements in</h2>
+            <div className="flex flex-col gap-3 items-center">
+                <p className='text-center'>Do you have a pole or track installed ?</p>
+                {/* <div className="flex justify-center gap-5">
+                <div onClick={()=>{dispatch(setIsPole(false) )}} className={`${isPole === false && 'border border-[#B68D40]  rounded-xl'} p-1`}><button className='px-[18px] py-[16px] rounded-lg bg-[#B68D40]'>No </button></div>
+                <div onClick={()=>{dispatch(setIsPole(true)  )}} className={`${isPole === true  && 'border border-[#B68D40]  rounded-xl'} p-1`}><button className='px-[18px] py-[16px] rounded-lg bg-[#B68D40]'>Yes</button></div>
+            </div> */}
+                    <div className="can-toggle flex justify-center items-center right-12">
+                        <input id="a" onChange={e=>e.target.checked ? dispatch(setIsPole(true)) : dispatch(setIsPole(false)) } defaultChecked={true} type="checkbox" />
+                        <label htmlFor="a">
+                            <div className="can-toggle__switch" data-checked="Yes" data-unchecked="No"></div>
+                        </label>
+                    </div>
+                <div className="flex  justify-center gap-5">
+                    <div className="flex flex-col">
+                        <label htmlFor="">Height</label>
+                        <input min={50} max={200} placeholder='50 CM' onChange={e => dispatch(setHeight(e.target.value))} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
+                    </div>
+                    <div className="flex flex-col">
+                        <label htmlFor="">Width</label>
+                        <input min={50} max={200} placeholder='50 CM' onChange={e => dispatch(setWidth(e.target.value))} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
+                    </div>
+
+                </div>
+            </div>
+            <div className="absolute bottom-5 w-full h-12 flex justify-between items-center px-10">
+            <button className="cursor-pointer flex justify-center items-center gap-1" onClick={()=>{setSelector(3)}}><KeyboardBackspace/> Back</button>
+                <div className="cursor-pointer h-10 w-32 bg-[#b68d40] flex justify-center items-center rounded-xl" onClick={() => { setSelector(5) }}>Next</div>
+            </div>
+        </div>
+    )
+}
+
+export default Pole

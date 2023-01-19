@@ -1,0 +1,63 @@
+import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import Navbar from '../common/Navbar'
+import google from '../asset/icon/google.png'
+import GoogleLogin from 'react-google-login'
+function Login() {
+    const navigate = useNavigate()
+    const onSuccess = (res) => {
+        console.log('success:', res);
+        navigate('/checkout')
+      };
+      const onFailure = (err) => {
+        console.log('failed:', err);
+      };
+      const clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
+    return (
+        <div className="">
+            <Navbar/>   
+            <div className={`px-[10%] mt-36 mb-24`}>
+                <h1 className='text-center text-4xl font-semibold'>Get started by filling the below order form.</h1>
+
+                <form className='w-full md:w-[500px] mx-auto   border-[#BABCBB] mt-5 space-y-5' onSubmit={e => { e.preventDefault() }}>
+
+                    <div className="space-y-2">
+                        <label htmlFor="">Email</label>
+                        <div className="">
+                            <input required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='Email' type="email" />
+                        </div>
+                    </div>
+
+
+                    <div className="space-y-2">
+                        <label htmlFor="">Password</label>
+                        <div className="">
+                            <input required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='password' type="password" />
+                        </div>
+                    </div>
+                    <div className="flex justify-between items-center">
+                        <p className='text-lg font-light text-[#03A1FA]'>Forgot Password ?</p>
+                        <p className='text-lg font-light text-[#03A1FA]'><Link to={'signup'}> Sign Up </Link></p>
+                        <button type="submit" className='h-12 w-28 bg-[#B68D40] rounded-md  text-white'>Login</button>
+                    </div>
+                </form>
+                <div className="flex justify-center items-center">
+                <GoogleLogin
+          clientId={clientId}
+          buttonText="Sign in with Google"
+          onSuccess={onSuccess}
+          onFailure={onFailure}
+          cookiePolicy={'single_host_origin'}
+          isSignedIn={true}
+          
+      />
+                    {/* <button className=' bg-blue-400 text-white p-2 rounded-md flex items-center mt-5'> <div className="h-12 w-12 bg-white rounded-md"> <img src={google} alt="" /> </div> <p className='px-8 font-medium text-lg'>Sign up with Google</p></button> */}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Login
+
+
