@@ -7,7 +7,7 @@ function Login() {
     const navigate = useNavigate()
     const onSuccess = (res) => {
         console.log('success:', res);
-        navigate('/checkout')
+        navigate('/checkout-2')
       };
       const onFailure = (err) => {
         console.log('failed:', err);

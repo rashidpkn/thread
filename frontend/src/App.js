@@ -10,6 +10,7 @@ import SignUp from './pages/signup'
 
 // import { GoogleLogin } from 'react-google-login';
 import { gapi } from 'gapi-script';
+import CheckOut2 from './pages/checkout-2'
 const clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path='/productBuilder' element={<ProductBuilder />} />
         <Route path='/checkout' element={<CheckOut />} />
+        <Route path='/checkout-2' element={<CheckOut2 />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/estimate' element={<Estimate />} />
         <Route path='/login' element={<Login />} />
