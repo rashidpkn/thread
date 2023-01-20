@@ -34,6 +34,10 @@ const User =  sequelize.define('users',{
     password:{
         type:DataTypes.STRING,
         allowNull:false
+    },savedProduct:{
+        type:DataTypes.ARRAY(DataTypes.JSON),
+        allowNull:false,
+        defaultValue:[]
     }
 
 })

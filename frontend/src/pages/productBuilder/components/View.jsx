@@ -1,7 +1,7 @@
 import { NavigateBeforeOutlined, NavigateNextOutlined, ShoppingCart } from '@mui/icons-material'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import React, { Suspense } from 'react'
+import React, { Suspense, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setMenu } from '../../../redux/slice/util'
 
@@ -12,14 +12,47 @@ import { Pencil } from './model/Pencil'
 import { Triple } from './model/Triple'
 import { Room } from './Room'
 
+
+import click from '../../asset/viewIcon/click.png'
+import pinch from '../../asset/viewIcon/pinch.png'
+import scroll from '../../asset/viewIcon/scroll.png'
+import swipe from '../../asset/viewIcon/swipe.png'
+
+
+
 function View() {
   const { show3D } = useSelector(state => state.util.productBuilder)
   const { wallColor } = useSelector(state => state.fabric)
   const { look } = useSelector(state => state.fabric.style)
+  const [show, setShow] = useState(true)
   return (
     <div className={`${!show3D && 'hidden lg:inline-block'}  h-[calc(100vh-5rem)] lg:h-full w-full lg:w-[900px] border flex-shrink-0 relative`}>
       <div className="z-10 bg-white absolute top-5 right-5 w-28 h-10 rounded-full border flex justify-center items-center gap-3 text-lg font-medium text-[#B68D40]"> <ShoppingCart fontSize="large" />  <p>{125.5}</p></div>
-      <div className="view h-full w-full">
+      {
+        show && <div className="absolute  z-10 h-48 w-72  bg-white/60 top-[30%] lg:top-[40%] left-[15%] lg:left-[30%] flex">
+            <div className="h-full w-1/2 hidden lg:flex flex-col justify-center items-center">
+                  <img src={click} alt="" />
+                  <p className='text-center'>Click and Drag to rotate</p>
+            </div>
+            <div className="h-full w-1/2 hidden lg:flex flex-col justify-center items-center">
+                  <img src={scroll} alt="" />
+                  <p className='text-center'>Scroll in/out to zoom</p>
+            </div>
+
+            <div className="h-full w-1/2 flex lg:hidden  flex-col justify-center items-center">
+                  <img src={swipe} alt="" />
+                  <p className='text-center'>Swipe to rotate</p>
+            </div>
+            <div className="h-full w-1/2 flex lg:hidden  flex-col justify-center items-center">
+                  <img src={pinch} alt="" />
+                  <p className='text-center'>Pinch to zoom</p>
+            </div>
+
+        </div>
+      }
+      
+      <div className="view h-full w-full" onClick={()=>setShow(false)}>
+
         <Canvas>
           <PerspectiveCamera makeDefault position={[0, 0, 14]} />
           <OrbitControls

@@ -1,7 +1,10 @@
 import { BookmarkBorderOutlined } from '@mui/icons-material'
+import axios from 'axios'
 import React from 'react'
-import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { Link, useNavigate } from 'react-router-dom'
+import backendIP from '../../backendIP'
+import { setSavedChange } from '../../redux/slice/util'
 import Navbar from '../common/Navbar'
 
 function Estimate() {
@@ -11,6 +14,11 @@ function Estimate() {
     const { lining, poleAndTrack } = useSelector(state => state.fabric.feature)
     const { glide, corded } = useSelector(state => state.fabric.feature.accessories)
     const { price } = useSelector(state => state.fabric)
+
+    const {loginStatus,email} = useSelector(state=>state.user)
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
     return (
         <div>
             <Navbar />
@@ -41,10 +49,25 @@ function Estimate() {
                             Buy Now
                         </Link>
                     </button>
-                    <button class="flex items-center justify-center w-1/2 text-sm">
-                        <Link to={'/login'}>
+                    <button class="flex items-center justify-center w-1/2 text-sm" onClick={()=>{
+                            if(loginStatus){
+                                axios.post(`${backendIP}/product/save`,{email,name,roomName,item,installation,isPole,height,width,panel,look,lining,poleAndTrack,glide,corded,price}).then(res=>{
+                                    if(res.data.status){
+                                        window.alert("Product is added to Cart")
+                                        navigate('/cart')
+                                    }else{
+                                        window.alert(res.data.reason)
+                                    }
+                                })
+                            }else{
+                                dispatch(setSavedChange(true))
+                                navigate('/login')
+
+                            }
+                        }}>
+                       
                         <BookmarkBorderOutlined /> save for later
-                        </Link>
+                        
                     </button>
                 </div>
             </div>

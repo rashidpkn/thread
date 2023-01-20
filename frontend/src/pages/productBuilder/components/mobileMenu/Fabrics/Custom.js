@@ -1080,7 +1080,7 @@ export const fabric =[
         wavy:true
     },
     {
-        id: 90,
+        id:  273,
         name: 'Emerson Sahara',
         color: '#9f7a1b',
         patternNumber: '00',

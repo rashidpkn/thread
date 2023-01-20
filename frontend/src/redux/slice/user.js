@@ -9,6 +9,7 @@ const initialState = {
     email:'',
     zipCode:'',
     password:'',
+    loginStatus:false
 }
 
 const user = createSlice({
@@ -23,9 +24,10 @@ const user = createSlice({
     setEmail   (state,{payload}){state.email    = payload},
     setZipCode (state,{payload}){state.zipCode  = payload},
     setPassword(state,{payload}){state.password = payload},
+    setLoginStatus(state,{payload}){state.loginStatus  = payload}
   }
 });
 
-export const {setFname,setLname,setPhone,setState,setAddress,setEmail,setZipCode,setPassword} = user.actions
+export const {setFname,setLname,setPhone,setState,setAddress,setEmail,setZipCode,setPassword,setLoginStatus} = user.actions
 
 export default user.reducer

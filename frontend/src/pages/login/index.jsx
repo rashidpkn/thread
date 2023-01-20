@@ -1,34 +1,68 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Navbar from '../common/Navbar'
 // import google from '../asset/icon/google.png'
 import GoogleLogin from 'react-google-login'
+import { useDispatch, useSelector } from 'react-redux'
+import { setEmail, setLoginStatus, setPassword } from '../../redux/slice/user'
+import axios from 'axios'
+import backendIP from '../../backendIP'
+import { setSavedChange } from '../../redux/slice/util'
 function Login() {
     const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const {email,password} = useSelector(state=>state.user)
+
+
+    const {savedChange} = useSelector(state=>state.util.estimate)
+
     const onSuccess = (res) => {
         console.log('success:', res);
-        navigate('/checkout-2')
+        dispatch(setLoginStatus(true))
+
+        if(savedChange===true){
+            navigate('/estimate')
+            dispatch(setSavedChange(false))
+        }else{
+            navigate('/cart')
+        }
+        // console.log(res.profileObj)
+        dispatch(setEmail(res.profileObj.email))
       };
       const onFailure = (err) => {
         console.log('failed:', err);
+        dispatch(setLoginStatus(false))
       };
       const clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
-      const [cre, setCre] = useState({
-        email:'',
-        password:''
-      })
+      
     return (
         <div className="">
             <Navbar/>   
             <div className={`px-[10%] mt-36 mb-24`}>
                 <h1 className='text-center text-4xl font-semibold'>Get started by filling the below order form.</h1>
 
-                <form className='w-full md:w-[500px] mx-auto   border-[#BABCBB] mt-5 space-y-5' onSubmit={e => { e.preventDefault() }}>
+                <form className='w-full md:w-[500px] mx-auto   border-[#BABCBB] mt-5 space-y-5' onSubmit={e => { 
+                    e.preventDefault();
+                    axios.post(`${backendIP}/user/login`,{email,password}).then(res=>{
+                        if(res.data.status){
+                            dispatch(setLoginStatus(true))
+                            
+                            if(savedChange){
+                                navigate('/estimate')
+                                dispatch(setSavedChange(false))
+                            }else{
+                                navigate('/cart')
+                            }
+                        }else{
+                            window.alert(res.data.reason)
+                        }
+                    })
+                    }}>
 
                     <div className="space-y-2">
                         <label htmlFor="">Email</label>
                         <div className="">
-                            <input onChange={e=>setCre({...cre,email:e.target.value})} required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='Email' type="email" />
+                            <input value={email} onChange={e=>{dispatch(setEmail(e.target.value))}}  required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='Email' type="email" />
                         </div>
                     </div>
 
@@ -36,7 +70,7 @@ function Login() {
                     <div className="space-y-2">
                         <label htmlFor="">Password</label>
                         <div className="">
-                            <input onChange={e=>setCre({...cre,password:e.target.value})} required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='password' type="password" />
+                            <input value={password} onChange={e=>dispatch(setPassword(e.target.value))}  required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='password' type="password" />
                         </div>
                     </div>
                     <div className="flex justify-between items-center">

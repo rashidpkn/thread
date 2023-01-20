@@ -6,6 +6,9 @@ var cors = require('cors')
 
 var users = require('./routes/users');
 var pay = require('./routes/pay');
+var product = require('./routes/product')
+
+
 const { join } = require('path');
 const sequelize = require('./database');
 
@@ -28,8 +31,8 @@ app.use('/',express.static(path.join(__dirname,'Home')))
 app.use(express.static(path.join(__dirname,'build')))
 
 app.use('/user', users);
-
 app.use('/pay',pay)
+app.use('/product',product)
 
 app.get('*', (req,res) =>{res.sendFile(path.join(__dirname,'/build/index.html'));});
 module.exports = app;

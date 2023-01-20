@@ -1,10 +1,11 @@
 import React from 'react'
 import Navbar from '../common/Navbar'
-import { setFname, setLname, setPhone, setState, setAddress, setEmail, setZipCode, setPassword } from '../../redux/slice/user'
+import { setFname, setLname, setPhone, setState, setAddress, setEmail, setZipCode, setPassword, setLoginStatus } from '../../redux/slice/user'
 import { useSelector, useDispatch } from 'react-redux'
 import axios from 'axios'
 import backendIP from '../../backendIP'
 import { useNavigate } from 'react-router-dom'
+import { setSavedChange } from '../../redux/slice/util'
 
 function SignUp() {
 
@@ -34,7 +35,10 @@ function SignUp() {
     'West Yorkshire',
   ]
   const dispatch = useDispatch()
+  
   const { fname, lname, phone, state, address, email, zipCode, password, } = useSelector(state => state.user)
+  const {savedChange} = useSelector(state=>state.util.estimate)
+
   const navigate = useNavigate()
   return (
     <div className="">
@@ -44,7 +48,13 @@ function SignUp() {
           e.preventDefault();
           axios.post(`${backendIP}/user/signup`,{fname, lname, phone, state, address, email, zipCode, password}).then(res=>{
             if(res.data?.status){
-              navigate('/cart')
+              dispatch(setLoginStatus(true))
+              if(savedChange){
+                navigate('/estimate')
+                dispatch(setSavedChange(false))
+            }else{
+                navigate('/cart')
+            }
             }else{
               window.alert(res.data.reason)
             }

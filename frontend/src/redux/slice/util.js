@@ -5,6 +5,9 @@ const initialState = {
         show3D : true,
         showMenu:false,
         menu:1
+    },
+    estimate:{
+      savedChange:false
     }
 }
 
@@ -33,10 +36,11 @@ const util = createSlice({
       }else{
         state.productBuilder.show3D = true
       }
-    }
+    },
+    setSavedChange(state,{payload}){state.estimate.savedChange=payload}
 }
 });
 
-export const {setShow3D,setShowMenu,setMenu} = util.actions
+export const {setShow3D,setShowMenu,setMenu,setSavedChange} = util.actions
 
 export default util.reducer
