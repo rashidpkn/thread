@@ -36,13 +36,14 @@ router.post('/login', async(req,res)=>{
     if(found){
       res.send({
         status:true,
-        reason:"User Found"
+        reason:"User Found",
+        fname:found.fname
       })
       }
       else{
         res.send({
           status:false,
-          reason:"User is not exist Please Sign Up First"
+          reason:"Please check your email and password"
         })
       }
   } catch (error) {

@@ -4,7 +4,7 @@ import Navbar from '../common/Navbar'
 // import google from '../asset/icon/google.png'
 import GoogleLogin from 'react-google-login'
 import { useDispatch, useSelector } from 'react-redux'
-import { setEmail, setLoginStatus, setPassword } from '../../redux/slice/user'
+import { setEmail, setFname, setLoginStatus, setPassword } from '../../redux/slice/user'
 import axios from 'axios'
 import backendIP from '../../backendIP'
 import { setSavedChange } from '../../redux/slice/util'
@@ -46,7 +46,7 @@ function Login() {
                     axios.post(`${backendIP}/user/login`,{email,password}).then(res=>{
                         if(res.data.status){
                             dispatch(setLoginStatus(true))
-                            
+                            dispatch(setFname(res.data.fname))
                             if(savedChange){
                                 navigate('/estimate')
                                 dispatch(setSavedChange(false))

@@ -7,27 +7,31 @@ import Navbar from '../common/Navbar'
 
 function Cart() {
     const [SavedProduct, setSavedProduct] = useState([])
-    const {email} = useSelector(state=>state.user)
+    const { email, fname } = useSelector(state => state.user)
     const navigate = useNavigate()
     useEffect(() => {
-      axios.post(`${backendIP}/product/saved`,{email}).then(res=>{
-        console.log(res.data)
-        if(res.data?.length === 0){
-            
-            navigate('/productbuilder')
-        }else
-        setSavedProduct(res.data)
-      })
-      // eslint-disable-next-line
+        axios.post(`${backendIP}/product/saved`, { email }).then(res => {
+            console.log(res.data)
+            if (res.data?.length === 0) {
+
+                navigate('/productbuilder')
+            } else
+                setSavedProduct(res.data)
+        })
+        // eslint-disable-next-line
     }, [email])
-    
+
     return (
         <div className='pb-10'>
             <Navbar />
-            <h1 className='text-center text-2xl font-medium my-5'>Cart</h1>
+            <div className="font-medium space-y-5 px-[10%] mt-5">
+                <h1 className='text-2xl font-medium'>Hello {fname}</h1>
+                <h2 className='text-xl font-medium'>Your saved estimate</h2>
+            </div>
+
             <div className="flex gap-5 mt-10 flex-wrap justify-center items-center">
                 {
-                    SavedProduct.map(e=><ItemCard name={e.name} item={e.item} installation={e.installation} isPole={e.isPole} width={e.width} height={e.height} roomName={e.roomName} panel={e.panel} look={e.look} lining={e.lining} poleAndTrack={e.poleAndTrack} glide={e.glide} corded={e.corded} color='#b68d40' price={e.price} />)
+                    SavedProduct.map(e => <ItemCard name={e.name} item={e.item} installation={e.installation} isPole={e.isPole} width={e.width} height={e.height} roomName={e.roomName} panel={e.panel} look={e.look} lining={e.lining} poleAndTrack={e.poleAndTrack} glide={e.glide} corded={e.corded} color='#b68d40' price={e.price} />)
                 }
             </div>
         </div>
@@ -38,7 +42,7 @@ export default Cart
 
 
 
-const ItemCard = ({name,item,installation,isPole,width,height,roomName,panel,look,lining,poleAndTrack,glide,corded,price,color,}) => {
+const ItemCard = ({ name, item, installation, isPole, width, height, roomName, panel, look, lining, poleAndTrack, glide, corded, price, color, }) => {
     const navigate = useNavigate()
     return (
         <div className=" space-y-3 text-lg font-medium w-[22rem] border rounded-xl p-5">
@@ -59,8 +63,8 @@ const ItemCard = ({name,item,installation,isPole,width,height,roomName,panel,loo
             <div className="flex">  <p className='w-36 text-xl'>Making Price    </p>  <p className='ml-8'>{price}</p>  </div>
             <div className="flex">  <p className='w-36 text-xl'>Accessories     </p>  <p className='ml-8'>{price}</p>  </div>
             <div className="flex">  <p className='w-36 text-xl'>Boxed &  Postage</p>  <p className='ml-8'>{price + 30}</p>  </div>
-            <div className="flex justify-center items-center"> <button className='h-12 w-36 bg-[#b68d40] rounded-2xl text-white' onClick={()=>navigate('/checkout')}>Checkout</button></div>
-            
+            <div className="flex justify-center items-center"> <button className='h-12 w-36 bg-[#b68d40] rounded-2xl text-white' onClick={() => navigate('/checkout')}>Checkout</button></div>
+
         </div>
     )
 }
