@@ -12,7 +12,7 @@ var product = require('./routes/product')
 const { join } = require('path');
 const sequelize = require('./database');
 
-sequelize.sync({force:true})
+sequelize.sync({alter:true})
 
 var app = express();
 
