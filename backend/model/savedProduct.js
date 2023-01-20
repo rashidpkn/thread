@@ -53,4 +53,6 @@ const SavedProduct = sequelize.define("savedProduct", {
     }
 })
 
+console.log("Product Table is OK")
+
 module.exports = SavedProduct
