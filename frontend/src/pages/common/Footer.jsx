@@ -5,7 +5,7 @@ function Footer() {
     <div className='hidden md:block'>
     <div className='h-[700px] w-full bg-[#1E1E1F] flex flex-col md:flex-row pt-[100px] text-white'>
       <div className="flex justify-center h-full md:w-1/4">
-        <img className='w-[102px] h-[71px]' src="/image/common/logo.svg" alt="logo" />
+        <img className='w-[102px] h-[71px]' src="/image/common/Thread-White.png" alt="logo" />
       </div>
       <div className="h-full divide-y md:w-3/4">
         <div className="flex flex-col justify-between w-full border-white md:flex-row md:h-2/3">
@@ -35,11 +35,11 @@ function Footer() {
         </div>
         <div className="flex flex-col items-center justify-between w-full p-1 md:flex-row md:h-1/3">
             <div className="flex gap-3">
-              <div className="w-12 h-12"><a href="https://www.facebook.com/My-Thread-curtains-105982962222299"><img src="/image/common/Facebook.png" alt=''/></a></div>
+              <div className="w-12 h-12"><a href="https://www.facebook.com/My-Thread-curtains-105982962222299"><img src="/image/common/facebook.png" alt=''/></a></div>
               <div className="w-12 h-12"><a href="https://www.youtube.com/channel/UCcUjybZ6g0zCWxApaa2PQHA"><img src="/image/common/youtube.png" alt=''/></a></div>
               <div className="w-12 h-12"><a href="https://www.instagram.com/mythreadcurtains/"><img src="/image/common/insta.png" alt=''/></a></div>
             </div>
-            <span className='text-center'>© 2022 Thread & Co. All Rights Reserved.</span>
+            <span className='text-center'>© 2023 Thread & Co. All Rights Reserved.</span>
             <div className=""></div>
         </div>
       </div>
