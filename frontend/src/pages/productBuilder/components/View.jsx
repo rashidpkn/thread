@@ -22,12 +22,12 @@ import swipe from '../../asset/viewIcon/swipe.png'
 
 function View() {
   const { show3D } = useSelector(state => state.util.productBuilder)
-  const { wallColor } = useSelector(state => state.fabric)
+  const { wallColor,price } = useSelector(state => state.fabric)
   const { look } = useSelector(state => state.fabric.style)
   const [show, setShow] = useState(true)
   return (
     <div className={`${!show3D && 'hidden lg:inline-block'}  h-[calc(100vh-5rem)] lg:h-full w-full lg:w-[900px] border flex-shrink-0 relative`}>
-      <div className="z-10 bg-white absolute top-5 right-5 w-28 h-10 rounded-full border flex justify-center items-center gap-3 text-lg font-medium text-[#B68D40]"> <ShoppingCart fontSize="large" />  <p>{125.5}</p></div>
+      <div className="z-10 bg-white absolute top-5 right-5 w-28 h-10 rounded-full border flex justify-center items-center gap-3 text-lg font-medium text-[#B68D40]"> <ShoppingCart fontSize="large" />  <p>{price}</p></div>
       {
         show && <div className="absolute  z-10 h-48 w-72  bg-white/60 top-[30%] lg:top-[40%] left-[15%] lg:left-[30%] flex">
             <div className="h-full w-1/2 hidden lg:flex flex-col justify-center items-center">

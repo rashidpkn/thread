@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { setHeight, setInstallation, setIsPole, setItem, setRoom, setRoomName,setWidth } from '../../../../redux/slice/fabric'
+import { setHeight, setInstallation, setIsPole, setItem, setPrice, setRoom, setRoomName,setWidth } from '../../../../redux/slice/fabric'
 import { setMenu } from '../../../../redux/slice/util'
 
 import Preload from 'image-preload'
@@ -23,7 +23,8 @@ Preload([Bay,Flat,Inside,OutSide,dBay,dFlat,dInside,dOutSide])
 
 function Measure() {
   const dispatch = useDispatch()
-  const { room, roomName, item ,installation} = useSelector(state => state.fabric.measure)
+  const { room, roomName, item ,installation,height,width} = useSelector(state => state.fabric.measure)
+
 
  
 
@@ -126,11 +127,11 @@ function Measure() {
           <div className="flex  justify-center gap-5">
             <div className="flex flex-col gap-3">
               <label htmlFor="">Height</label>
-              <input min={50} max={200} placeholder='50 CM'  onChange={e => dispatch(setHeight(e.target.value))} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
+              <input value={height} min={100} max={305} placeholder='100 CM to 305 CM'  onChange={e => {dispatch(setHeight(Number(e.target.value))) ;dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
             </div>
             <div className="flex flex-col gap-3">
               <label htmlFor="">Width</label>
-              <input min={50} max={200} placeholder='50 CM' onChange={e => dispatch(setWidth(e.target.value))} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
+              <input value={width} min={75} max={480} placeholder='75 CM to 480 CM' onChange={e =>{ dispatch(setWidth(Number(e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
             </div>
 
           </div>

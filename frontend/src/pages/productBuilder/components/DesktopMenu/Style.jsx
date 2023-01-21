@@ -1,7 +1,7 @@
 import { KeyboardBackspace } from '@mui/icons-material'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { setLook, setPanel  } from '../../../../redux/slice/fabric'
+import { setLook, setPanel, setPrice  } from '../../../../redux/slice/fabric'
 import { setMenu } from '../../../../redux/slice/util'
 
 
@@ -47,11 +47,11 @@ function Style() {
         </div>
         <p className='text-center font-medium'>What looks are you going for ?</p>
         <div className="flex justify-center gap-5 flex-wrap">
-          <div onClick={()=>{dispatch(setLook('Double'))}} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look=== 'Double' ? Double : dDouble} alt="" /> <p className='absolute -bottom-6 text-center'>Double</p></div>
-          <div onClick={()=>{dispatch(setLook('Eyelet'))}} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look=== 'Eyelet' ? Eyelet : dEyelet} alt="" /> <p className='absolute -bottom-6 text-center'>Eyelet</p></div>
-          <div onClick={()=>{dispatch(setLook('Pencil'))}} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look=== 'Pencil' ? Pencil : dPencil} alt="" /> <p className='absolute -bottom-6 text-center'>Pencil</p></div>
-          <div onClick={()=>{dispatch(setLook('Goblet'))}} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look=== 'Goblet' ? Goblet : dGoblet} alt="" /> <p className='absolute -bottom-6 text-center'>Goblet</p></div>
-          <div onClick={()=>{dispatch(setLook('Triple'))}} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look=== 'Triple' ? Triple : dTriple} alt="" /> <p className='absolute -bottom-6 text-center'>Triple</p></div>
+          <div onClick={()=>{dispatch(setLook('Double'));dispatch(setPrice())}} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look=== 'Double' ? Double : dDouble} alt="" /> <p className='absolute -bottom-6 text-center'>Double</p></div>
+          <div onClick={()=>{dispatch(setLook('Eyelet'));dispatch(setPrice())}} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look=== 'Eyelet' ? Eyelet : dEyelet} alt="" /> <p className='absolute -bottom-6 text-center'>Eyelet</p></div>
+          <div onClick={()=>{dispatch(setLook('Pencil'));dispatch(setPrice())}} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look=== 'Pencil' ? Pencil : dPencil} alt="" /> <p className='absolute -bottom-6 text-center'>Pencil</p></div>
+          <div onClick={()=>{dispatch(setLook('Goblet'));dispatch(setPrice())}} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look=== 'Goblet' ? Goblet : dGoblet} alt="" /> <p className='absolute -bottom-6 text-center'>Goblet</p></div>
+          <div onClick={()=>{dispatch(setLook('Triple'));dispatch(setPrice())}} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look=== 'Triple' ? Triple : dTriple} alt="" /> <p className='absolute -bottom-6 text-center'>Triple</p></div>
         </div>
         <div className="flex justify-between items-center px-5">
             <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => dispatch(setMenu(2)) }><KeyboardBackspace/> Back</button>

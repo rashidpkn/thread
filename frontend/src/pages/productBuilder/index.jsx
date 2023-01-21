@@ -11,6 +11,7 @@ import View from './components/View'
 
 
 import Magnifier from "react-magnifier";
+import Footer from '../common/Footer'
 
 function ProductBuilder() {
   const {fabricPath,magnifyFabricPath,magnifyWavyFabricPath} = useSelector(state=>state.fabric.fabricType)
@@ -34,6 +35,7 @@ function ProductBuilder() {
               <div className="border h-full w-48 "> <Magnifier src={magnifyWavyFabricPath} alt="" /></div>
           </div>
         </div>
+        <Footer/>
     </div>
   )
 }

@@ -1,10 +1,10 @@
 import { KeyboardBackspace } from '@mui/icons-material'
 import React from 'react'
-import { useDispatch } from 'react-redux'
-import { setHeight, setIsPole, setWidth } from '../../../../../redux/slice/fabric'
+import { useDispatch, useSelector } from 'react-redux'
+import { setHeight, setIsPole, setPrice, setWidth } from '../../../../../redux/slice/fabric'
 
 function Pole({ setSelector }) {
-    // const { isPole, height, width } = useSelector(state => state.fabric.measure)
+    const {  height, width } = useSelector(state => state.fabric.measure)
     const dispatch = useDispatch()
     return (
         <div className='space-y-3 relative h-full'>
@@ -24,11 +24,11 @@ function Pole({ setSelector }) {
                 <div className="flex  justify-center gap-5">
                     <div className="flex flex-col">
                         <label htmlFor="">Height</label>
-                        <input min={50} max={200} placeholder='50 CM' onChange={e => dispatch(setHeight(e.target.value))} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
+                        <input value={height} min={100} max={480} placeholder='100 CM to 480 CM' onChange={e => {dispatch(setHeight(Number(e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
                     </div>
                     <div className="flex flex-col">
                         <label htmlFor="">Width</label>
-                        <input min={50} max={200} placeholder='50 CM' onChange={e => dispatch(setWidth(e.target.value))} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
+                        <input value={width} min={75} max={480} placeholder='75 CM to 480 CM' onChange={e => {dispatch(setWidth(Number(e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
                     </div>
 
                 </div>

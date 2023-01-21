@@ -13,6 +13,7 @@ import { gapi } from 'gapi-script';
 import CheckOut2 from './pages/checkout-2'
 import Cart from './pages/cart'
 import { useSelector } from 'react-redux'
+import AboutUs from './pages/AboutUs'
 const clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
 
 
@@ -39,14 +40,20 @@ function App() {
         <Route path='/checkout-2' element={<CheckOut2 />} />
         {/* <Route path='/signup' element={loginStatus ? <Navigate to={'/cart'} /> : <SignUp/>} /> */}
         <Route path='/signup' element={<SignUp/>} />
-
         <Route path='/estimate' element={<Estimate />} />
-
         {/* <Route path='/login' element={loginStatus ? <Navigate to={'/cart'} /> : <Login/>} /> */}
         <Route path='/login' element={ <Login/>} />
-
         <Route path='/payment/:clientSecret' element={<Payment />} />
         <Route path='/cart' element={loginStatus ? <Cart /> : <Navigate to={'/login'} />  } />
+
+
+
+
+      {/* static Pages */}
+      <Route path='/about-us' element={<AboutUs/>} />
+
+
+
       </Routes>
     </div>
   )
