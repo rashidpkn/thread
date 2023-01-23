@@ -58,7 +58,7 @@ const Form = () => {
 // </form>
 
 // </div>
-<div className="max-w-6xl px-12 py-20 mx-auto mb-24 bg-white bg-gray-100 shadow-xl lg:px-24">
+<div className="max-w-6xl px-12 py-20 mx-auto mb-24  bg-gray-100 shadow-xl lg:px-24">
   <form onSubmit={e => { e.preventDefault();
     //  formHandler() 
      }} >
