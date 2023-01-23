@@ -48,7 +48,7 @@ function Measure() {
         <button onClick={() => setSelector(3)} className={`${selector === 3 ? 'text-[#B68D40]' : 'hidden'}  `} >Measurment</button>
       </div>
       {
-        selector === 1 && <div className="space-y-10">
+        selector === 1 && <div className="space-y-12">
 
           <p className='text-center font-medium'>What are you measuring for?</p>
           <div className="flex justify-center gap-5">

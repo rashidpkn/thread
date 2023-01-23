@@ -33,7 +33,7 @@ function Navbar() {
             </li>
 
             <li className='cursor-pointer flex justify-center items-center h-full'><Link to={'/productbuilder'}> Customise Curtains </Link></li>
-            <li className='cursor-pointer flex justify-center items-center h-full'><Link to={'/productbuilder'}> Blinds Curtains </Link></li>
+            <li className='cursor-pointer flex justify-center items-center h-full'><Link to={'/productbuilder'}> Customise Blinds</Link></li>
             <li className='cursor-pointer flex justify-center items-center h-full'><Link to={'/about-us'}> About Us </Link></li>
             <li className='cursor-pointer flex justify-center items-center h-full'><Link to={'/contact-us'}> Contact Us </Link></li>
           </ul>
@@ -48,12 +48,12 @@ function Navbar() {
             <p>Our curtains are made to measure at the highest quality specification.</p>
           </div>
           <div className={` ${showCurtains ? 'hidden lg:flex' : 'hidden'} justify-between items-center h-full w-full`}>
-            <Curtain backgroundImage={'/image/common/nav1.jpg'} zoom={true} />
-            <Curtain backgroundImage={'/image/common/nav2.jpg'} zoom={true} />
-            <Curtain backgroundImage={'/image/common/nav3.jpg'} zoom={true} />
-            <Curtain backgroundImage={'/image/common/nav4.png'} zoom={true} />
-            <Curtain backgroundImage={'/image/common/nav5.png'} zoom={true} />
-            <Curtain backgroundImage={'/image/common/nav6.png'} zoom={true} />
+            <Curtain backgroundImage={'/image/common/nav1.jpg'} />
+            <Curtain backgroundImage={'/image/common/nav2.jpg'} />
+            <Curtain backgroundImage={'/image/common/nav3.jpg'} />
+            <Curtain backgroundImage={'/image/common/nav4.png'} />
+            <Curtain backgroundImage={'/image/common/nav5.png'} />
+            <Curtain  />
           </div>
         </div>
 
@@ -79,34 +79,22 @@ function Navbar() {
           </ul>
         }
       </div>
-      {/* <div className='h-[60px] w-full bg-[#29434E] flex flex-row pt-[20px] text-white justify-around  lg:hidden'>
-        <div className='text-[24px]'>
-          <FaHome />
-        </div>
-        <div className='text-[24px]'>
-          <FaHeart />
-        </div>
-        <div className='text-[24px]'>
-          <FaShoppingCart />
-        </div>
-        <div className='text-[24px]'>
-          <FaUserAlt />
-        </div>
-
-      </div> */}
+    
     </>
   )
 }
 
 export default Navbar
 
-const Curtain = ({backgroundImage,zoom}) => (
-  <div className="h-[80%] w-[14%] relative" style={{ backgroundImage: `url(${backgroundImage})` }} >
+const Curtain = ({backgroundImage}) => {
+  const [zoom, setZoom] = useState(false)
+return(
+  <div className="h-[80%] w-[14%] relative rounded-xl duration-200" style={{ background: backgroundImage? `url(${backgroundImage})`:'#7285a5' }} onMouseEnter={()=>setZoom(true)} onMouseLeave={()=>setZoom(false)}>
     <div className="absolute bottom-0 right-0">
       <PlusSVG  zoom={zoom}/>
     </div>
   </div>
-)
+)}
 
 
 
