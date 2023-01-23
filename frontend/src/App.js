@@ -14,6 +14,15 @@ import CheckOut2 from './pages/checkout-2'
 import Cart from './pages/cart'
 import { useSelector } from 'react-redux'
 import AboutUs from './pages/AboutUs'
+import Curtains from './pages/Curtains'
+import PencilPleatCurtain from './pages/Curtains/pages/pencilPleatCurtains'
+import EyeletCurtain from './pages/Curtains/pages/eyelet'
+import DoublePleatCurtain from './pages/Curtains/pages/doublePleat'
+import Goblet from './pages/Curtains/pages/goblet'
+import TriplePleat from './pages/Curtains/pages/triplePleat'
+import Contact from './pages/ContactUs'
+
+
 const clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
 
 
@@ -46,11 +55,18 @@ function App() {
         <Route path='/payment/:clientSecret' element={<Payment />} />
         <Route path='/cart' element={loginStatus ? <Cart /> : <Navigate to={'/login'} />  } />
 
+        <Route path="/curtains" element={<Curtains/>}/>
+        <Route path="/PencilPleatCurtains" element={<PencilPleatCurtain />} />
+        <Route path="/EyeletCurtains" element={<EyeletCurtain />} />
+        <Route path="/DoublePleatCurtains" element={<DoublePleatCurtain />} />      
+        <Route path="/TriplePleatCurtains" element={<TriplePleat />} />
+        <Route path="/Goblet" element={<Goblet />} />
 
 
 
       {/* static Pages */}
       <Route path='/about-us' element={<AboutUs/>} />
+      <Route path="/contact-us" element={<Contact/>}/>
 
 
 

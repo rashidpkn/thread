@@ -26,10 +26,10 @@ function Navbar() {
           </a>
 
           <ul className='flex gap-8'>
-            <li className='cursor-pointer'>Curtain</li>
+            <li className='cursor-pointer'> <Link to={'/curtains'}> Curtain </Link></li>
             <li className='cursor-pointer'><Link to={'/productbuilder'}> Customise Curtains </Link></li>
             <li className='cursor-pointer'><Link to={'/about-us'}> About Us </Link></li>
-            <li className='cursor-pointer'>Contact Us</li>
+            <li className='cursor-pointer'><Link to={'/contact-us'}> Contact Us </Link></li>
           </ul>
           <Link to={'/cart'}>
             {/* <AddShoppingCartOutlined fontSize='large' /> */}
