@@ -1,7 +1,7 @@
 import { NavigateBeforeOutlined, NavigateNextOutlined, ShoppingCart } from '@mui/icons-material'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import React, { Suspense, useState } from 'react'
+import React, { Suspense } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setMenu } from '../../../redux/slice/util'
 
@@ -20,11 +20,11 @@ import swipe from '../../asset/viewIcon/swipe.png'
 
 
 
-function View() {
+function View({show}) {
   const { show3D } = useSelector(state => state.util.productBuilder)
   const { wallColor,price } = useSelector(state => state.fabric)
   const { look } = useSelector(state => state.fabric.style)
-  const [show, setShow] = useState(true)
+  
   return (
     <div className={`${!show3D && 'hidden lg:inline-block'}  h-[calc(100vh-5rem)] lg:h-full w-full lg:w-[900px] border flex-shrink-0 relative`}>
       <div className="z-10 bg-white absolute top-5 right-5 w-28 h-10 rounded-full border flex justify-center items-center gap-3 text-lg font-medium text-[#B68D40]"> <ShoppingCart fontSize="large" />  <p>{price}</p></div>
@@ -51,7 +51,7 @@ function View() {
         </div>
       }
       
-      <div className="view h-full w-full" onClick={()=>setShow(false)}>
+      <div className="view h-full w-full" >
 
         <Canvas>
           <PerspectiveCamera makeDefault position={[0, 0, 14]} />

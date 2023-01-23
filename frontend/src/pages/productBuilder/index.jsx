@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 
 // import Footer from '../common/Footer'
@@ -15,12 +15,13 @@ import Footer from '../common/Footer'
 
 function ProductBuilder() {
   const {fabricPath,magnifyFabricPath,magnifyWavyFabricPath} = useSelector(state=>state.fabric.fabricType)
+  const [show, setShow] = useState(true)
   return (
-    <div className="font-inter w-full overflow-x-hidden">
+    <div className="font-inter w-full overflow-x-hidden" onClick={()=>{setShow(false)}}>
         <Navbar />
         <div className="w-full flex  flex-col lg:flex-row justify-center lg:h-[calc(100vh-5rem)] lg:gap-2 bg-[#F2F5F7]">
           
-          <View />
+          <View show={show}/>
           <MobileMenu/>
           <DesktopMenu />
         </div>

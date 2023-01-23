@@ -23,12 +23,12 @@ function Pole({ setSelector }) {
                     </div>
                 <div className="flex  justify-center gap-5">
                     <div className="flex flex-col">
-                        <label htmlFor="">Height</label>
-                        <input value={height} min={100} max={480} placeholder='100 CM to 480 CM' onChange={e => {dispatch(setHeight(Number(e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
+                        <label htmlFor="">Height CM</label>
+                        <input value={height} min={100} max={480} placeholder='100 CM to 480 CM' onChange={e => {dispatch(setHeight(Number(height<100?100:e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
                     </div>
                     <div className="flex flex-col">
-                        <label htmlFor="">Width</label>
-                        <input value={width} min={75} max={480} placeholder='75 CM to 480 CM' onChange={e => {dispatch(setWidth(Number(e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
+                        <label htmlFor="">Width CM</label>
+                        <input value={width} min={75} max={480} placeholder='75 CM to 480 CM' onChange={e => {dispatch(setWidth(Number(width<75?75:e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
                     </div>
 
                 </div>

@@ -39,7 +39,7 @@ function Login() {
         <div className="">
             <Navbar/>   
             <div className={`px-[10%] mt-36 mb-24`}>
-                <h1 className='text-center text-4xl font-semibold'>Get started by filling the below order form.</h1>
+                <h1 className='text-center text-4xl font-semibold'>Sign up or enter your account details below to receive your quotation by email</h1>
 
                 <form className='w-full md:w-[500px] mx-auto   border-[#BABCBB] mt-5 space-y-5' onSubmit={e => { 
                     e.preventDefault();

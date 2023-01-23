@@ -23,7 +23,7 @@ function Estimate() {
                 <div className="flex ">  <p className='w-40'>Features        </p>    <p>{lining}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Making Price    </p>    <p>{price}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Accessories     </p>    <p>{price}</p>  </div>
-                <div className="flex ">  <p className='w-40'>Boxed &  Postage</p>    <p>{price + 30}</p>  </div>
+                <div className="flex ">  <p className='w-40'>Boxed &  Postage</p>    <p>{ 30}</p>  </div>
             </div>
             <div className="flex justify-center items-center gap-10">
                 <Link to={'/login'}>

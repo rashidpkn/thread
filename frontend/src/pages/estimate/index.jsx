@@ -40,7 +40,7 @@ function Estimate() {
 
                     <div className="flex">  <p className='w-64 text-xl'>Making Price    </p>  <p className='ml-16'>{price}</p>  </div>
                     <div className="flex">  <p className='w-64 text-xl'>Accessories     </p>  <p className='ml-16'>{price}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Boxed &  Postage</p>  <p className='ml-16'>{price + 30}</p>  </div>
+                    <div className="flex">  <p className='w-64 text-xl'>Boxed &  Postage</p>  <p className='ml-16'>{ 30}</p>  </div>
                 </div>
                 <div class="w-96  border border-[#b68d40] rounded-3xl h-10 flex justify-center items-center  font-bold text-[#686161]">
 

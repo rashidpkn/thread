@@ -4,3 +4,16 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@keyframes dropDown {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 16rem;
+    }
+}
+
+.dropDown{
+    animation: dropDown 1s ;
+}

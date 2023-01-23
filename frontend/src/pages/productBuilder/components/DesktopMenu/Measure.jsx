@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { setHeight, setInstallation, setIsPole, setItem, setPrice, setRoom, setRoomName,setWidth } from '../../../../redux/slice/fabric'
+import { setHeight, setInstallation, setIsPole, setItem, setPrice, setRoom, setRoomName, setWidth } from '../../../../redux/slice/fabric'
 import { setMenu } from '../../../../redux/slice/util'
 
 import Preload from 'image-preload'
@@ -17,69 +17,86 @@ import dInside from '../../../asset/measurment/dInside.png'
 import dOutSide from '../../../asset/measurment/dOutside.png'
 import { KeyboardBackspace } from '@mui/icons-material'
 
-Preload([Bay,Flat,Inside,OutSide,dBay,dFlat,dInside,dOutSide])
+Preload([Bay, Flat, Inside, OutSide, dBay, dFlat, dInside, dOutSide])
 
 
 
 function Measure() {
   const dispatch = useDispatch()
-  const { room, roomName, item ,installation,height,width} = useSelector(state => state.fabric.measure)
+  const { room, roomName, item, installation, height, width } = useSelector(state => state.fabric.measure)
 
 
- 
+
 
   const [selector, setSelector] = useState(1)
   return (
     <div className='space-y-5'>
       <div className="p-5 w-full flex items-center justify-between gap-5">
         <div className=''>
-          {/* <button className={`${selector !== 2 && 'hidden'} text-[#B68D40]`}  onClick={() => selector !==1 && setSelector(selector-1)}>Back</button> */}
+          
         </div>
-        <p className='font-medium text-center'>Get Your Measurements</p>
+        <p className='font-medium text-center'>Input Your Measurements</p>
         <div className=""></div>
-        {/* <button className='h-8 w-20 rounded-3xl bg-[#B68D40] text-white' onClick={() => dispatch(setMenu(3))}>Next</button> */}
+        
       </div>
-      {/* <div className="w-full px-5">
-            <button className='h-12 w-full border border-[#b68d40] rounded-md hover:text-[#B68D40]'>Add a new measurements</button>
-        </div> */}
+     
 
       <div className="flex justify-center gap-5">
-        <button onClick={() => setSelector(1)} className={`${selector === 1 ? 'text-[#B68D40]' : 'hidden' }  `} >Curtain/Blinds</button>
-        <button onClick={() => setSelector(2)} className={`${selector === 2 ? 'text-[#B68D40]' : 'hidden' }  `} >Room Name</button>
-        <button onClick={() => setSelector(3)} className={`${selector === 3 ? 'text-[#B68D40]' : 'hidden' }  `} >Measurment</button>
+        
+        {/* <button onClick={() => setSelector(1)} className={`${selector === 1 ? 'text-[#B68D40]' : 'hidden'}  `} >Curtain/Blinds</button> */}
+        <button onClick={() => setSelector(2)} className={`${selector === 2 ? 'text-[#B68D40]' : 'hidden'}  `} >Room Name</button>
+        <button onClick={() => setSelector(3)} className={`${selector === 3 ? 'text-[#B68D40]' : 'hidden'}  `} >Measurment</button>
       </div>
       {
-        selector === 1 && <div className="space-y-3">
+        selector === 1 && <div className="space-y-10">
 
           <p className='text-center font-medium'>What are you measuring for?</p>
           <div className="flex justify-center gap-5">
-            <div onClick={() => { dispatch(setItem('Curtain')) }} className={` w-24 h-24 rounded-md flex justify-center items-center `}> <img className='w-full' src={item === 'Curtain' ? Flat : dFlat} alt="" /> </div>
-            <div onClick={() => { dispatch(setItem('Blind')) }} className={` w-24 h-24 rounded-md flex justify-center items-center `}>  <img className='w-full' src={item === 'Blind' ? OutSide : dOutSide} alt="" /> </div>
+            <div onClick={() => { dispatch(setItem('Curtain')) }} className={` w-24 h-24 rounded-md flex justify-center items-center relative`}>
+              <img className='w-full' src={item === 'Curtain' ? Flat : dFlat} alt="" />
+              <p className='absolute -bottom-6 text-center w-full'>Curtain</p>
+            </div>
+            <div onClick={() => { dispatch(setItem('Blind')) }} className={` w-24 h-24 rounded-md flex justify-center items-center relative`}>
+              <img className='w-full' src={item === 'Blind' ? OutSide : dOutSide} alt="" />
+              <p className='absolute -bottom-6 text-center w-full'>Blind</p>
+            </div>
           </div>
           {
             item === 'Curtain' && <div className="space-y-3">
               <p className='text-center font-medium'>What kind of window to you have?</p>
               <div className="flex justify-center gap-5">
-                <div onClick={()=>{dispatch(setInstallation('Curtain Flat'))}}  className={` w-24 h-24 rounded-md flex justify-center items-center `}> <img className='w-full' src={installation === 'Curtain Flat' ? Flat : dFlat} alt="" /> </div>
-                <div onClick={()=>{dispatch(setInstallation('Curtain Bay'))}} className={` w-24 h-24 rounded-md flex justify-center items-center `}> <img className='w-full' src={installation === 'Curtain Bay' ? Bay : dBay} alt="" /> </div>
+                <div onClick={() => { dispatch(setInstallation('Curtain Flat')) }} className={` w-24 h-24 rounded-md flex justify-center items-center relative`}> 
+                <img className='w-full' src={installation === 'Curtain Flat' ? Flat : dFlat} alt="" /> 
+                <p className='absolute -bottom-6 text-center'>Flat</p>
+                </div>
+                <div onClick={() => { dispatch(setInstallation('Curtain Bay')) }} className={` w-24 h-24 rounded-md flex justify-center items-center relative`}> 
+                <img className='w-full' src={installation === 'Curtain Bay' ? Bay : dBay} alt="" /> 
+                <p className='absolute -bottom-6 text-center'>Bay</p>
+                </div>
               </div>
             </div>
           }
 
           {
-            item === 'Blind' && <div className="space-y-3">
+            item === 'Blind' && <div className="space-y-7">
               <p className='text-center font-medium'>How will your blinds be installed?</p>
               <div className="flex justify-center gap-5">
-                <div onClick={()=>{dispatch(setInstallation('Blind Inside'))}} className={`w-24 h-24 rounded-md flex justify-center items-center `}> <img className='w-full' src={installation === 'Blind Inside' ? Inside :dInside} alt="" /> </div>
-                <div onClick={()=>{dispatch(setInstallation('Blind OutSide'))}} className={`w-24 h-24 rounded-md flex justify-center items-center `}> <img className='w-full' src={installation === 'Blind OutSide' ? OutSide : dOutSide} alt="" /> </div>
+                <div onClick={() => { dispatch(setInstallation('Blind Inside')) }} className={`w-24 h-24 rounded-md flex justify-center items-center relative`}> 
+                <img className='w-full' src={installation === 'Blind Inside' ? Inside : dInside} alt="" /> 
+                <p className='absolute -bottom-6 text-center'>Inside Blind</p>
+                </div>
+                <div onClick={() => { dispatch(setInstallation('Blind OutSide')) }} className={`w-24 h-24 rounded-md flex justify-center items-center relative`}> 
+                <img className='w-full' src={installation === 'Blind OutSide' ? OutSide : dOutSide} alt="" /> 
+                <p className='absolute -bottom-12 text-center'>Outside Blinds</p>
+                </div>
               </div>
             </div>
           }
           <div className="flex justify-center items-center">
-            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(2) }>Name your room</button>
+            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(2)}>Name your room</button>
           </div>
           <div className="flex  items-center px-5">
-            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() =>dispatch(setMenu(1)) }> <KeyboardBackspace/> Back</button>
+            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => dispatch(setMenu(1))}> <KeyboardBackspace /> Back</button>
           </div>
         </div>
       }
@@ -100,15 +117,15 @@ function Measure() {
           </div>
           <p className='text-center font-medium'>Give this window a name!</p>
           <div className="flex justify-center px-10">
-            <input  onChange={e => dispatch(setRoomName(e.target.value))} disabled={room === 'Other Rooms' ? false : true} value={roomName} className='bg-[#122620]/30 h-12 pl-2 w-full rounded-md' placeholder='Bedrooms' type="text" />
+            <input onChange={e => dispatch(setRoomName(e.target.value))} disabled={room === 'Other Rooms' ? false : true} value={roomName} className='bg-[#122620]/30 h-12 pl-2 w-full rounded-md' placeholder='Bedrooms' type="text" />
           </div>
 
           <div className="flex justify-center items-center">
-            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(3) }>Add Measurment</button>
+            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(3)}>Add Measurment</button>
           </div>
 
           <div className="flex  items-center px-5">
-            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => setSelector(1) }> <KeyboardBackspace/> Back</button>
+            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => setSelector(1)}> <KeyboardBackspace /> Back</button>
           </div>
 
         </div>
@@ -126,20 +143,21 @@ function Measure() {
           <p className='text-center font-medium'>Enter Height and Width</p>
           <div className="flex  justify-center gap-5">
             <div className="flex flex-col gap-3">
-              <label htmlFor="">Height</label>
-              <input value={height} min={100} max={305} placeholder='100 CM to 305 CM'  onChange={e => {dispatch(setHeight(Number(e.target.value))) ;dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
+              <label htmlFor="">Height CM</label>
+              <input value={height} min={100} max={305} placeholder='100 CM to 305 CM' onChange={e => { dispatch(setHeight(Number(height < 100 ? 100 : e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
             </div>
             <div className="flex flex-col gap-3">
-              <label htmlFor="">Width</label>
-              <input value={width} min={75} max={480} placeholder='75 CM to 480 CM' onChange={e =>{ dispatch(setWidth(Number(e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
+              <label htmlFor="">Width CM</label>
+              <input value={width} min={75} max={480} placeholder='75 CM to 480 CM' onChange={e => { dispatch(setWidth(Number(width < 75 ? 75 : e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
             </div>
 
           </div>
           <div className="flex justify-between items-center px-5">
-            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => setSelector(2) }><KeyboardBackspace/> Back</button>
-            <button className='h-8 w-20 rounded-3xl bg-[#B68D40] text-white' onClick={() => dispatch(setMenu(3))}>Next</button>
+            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => setSelector(2)}><KeyboardBackspace /> Back</button>
+            
+            <button className='h-8 w-20 rounded-3xl bg-[#B68D40] text-white' onClick={() =>item==='Blind' ?dispatch(setMenu(4)) :dispatch(setMenu(3))}>Next</button>
           </div>
-          
+
         </div>
       }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import Magnifier from 'react-magnifier';
 import { useDispatch, useSelector } from 'react-redux'
 import { setFabric } from '../../../../redux/slice/fabric';
 import { setShow3D } from '../../../../redux/slice/util';
@@ -11,8 +12,14 @@ function Image() {
     <div className='inline-block lg:hidden h-96 space-y-5 pt-5'>
         <h2 className='text-center text-3xl font-medium'>Frabric</h2>
         <div className=" flex justify-center items-center gap-5">
-            <img src={magnifyFabricPath} alt="" className='w-28 h-28'/>
-            <img src={magnifyWavyFabricPath} alt="" className='w-28 h-28'/>
+          <div className='w-28 h-28'>
+            <Magnifier  src={magnifyFabricPath} />
+          </div>
+          <div className='w-28 h-28'>
+            <Magnifier  src={magnifyWavyFabricPath} />
+          </div>
+            {/* <img src={magnifyFabricPath} alt="" className='w-28 h-28'/>
+            <img src={magnifyWavyFabricPath} alt="" className='w-28 h-28'/> */}
         </div>
         <div className='flex flex-wrap justify-center gap-5 h-[500px] overflow-y-scroll px-3'>
         {fabric.map(e=>
