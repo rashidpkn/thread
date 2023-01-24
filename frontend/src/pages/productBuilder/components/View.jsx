@@ -26,7 +26,7 @@ function View({show}) {
   const { look } = useSelector(state => state.fabric.style)
   
   return (
-    <div className={`${!show3D && 'hidden lg:inline-block'}  h-[calc(100vh-5rem)] lg:h-full w-full lg:w-[900px] border flex-shrink-0 relative`}>
+    <div className={`${!show3D && 'hidden lg:inline-block'}  h-[calc(100vh-5rem)] lg:h-full w-full lg:w-3/5  flex-shrink-0 relative`}>
       <div className="z-10 bg-white absolute top-5 right-5 w-28 h-10 rounded-full border flex justify-center items-center gap-3 text-lg font-medium text-[#B68D40]"> <ShoppingCart fontSize="large" />  <p>{price}</p></div>
       {
         show && <div className="absolute  z-10 h-48 w-72  bg-white/60 top-[30%] lg:top-[40%] left-[15%] lg:left-[30%] flex">

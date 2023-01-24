@@ -15,7 +15,7 @@ import dBay from '../../../asset/measurment/dBay.png'
 import dFlat from '../../../asset/measurment/dFlat.png'
 import dInside from '../../../asset/measurment/dInside.png'
 import dOutSide from '../../../asset/measurment/dOutside.png'
-import { KeyboardBackspace } from '@mui/icons-material'
+import { ArrowRightAlt, KeyboardBackspace } from '@mui/icons-material'
 
 Preload([Bay, Flat, Inside, OutSide, dBay, dFlat, dInside, dOutSide])
 
@@ -31,24 +31,14 @@ function Measure() {
   const [selector, setSelector] = useState(1)
   return (
     <div className='space-y-5'>
-      <div className="p-5 w-full flex items-center justify-between gap-5">
-        <div className=''>
-          
-        </div>
         <p className='font-medium text-center'>Input Your Measurements</p>
-        <div className=""></div>
-        
-      </div>
-     
-
       <div className="flex justify-center gap-5">
-        
         {/* <button onClick={() => setSelector(1)} className={`${selector === 1 ? 'text-[#B68D40]' : 'hidden'}  `} >Curtain/Blinds</button> */}
         <button onClick={() => setSelector(2)} className={`${selector === 2 ? 'text-[#B68D40]' : 'hidden'}  `} >Room Name</button>
         <button onClick={() => setSelector(3)} className={`${selector === 3 ? 'text-[#B68D40]' : 'hidden'}  `} >Measurment</button>
       </div>
       {
-        selector === 1 && <div className="space-y-12">
+        selector === 1 && <div className="space-y-10">
 
           <p className='text-center font-medium'>What are you measuring for?</p>
           <div className="flex justify-center gap-5">
@@ -92,11 +82,12 @@ function Measure() {
               </div>
             </div>
           }
-          <div className="flex justify-center items-center">
+          {/* <div className="flex justify-center items-center">
             <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(2)}>Name your room</button>
-          </div>
-          <div className="flex  items-center px-5">
-            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => dispatch(setMenu(1))}> <KeyboardBackspace /> Back</button>
+          </div> */}
+          <div className="flex  justify-between items-center mt-10">
+            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => dispatch(setMenu(1))}> <KeyboardBackspace /> Back</button>
+            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={()=>  setSelector(2)      }>Next <ArrowRightAlt/></button>
           </div>
         </div>
       }
@@ -106,27 +97,25 @@ function Measure() {
         selector === 2 && <div className="space-y-5">
           <p className='text-center font-medium'>The layer on the inside of the curtain, for insulation or a weightier look.</p>
           <div className="flex justify-center flex-wrap gap-3 px-2">
-            <button onClick={() => dispatch(setRoom('Bedroom'))} className={` ${room === 'Bedroom' && 'border-2'} h-12 w-28 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Bedroom</button>
-            <button onClick={() => dispatch(setRoom('Study'))} className={` ${room === 'Study' && 'border-2'} h-12 w-28 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Study</button>
-            <button onClick={() => dispatch(setRoom('Bathroom'))} className={` ${room === 'Bathroom' && 'border-2'} h-12 w-28 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Bathroom</button>
-            <button onClick={() => dispatch(setRoom('Balcony'))} className={` ${room === 'Balcony' && 'border-2'} h-12 w-28 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Balcony</button>
-            <button onClick={() => dispatch(setRoom('Living Room'))} className={` ${room === 'Living Room' && 'border-2'} h-12 w-28 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Living Room</button>
-            <button onClick={() => dispatch(setRoom('Dining Room'))} className={` ${room === 'Dining Room' && 'border-2'} h-12 w-28 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Dining Room</button>
-            <button onClick={() => dispatch(setRoom('Kitchen'))} className={` ${room === 'Kitchen' && 'border-2'} h-12 w-28 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Kitchen</button>
-            <button onClick={() => dispatch(setRoom('Other Rooms'))} className={` ${room === 'Other Rooms' && 'border-2'} h-12 w-28 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Other Rooms</button>
+            <button onClick={() => dispatch(setRoom('Bedroom'))} className={` ${room === 'Bedroom' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Bedroom</button>
+            <button onClick={() => dispatch(setRoom('Study'))} className={` ${room === 'Study' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Study</button>
+            <button onClick={() => dispatch(setRoom('Bathroom'))} className={` ${room === 'Bathroom' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Bathroom</button>
+            <button onClick={() => dispatch(setRoom('Balcony'))} className={` ${room === 'Balcony' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Balcony</button>
+            <button onClick={() => dispatch(setRoom('Living Room'))} className={` ${room === 'Living Room' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Living Room</button>
+            <button onClick={() => dispatch(setRoom('Dining Room'))} className={` ${room === 'Dining Room' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Dining Room</button>
+            <button onClick={() => dispatch(setRoom('Kitchen'))} className={` ${room === 'Kitchen' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Kitchen</button>
+            <button onClick={() => dispatch(setRoom('Other Rooms'))} className={` ${room === 'Other Rooms' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Other Rooms</button>
           </div>
           <p className='text-center font-medium'>Give this window a name!</p>
           <div className="flex justify-center px-10">
             <input onChange={e => dispatch(setRoomName(e.target.value))} disabled={room === 'Other Rooms' ? false : true} value={roomName} className='bg-[#122620]/30 h-12 pl-2 w-full rounded-md' placeholder='Bedrooms' type="text" />
           </div>
 
-          <div className="flex justify-center items-center">
-            <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(3)}>Add Measurment</button>
+          <div className="flex  justify-between items-center mt-10">
+            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => setSelector(1)}> <KeyboardBackspace /> Back</button>
+            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={()=>  setSelector(3)}>Next <ArrowRightAlt/></button>
           </div>
 
-          <div className="flex  items-center px-5">
-            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => setSelector(1)}> <KeyboardBackspace /> Back</button>
-          </div>
 
         </div>
       }
@@ -152,10 +141,10 @@ function Measure() {
             </div>
 
           </div>
-          <div className="flex justify-between items-center px-5">
-            <button className='h-12 px-3  rounded-md text-[#B68D40]' onClick={() => setSelector(2)}><KeyboardBackspace /> Back</button>
-            
-            <button className='h-8 w-20 rounded-3xl bg-[#B68D40] text-white' onClick={() =>item==='Blind' ?dispatch(setMenu(4)) :dispatch(setMenu(3))}>Next</button>
+          
+          <div className="flex  justify-between items-center mt-10">
+            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => setSelector(2)}> <KeyboardBackspace /> Back</button>
+            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={()=>  item==='Blind' ?dispatch(setMenu(4)) :dispatch(setMenu(3))}> Next <ArrowRightAlt/></button>
           </div>
 
         </div>

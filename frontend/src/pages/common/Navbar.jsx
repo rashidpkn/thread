@@ -42,7 +42,7 @@ function Navbar() {
             <Cart />
           </Link>
         </nav>
-        <div className={`${showCurtains ? 'h-[500px] px-[5%] py-2 hidden lg:inline-block' : 'h-0'} hidden lg:inline-block duration-200 w-full  bg-white/50  `}>
+        {/* <div className={`${showCurtains ? 'h-[500px] px-[5%] py-2 hidden lg:inline-block' : 'h-0'} hidden lg:inline-block duration-200 w-full  bg-white/50  `}>
           <div className={` ${showCurtains ? 'flex' : 'hidden'}  gap-5`}>
             <h1>Shop Our Curtains</h1>
             <p>Our curtains are made to measure at the highest quality specification.</p>
@@ -55,7 +55,7 @@ function Navbar() {
             <Curtain backgroundImage={'/image/common/nav5.png'} />
             <Curtain  />
           </div>
-        </div>
+        </div> */}
 
 
 
@@ -86,29 +86,29 @@ function Navbar() {
 
 export default Navbar
 
-const Curtain = ({backgroundImage}) => {
-  const [zoom, setZoom] = useState(false)
-return(
-  <div className="h-[80%] w-[14%] relative rounded-xl duration-200" style={{ background: backgroundImage? `url(${backgroundImage})`:'#7285a5' }} onMouseEnter={()=>setZoom(true)} onMouseLeave={()=>setZoom(false)}>
-    <div className="absolute bottom-0 right-0">
-      <PlusSVG  zoom={zoom}/>
-    </div>
-  </div>
-)}
+// const Curtain = ({backgroundImage}) => {
+//   const [zoom, setZoom] = useState(false)
+// return(
+//   <div className="h-[80%] w-[14%] relative rounded-xl duration-200" style={{ background: backgroundImage? `url(${backgroundImage})`:'#7285a5' }} onMouseEnter={()=>setZoom(true)} onMouseLeave={()=>setZoom(false)}>
+//     <div className="absolute bottom-0 right-0">
+//       <PlusSVG  zoom={zoom}/>
+//     </div>
+//   </div>
+// )}
 
 
 
 
 
-const PlusSVG = ({zoom}) => <svg
-  className="corner"
-  fill="#fff"
-  width={zoom?100 :80}
-  height={zoom?100 :80}
-  viewBox="0 0 80 80"
-  aria-hidden="true"
-  role="img"
+// const PlusSVG = ({zoom}) => <svg
+//   className="corner"
+//   fill="#fff"
+//   width={zoom?100 :80}
+//   height={zoom?100 :80}
+//   viewBox="0 0 80 80"
+//   aria-hidden="true"
+//   role="img"
 
->
-  <path d="M80,6.33543898 L80,80 L3.85686258,80 C11.3486253,76.7919283 16.597369,69.3522221 16.597369,60.6866061 L16.597369,50.6342576 C16.597369,33.4845191 30.499979,19.5819091 47.6497175,19.5819091 L60.4777554,19.5819091 C69.337167,19.5819091 76.9152239,14.095777 80,6.33543898 L80,6.33543898 Z" />
-</svg>
+// >
+//   <path d="M80,6.33543898 L80,80 L3.85686258,80 C11.3486253,76.7919283 16.597369,69.3522221 16.597369,60.6866061 L16.597369,50.6342576 C16.597369,33.4845191 30.499979,19.5819091 47.6497175,19.5819091 L60.4777554,19.5819091 C69.337167,19.5819091 76.9152239,14.095777 80,6.33543898 L80,6.33543898 Z" />
+// </svg>
