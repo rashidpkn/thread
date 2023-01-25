@@ -24,9 +24,9 @@ function Navbar() {
 
         {showAccount &&
           <div className="absolute top-9 right-0 bg-[#2b2b2b] w-48 rounded-bl-2xl flex flex-col justify-center items-center px-7 py-5 text-white gap-2">
-            <h3>Login</h3>
+            <h3><Link to={'/login'}> Login </Link></h3>
             <div className="w-full h-[1px] bg-white"></div>
-            <h3>Saved</h3>
+            <h3><Link to={'/cart'}> Saved </Link></h3>
           </div>
         }
 
