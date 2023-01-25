@@ -17,40 +17,41 @@ import click from '../../asset/viewIcon/click.png'
 import pinch from '../../asset/viewIcon/pinch.png'
 import scroll from '../../asset/viewIcon/scroll.png'
 import swipe from '../../asset/viewIcon/swipe.png'
+import Magnifier from 'react-magnifier'
 
 
 
-function View({show}) {
+function View({ show }) {
   const { show3D } = useSelector(state => state.util.productBuilder)
-  const { wallColor,price } = useSelector(state => state.fabric)
+  const { wallColor, price } = useSelector(state => state.fabric)
   const { look } = useSelector(state => state.fabric.style)
-  
+
   return (
     <div className={`${!show3D && 'hidden lg:inline-block'}  h-[calc(100vh-5rem)] lg:h-full w-full lg:w-3/5  flex-shrink-0 relative`}>
       <div className="z-10 bg-white absolute top-5 right-5 w-28 h-10 rounded-full border flex justify-center items-center gap-3 text-lg font-medium text-[#B68D40]"> <ShoppingCart fontSize="large" />  <p>{price}</p></div>
       {
-        show && <div className="absolute  z-10 h-48 w-72  bg-white/60 top-[30%] lg:top-[40%] left-[15%] lg:left-[30%] flex">
-            <div className="h-full w-1/2 hidden lg:flex flex-col justify-center items-center">
-                  <img src={click} alt="" />
-                  <p className='text-center'>Click and Drag to rotate</p>
-            </div>
-            <div className="h-full w-1/2 hidden lg:flex flex-col justify-center items-center">
-                  <img src={scroll} alt="" />
-                  <p className='text-center'>Scroll in/out to zoom</p>
-            </div>
+        show && <div className="absolute  z-10 h-48 w-72  bg-white/60 top-[30%] lg:top-[30%] left-[15%] lg:left-[30%] flex">
+          <div className="h-full w-1/2 hidden lg:flex flex-col justify-center items-center">
+            <img src={click} alt="" />
+            <p className='text-center'>Click and Drag to rotate</p>
+          </div>
+          <div className="h-full w-1/2 hidden lg:flex flex-col justify-center items-center">
+            <img src={scroll} alt="" />
+            <p className='text-center'>Scroll in/out to zoom</p>
+          </div>
 
-            <div className="h-full w-1/2 flex lg:hidden  flex-col justify-center items-center">
-                  <img src={swipe} alt="" />
-                  <p className='text-center'>Swipe to rotate</p>
-            </div>
-            <div className="h-full w-1/2 flex lg:hidden  flex-col justify-center items-center">
-                  <img src={pinch} alt="" />
-                  <p className='text-center'>Pinch to zoom</p>
-            </div>
+          <div className="h-full w-1/2 flex lg:hidden  flex-col justify-center items-center">
+            <img src={swipe} alt="" />
+            <p className='text-center'>Swipe to rotate</p>
+          </div>
+          <div className="h-full w-1/2 flex lg:hidden  flex-col justify-center items-center">
+            <img src={pinch} alt="" />
+            <p className='text-center'>Pinch to zoom</p>
+          </div>
 
         </div>
       }
-      
+
       <div className="view h-full w-full" >
 
         <Canvas>
@@ -66,22 +67,22 @@ function View({show}) {
             minPolarAngle={0}
             maxPolarAngle={Math.PI / 2}
           />
-          <ambientLight intensity={0.5}/>
-          <directionalLight position={[-1,5,2]}/>
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[-1, 5, 2]} />
           <Suspense fallback={null}>
 
-            <Room wallColor={wallColor}/>
+            <Room wallColor={wallColor} />
             {
-              look === 'Double' &&  <Double />
+              look === 'Double' && <Double />
             }
             {
-              look === 'Eyelet' && <Eyelet/>
+              look === 'Eyelet' && <Eyelet />
             }
             {
-              look === 'Pencil' && <Pencil/>
+              look === 'Pencil' && <Pencil />
             }
             {
-              look === 'Goblet' && <Goblet/>
+              look === 'Goblet' && <Goblet />
             }
             {
               look === 'Triple' && <Triple />
@@ -100,19 +101,39 @@ export default View
 const Selector = () => {
   const dispatch = useDispatch()
   const { showMenu } = useSelector(state => state.util.productBuilder)
-  const { color,name } = useSelector(state => state.fabric.fabricType)
+  const { color, name } = useSelector(state => state.fabric.fabricType)
+  const { magnifyFabricPath, magnifyWavyFabricPath } = useSelector(state => state.fabric.fabricType)
   return (
-    <div className={`${showMenu && 'hidden lg:flex'} z-10  absolute right-1 bottom-36 lg:bottom-1 w-[167px] h-[156px] rounded-3xl bg-[#F4EBD0]/50 py-5 flex flex-col justify-center gap-5 p-3`}>
-      <h2 className='text-base'>Selected Fabric</h2>
-      <div className="flex justify-between lg:justify-center items-center">
-        <div className="text-[#b68d40] lg:hidden" onClick={() => { dispatch(setMenu(1)) }}><NavigateBeforeOutlined /></div>
-        <div className="p-1 rounded-full border-2 border-[#B68D40]">
-          <div className='bg-cover rounded-full w-9 h-9 hidden lg:block'  style={{ backgroundColor: color }} ></div>
-          <div className='bg-cover rounded-full w-9 h-9 block lg:hidden' onClick={() => { dispatch(setMenu(6)) }} style={{ backgroundColor: color }} ></div>
+    <>
+      <div className={`${showMenu && 'hidde'} z-10  absolute right-1 bottom-36 lg:bottom-1 w-[167px] h-[156px] rounded-3xl bg-[#F4EBD0]/50 py-5 flex lg:hidden flex-col justify-center gap-5 p-3`}>
+        <h2 className='text-base'>Selected Fabric</h2>
+        <div className="flex justify-between lg:justify-center items-center">
+          <div className="text-[#b68d40] lg:hidden" onClick={() => { dispatch(setMenu(1)) }}><NavigateBeforeOutlined /></div>
+          <div className="p-1 rounded-full border-2 border-[#B68D40]">
+            <div className='bg-cover rounded-full w-9 h-9 hidden lg:block' style={{ backgroundColor: color }} ></div>
+            <div className='bg-cover rounded-full w-9 h-9 block lg:hidden' onClick={() => { dispatch(setMenu(6)) }} style={{ backgroundColor: color }} ></div>
+          </div>
+          <div className="text-[#b68d40] lg:hidden" onClick={() => { dispatch(setMenu(1)) }} ><NavigateNextOutlined /></div>
         </div>
-        <div className="text-[#b68d40] lg:hidden" onClick={() => { dispatch(setMenu(1)) }} ><NavigateNextOutlined /></div>
+        <h6 className='text-center'>{name}</h6>
       </div>
-      <h6 className='text-center'>{name}</h6>
-    </div>
+      <div className="z-10 absolute right-1 bottom-1   bg-[#2b2b2b]/70 rounded-lg text-white text-center py-3 px-4 space-y-3">
+        <p>Selected Fabric</p>
+        <div className="flex gap-3 h-20">
+          <div className="w-28 h-full flex flex-col justify-center items-center gap-2">
+            <h6 className='text-center'>{name}</h6>
+            <div className="p-1 border border-[#E1B980] rounded-full">
+              <div className='bg-cover rounded-full w-9 h-9' style={{ backgroundColor: color }} ></div>
+            </div>
+          </div>
+          <div className="w-20 h-full ">
+            <Magnifier src={magnifyFabricPath} className='h-full w-full rounded-lg' />
+          </div>
+          <div className="w-20 h-full ">
+            <Magnifier src={magnifyWavyFabricPath} className='h-full w-full rounded-lg' />
+          </div>
+        </div>
+      </div>
+    </>
   )
 }

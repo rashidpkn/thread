@@ -19,7 +19,7 @@ function ProductBuilder() {
   return (
     <div className="font-inter w-full overflow-x-hidden" onClick={()=>{setShow(false)}}>
         <Navbar />
-        <div className="w-full flex  flex-col lg:flex-row justify-center lg:h-[calc(100vh-5rem)] bg-[#F2F5F7] lg:bg-[#1E1E1E] lg:p-12">
+        <div className="w-full flex  flex-col lg:flex-row justify-center lg:h-[calc(100vh-148px)] bg-[#F2F5F7] lg:bg-[#1E1E1E] lg:p-12">
           <View show={show}/>
           <MobileMenu/>
           <DesktopMenu />

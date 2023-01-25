@@ -7,22 +7,32 @@ import Cart from '../asset/icon/Cart'
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false)
   const [showCurtains, setShowCurtains] = useState(false)
+  const [showAccount, setShowAccount] = useState(false)
 
   return (
     <>
-      <div className="hidden lg:flex h-9 bg-[#243029] justify-between items-center text-white px-5 font-inter">
+      {/* bg-[#243029] */}
+      <div className="hidden lg:flex h-9 bg-[#2b2b2b]  justify-between items-center text-white px-5 font-inter relative">
         <h1>Make a free appointment</h1>
 
         <ul className="flex gap-5">
           <li className='flex justify-center items-center gap-2'><SupportAgent className='text-[#b68d40]' /> 0203 633 8622</li>
           <li className='flex justify-center items-center gap-2'><Email className='text-[#b68d40]' /> info@my-thread.co.uk</li>
           <li>Inspiration</li>
-          <li>My Account</li>
+          <li className='cursor-pointer' onClick={()=>{setShowAccount(!showAccount)}}>My Account</li>
         </ul>
 
+        {showAccount &&
+          <div className="absolute top-9 right-0 bg-[#2b2b2b] w-48 rounded-bl-2xl flex flex-col justify-center items-center px-7 py-5 text-white gap-2">
+            <h3>Login</h3>
+            <div className="w-full h-[1px] bg-white"></div>
+            <h3>Saved</h3>
+          </div>
+        }
+
       </div>
-      <div className=' border-b shadow-md w-full text-[#B68D40] text-lg'>
-        <nav className='h-20 w-full hidden lg:flex justify-between items-center px-20 border-b'>
+      <div className='  shadow-md w-full text-[#B68D40] text-lg'>
+        <nav className='h-28 w-full hidden lg:flex justify-between items-center px-20 '>
           <a href="https://my-thread.co.uk">
             <img src="/image/common/logo.svg" width={100} alt="" />
           </a>
@@ -79,7 +89,7 @@ function Navbar() {
           </ul>
         }
       </div>
-    
+
     </>
   )
 }

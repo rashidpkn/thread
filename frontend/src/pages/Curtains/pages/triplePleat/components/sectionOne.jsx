@@ -5,7 +5,7 @@ function SectionOne() {
     <div className='flex flex-col flex-col-reverse w-full h-full p-10 md:flex-row'>
         <div className="flex flex-col items-center w-full leftsection">
         <div className="w-5/6 pt-10 heading">
-            <h1 className='text-5xl font-bold text-[#4A4A4A]'>Tripple Pleat Curtains</h1>
+            <h1 className='text-5xl font-bold text-[#4A4A4A]'>Triple Pleat Curtains</h1>
         </div>
         <div className="w-5/6 pt-10 paragraph">
             <p className='leading-7'>
