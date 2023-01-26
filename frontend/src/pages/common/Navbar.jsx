@@ -19,7 +19,7 @@ function Navbar() {
           <li className='flex justify-center items-center gap-2'><SupportAgent className='text-[#b68d40]' /> 0203 633 8622</li>
           <li className='flex justify-center items-center gap-2'><Email className='text-[#b68d40]' /> info@my-thread.co.uk</li>
           <li>Inspiration</li>
-          <li className='cursor-pointer' onClick={()=>{setShowAccount(!showAccount)}}>My Account</li>
+          <li className='cursor-pointer' onClick={() => { setShowAccount(!showAccount) }}>My Account</li>
         </ul>
 
         {showAccount &&
@@ -38,14 +38,26 @@ function Navbar() {
           </a>
 
           <ul className='flex gap-8 h-full'>
-            <li className='cursor-pointer flex justify-center items-center h-full' onMouseEnter={() => setShowCurtains(!showCurtains)}>
+            {/* <li className='cursor-pointer flex justify-center items-center h-full' onMouseEnter={() => setShowCurtains(!showCurtains)}>
               <Link to={'/curtains'}> Curtains Style </Link>
             </li>
-
             <li className='cursor-pointer flex justify-center items-center h-full'><Link to={'/productbuilder'}> Customise Curtains </Link></li>
             <li className='cursor-pointer flex justify-center items-center h-full'><Link to={'/productbuilder'}> Customise Blinds</Link></li>
             <li className='cursor-pointer flex justify-center items-center h-full'><Link to={'/about-us'}> About Us </Link></li>
-            <li className='cursor-pointer flex justify-center items-center h-full'><Link to={'/contact-us'}> Contact Us </Link></li>
+            <li className='cursor-pointer flex justify-center items-center h-full'><Link to={'/contact-us'}> Contact Us </Link></li> */}
+            <li className='cursor-pointer flex justify-center items-center h-full px-5 relative group'>
+              <span>Shop Now</span>
+              <div className="absolute h-0 w-0 group-hover:h-32 group-hover:w-56 overflow-hidden rounded-md bg-[#E1B980] top-16 z-50 duration-200 flex flex-col justify-center items-center group-hover:px-7 group-hover:py-5 text-white gap-2">
+                <h3><Link to={'/productbuilder'}>Customise Curtains </Link></h3>
+                <div className="w-full h-[1px] bg-white"></div>
+                <h3><Link to={'/productbuilder'}> Customise Blinds </Link></h3>
+              </div>
+
+            </li>
+
+            <li className='cursor-pointer flex justify-center items-center h-full px-5'>Order Sample</li>
+            <li className='cursor-pointer flex justify-center items-center h-full px-5'>About Us</li>
+            <li className='cursor-pointer flex justify-center items-center h-full px-5'>Contact Us</li>
           </ul>
           <Link to={'/cart'}>
             {/* <AddShoppingCartOutlined fontSize='large' /> */}

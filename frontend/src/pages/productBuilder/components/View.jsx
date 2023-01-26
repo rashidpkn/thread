@@ -25,6 +25,7 @@ function View({ show }) {
   const { show3D } = useSelector(state => state.util.productBuilder)
   const { wallColor, price } = useSelector(state => state.fabric)
   const { look } = useSelector(state => state.fabric.style)
+  const {img} = useSelector(state=>state.fabric.fabricType)
 
   return (
     <div className={`${!show3D && 'hidden lg:inline-block'}  h-[calc(100vh-5rem)] lg:h-full w-full lg:w-3/5  flex-shrink-0 relative`}>
@@ -53,8 +54,8 @@ function View({ show }) {
       }
 
       <div className="view h-full w-full" >
-
-        <Canvas>
+      <img src={img} alt="" className='object-cover w-full h-full'/>
+        {/* <Canvas>
           <PerspectiveCamera makeDefault position={[0, 0, 14]} />
           <OrbitControls
             enablePan={true}
@@ -88,7 +89,7 @@ function View({ show }) {
               look === 'Triple' && <Triple />
             }
           </Suspense>
-        </Canvas>
+        </Canvas> */}
       </div>
       <Selector />
     </div>
@@ -105,7 +106,7 @@ const Selector = () => {
   const { magnifyFabricPath, magnifyWavyFabricPath } = useSelector(state => state.fabric.fabricType)
   return (
     <>
-      <div className={`${showMenu && 'hidde'} z-10  absolute right-1 bottom-36 lg:bottom-1 w-[167px] h-[156px] rounded-3xl bg-[#F4EBD0]/50 py-5 flex lg:hidden flex-col justify-center gap-5 p-3`}>
+      {/* <div className={`${showMenu && 'hidde'} z-10  absolute right-1 bottom-36 lg:bottom-1 w-[167px] h-[156px] rounded-3xl bg-[#F4EBD0]/50 py-5 flex lg:hidden flex-col justify-center gap-5 p-3`}>
         <h2 className='text-base'>Selected Fabric</h2>
         <div className="flex justify-between lg:justify-center items-center">
           <div className="text-[#b68d40] lg:hidden" onClick={() => { dispatch(setMenu(1)) }}><NavigateBeforeOutlined /></div>
@@ -116,8 +117,8 @@ const Selector = () => {
           <div className="text-[#b68d40] lg:hidden" onClick={() => { dispatch(setMenu(1)) }} ><NavigateNextOutlined /></div>
         </div>
         <h6 className='text-center'>{name}</h6>
-      </div>
-      <div className="z-10 absolute right-1 bottom-1   bg-[#2b2b2b]/70 rounded-lg text-white text-center py-3 px-4 space-y-3">
+      </div> */}
+      <div className="z-10 absolute right-1 bottom-36 lg:bottom-1   bg-[#2b2b2b]/70 rounded-lg text-white text-center py-3 px-4 space-y-3">
         <p>Selected Fabric</p>
         <div className="flex gap-3 h-20">
           <div className="w-28 h-full flex flex-col justify-center items-center gap-2">
