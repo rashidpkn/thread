@@ -15,7 +15,8 @@ const initialState = {
         fabricPath: 'plains/Azurite_Black.jpg',
         magnifyFabricPath: 'magnify/Azurite_Black.jpg',
         magnifyWavyFabricPath: 'magnify/azurite_black_2.jpg',
-        wavy: true
+        wavy: true,
+        img:'magnify/Azurite_Black.jpg',
     },
     wallColor: 'fff',
     measure: {
