@@ -14,7 +14,7 @@ function PatternFabrics() {
       <div className='flex flex-wrap justify-center gap-5   '>
       {fabric.map(e=>
           (e.patternNumber ==='01' && e.group==='B' && <div className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}> 
-             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setShow3D(true));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
+             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
           </div>)
         )}
       </div>
@@ -23,7 +23,7 @@ function PatternFabrics() {
       <div className='flex flex-wrap justify-center gap-5   '>
       {fabric.map(e=>
           (e.patternNumber ==='01' &&  e.group==='C' && <div className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}> 
-             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setShow3D(true));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
+             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
           </div>)
         )}
       </div>
@@ -32,7 +32,7 @@ function PatternFabrics() {
       <div className='flex flex-wrap justify-center gap-5   '>
       {fabric.map(e=>
           (e.patternNumber ==='01' &&  e.group==='D' && <div className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}> 
-             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setShow3D(true));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
+             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
           </div>)
         )}
       </div>
@@ -41,7 +41,7 @@ function PatternFabrics() {
       <div className='flex flex-wrap justify-center gap-5   '>
       {fabric.map(e=>
           (e.patternNumber ==='01' &&  e.group==='E' && <div className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}> 
-             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setShow3D(true));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
+             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
           </div>)
         )}
       </div>
@@ -50,7 +50,7 @@ function PatternFabrics() {
       <div className='flex flex-wrap justify-center gap-5   '>
       {fabric.map(e=>
           (e.patternNumber ==='01' &&  e.group==='F' && <div className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}> 
-             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setShow3D(true));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
+             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
           </div>)
         )}
       </div>
@@ -59,7 +59,7 @@ function PatternFabrics() {
       <div className='flex flex-wrap justify-center gap-5   '>
       {fabric.map(e=>
           (e.patternNumber ==='01' &&  e.group==='G' && <div className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}> 
-             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setShow3D(true));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
+             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
           </div>)
         )}
       </div>
@@ -68,7 +68,7 @@ function PatternFabrics() {
       <div className='flex flex-wrap justify-center gap-5   '>
       {fabric.map(e=>
           (e.patternNumber ==='01' &&  e.group==='H' && <div className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}> 
-             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setShow3D(true));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
+             <button  onClick={()=>{dispatch(setFabric(e));dispatch(setPrice())}} style={{backgroundImage:`url(${e.fabricPath})`}} className={`w-10 h-10 rounded-full`}></button>
           </div>)
         )}
       </div>

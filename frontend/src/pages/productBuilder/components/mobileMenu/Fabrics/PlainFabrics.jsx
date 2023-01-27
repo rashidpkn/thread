@@ -13,7 +13,7 @@ function PlainFabrics() {
       <div className='flex flex-wrap justify-center gap-5 '>
         {fabric.map(e =>
         (e.patternNumber === '00' && e.group === 'C' && <div key={e.id} className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}>
-          <button onClick={() => { dispatch(setFabric(e)); dispatch(setShow3D(true));dispatch(setPrice()) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
+          <button onClick={() => { dispatch(setFabric(e));dispatch(setPrice()) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
         </div>)
         )}
       </div>
@@ -22,7 +22,7 @@ function PlainFabrics() {
       <div className='flex flex-wrap justify-center gap-5 '>
         {fabric.map(e =>
         (e.patternNumber === '00' && e.group === 'D' && <div key={e.id} className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}>
-          <button onClick={() => { dispatch(setFabric(e)); dispatch(setShow3D(true));dispatch(setPrice()) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
+          <button onClick={() => { dispatch(setFabric(e));dispatch(setPrice()) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
         </div>)
         )}
       </div>
@@ -31,7 +31,7 @@ function PlainFabrics() {
       <div className='flex flex-wrap justify-center gap-5 '>
         {fabric.map(e =>
         (e.patternNumber === '00' && e.group === 'E' && <div key={e.id} className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}>
-          <button onClick={() => { dispatch(setFabric(e)); dispatch(setShow3D(true));dispatch(setPrice()) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
+          <button onClick={() => { dispatch(setFabric(e));dispatch(setPrice()) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
         </div>)
         )}
       </div>
