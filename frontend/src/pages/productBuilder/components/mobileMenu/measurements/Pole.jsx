@@ -35,7 +35,7 @@ function Pole({ setSelector }) {
             </div>
             <div className="absolute bottom-5 w-full h-12 flex justify-between items-center px-10">
             <button className="cursor-pointer flex justify-center items-center gap-1" onClick={()=>{setSelector(3)}}><KeyboardBackspace/> Back</button>
-                <div className="cursor-pointer h-10 w-32 bg-[#b68d40] flex justify-center items-center rounded-xl" onClick={() => { setSelector(5) }}>Next</div>
+                <div className="cursor-pointer h-10 w-32 bg-[#2b2b2b] text-white flex justify-center items-center rounded-xl" onClick={() => { setSelector(5) }}>Next</div>
             </div>
         </div>
     )

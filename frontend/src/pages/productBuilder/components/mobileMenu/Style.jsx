@@ -54,7 +54,7 @@ function Style() {
             <div className="absolute w-full bottom-2 flex justify-between px-3 items-center">
 
                 <button onClick={() => { dispatch(setMenu(2)) }} className=''><KeyboardBackspace /> Back </button>
-                <button onClick={() => { dispatch(setMenu(4)) }} className='px-[18px] py-[16px] rounded-xl bg-[#B68D40]'>Next</button>
+                <button onClick={() => { dispatch(setMenu(4)) }} className='cursor-pointer h-10 w-32 bg-[#2b2b2b] text-white flex justify-center items-center rounded-xl'>Next</button>
             </div>
         </div>
     )

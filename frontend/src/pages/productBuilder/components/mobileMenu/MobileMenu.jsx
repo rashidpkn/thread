@@ -13,24 +13,24 @@ function MobileMenu() {
     const { showMenu, menu } = useSelector(state => state.util.productBuilder)
     const dispatch = useDispatch()
     return (
-        <div className={`${!showMenu && 'hidden' } ${menu === 1 || menu===5 ? 'h-[calc(100vh-5rem)] ' : ''} lg:hidden  bg-[#2b2b2b] text-white fixed rounded-t-3xl bottom-0  w-full flex-shrink-0`}>
+        <div className={`${!showMenu && 'hidden' } ${menu === 1 || menu===5 ? 'h-[calc(100vh-5rem)] ' : ''} lg:hidden  bg-[#E1B980] text-[#2b2b2b] fixed rounded-t-3xl bottom-0  w-full flex-shrink-0`}>
             <div className="flex justify-center">
                 
             </div>
             <div className="flex h-12  justify-between items-center px-10">
                 <div className=""></div>
-                <div className='h-2 rounded-full w-28 bg-[#B68D40]' />
-                <button onClick={() => dispatch(setShowMenu(false))}><Close className='text-[#b68d40]' /></button>
+                <div className='h-2 rounded-full w-28 bg-[#2b2b2b]' />
+                <button onClick={() => dispatch(setShowMenu(false))}><Close className='text-[#2b2b2b]' /></button>
             </div>
             <div className={`flex flex-col lg:hidden justify-center items-center w-full  h-10`}>
                 <div className="flex justify-center items-center gap-3 relative z-10 text-white">
-                    <button onClick={()=>dispatch(setMenu(1))} className={`${menu === 1 ? 'bg-[#b68d40]' : 'bg-[#624e27]'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>1</button>
-                    <button onClick={()=>dispatch(setMenu(2))} className={`${menu === 2 ? 'bg-[#b68d40]' : 'bg-[#624e27]'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>2</button>
-                    <button onClick={()=>dispatch(setMenu(3))} className={`${menu === 3 ? 'bg-[#b68d40]' : 'bg-[#624e27]'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>3</button>
-                    <button onClick={()=>dispatch(setMenu(4))} className={`${menu === 4 ? 'bg-[#b68d40]' : 'bg-[#624e27]'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>4</button>
-                    <button onClick={()=>dispatch(setMenu(5))} className={`${menu === 5 ? 'bg-[#b68d40]' : 'bg-[#624e27]'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>5</button>
+                    <button onClick={()=>dispatch(setMenu(1))} className={`${menu === 1 ? 'bg-[#2b2b2b]' : 'bg-[#2b2b2b]/70'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>1</button>
+                    <button onClick={()=>dispatch(setMenu(2))} className={`${menu === 2 ? 'bg-[#2b2b2b]' : 'bg-[#2b2b2b]/70'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>2</button>
+                    <button onClick={()=>dispatch(setMenu(3))} className={`${menu === 3 ? 'bg-[#2b2b2b]' : 'bg-[#2b2b2b]/70'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>3</button>
+                    <button onClick={()=>dispatch(setMenu(4))} className={`${menu === 4 ? 'bg-[#2b2b2b]' : 'bg-[#2b2b2b]/70'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>4</button>
+                    <button onClick={()=>dispatch(setMenu(5))} className={`${menu === 5 ? 'bg-[#2b2b2b]' : 'bg-[#2b2b2b]/70'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>5</button>
                 </div>
-                <hr className="bg-white w-36 relative bottom-4" />
+                <div className="bg-[#2b2b2b]/50 h-[1px] w-36 relative bottom-4" />
             </div>
             {
                 menu === 1 && <Fabric/>

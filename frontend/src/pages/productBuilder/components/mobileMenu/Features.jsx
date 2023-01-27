@@ -13,10 +13,10 @@ function Features() {
                 <h2 className='text-2xl text-center'>Features</h2>
             </div>
             <div className="bg-[#624e27] flex justify-between items-center p-2 gap-2  rounded-lg text-white mx-5">
-                <button onClick={() => setSelector(1)} className={`${selector === 1 && 'bg-[#b68d40]'} ${poleAndTrack==="I don't need one" ? "w-[200px]" : "w-[115px]" }   h-[40px] rounded-md`} >Lining</button>
-                <button onClick={() => setSelector(2)} className={`${selector === 2 && 'bg-[#b68d40]'} ${poleAndTrack==="I don't need one" ? "w-[200px]" : "w-[115px]" }   h-[40px] rounded-md`} >Pole/Track</button>
+                <button onClick={() => setSelector(1)} className={`${selector === 1 && 'bg-[#2b2b2b] text-white'} ${poleAndTrack==="I don't need one" ? "w-[200px]" : "w-[115px]" }   h-[40px] rounded-md`} >Lining</button>
+                <button onClick={() => setSelector(2)} className={`${selector === 2 && 'bg-[#2b2b2b] text-white'} ${poleAndTrack==="I don't need one" ? "w-[200px]" : "w-[115px]" }   h-[40px] rounded-md`} >Pole/Track</button>
                 {poleAndTrack !=="I don't need one" 
-                    && <button onClick={() => setSelector(3)} className={`${selector === 3 && 'bg-[#b68d40]'}  w-[115px] h-[40px] rounded-md`} >Accessories</button>
+                    && <button onClick={() => setSelector(3)} className={`${selector === 3 && 'bg-[#2b2b2b] text-white'}  w-[115px] h-[40px] rounded-md`} >Accessories</button>
                 }
                 
             </div>

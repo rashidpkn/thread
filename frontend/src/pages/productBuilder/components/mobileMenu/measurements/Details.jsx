@@ -13,9 +13,9 @@ function Details() {
             </div>
             <div className="flex justify-center">
               {item==='Blind' ? 
-              <button  className='bg-[#B68D40] px-[20px] py-[14px] rounded-2xl' onClick={()=>dispatch(setMenu(4))}>Choose Accessories</button> 
+              <button  className='bg-[#2b2b2b] text-white px-[20px] py-[14px] rounded-2xl' onClick={()=>dispatch(setMenu(4))}>Choose Accessories</button> 
                 :
-              <button  className='bg-[#B68D40] px-[20px] py-[14px] rounded-2xl' onClick={()=>dispatch(setMenu(3))}>Choose Style</button>
+              <button  className='bg-[#2b2b2b] text-white px-[20px] py-[14px] rounded-2xl' onClick={()=>dispatch(setMenu(3))}>Choose Style</button>
               }
                 
             </div>

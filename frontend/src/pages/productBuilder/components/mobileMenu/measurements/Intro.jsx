@@ -8,7 +8,7 @@ function Intro({setSelector}) {
                 <h3 className='text-lg text-center'>Input your measurement</h3>
             </div>
             <div className="flex justify-center">
-                <button onClick={()=>{setSelector(1)}} className='bg-[#B68D40] px-[20px] py-[14px] rounded-2xl'>Add Measurements</button>
+                <button onClick={()=>{setSelector(1)}} className='bg-[#2b2b2b] text-white px-[20px] py-[14px] rounded-2xl'>Add Measurements</button>
             </div>
         </div>
     )
