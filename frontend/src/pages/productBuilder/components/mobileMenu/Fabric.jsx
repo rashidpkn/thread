@@ -15,7 +15,7 @@ function Fabric() {
             <div className="bg-[#624e27] flex justify-between items-center p-2 gap-2  rounded-lg text-white mx-5">
                 <button onClick={()=>setSelector(1)} className={`${selector === 1 && 'bg-[#b68d40]'}  w-[115px] h-[40px] rounded-md`} >Plain Fabric</button>
                 <button onClick={()=>setSelector(2)} className={`${selector === 2 && 'bg-[#b68d40]'}  w-[115px] h-[40px] rounded-md`} >Patterns</button>
-                <button onClick={()=>setSelector(3)} className={`${selector === 3 && 'bg-[#b68d40]'}  w-[115px] h-[40px] rounded-md`} >Wall Colors</button>
+                {/* <button onClick={()=>setSelector(3)} className={`${selector === 3 && 'bg-[#b68d40]'}  w-[115px] h-[40px] rounded-md`} >Wall Colors</button> */}
             </div>
             {
                 selector === 1  && <PlainFabrics/>

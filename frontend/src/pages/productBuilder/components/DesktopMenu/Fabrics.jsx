@@ -15,7 +15,7 @@ function Fabrics() {
         <div className="flex justify-center gap-5">
             <button onClick={()=>setSelector(1)} className={`${selector === 1 ? 'text-[#2B2B2B]' : 'text-[#2B2B2B]/50'}`} >PLAIN FABRICS</button>
             <button onClick={()=>setSelector(2)} className={`${selector === 2 ? 'text-[#2B2B2B]' : 'text-[#2B2B2B]/50'}`} >PATTERNS</button>
-            <button onClick={()=>setSelector(3)} className={`${selector === 3 ? 'text-[#2B2B2B]' : 'text-[#2B2B2B]/50'}`} >WALL COLORS</button>
+            {/* <button onClick={()=>setSelector(3)} className={`${selector === 3 ? 'text-[#2B2B2B]' : 'text-[#2B2B2B]/50'}`} >WALL COLORS</button> */}
         </div>
         
         {
