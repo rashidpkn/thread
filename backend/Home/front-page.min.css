@@ -718,12 +718,15 @@ div:nth-child(5n+2)>.card--service .mask-line {
 div:nth-child(5n+3)>.card--service {
     background: #eaa79b
 }
+
 div:nth-child(5n+4)>.card--service {
     background: #3f7355
 }
+
 div:nth-child(5n+5)>.card--service {
     background: #7285a5
 }
+
 div:nth-child(5n+3)>.card--service .mask-line {
     left: -66.07143vw;
     bottom: .47619vw
@@ -1863,9 +1866,11 @@ div:nth-child(5n+3)>.card--service .mask-line {
     .grid--service-cards>div:nth-child(5n+3) {
         margin-bottom: 5.17857vw
     }
+
     .grid--service-cards>div:nth-child(5n+5) {
         margin-bottom: 5.17857vw
     }
+
     .card--service .card__inner {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -2743,4 +2748,10 @@ div:nth-child(5n+3)>.card--service .mask-line {
         transition: transform 1s ease-in-out;
         transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out
     }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
 }
