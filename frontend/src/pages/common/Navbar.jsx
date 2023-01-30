@@ -56,8 +56,8 @@ function Navbar() {
             </li>
 
             <li className='cursor-pointer flex justify-center items-center h-full px-5'>Order Sample</li>
-            <li className='cursor-pointer flex justify-center items-center h-full px-5'>About Us</li>
-            <li className='cursor-pointer flex justify-center items-center h-full px-5'>Contact Us</li>
+            <li className='cursor-pointer flex justify-center items-center h-full px-5'><Link to={'/about-us'}> About Us </Link></li>
+            <li className='cursor-pointer flex justify-center items-center h-full px-5'><Link to={'/contact-us'}> Contact Us </Link></li>
           </ul>
           <Link to={'/cart'}>
             {/* <AddShoppingCartOutlined fontSize='large' /> */}
@@ -94,10 +94,10 @@ function Navbar() {
         </nav>
         {
           showMenu && <ul className="flex lg:hidden flex-col w-full p-2 gap-3 ">
-            <li className='cursor-pointer'>Curtain</li>
-            <li className='cursor-pointer'>Customise Curtains</li>
-            <li className='cursor-pointer'>About Us</li>
-            <li className='cursor-pointer'>Contact Us</li>
+            <li className='cursor-pointer'><Link to={'/productBuilder'}> Shop Now </Link></li>
+            <li className='cursor-pointer'>Order Sample</li>
+            <li className='cursor-pointer'><Link to={'/about-us'}> About Us </Link></li>
+            <li className='cursor-pointer'><Link to={'/contact-us'}> Contact Us </Link></li>
           </ul>
         }
       </div>

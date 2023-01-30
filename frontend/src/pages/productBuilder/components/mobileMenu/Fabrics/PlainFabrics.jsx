@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setFabric, setPrice } from '../../../../../redux/slice/fabric'
-import { setShow3D } from '../../../../../redux/slice/util'
+import { setMenu, setShow3D, setShowMenu } from '../../../../../redux/slice/util'
 import { fabric } from './Custom'
 
 function PlainFabrics() {
@@ -13,7 +13,7 @@ function PlainFabrics() {
       <div className='flex flex-wrap justify-center gap-5 '>
         {fabric.map(e =>
         (e.patternNumber === '00' && e.group === 'C' && <div key={e.id} className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}>
-          <button onClick={() => { dispatch(setFabric(e));dispatch(setPrice()) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
+          <button onClick={() => { dispatch(setFabric(e)); dispatch(setPrice()); dispatch(setShowMenu(false)) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
         </div>)
         )}
       </div>
@@ -22,7 +22,7 @@ function PlainFabrics() {
       <div className='flex flex-wrap justify-center gap-5 '>
         {fabric.map(e =>
         (e.patternNumber === '00' && e.group === 'D' && <div key={e.id} className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}>
-          <button onClick={() => { dispatch(setFabric(e));dispatch(setPrice()) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
+          <button onClick={() => { dispatch(setFabric(e)); dispatch(setPrice()); dispatch(setShowMenu(false)) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
         </div>)
         )}
       </div>
@@ -31,7 +31,7 @@ function PlainFabrics() {
       <div className='flex flex-wrap justify-center gap-5 '>
         {fabric.map(e =>
         (e.patternNumber === '00' && e.group === 'E' && <div key={e.id} className={`${e.id === id && 'border border-[#2B2B2B] rounded-full '} flex justify-center items-center p-1`}>
-          <button onClick={() => { dispatch(setFabric(e));dispatch(setPrice()) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
+          <button onClick={() => { dispatch(setFabric(e)); dispatch(setPrice()); dispatch(setShowMenu(false)) }} style={{ backgroundColor: e.color }} className={`w-10 h-10 rounded-full`}></button>
         </div>)
         )}
       </div>
