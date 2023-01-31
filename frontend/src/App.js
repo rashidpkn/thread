@@ -21,6 +21,7 @@ import DoublePleatCurtain from './pages/Curtains/pages/doublePleat'
 import Goblet from './pages/Curtains/pages/goblet'
 import TriplePleat from './pages/Curtains/pages/triplePleat'
 import Contact from './pages/ContactUs'
+import Samples from './pages/samples'
 
 
 const clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
@@ -62,6 +63,7 @@ function App() {
         <Route path="/TriplePleatCurtains" element={<TriplePleat />} />
         <Route path="/Goblet" element={<Goblet />} />
 
+        <Route path='/order-samples' element={<Samples/>} />
 
 
       {/* static Pages */}

@@ -41,7 +41,7 @@ function Navbar() {
 
           <ul className='flex justify-center items-center gap-20 h-full font-medium'>
 
-            <li className='cursor-pointer' onClick={() => {
+            <li className='cursor-pointer hover:underline underline-offset-1' onClick={() => {
               if (showShop) {
                 setShowShop(false)
               } else {
@@ -50,7 +50,7 @@ function Navbar() {
               }
 
             }}>Shop No</li>
-            <li className='cursor-pointer' onClick={() => {
+            <li className='cursor-pointer hover:underline underline-offset-1' onClick={() => {
               if (showCurtains) {
                 setShowCurtains(false)
               } else {
@@ -59,9 +59,9 @@ function Navbar() {
               }
 
             }}>Curtain Style</li>
-            <li className='cursor-pointer'>Order Sample</li>
-            <li className='cursor-pointer'><Link to={'/about-us'}> About Us </Link></li>
-            <li className='cursor-pointer'><Link to={'/contact-us'}> Contact Us </Link></li>
+            <li className='cursor-pointer hover:underline underline-offset-1'><Link to={'/order-samples'}> Order Sample </Link></li>
+            <li className='cursor-pointer hover:underline underline-offset-1'><Link to={'/about-us'}> About Us </Link></li>
+            <li className='cursor-pointer hover:underline underline-offset-1'><Link to={'/contact-us'}> Contact Us </Link></li>
           </ul>
           <Link to={'/cart'}>
             <Cart />

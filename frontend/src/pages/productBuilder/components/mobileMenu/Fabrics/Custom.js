@@ -1171,7 +1171,7 @@ export const fabric =[
         img:'magnify/emerson_pebble_1_1.jpg',
     },
     {
-        id:  273,
+        id:  91,
         name: 'Emerson Sahara',
         color: '#9f7a1b',
         patternNumber: '00',
@@ -1184,7 +1184,7 @@ export const fabric =[
         img:'magnify/emerson_sahara_1_1.jpg',
     },
     {
-        id: 91,
+        id: 92,
         name: 'Emerson Smoke',
         color: '#74706f',
         patternNumber: '00',
@@ -1197,7 +1197,7 @@ export const fabric =[
         img:'magnify/emerson_smoke_1_1.jpg',
     },
     {
-        id: 92,
+        id: 93,
         name: 'Emerson Zinc',
         color: '#a19a8d',
         patternNumber: '00',
@@ -1212,7 +1212,7 @@ export const fabric =[
 
 
     {
-        id: 93,
+        id: 94,
         name: 'Acanthium Autumn',
         color: '',
         patternNumber: '01',
@@ -1224,19 +1224,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ACANTHIUM AUTUMN.jpg',
     },
-    {
-        id: 94,
-        name: 'Acanthium Foxglove',
-        color: '',
-        patternNumber: '01',
-        fabricInitialPrice: 0,
-        group: 'B',
-        fabricPath: 'patterns/Acanthium_Foxglove.jpg',
-        magnifyFabricPath: 'magnify/acanthium_foxglove_5.jpg',
-        magnifyWavyFabricPath: 'magnify/acanthium_foxglove_2_1.jpg',
-        wavy:true,
-        img:'magnify/acanthium_foxglove_5.jpg',
-    },
+    
     {
         id: 95,
         name: 'Acanthium Garnet',
@@ -1289,35 +1277,9 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/AVIARY LAGOON.jpg',
     },
+    
     {
         id: 99,
-        name: 'Aztec Ochre',
-        color: '',
-        patternNumber: '01',
-        fabricInitialPrice: 0,
-        group: 'B',
-        fabricPath: 'patterns/Aztec_Ochre_11zon.jpg',
-        magnifyFabricPath: 'magnify/aztec_ochre_3.jpg',
-        magnifyWavyFabricPath: 'magnify/aztec_ochre_2_1.jpg',
-        wavy:true,
-        // img:'/fabric_image/AZTEC OCHRE.jpg',
-        img:'magnify/aztec_ochre_3.jpg',
-    },
-    {
-        id: 100,
-        name: 'Aztec Salsa',
-        color: '',
-        patternNumber: '01',
-        fabricInitialPrice: 0,
-        group: 'B',
-        fabricPath: 'patterns/Aztec_Salsa_11zon.jpg',
-        magnifyFabricPath: 'magnify/aztec_salsa_3.jpg',
-        magnifyWavyFabricPath: 'magnify/aztec_salsa_2.jpg',
-        wavy:true,
-        img:'/fabric_image/AZTEC SALSA.jpg',
-    },
-    {
-        id: 101,
         name: 'Aztec Smoke',
         color: '',
         patternNumber: '01',
@@ -1330,7 +1292,7 @@ export const fabric =[
         img:'/fabric_image/AZTEC SMOKE.jpg',
     },
     {
-        id: 103,
+        id: 100,
         name: 'Caicos Begonia',
         color: '',
         patternNumber: '01',
@@ -1343,7 +1305,7 @@ export const fabric =[
         img:'/fabric_image/CAICOS BEGONIA.jpg',
     },
     {
-        id: 104,
+        id: 101,
         name: 'Caicos Chambray',
         color: '',
         patternNumber: '01',
@@ -1356,7 +1318,7 @@ export const fabric =[
         img:'/fabric_image/CAICOS CHAMBRAY.jpg',
     },
     {
-        id: 105,
+        id: 102,
         name: 'Caicos Hessian',
         color: '',
         patternNumber: '01',
@@ -1369,7 +1331,7 @@ export const fabric =[
         img:'/fabric_image/CAICOS HESSIAN.jpg',
     },
     {
-        id: 106,
+        id: 103,
         name: 'Caicos Kiwi',
         color: '',
         patternNumber: '01',
@@ -1382,7 +1344,7 @@ export const fabric =[
         img:'/fabric_image/CAICOS KIWI.jpg',
     },
     {
-        id: 107,
+        id: 104,
         name: 'Caicos Mandarin',
         color: '',
         patternNumber: '01',
@@ -1395,7 +1357,7 @@ export const fabric =[
         img:'/fabric_image/CAICOS MANDARIN.jpg',
     },
     {
-        id: 106,
+        id: 105,
         name: 'Carlina Dusk',
         color: '',
         patternNumber: '01',
@@ -1408,7 +1370,7 @@ export const fabric =[
         img:'/fabric_image/CARLINA DUSK.jpg',
     },
     {
-        id: 107,
+        id: 106,
         name: 'Carlina Ochre',
         color: '',
         patternNumber: '01',
@@ -1421,7 +1383,7 @@ export const fabric =[
         img:'/fabric_image/CARLINA OCHRE.jpg',
     },
     {
-        id: 108,
+        id: 107,
         name: 'Carlina Teal',
         color: '',
         patternNumber: '01',
@@ -1434,7 +1396,7 @@ export const fabric =[
         img:'/fabric_image/CARLINA TEAL.jpg',
     },
     {
-        id: 109,
+        id: 108,
         name: 'Cotswold Jade',
         color: '',
         patternNumber: '01',
@@ -1447,7 +1409,7 @@ export const fabric =[
         img:'/fabric_image/COTSWOLD JADE.jpg',
     },
     {
-        id: 110,
+        id: 109,
         name: 'Cotswold Jewel',
         color: '',
         patternNumber: '01',
@@ -1460,7 +1422,7 @@ export const fabric =[
         img:'/fabric_image/COTSWOLD JEWEL.jpg',
     },
     {
-        id: 111,
+        id: 110,
         name: 'Etched Vine Eau De Nil',
         color: '',
         patternNumber: '01',
@@ -1473,7 +1435,7 @@ export const fabric =[
         img:'/fabric_image/ETCHED VINE EAU DE NIL.jpg',
     },
     {
-        id: 112,
+        id: 111,
         name: 'Etched Vine Feather',
         color: '',
         patternNumber: '01',
@@ -1486,7 +1448,7 @@ export const fabric =[
         img:'/fabric_image/ETCHED VINE FEATHER.jpg',
     },
     {
-        id: 113,
+        id: 112,
         name: 'Etched Vine Sandstone',
         color: '',
         patternNumber: '01',
@@ -1499,7 +1461,7 @@ export const fabric =[
         img:'/fabric_image/ETCHED VINE SANDSTONE.jpg',
     },
     {
-        id: 114,
+        id: 113,
         name: 'Heritage Fern',
         color: '',
         patternNumber: '01',
@@ -1512,7 +1474,7 @@ export const fabric =[
         img:'/fabric_image/HERITAGE FERN.jpg',
     },
     {
-        id: 115,
+        id: 114,
         name: 'Heritage Midnight',
         color: '',
         patternNumber: '01',
@@ -1525,7 +1487,7 @@ export const fabric =[
         img:'/fabric_image/HERITAGE MIDNIGHT.jpg',
     },
     {
-        id: 116,
+        id: 115,
         name: 'Kelmscott Jade',
         color: '',
         patternNumber: '01',
@@ -1538,7 +1500,7 @@ export const fabric =[
         img:'/fabric_image/KELMSCOTT JADE.jpg',
     },
     {
-        id: 117,
+        id: 116,
         name: 'Kelmscott Jewel',
         color: '',
         patternNumber: '01',
@@ -1551,7 +1513,7 @@ export const fabric =[
         img:'/fabric_image/KELMSCOTT JEWEL.jpg',
     },
     {
-        id: 118,
+        id: 117,
         name: 'Maldives Lagoon',
         color: '',
         patternNumber: '01',
@@ -1564,7 +1526,7 @@ export const fabric =[
         img:'/fabric_image/MALDIVES LAGOON.jpg',
     },
     {
-        id: 119,
+        id: 118,
         name: 'Maldives Reef',
         color: '',
         patternNumber: '01',
@@ -1577,7 +1539,7 @@ export const fabric =[
         img:'/fabric_image/MALDIVES REEF.jpg',
     },
     {
-        id: 120,
+        id: 119,
         name: 'Manila Cranberry',
         color: '',
         patternNumber: '01',
@@ -1590,7 +1552,7 @@ export const fabric =[
         img:'/fabric_image/MANILA CRANBERRY.jpg',
     },
     {
-        id: 121,
+        id: 120,
         name: 'Manila Lagoon',
         color: '',
         patternNumber: '01',
@@ -1603,7 +1565,7 @@ export const fabric =[
         img:'/fabric_image/MANILA LAGOON.jpg',
     },
     {
-        id: 122,
+        id: 121,
         name: 'Manila Zinc',
         color: '',
         patternNumber: '01',
@@ -1616,7 +1578,7 @@ export const fabric =[
         img:'/fabric_image/MANILA ZINC.jpg',
     },
     {
-        id: 123,
+        id: 122,
         name: 'Navajo Indigo',
         color: '',
         patternNumber: '01',
@@ -1629,7 +1591,7 @@ export const fabric =[
         img:'/fabric_image/NAVAJO INDIGO.jpg',
     },
     {
-        id: 124,
+        id: 123,
         name: 'Navajo Teal',
         color: '',
         patternNumber: '01',
@@ -1642,7 +1604,7 @@ export const fabric =[
         img:'/fabric_image/NAVAJO TEAL.jpg',
     },
     {
-        id: 125,
+        id: 124,
         name: 'Parchment Feather',
         color: '',
         patternNumber: '01',
@@ -1655,7 +1617,7 @@ export const fabric =[
         img:'/fabric_image/PARCHMENT FERN.jpg',
     },
     {
-        id: 126,
+        id: 125,
         name: 'Parchment Fern',
         color: '',
         patternNumber: '01',
@@ -1668,7 +1630,7 @@ export const fabric =[
         img:'/fabric_image/PARCHMENT FERN.jpg',
     },
     {
-        id: 127,
+        id: 126,
         name: 'Parchment Wedgewood',
         color: '',
         patternNumber: '01',
@@ -1681,7 +1643,7 @@ export const fabric =[
         img:'/fabric_image/PARCHMENT WEDGEWOOD.jpg',
     },
     {
-        id: 128,
+        id: 127,
         name: 'Pomegranate Trail Ochre',
         color: '',
         patternNumber: '01',
@@ -1694,7 +1656,7 @@ export const fabric =[
         img:'/fabric_image/POMEGRANATE OCHRE.jpg',
     },
     {
-        id: 129,
+        id: 128,
         name: 'Pomegranate Trail Scarlet',
         color: '',
         patternNumber: '01',
@@ -1772,7 +1734,7 @@ export const fabric =[
     //     img:'/fabric_image/',
     // },
     {
-        id: 134,
+        id: 131,
         name: 'Wild Meadow Magenta',
         color: '',
         patternNumber: '01',
@@ -1785,7 +1747,7 @@ export const fabric =[
         img:'/fabric_image/WILD MEADOW MAGENTA.jpg',
     },
     {
-        id: 135,
+        id: 132,
         name: 'Wild Meadow Ruby',
         color: '',
         patternNumber: '01',
@@ -1797,6 +1759,53 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/WILD MEADOW RUBY.jpg',
     },
+    {
+        id: 133,
+        name: 'Acanthium Foxglove',
+        color: '',
+        patternNumber: '01',
+        fabricInitialPrice: 0,
+        group: 'B',
+        fabricPath: 'patterns/Acanthium_Foxglove.jpg',
+        magnifyFabricPath: 'magnify/acanthium_foxglove_5.jpg',
+        magnifyWavyFabricPath: 'magnify/acanthium_foxglove_2_1.jpg',
+        wavy:true,
+        img:'magnify/acanthium_foxglove_5.jpg',
+    },
+    {
+        id: 134,
+        name: 'Aztec Ochre',
+        color: '',
+        patternNumber: '01',
+        fabricInitialPrice: 0,
+        group: 'B',
+        fabricPath: 'patterns/Aztec_Ochre_11zon.jpg',
+        magnifyFabricPath: 'magnify/aztec_ochre_3.jpg',
+        magnifyWavyFabricPath: 'magnify/aztec_ochre_2_1.jpg',
+        wavy:true,
+        // img:'/fabric_image/AZTEC OCHRE.jpg',
+        img:'magnify/aztec_ochre_3.jpg',
+    },
+    {
+        id: 135,
+        name: 'Aztec Salsa',
+        color: '',
+        patternNumber: '01',
+        fabricInitialPrice: 0,
+        group: 'B',
+        fabricPath: 'patterns/Aztec_Salsa_11zon.jpg',
+        magnifyFabricPath: 'magnify/aztec_salsa_3.jpg',
+        magnifyWavyFabricPath: 'magnify/aztec_salsa_2.jpg',
+        wavy:true,
+        img:'/fabric_image/AZTEC SALSA.jpg',
+    },
+
+
+
+
+
+
+
 
     
     {
@@ -2242,7 +2251,7 @@ export const fabric =[
         img:'magnify/great_oak_willow_low_res.jpg',
     },
     {
-        id: 168,
+        id: 169,
         name: 'Greenhouse Pots Mist',
         color: '',
         patternNumber: '01',
@@ -2255,7 +2264,7 @@ export const fabric =[
         img:'/fabric_image/GREENHOUSE POTS MIST.jpg',
     },
     {
-        id: 169,
+        id: 170,
         name: 'Greenhouse Pots Ochre',
         color: '',
         patternNumber: '01',
@@ -2268,7 +2277,7 @@ export const fabric =[
         img:'/fabric_image/GREENHOUSE POTS OCHRE.jpg',
     },
     {
-        id: 170,
+        id: 171,
         name: 'Headgerow Charcoal',
         color: '',
         patternNumber: '01',
@@ -2281,7 +2290,7 @@ export const fabric =[
         img:'/fabric_image/HEDGEROW CHARCOAL.jpg',
     },
     {
-        id: 171,
+        id: 172,
         name: 'Headgerow Magenta',
         color: '',
         patternNumber: '01',
@@ -2294,7 +2303,7 @@ export const fabric =[
         img:'/fabric_image/HEDGEROW MAGENTA.jpg',
     },
     {
-        id: 172,
+        id: 173,
         name: 'Headgerow Pistachio',
         color: '',
         patternNumber: '01',
@@ -2307,7 +2316,7 @@ export const fabric =[
         img:'/fabric_image/HEDGEROW PISTACHIO.jpg',
     },
     {
-        id: 173,
+        id: 174,
         name: 'Oak Leaf Duchegg Low Res',
         color: '',
         patternNumber: '01',
@@ -2320,7 +2329,7 @@ export const fabric =[
         img:'magnify/oak_leaf_duckegg_low_res.jpg',
     },
     {
-        id: 173,
+        id: 175,
         name: 'Oak Leaf Lemongrass Low Res',
         color: '',
         patternNumber: '01',
@@ -2333,7 +2342,7 @@ export const fabric =[
         img:'magnify/oak_leaf_lemongrass_low_res.jpg',
     },
     {
-        id: 174,
+        id: 176,
         name: 'Oak Leaf Midnight Low Res',
         color: '',
         patternNumber: '01',
@@ -2346,7 +2355,7 @@ export const fabric =[
         img:'magnify/oak_leaf_midnight_low_res.jpg',
     },
     {
-        id: 175,
+        id: 177,
         name: 'Oak Leaf Paprika Low Res',
         color: '',
         patternNumber: '01',
@@ -2359,7 +2368,7 @@ export const fabric =[
         img:'magnify/oak_leaf_paprika_low_res.jpg',
     },
     {
-        id: 175,
+        id: 178,
         name: 'Oak Leaf Pewter Low Res',
         color: '',
         patternNumber: '01',
@@ -2372,7 +2381,7 @@ export const fabric =[
         img:'magnify/oak_leaf_pewter_low_res.jpg',
     },
     {
-        id: 176,
+        id: 179,
         name: 'Oak Leaf Sand Low Res',
         color: '',
         patternNumber: '01',
@@ -2385,7 +2394,7 @@ export const fabric =[
         img:'magnify/oak_leaf_sand_low_res.jpg',
     },
     {
-        id: 177,
+        id: 180,
         name: 'Oak Leaf Willow Low Res',
         color: '',
         patternNumber: '01',
@@ -2398,7 +2407,7 @@ export const fabric =[
         img:'magnify/oak_leaf_sand_low_res.jpg',
     },
     {
-        id: 178,
+        id: 181,
         name: 'Oak Leaf Rose Low Res',
         color: '',
         patternNumber: '01',
@@ -2411,7 +2420,7 @@ export const fabric =[
         img:'magnify/oak_leaf_rose_low_res.jpg',
     },
     {
-        id: 179,
+        id: 182,
         name: 'Kemble Cloud',
         color: '',
         patternNumber: '01',
@@ -2424,7 +2433,7 @@ export const fabric =[
         img:'/fabric_image/KEMBLE CLOUD.jpg',
     },
     {
-        id: 180,
+        id: 183,
         name: 'Kemble Filigree',
         color: '',
         patternNumber: '01',
@@ -2437,7 +2446,7 @@ export const fabric =[
         img:'/fabric_image/KEMBLE FILIGREE.jpg',
     },
     {
-        id: 181,
+        id: 184,
         name: 'Kemble Sapphire',
         color: '',
         patternNumber: '01',
@@ -2450,7 +2459,7 @@ export const fabric =[
         img:'/fabric_image/KEMBLE SAPPHIRE.jpg',
     },
     {
-        id: 182,
+        id: 185,
         name: 'Palm House Moonlight',
         color: '',
         patternNumber: '01',
@@ -2463,7 +2472,7 @@ export const fabric =[
         img:'/fabric_image/PALM HOUSE MOONLIGHT.jpg',
     },
     {
-        id: 183,
+        id: 186,
         name: 'Palm House Ochre',
         color: '',
         patternNumber: '01',
@@ -2476,7 +2485,7 @@ export const fabric =[
         img:'/fabric_image/PALM HOUSE OCHRE.jpg',
     },
     {
-        id: 184,
+        id: 187,
         name: 'Palm House Spruce',
         color: '',
         patternNumber: '01',
@@ -2489,7 +2498,7 @@ export const fabric =[
         img:'/fabric_image/PALM HOUSE SPRUCE.jpg',
     },
     {
-        id: 185,
+        id: 188,
         name: 'Pencil Stripe Duckegg Low Res',
         color: '',
         patternNumber: '01',
@@ -2502,7 +2511,7 @@ export const fabric =[
         img:'magnify/pencil_stripe_duckegg_low_res.jpg',
     },
     {
-        id: 186,
+        id: 189,
         name: 'Pencil Stripe midnight Low Res',
         color: '',
         patternNumber: '01',
@@ -2515,7 +2524,7 @@ export const fabric =[
         img:'magnify/pencil_stripe_midnight_low_res.jpg',
     },
     {
-        id: 187,
+        id: 190,
         name: 'Pencil Stripe Ocean Low Res',
         color: '',
         patternNumber: '01',
@@ -2541,7 +2550,7 @@ export const fabric =[
     //     img:'/fabric_image/',
     // },
     {
-        id: 188,
+        id: 191,
         name: 'Pencil Stripe Sand Low Res',
         color: '',
         patternNumber: '01',
@@ -2554,7 +2563,7 @@ export const fabric =[
         img:'magnify/pencil_stripe_sand_low_res.jpg',
     },
     {
-        id: 189,
+        id: 192,
         name: 'Rainforest Lagoon',
         color: '',
         patternNumber: '01',
@@ -2567,7 +2576,7 @@ export const fabric =[
         img:'/fabric_image/RAINFOREST LAGOON.jpg',
     },
     {
-        id: 190,
+        id: 193,
         name: 'Rainforest Marine',
         color: '',
         patternNumber: '01',
@@ -2580,7 +2589,7 @@ export const fabric =[
         img:'magnify/rainforest_marine.jpg',
     },
     {
-        id: 191,
+        id: 194,
         name: 'Rowing Stripe Duckegg Low Res',
         color: '',
         patternNumber: '01',
@@ -2606,7 +2615,7 @@ export const fabric =[
     //     img:'/fabric_image/',
     // },
     {
-        id: 192,
+        id: 195,
         name: 'Rowing Stripe Midnight Low Res',
         color: '',
         patternNumber: '01',
@@ -2619,7 +2628,7 @@ export const fabric =[
         img:'magnify/midnight_-_tweaked_colour_1_1.jpg',
     },
     {
-        id: 193,
+        id: 196,
         name: 'Rowing Stripe Oatmeal Low Res',
         color: '',
         patternNumber: '01',
@@ -2632,7 +2641,7 @@ export const fabric =[
         img:'magnify/rowing_stripe_-_oatmeal_low_res.jpg',
     },
     {
-        id: 194,
+        id: 197,
         name: 'Rowing Stripe Pewter Low Res',
         color: '',
         patternNumber: '01',
@@ -2645,7 +2654,7 @@ export const fabric =[
         img:'magnify/rowing_stripe_-_pewter_low_res.jpg',
     },
     {
-        id: 195,
+        id: 198,
         name: 'Rowing Stripe Sand Low Res',
         color: '',
         patternNumber: '01',
@@ -2658,7 +2667,7 @@ export const fabric =[
         img:'magnify/rowing_stripe_-_sand_low_res.jpg',
     },
     {
-        id: 196,
+        id: 199,
         name: 'Victorian Glasshouse Mist',
         color: '',
         patternNumber: '01',
@@ -2671,7 +2680,7 @@ export const fabric =[
         img:'/fabric_image/VICTORIAN GLASSHOUSE MIST.jpg',
     },
     {
-        id: 197,
+        id: 200,
         name: 'Victorian Glasshouse Moonlight',
         color: '',
         patternNumber: '01',
@@ -2684,7 +2693,7 @@ export const fabric =[
         img:'/fabric_image/VICTORIAN GLASSHOUSE MOONLIGHT.jpg',
     },
     {
-        id: 198,
+        id: 201,
         name: 'Victorian Glasshouse Spruce',
         color: '',
         patternNumber: '01',
@@ -2697,7 +2706,7 @@ export const fabric =[
         img:'/fabric_image/VICTORIAN GLASSHOUSE SPRUCE.jpg',
     },
     {
-        id: 199,
+        id: 202,
         name: 'Charnwood Flint',
         color: '',
         patternNumber: '01',
@@ -2710,7 +2719,7 @@ export const fabric =[
         img:'/fabric_image/CHARNWOOD FLINT.jpg',
     },
     {
-        id: 200,
+        id: 203,
         name: 'Charnwood Midnight',
         color: '',
         patternNumber: '01',
@@ -2723,7 +2732,7 @@ export const fabric =[
         img:'magnify/charnwood_charnwood_midnight_1.jpg',
     },
     {
-        id: 201,
+        id: 204,
         name: 'Country Journal Denim',
         color: '',
         patternNumber: '01',
@@ -2736,7 +2745,7 @@ export const fabric =[
         img:'/fabric_image/COUNTRY JOURNAL DENIM.jpg',
     },
     {
-        id: 202,
+        id: 205,
         name: 'Country Journal Dove',
         color: '',
         patternNumber: '01',
@@ -2749,7 +2758,7 @@ export const fabric =[
         img:'/fabric_image/COUNTRY JOURNAL DOVE.jpg',
     },
     {
-        id: 203,
+        id: 206,
         name: 'Country Journal Fern',
         color: '',
         patternNumber: '01',
@@ -2762,7 +2771,7 @@ export const fabric =[
         img:'/fabric_image/COUNTRY JOURNAL FERN.jpg',
     },
     {
-        id: 204,
+        id: 207,
         name: 'Country Journal Haze',
         color: '',
         patternNumber: '01',
@@ -2775,7 +2784,7 @@ export const fabric =[
         img:'/fabric_image/COUNTRY JOURNAL HAZE.jpg',
     },
     {
-        id: 205,
+        id: 208,
         name: 'Country Journal Rosa',
         color: '',
         patternNumber: '01',
@@ -2788,7 +2797,7 @@ export const fabric =[
         img:'/fabric_image/COUNTRY JOURNAL ROSA.jpg',
     },
     {
-        id: 206,
+        id: 209,
         name: 'Facet Blueprint',
         color: '',
         patternNumber: '01',
@@ -2801,7 +2810,7 @@ export const fabric =[
         img:'/fabric_image/FACET BLUEPRINT.jpg',
     },
     {
-        id: 207,
+        id: 210,
         name: 'Facet Steel',
         color: '',
         patternNumber: '01',
@@ -2814,7 +2823,7 @@ export const fabric =[
         img:'/fabric_image/FACET STEEL.jpg',
     },
     {
-        id: 208,
+        id: 211,
         name: 'Facet Stone',
         color: '',
         patternNumber: '01',
@@ -2827,7 +2836,7 @@ export const fabric =[
         img:'/fabric_image/FACET STONE.jpg',
     },
     {
-        id: 209,
+        id: 212,
         name: 'Luxor Cream',
         color: '',
         patternNumber: '01',
@@ -2840,7 +2849,7 @@ export const fabric =[
         img:'/fabric_image/LUXOR CREAM.jpg',
     },
     {
-        id: 210,
+        id: 213,
         name: 'Luxor Steel',
         color: '',
         patternNumber: '01',
@@ -2853,7 +2862,7 @@ export const fabric =[
         img:'/fabric_image/LUXOR STEEL.jpg',
     },
     {
-        id: 211,
+        id: 214,
         name: 'Portico Lapis',
         color: '',
         patternNumber: '01',
@@ -2866,7 +2875,7 @@ export const fabric =[
         img:'magnify/portico_lapis_1.jpg',
     },
     {
-        id: 212,
+        id: 215,
         name: 'Portico Ochre',
         color: '',
         patternNumber: '01',
@@ -2879,7 +2888,7 @@ export const fabric =[
         img:'magnify/portico_ochre_1.jpg',
     },
     {
-        id: 213,
+        id: 216,
         name: 'Portico Pewter',
         color: '',
         patternNumber: '01',
@@ -2897,12 +2906,8 @@ export const fabric =[
 
 
 
-        //To Do
-
-
-
     {
-        id: 214,
+        id: 217,
         name: 'Arcadia Blueprint',
         color: '',
         patternNumber: '01',
@@ -2915,7 +2920,7 @@ export const fabric =[
         img:'/fabric_image/ARCADIA BLUEPRINT.jpg',
     },
     {
-        id: 215,
+        id: 218,
         name: 'Arcadia Stone',
         color: '',
         patternNumber: '01',
@@ -2928,7 +2933,7 @@ export const fabric =[
         img:'/fabric_image/ARCADIA STONE.jpg',
     },
     {
-        id: 216,
+        id: 219,
         name: 'Brackenhill Indigo',
         color: '',
         patternNumber: '01',
@@ -2941,7 +2946,7 @@ export const fabric =[
         img:'/fabric_image/BRACKENHILL INDIGO.jpg',
     },
     {
-        id: 217,
+        id: 220,
         name: 'Brackenhill Jade',
         color: '',
         patternNumber: '01',
@@ -2954,7 +2959,7 @@ export const fabric =[
         img:'/fabric_image/BRACKENHILL JADE.jpg',
     },
     {
-        id: 218,
+        id: 221,
         name: 'Fia Clay',
         color: '',
         patternNumber: '01',
@@ -2967,7 +2972,7 @@ export const fabric =[
         img:'/fabric_image/FIA CLAY.jpg',
     },
     {
-        id: 219,
+        id: 222,
         name: 'Fia Denim',
         color: '',
         patternNumber: '01',
@@ -2980,7 +2985,7 @@ export const fabric =[
         img:'/fabric_image/FIA DENIM.jpg',
     },
     {
-        id: 220,
+        id: 223,
         name: 'Fia Dove',
         color: '',
         patternNumber: '01',
@@ -2993,7 +2998,7 @@ export const fabric =[
         img:'/fabric_image/FIA DOVE.jpg',
     },
     {
-        id: 221,
+        id: 224,
         name: 'Fia Fern',
         color: '',
         patternNumber: '01',
@@ -3006,7 +3011,7 @@ export const fabric =[
         img:'/fabric_image/FIA FERN.jpg',
     },
     {
-        id: 222,
+        id: 225,
         name: 'Fia Rosa',
         color: '',
         patternNumber: '01',
@@ -3019,7 +3024,7 @@ export const fabric =[
         img:'/fabric_image/FIA ROSE.jpg',
     },
     {
-        id: 223,
+        id: 226,
         name: 'HeathCliff Arctic',
         color: '',
         patternNumber: '01',
@@ -3032,7 +3037,7 @@ export const fabric =[
         img:'/fabric_image/HEATHCLIFF ARCTIC.jpg',
     },
     {
-        id: 224,
+        id: 227,
         name: 'HeathCliff Indigo',
         color: '',
         patternNumber: '01',
@@ -3045,7 +3050,7 @@ export const fabric =[
         img:'/fabric_image/HEATHCLIFF INDIGO.jpg',
     },
     {
-        id: 225,
+        id: 228,
         name: 'Laurie Linen Woven',
         color: '',
         patternNumber: '01',
@@ -3058,7 +3063,7 @@ export const fabric =[
         img:'/fabric_image/LAURIE LINEN.jpg',
     },
     {
-        id: 226,
+        id: 229,
         name: 'Laurie Wedgewood',
         color: '',
         patternNumber: '01',
@@ -3149,7 +3154,7 @@ export const fabric =[
         img:'/fabric_image/TIVERTON INDIGO.jpg',
     },
     {
-        id: 234,
+        id: 233,
         name: 'Tiverton Sand',
         color: '',
         patternNumber: '01',
@@ -3164,7 +3169,7 @@ export const fabric =[
 
 
     {
-        id: 235,
+        id: 234,
         name: 'Harper Linen',
         color: '',
         patternNumber: '01',
@@ -3177,7 +3182,7 @@ export const fabric =[
         img:'/fabric_image/HARPER LINEN.jpg',
     },
     {
-        id: 236,
+        id: 235,
         name: 'Harper Eau De',
         color: '',
         patternNumber: '01',
@@ -3190,7 +3195,7 @@ export const fabric =[
         img:'/fabric_image/HARPER EAU DE NIL.jpg',
     },
     {
-        id: 237,
+        id: 236,
         name: 'Harper Feather',
         color: '',
         patternNumber: '01',
@@ -3203,7 +3208,7 @@ export const fabric =[
         img:'/fabric_image/HARPER FEATHER.jpg',
     },
     {
-        id: 238,
+        id: 237,
         name: 'Harper Wedgewood',
         color: '',
         patternNumber: '01',
@@ -3229,7 +3234,7 @@ export const fabric =[
     //     img:'/fabric_image/',
     // },
     {
-        id: 240,
+        id: 238,
         name: 'Sumi Blush',
         color: '',
         patternNumber: '01',
@@ -3242,7 +3247,7 @@ export const fabric =[
         img:'/fabric_image/SUMI BLUSH.jpg',
     },
     {
-        id: 241,
+        id: 239,
         name: 'Sumi Delft',
         color: '',
         patternNumber: '01',
@@ -3255,7 +3260,7 @@ export const fabric =[
         img:'/fabric_image/SUMI DELFT.jpg',
     },
     {
-        id: 242,
+        id: 240,
         name: 'Sumi Duckegg',
         color: '',
         patternNumber: '01',
@@ -3268,7 +3273,7 @@ export const fabric =[
         img:'/fabric_image/SUMI DUCKEGG.jpg',
     },
     {
-        id: 243,
+        id: 241,
         name: 'Sumi Saffron',
         color: '',
         patternNumber: '01',
@@ -3281,7 +3286,7 @@ export const fabric =[
         img:'/fabric_image/SUMI SAFFRON.jpg',
     },
     {
-        id: 244,
+        id: 242,
         name: 'Mosaic Midnight',
         color: '',
         patternNumber: '01',
@@ -3294,7 +3299,7 @@ export const fabric =[
         img:'/fabric_image/MOSAIC MIDNIGHT.jpg',
     },
     {
-        id: 245,
+        id: 243,
         name: 'Mosaic Graphite',
         color: '',
         patternNumber: '01',
@@ -3307,7 +3312,7 @@ export const fabric =[
         img:'/fabric_image/MOSAIC GRAPHITE.jpg',
     },
     {
-        id: 246,
+        id: 244,
         name: 'Mosaic Putty',
         color: '',
         patternNumber: '01',
@@ -3320,7 +3325,7 @@ export const fabric =[
         img:'/fabric_image/MOSAIC PUTTY.jpg',
     },
     {
-        id: 247,
+        id: 245,
         name: 'Galerie Lagoon',
         color: '',
         patternNumber: '01',
@@ -3333,7 +3338,7 @@ export const fabric =[
         img:'/fabric_image/GALERIE LAGOON.jpg',
     },
     {
-        id: 248,
+        id: 246,
         name: 'Galerie Marine',
         color: '',
         patternNumber: '01',
@@ -3346,7 +3351,7 @@ export const fabric =[
         img:'/fabric_image/GALERIE MARINE.jpg',
     },
     {
-        id: 248,
+        id: 247,
         name: 'Galerie Pearl',
         color: '',
         patternNumber: '01',
@@ -3359,7 +3364,7 @@ export const fabric =[
         img:'/fabric_image/GALERIE PEARL.jpg',
     },
     {
-        id: 249,
+        id: 248,
         name: 'Chantilly Stone',
         color: '',
         patternNumber: '01',
@@ -3372,7 +3377,7 @@ export const fabric =[
         img:'/fabric_image/CHANTILLY STONE.jpg',
     },
     {
-        id: 250,
+        id: 249,
         name: 'Chantilly Wedgewood',
         color: '',
         patternNumber: '01',
@@ -3385,7 +3390,7 @@ export const fabric =[
         img:'/fabric_image/CHANTILLY WEDGEWOOD.jpg',
     },
     {
-        id: 251,
+        id: 250,
         name: 'Bougainvillea Fuchsia',
         color: '',
         patternNumber: '01',
@@ -3398,7 +3403,7 @@ export const fabric =[
         img:'/fabric_image/BOUGAINVILLEA FUCHSIA.jpg',
     },
     {
-        id: 252,
+        id: 251,
         name: 'Bougainvillea Paprika',
         color: '',
         patternNumber: '01',
@@ -3450,7 +3455,7 @@ export const fabric =[
     //     img:'/fabric_image/',
     // },
         {
-        id: 256,
+        id: 252,
         name: 'Tiffany Autumn',
         color: '',
         patternNumber: '01',
@@ -3463,7 +3468,7 @@ export const fabric =[
         img:'/fabric_image/TIFFANY AUTUMN.jpg',
     },
     {
-        id: 257,
+        id: 253,
         name: 'Tiffany Jewel',
         color: '',
         patternNumber: '01',
@@ -3476,7 +3481,7 @@ export const fabric =[
         img:'/fabric_image/TIFFANY JEWEL.jpg',
     },
     {
-        id: 258,
+        id: 254,
         name: 'Tiffany Mulberry',
         color: '',
         patternNumber: '01',
@@ -3489,7 +3494,7 @@ export const fabric =[
         img:'/fabric_image/TIFFANY MULBERRY.jpg',
     },
     {
-        id: 259,
+        id: 255,
         name: 'Tiffany Prussian',
         color: '',
         patternNumber: '01',
@@ -3502,7 +3507,7 @@ export const fabric =[
         img:'/fabric_image/TIFFANY PRUSSIAN.jpg',
     },
     {
-        id: 260,
+        id: 256,
         name: 'Tiffany Sand',
         color: '',
         patternNumber: '01',
@@ -3515,7 +3520,7 @@ export const fabric =[
         img:'/fabric_image/TIFFANY SAND.jpg',
     },
     {
-        id: 261,
+        id: 257,
         name: 'Whitewell Flint',
         color: '',
         patternNumber: '01',
@@ -3528,7 +3533,7 @@ export const fabric =[
         img:'/fabric_image/WHITWELL FLINT.jpg',
     },
     {
-        id: 262,
+        id: 258,
         name: 'Whitewell Linen',
         color: '',
         patternNumber: '01',
@@ -3541,7 +3546,7 @@ export const fabric =[
         img:'/fabric_image/WHITWELL LINEN.jpg',
     },
     {
-        id: 263,
+        id: 259,
         name: 'Whitewell Verdigris',
         color: '',
         patternNumber: '01',
@@ -3554,7 +3559,7 @@ export const fabric =[
         img:'/fabric_image/WHITWELL VERDIGRIS.jpg',
     },
     {
-        id: 264,
+        id: 260,
         name: 'Cottage Garden Cornsilk',
         color: '',
         patternNumber: '01',
@@ -3567,7 +3572,7 @@ export const fabric =[
         img:'/fabric_image/COTTAGE GARDEN CORNSILK.jpg',
     },
     {
-        id: 265,
+        id: 261,
         name: 'Cottage Garden Rosella',
         color: '',
         patternNumber: '01',
@@ -3580,7 +3585,7 @@ export const fabric =[
         img:'/fabric_image/COTTAGE GARDEN ROSELLA.jpg',
     },
     {
-        id: 267,
+        id: 262,
         name: 'Monseratt Lagoon',
         color: '',
         patternNumber: '01',
@@ -3593,7 +3598,7 @@ export const fabric =[
         img:'/fabric_image/MONTSERRAT LAGOON.jpg',
     },
     {
-        id: 268,
+        id: 263,
         name: 'Ophelia Glacier',
         color: '',
         patternNumber: '01',
@@ -3606,7 +3611,7 @@ export const fabric =[
         img:'/fabric_image/OPHELIA GLACIER.jpg',
     },
     {
-        id: 269,
+        id: 264,
         name: 'Ophelia Henna',
         color: '',
         patternNumber: '01',
@@ -3619,7 +3624,7 @@ export const fabric =[
         img:'/fabric_image/OPHELIA HENNA.jpg',
     },
     {
-        id: 270,
+        id: 265,
         name: 'Ophelia Thyme',
         color: '',
         patternNumber: '01',
@@ -3632,7 +3637,7 @@ export const fabric =[
         img:'/fabric_image/OPHELIA THYME.jpg',
     },
     {
-        id: 271,
+        id: 266,
         name: 'Camille Cloud',
         color: '',
         patternNumber: '01',
@@ -3645,7 +3650,7 @@ export const fabric =[
         img:'/fabric_image/CAMILLE CLOUD.jpg',
     },
     {
-        id: 272,
+        id: 267,
         name: 'Camille Stone',
         color: '',
         patternNumber: '01',

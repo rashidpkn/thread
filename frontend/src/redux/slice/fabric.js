@@ -6,17 +6,17 @@ import { priceList1, priceList10, priceList11, priceList12, priceList13, priceLi
 
 const initialState = {
     fabricType: {
-        id: 1,
-        name: 'Azurite Black',
-        color: '#333333',
-        patternNumber: '00',
+        id: 93,
+        name: 'Acanthium Autumn',
+        color: '',
+        patternNumber: '01',
         fabricInitialPrice: 0,
-        group: 'C',
-        fabricPath: 'plains/Azurite_Black.jpg',
-        magnifyFabricPath: 'magnify/Azurite_Black.jpg',
-        magnifyWavyFabricPath: 'magnify/azurite_black_2.jpg',
+        group: 'B',
+        fabricPath: 'patterns/Acanthium_Autumn.jpg',
+        magnifyFabricPath: 'magnify/acanthium_autumn_1.jpg',
+        magnifyWavyFabricPath: 'magnify/acanthium_autumn_2.jpg',
         wavy: true,
-        img:'magnify/Azurite_Black.jpg',
+        img: '/fabric_image/ACANTHIUM AUTUMN.jpg'
     },
     wallColor: 'fff',
     measure: {
@@ -58,13 +58,13 @@ const fabric = createSlice({
                 state.measure.roomName = ''
             }
         },
-        
+
         setItem(state, { payload }) { state.measure.item = payload },
         setInstallation(state, { payload }) { state.measure.installation = payload },
         setPanel(state, { payload }) { state.style.panel = payload },
         setLook(state, { payload }) {
             state.style.look = payload
-            
+
 
 
         },
@@ -76,10 +76,10 @@ const fabric = createSlice({
         setPole(state, { payload }) { state.feature.poleAndTrack = payload },
         setGlide(state, { payload }) { state.feature.accessories.glide = payload },
         setCorded(state, { payload }) { state.feature.accessories.corded = payload },
-        setPrice(state,action){
+        setPrice(state, action) {
 
             const { width, height } = state.measure
-            const {look} = state.style
+            const { look } = state.style
             let widthIndex = 0
             let heightIndex = 0
             let Width = [0, 135, 205, 275, 342, 411, 480, 548]
