@@ -59,7 +59,7 @@ function Navbar() {
               }
 
             }}>Curtain Style</li>
-            <li className='cursor-pointer hover:underline underline-offset-1'><Link to={'/order-samples'}> Order Sample </Link></li>
+            <li className='cursor-pointer hover:underline underline-offset-1'><Link to={'/order-samples'}> Order Samples </Link></li>
             <li className='cursor-pointer hover:underline underline-offset-1'><Link to={'/about-us'}> About Us </Link></li>
             <li className='cursor-pointer hover:underline underline-offset-1'><Link to={'/contact-us'}> Contact Us </Link></li>
           </ul>
