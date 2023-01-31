@@ -39,7 +39,7 @@ function Navbar() {
             <img src="/image/common/logo.svg" width={100} alt="" />
           </a>
 
-          <ul className='flex justify-center items-center gap-10 h-full'>
+          <ul className='flex justify-center items-center gap-20 h-full font-medium'>
 
             <li className='cursor-pointer' onClick={() => {
               if (showShop) {
