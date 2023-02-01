@@ -6,14 +6,12 @@ import Cart from '../asset/icon/Cart'
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false)
-  const [showCurtains, setShowCurtains] = useState(false)
-  const [showShop, setShowShop] = useState(false)
-  const [showAccount, setShowAccount] = useState(false)
 
+  const [showAccount, setShowAccount] = useState(false)
 
   return (
     <>
-      <div className="sticky top-0 z-10">
+      <div className="sticky top-0 z-20">
         <div className="hidden lg:flex h-9 bg-[#2b2b2b]  justify-between items-center text-white px-5 font-inter relative">
           <h1>Make a free appointment</h1>
 
@@ -43,31 +41,24 @@ function Navbar() {
             <ul className='flex justify-center items-center gap-12  h-full font-inter'>
 
 
-              <li className='cursor-pointer hover:underline underline-offset-1' onClick={() => {
-                if (showShop) {
-                  setShowShop(false)
-                } else {
-                  setShowShop(true)
-                  setShowCurtains(false)
-                }
 
-              }}>Shop Now</li>
-              <li className='cursor-pointer hover:underline underline-offset-1' onClick={() => {
-                if (showCurtains) {
-                  setShowCurtains(false)
-                } else {
-                  setShowShop(false)
-                  setShowCurtains(true)
-                }
-
-              }}>Curtain Style</li>
-              <li className='cursor-pointer hover:underline underline-offset-1'><Link to={'/order-samples'}> Order Samples </Link></li>
-              <li className='cursor-pointer hover:underline underline-offset-1'><Link to={'/about-us'}> About Us </Link></li>
-              <li className='cursor-pointer hover:underline underline-offset-1'><Link to={'/contact-us'}> Contact Us </Link></li>
-              
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
-                <Link to={'/test'}>Test</Link>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[500px] overflow-hidden duration-500 w-full bg-white px-[10%]">
+                <Link to={'/productBuilder'}>Shop Now</Link>
+                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%]">
+                  <div className={` flex flex-col gap-5`}>
+                    <h1>Shop Our Curtains</h1>
+                    <p>Our curtains are made to measure at the highest quality specification.</p>
+                  </div>
+                  <div className={`flex justify-center gap-5 items-center h-full w-full pb-5`}>
+                    <Curtain path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
+                    <Curtain path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'/image/common/nav2.jpg'} />
+                  </div>
+                </div>
+              </li>
+
+              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
+                <Link to={'/curtains'}>Curtain Style</Link>
+                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white px-[10%]">
                   <div className={` flex flex-col gap-5`}>
                     <h1>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
@@ -83,42 +74,15 @@ function Navbar() {
                 </div>
               </li>
 
+              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link to={'/order-samples'}> Order Samples </Link></li>
+              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link to={'/about-us'}> About Us </Link></li>
+              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link to={'/contact-us'}> Contact Us </Link></li>
             </ul>
             <Link to={'/cart'}>
               <Cart />
             </Link>
           </nav>
         </div>
-        <div className={`${showCurtains ? 'h-[500px] px-[10%] py-2 hidden lg:inline-block' : 'h-0'} hidden lg:block duration-200 w-full  bg-white/50  `}>
-          <div className={` ${showCurtains ? 'flex flex-col' : 'hidden'}  gap-5`}>
-            <h1>Shop Our Curtains</h1>
-            <p>Our curtains are made to measure at the highest quality specification.</p>
-          </div>
-          <div className={` ${showCurtains ? 'hidden lg:flex' : 'hidden'} justify-center gap-5 items-center h-full w-full`}>
-            <Curtain path={'/PencilPleatCurtains'} title={'Pencil Pleat Curtains'} backgroundImage={'/image/common/nav1.jpg'} />
-            <Curtain path={'/EyeletCurtains'} title={'Eyelet Curtains'} backgroundImage={'/image/common/nav2.jpg'} />
-            <Curtain path={'/Goblet'} title={'Goblet Curtains'} backgroundImage={'/image/common/nav3.jpg'} />
-            <Curtain path={'/DoublePleatCurtains'} title={'Double Pleat Curtains'} backgroundImage={'/image/common/nav5.png'} />
-            <Curtain path={'/TriplePleatCurtains'} title={'Trible Pleat Curtains'} backgroundImage={'/image/common/nav4.png'} />
-            <Curtain path={'/curtains'} title={'Shop All Curtains'} />
-          </div>
-        </div>
-
-        <div className={`${showShop ? 'h-[500px] px-[10%] py-2 hidden lg:inline-block' : 'h-0'} hidden lg:block duration-200 w-full  bg-white/50  `}>
-          <div className={` ${showShop ? 'flex flex-col' : 'hidden'}  gap-5`}>
-            <h1>Shop Our Curtains</h1>
-            <p>Our curtains are made to measure at the highest quality specification.</p>
-          </div>
-          <div className={` ${showShop ? 'hidden lg:flex' : 'hidden'} justify-center gap-5 items-center h-full w-full`}>
-
-            <Curtain path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
-            <Curtain path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'/image/common/nav2.jpg'} />
-
-
-          </div>
-        </div>
-
-
 
         <nav className='h-20 w-full flex lg:hidden justify-between items-center px-5'>
           <MenuOutlined className='cursor-pointer' onClick={() => setShowMenu(!showMenu)} />
@@ -152,7 +116,7 @@ const Curtain = ({ backgroundImage, title, path }) => {
   const navigate = useNavigate()
   return (
 
-    <div onClick={() => { navigate(path) }} className="h-[80%] w-[200px] relative rounded-xl duration-200" style={{ background: backgroundImage ? `url(${backgroundImage})` : '#7285a5' }} onMouseEnter={() => setZoom(true)} onMouseLeave={() => setZoom(false)}>
+    <div onClick={() => { navigate(path) }} className="group-hover:h-[400px] w-[200px] relative rounded-xl duration-200" style={{ background: backgroundImage ? `url(${backgroundImage})` : '#7285a5' }} onMouseEnter={() => setZoom(true)} onMouseLeave={() => setZoom(false)}>
       <div className="absolute bottom-0 right-0">
         <PlusSVG zoom={zoom} />
       </div>
@@ -162,10 +126,6 @@ const Curtain = ({ backgroundImage, title, path }) => {
 
   )
 }
-
-
-
-
 
 const PlusSVG = ({ zoom }) => <svg
   className="corner duration-200"

@@ -1,5 +1,5 @@
 import React from 'react'
-import Cart from '../asset/icon/Cart'
+// import Cart from '../asset/icon/Cart'
 
 import Footer from '../common/Footer'
 import Navbar from '../common/Navbar'

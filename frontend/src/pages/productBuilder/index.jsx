@@ -17,17 +17,19 @@ function ProductBuilder() {
   // const {fabricPath,magnifyFabricPath,magnifyWavyFabricPath} = useSelector(state=>state.fabric.fabricType)
   const [show, setShow] = useState(true)
   return (
-    <div className="font-inter w-full overflow-x-hidden" onClick={()=>{setShow(false)}}>
-        <Navbar />
+    <>
+      <Navbar />
+      <div className="font-inter w-full overflow-x-hidden" onClick={() => { setShow(false) }}>
         <div className="w-full flex  flex-col lg:flex-row justify-center lg:h-[calc(100vh-148px)] bg-[#F2F5F7] lg:bg-[#1E1E1E] lg:p-12">
-          <View show={show}/>
-          <MobileMenu/>
+          <View show={show} />
+          <MobileMenu />
           <DesktopMenu />
         </div>
         <MobileMenuSelector />
-        
-        <Footer/>
-    </div>
+
+      </div>
+      <Footer />
+    </>
   )
 }
 
