@@ -40,8 +40,6 @@ function Navbar() {
 
             <ul className='flex justify-center items-center gap-12  h-full font-inter'>
 
-
-
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/productBuilder'}>Shop Now</Link>
                 <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%]">
