@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import Navbar from '../common/Navbar'
 // import google from '../asset/icon/google.png'
 import GoogleLogin from 'react-google-login'
+
+
 import { useDispatch, useSelector } from 'react-redux'
 import { setEmail, setFname, setLoginStatus, setPassword } from '../../redux/slice/user'
 import axios from 'axios'
@@ -13,11 +15,10 @@ function Login() {
     const dispatch = useDispatch()
     const {email,password} = useSelector(state=>state.user)
 
-
     const {savedChange} = useSelector(state=>state.util.estimate)
 
     const onSuccess = (res) => {
-        console.log('success:', res);
+        
         dispatch(setLoginStatus(true))
 
         if(savedChange===true){
@@ -26,7 +27,6 @@ function Login() {
         }else{
             navigate('/cart')
         }
-        // console.log(res.profileObj)
         dispatch(setEmail(res.profileObj.email))
       };
       const onFailure = (err) => {
@@ -85,6 +85,7 @@ function Login() {
           buttonText="Sign in with Google"
           onSuccess={onSuccess}
           onFailure={onFailure}
+          
           cookiePolicy={'single_host_origin'}
           isSignedIn={true}
           

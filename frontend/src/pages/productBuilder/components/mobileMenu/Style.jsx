@@ -28,6 +28,7 @@ function Style() {
         return () => {
             dispatch(setShow3D(false))
         }
+        // eslint-disable-next-line
     }, [])
 
     const dispatch = useDispatch()
@@ -54,27 +55,32 @@ function Style() {
                 <div onClick={() => { dispatch(setLook('Double')); dispatch(setPrice()); }} className={`w-16 h-16 rounded-md flex justify-center items-center relative`} >
                     <img className='w-full' src={look === 'Double' ? Double : dDouble} alt="" />
                     <p className='absolute -bottom-6 text-center'>Double</p>
-                    <InfoOutlined onClick={() => dispatch(setShow3D(true))} fontSize='small' className='absolute top-1 right-1 bg-blue-500 text-white rounded-full' aria-label="Let's try out 3D" titleAccess="Let's try out 3D" />
+                    <InfoOutlined onClick={() => dispatch(setShow3D(true))} fontSize='small' className='peer absolute top-1 right-1 bg-blue-500 text-white rounded-full' />
+                    <p className='hidden peer-hover:block absolute -top-5 -right-24 bg-slate-200'>Let's try out 3D</p>
                 </div>
                 <div onClick={() => { dispatch(setLook('Eyelet')); dispatch(setPrice()); }} className={`w-16 h-16 rounded-md flex justify-center items-center relative`} >
                     <img className='w-full' src={look === 'Eyelet' ? Eyelet : dEyelet} alt="" />
                     <p className='absolute -bottom-6 text-center'>Eyelet</p>
-                    <InfoOutlined onClick={() => dispatch(setShow3D(true))} fontSize='small' className='absolute top-1 right-1 bg-blue-500 text-white rounded-full' aria-label="Let's try out 3D" titleAccess="Let's try out 3D" />
+                    <InfoOutlined onClick={() => dispatch(setShow3D(true))} fontSize='small' className='peer absolute top-1 right-1 bg-blue-500 text-white rounded-full' />
+                    <p className='hidden peer-hover:block absolute -top-5 -right-24 bg-slate-200'>Let's try out 3D</p>
                 </div>
                 <div onClick={() => { dispatch(setLook('Pencil')); dispatch(setPrice()); }} className={`w-16 h-16 rounded-md flex justify-center items-center relative`} >
                     <img className='w-full' src={look === 'Pencil' ? Pencil : dPencil} alt="" />
                     <p className='absolute -bottom-6 text-center'>Pencil</p>
-                    <InfoOutlined onClick={() => dispatch(setShow3D(true))} fontSize='small' className='absolute top-1 right-1 bg-blue-500 text-white rounded-full' aria-label="Let's try out 3D" titleAccess="Let's try out 3D" />
+                    <InfoOutlined onClick={() => dispatch(setShow3D(true))} fontSize='small' className='peer absolute top-1 right-1 bg-blue-500 text-white rounded-full' />
+                    <p className='hidden peer-hover:block absolute -top-5 -right-24 bg-slate-200'>Let's try out 3D</p>
                 </div>
                 <div onClick={() => { dispatch(setLook('Goblet')); dispatch(setPrice()); }} className={`w-16 h-16 rounded-md flex justify-center items-center relative`} >
                     <img className='w-full' src={look === 'Goblet' ? Goblet : dGoblet} alt="" />
                     <p className='absolute -bottom-6 text-center'>Goblet</p>
-                    <InfoOutlined onClick={() => dispatch(setShow3D(true))} fontSize='small' className='absolute top-1 right-1 bg-blue-500 text-white rounded-full' aria-label="Let's try out 3D" titleAccess="Let's try out 3D" />
+                    <InfoOutlined onClick={() => dispatch(setShow3D(true))} fontSize='small' className='peer absolute top-1 right-1 bg-blue-500 text-white rounded-full' />
+                    <p className='hidden peer-hover:block absolute -top-5 -right-24 bg-slate-200'>Let's try out 3D</p>
                 </div>
                 <div onClick={() => { dispatch(setLook('Triple')); dispatch(setPrice()); }} className={`w-16 h-16 rounded-md flex justify-center items-center relative`} >
                     <img className='w-full' src={look === 'Triple' ? Triple : dTriple} alt="" />
                     <p className='absolute -bottom-6 text-center'>Triple</p>
-                    <InfoOutlined onClick={() => dispatch(setShow3D(true))} fontSize='small' className='absolute top-1 right-1 bg-blue-500 text-white rounded-full' aria-label="Let's try out 3D" titleAccess="Let's try out 3D" />
+                    <InfoOutlined onClick={() => dispatch(setShow3D(true))} fontSize='small' className='peer absolute top-1 right-1 bg-blue-500 text-white rounded-full' />
+                    <p className='hidden peer-hover:block absolute -top-5 -right-24 bg-slate-200'>Let's try out 3D</p>
                 </div>
             </div>
             <div className="absolute w-full bottom-2 flex justify-between px-3 items-center">

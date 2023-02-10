@@ -1,0 +1,9 @@
+import React from 'react'
+
+function RollerBlinds() {
+  return (
+    <svg className='w-[60px]' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><rect width="24.897" height="26.786" x="3.694" y="3.581" fill="#F4EFEC" stroke="#232323" strokeWidth=".6"></rect><rect width="11.333" height="24" x="16.572" y="5.333" fill="#F4EFEC"></rect><rect width="10.732" height="24.897" x="16.914" y="4.525" stroke="#232323" strokeWidth=".6"></rect><path stroke="#232323" strokeWidth=".7" d="M16.614 5.17h10.388v23.608"></path><path stroke="#232323" strokeWidth=".6" d="M16.614 28.778h10.388"></path><rect width="11.333" height="24" x="4.572" y="5.333" fill="#F4EFEC"></rect><path stroke="#232323" strokeLinecap="round" strokeWidth=".7" d="m4.601 4.533.68.637"></path><path stroke="#232323" strokeWidth=".7" d="M15.67 5.17H5.282v23.608"></path><path stroke="#232323" strokeLinecap="round" strokeWidth=".6" d="m5.282 28.778-.708.708"></path><path stroke="#232323" strokeWidth=".6" d="M5.282 28.778H15.67"></path><rect width="10.732" height="24.897" x="4.638" y="4.525" stroke="#232323" strokeWidth=".6"></rect><path stroke="#232323" strokeLinecap="round" strokeWidth=".7" d="m27.736 4.458-.734.711"></path><path stroke="#232323" strokeLinecap="round" strokeWidth=".6" d="m27.002 28.778.735.708"></path><rect width="28.566" height="13.634" x="1.965" y="1.983" fill="#F4EFEC" stroke="#232323" strokeWidth=".4" rx="1"></rect><path fill="#F4EFEC" stroke="#232323" strokeWidth=".4" d="M1.516 2.333a.8.8 0 0 1 .8-.8H30.18a.8.8 0 0 1 .8.8v.597a.8.8 0 0 1-.8.8H2.316a.8.8 0 0 1-.8-.8v-.597Z"></path><rect width="1.298" height="2.597" x=".667" y="1.333" fill="#232323"></rect><rect width="1.298" height="2.597" x="30.531" y="1.333" fill="#232323"></rect></svg>
+  )
+}
+
+export default RollerBlinds

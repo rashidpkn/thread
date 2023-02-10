@@ -22,6 +22,7 @@ import Goblet from './pages/Curtains/pages/goblet'
 import TriplePleat from './pages/Curtains/pages/triplePleat'
 import Contact from './pages/ContactUs'
 import Samples from './pages/samples'
+import SampleCheckout from './pages/Sample checkout'
 
 
 const clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
@@ -64,6 +65,7 @@ function App() {
         <Route path="/Goblet" element={<Goblet />} />
 
         <Route path='/order-samples' element={<Samples/>} />
+        <Route path='/samples-checkout' element={<SampleCheckout/>} />
 
 
       {/* static Pages */}
