@@ -218,7 +218,7 @@ const Curtain = ({ backgroundImage, title, path, submenu }) => {
 
     <div onClick={() => { navigate(path) }} className={`group-hover:h-[360px] w-1/${submenu} relative rounded-xl duration-200 overflow-hidden`} style={{ background: !backgroundImage && '#7285a5' }} onMouseEnter={() => setZoom(true)} onMouseLeave={() => setZoom(false)}>
       {
-        backgroundImage && <img src={backgroundImage} className='w-full h-[360px] ' alt='' />
+        backgroundImage && <img src={backgroundImage} className='w-full h-[360px] object-cover' alt='' />
       }
       <div className="absolute bottom-0 right-0">
         <PlusSVG zoom={zoom} />

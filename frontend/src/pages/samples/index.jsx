@@ -2,7 +2,7 @@ import { Delete } from '@mui/icons-material'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { setCart } from '../../redux/slice/sample'
 // import Cart from '../asset/icon/Cart'
 
@@ -12,6 +12,7 @@ import { fabric } from '../productBuilder/components/mobileMenu/Fabrics/Custom'
 
 function Samples() {
     const dispatch = useDispatch()
+    const {loginStatus} = useSelector(state=>state.user)
     const { cart } = useSelector(state => state.sample)
     const navigate = useNavigate()
     const [showFilters, setShowFilters] = useState({
@@ -78,7 +79,7 @@ function Samples() {
                                     [...Array(10 - cart.length)].map(e => <div className="w-14 h-14 border border-black flex justify-center items-center text-3xl font-light">+</div>)
                                 }
                             </div>
-                            <button className='h-14 w-full bg-black text-white' >Log in to see my Samples</button>
+                             {loginStatus && <Link to={'/login'}> <button className='h-14 w-full bg-black text-white' >Log in to see my Samples</button> </Link>}
                             <button className='h-14 w-full bg-black text-white' onClick={()=>{
                                 if(cart.length){
                                     navigate('/samples-checkout')
