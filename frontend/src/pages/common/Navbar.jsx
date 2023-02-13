@@ -62,7 +62,7 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/productBuilder'}>Shop Now</Link>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%]">
+                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-200 w-full bg-white  px-[10%]">
                   <div className={` flex flex-col gap-5`}>
                     <h1>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
@@ -76,7 +76,7 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/curtains'}>Curtain Style</Link>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white px-[10%]">
+                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-200 w-full bg-white px-[10%]">
                   <div className={` flex flex-col gap-5`}>
                     <h1>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
