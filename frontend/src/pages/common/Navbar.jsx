@@ -63,7 +63,7 @@ function Navbar() {
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/productBuilder'}>Shop Now</Link>
                 <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%]">
-                  <div className={` flex flex-col gap-5`}>
+                  <div className={`hidden group-hover:flex flex-col gap-5`}>
                     <h1>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
@@ -77,7 +77,7 @@ function Navbar() {
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/curtains'}>Curtain Style</Link>
                 <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white px-[10%]">
-                  <div className={` flex flex-col gap-5`}>
+                  <div className={` hidden group-hover:flex flex-col gap-5`}>
                     <h1>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
@@ -168,7 +168,7 @@ function Navbar() {
           </nav>
         </div>
 
-        <nav className='h-20 w-full flex lg:hidden justify-between items-center px-5'>
+        <nav className='h-20 w-full flex lg:hidden justify-between items-center px-5 bg-white'>
           <MenuOutlined className='cursor-pointer' onClick={() => setShowMenu(!showMenu)} />
           <a href="https://my-thread.co.uk">
             <img src="/image/common/logo.svg" width={100} alt="" />
@@ -182,9 +182,13 @@ function Navbar() {
         {
           showMenu && <ul className="flex lg:hidden flex-col w-full p-2 gap-3 ">
             <li className='cursor-pointer'><Link to={'/productBuilder'}> Shop Now </Link></li>
-            <li className='cursor-pointer'>Order Samples</li>
+            <li className='cursor-pointer'><Link to={'/order-samples'}>Order Samples</Link></li>
             <li className='cursor-pointer'><Link to={'/about-us'}> About Us </Link></li>
             <li className='cursor-pointer'><Link to={'/contact-us'}> Contact Us </Link></li>
+            {
+              cart.length !== 0 && <li> <Link to={'/samples-checkout'}>Your Sample <p className='inline-flex justify-center items-center h-6 w-6 rounded-full bg-[#CD6600] text-white'>{cart.length}</p></Link></li>
+            }
+            
           </ul>
         }
       </div>

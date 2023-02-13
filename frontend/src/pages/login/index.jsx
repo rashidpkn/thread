@@ -39,7 +39,7 @@ function Login() {
         <div className="">
             <Navbar/>   
             <div className={`px-[10%] mt-36 mb-24`}>
-                <h1 className='text-center text-4xl font-semibold'>Sign up or enter your account details below to receive your quotation by email</h1>
+                <h1 className='text-center text-xl md:text-4xl font-semibold'>Sign up or enter your account details below to receive your quotation by email</h1>
 
                 <form className='w-full md:w-[500px] mx-auto   border-[#BABCBB] mt-5 space-y-5' onSubmit={e => { 
                     e.preventDefault();
@@ -73,13 +73,13 @@ function Login() {
                             <input value={password} onChange={e=>dispatch(setPassword(e.target.value))}  required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='password' type="password" />
                         </div>
                     </div>
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between items-center flex-wrap gap-5">
                         <p className='text-lg font-light text-[#03A1FA]'>Forgot Password ?</p>
                         <p className='text-lg font-light text-[#03A1FA]'><Link to={'/signup'}> Sign Up </Link></p>
                         <button type="submit" className='h-12 w-28 bg-[#B68D40] rounded-md  text-white'>Login</button>
                     </div>
                 </form>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center mt-5">
                 <GoogleLogin
           clientId={clientId}
           buttonText="Sign in with Google"

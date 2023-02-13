@@ -43,7 +43,7 @@ function SignUp() {
   return (
     <div className="">
       <Navbar />
-      <div className="flex justify-center items-center mt-10">
+      <div className="flex justify-center items-center mt-10 p-[5%]">
         <form onSubmit={e => { 
           e.preventDefault();
           axios.post(`${backendIP}/user/signup`,{fname, lname, phone, state, address, email, zipCode, password}).then(res=>{
