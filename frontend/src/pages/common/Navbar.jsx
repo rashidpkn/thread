@@ -68,8 +68,8 @@ function Navbar() {
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
                   <div className={`flex justify-center gap-5 items-center h-full w-full pb-5`}>
-                    <Curtain submenu={3} path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
-                    <Curtain submenu={3} path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'https://www.vistafashions.com/main/images/gallery/roman-blinds/roman-blinds08.jpg'} />
+                    <Curtain submenu={2} path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
+                    <Curtain submenu={2} path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'https://www.vistafashions.com/main/images/gallery/roman-blinds/roman-blinds08.jpg'} />
                   </div>
                 </div>
               </li>
