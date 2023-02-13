@@ -9,16 +9,7 @@
     <title>London Curtains | Luxury Curtains | London Blinds </title>
     <meta name="description"
         content="Curtains are a cardinal element in any decor which can be your home or workplace. Here's a synopsis of perfect window treatments by London Curtains!" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              
-            }
-          }
-        }
-      </script>
+
     <style media="screen">
         html {
             -webkit-box-sizing: border-box;
@@ -1661,7 +1652,6 @@
             }
         }
 
-        .mobile-footer-icon {}
 
         .circle-icon {
             position: absolute;
@@ -1802,6 +1792,667 @@
         .sec-nav:hover {
             color: #febf7a;
         }
+
+
+
+
+
+
+
+
+        /* ! tailwindcss v3.2.6 | MIT License | https://tailwindcss.com */
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-\[110px\] {
+  top: 110px;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-\[10rem\] {
+  height: 10rem;
+}
+
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[60px\] {
+  width: 60px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.px-\[10\%\] {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.hover\:bg-\[\#D7C7BE\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 199 190 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:h-\[550px\] {
+  height: 550px;
+}
+
+.group:hover .group-hover\:pt-\[5\%\] {
+  padding-top: 5%;
+}
+
+
+
+
+
+
+
     </style>
 
 
@@ -1828,7 +2479,7 @@
                         d="M15.8122222,25.2777778 C14.4315103,25.2777778 13.3122222,24.1584897 13.3122222,22.7777778 C13.3122222,21.3970659 14.4315103,20.2777778 15.8122222,20.2777778 C17.1929341,20.2777778 18.3122222,21.3970659 18.3122222,22.7777778 C18.3122222,24.1584897 17.1929341,25.2777778 15.8122222,25.2777778 Z M4.70111111,25.2777778 C3.32039924,25.2777778 2.20111111,24.1584897 2.20111111,22.7777778 C2.20111111,21.3970659 3.32039924,20.2777778 4.70111111,20.2777778 C6.08182299,20.2777778 7.20111111,21.3970659 7.20111111,22.7777778 C7.20111111,24.1584897 6.08182299,25.2777778 4.70111111,25.2777778 Z M24.6133629,-9.59232693e-14 C25.3791814,-9.59232693e-14 26,0.621826736 26,1.38888889 C26,2.15595104 25.3791814,2.77777778 24.6133629,2.77777778 L22.1873027,2.77777778 C22.0484471,2.77774159 21.9311481,2.88096115 21.9133032,3.01888889 L19.9520437,17.7566667 C19.8198776,18.7214097 18.9984814,19.4412985 18.0262821,19.4444444 L1.38663714,19.4444444 C0.891239411,19.4444444 0.433473023,19.1797237 0.185774153,18.75 C-0.0619247176,18.3202763 -0.0619247176,17.7908348 0.185774153,17.3611111 C0.433473023,16.9313874 0.891239411,16.6666666 1.38663714,16.6666667 L17.0511989,16.6666667 C17.1901105,16.666286 17.3074915,16.5634108 17.3263077,16.4255556 L19.2920045,1.68777778 C19.4232069,0.722963755 20.2445164,0.00273595531 21.2166567,-9.59232693e-14 L24.6133629,-9.59232693e-14 Z">
                     </path>
                 </svg>
-                <span class="my-cart__total">0</span>
+                <!-- <span class="my-cart__total">0</span> -->
             </a>
             <a class="earphone" href="tel:0203 633 8622">
                 <span class="glyphicon glyphicon-earphone"></span>
@@ -2103,13 +2754,16 @@
                             </li>
 
 
+
+
+
+
                             <li class="nav-item__value-buys group">
                                 <a style="color: #B68D40;" href="/order-samples">
                                     Order Samples</a>
                                 <div class="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white"
                                     style="background-image: url(&quot;https://res.cloudinary.com/madebystitched/image/upload/w_1700/Carmen/IMG_3174.jpg&quot;);">
                                     <h2 class="text-4xl  font-medium">Curtain + Blind Fabric Samples
-
                                     </h2>
                                     <p class="text-sm ">Take your pick from our large selection of eco-friendly fabrics
                                         all available in a range of classic <br>heading and lining styles, including
@@ -2120,7 +2774,6 @@
                                         <div
                                             class="h-[10rem] w-[10rem] border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-5">
                                             <p class="text-center">ALL FABRICS
-
                                             </p>
                                         </div>
                                         <div
@@ -2128,58 +2781,44 @@
                                             <svg class="w-[60px]" xmlns="http://www.w3.org/2000/svg" fill="none"
                                                 viewBox="0 0 32 32">
                                                 <rect width="27.191" height=".554" x="2.735" y="2.369" fill="#232323">
-
                                                 </rect>
                                                 <ellipse cx="2.628" cy="2.632" fill="#232323" rx=".628" ry=".632">
-
                                                 </ellipse>
                                                 <ellipse cx="29.372" cy="2.632" fill="#232323" rx=".628" ry=".632">
-
                                                 </ellipse>
                                                 <rect width="20.173" height="19.04" x="5.863" y="4.427" fill="#F4EFEC"
                                                     stroke="#232323" stroke-width=".6">
-
                                                 </rect>
                                                 <rect width="8" height="17.333" x="16.572" y="5.333" fill="#F4EFEC">
-
                                                 </rect>
                                                 <rect width="8.067" height="16.733" x="16.967" y="5.633"
                                                     stroke="#232323" stroke-width=".6">
-
                                                 </rect>
                                                 <rect width="8" height="17.333" x="7.239" y="5.333" fill="#F4EFEC">
-
                                                 </rect>
                                                 <path stroke="#232323" stroke-linecap="round" stroke-width=".7"
                                                     d="m6.547 5.025.555.456m.001 16.932-.578.508">
-
                                                 </path>
                                                 <rect width="8.733" height="16.733" x="6.3" y="5.633" stroke="#232323"
                                                     stroke-width=".6">
-
                                                 </rect>
                                                 <path stroke="#232323" stroke-linecap="round" stroke-width=".7"
                                                     d="m25.395 4.971-.599.51m0 16.932.6.508">
-
                                                 </path>
                                                 <path fill="#232323" fill-rule="evenodd"
                                                     d="M8.44 30.667H4.251c-.135 0-.245-.172-.245-.384V1.717c0-.212.11-.384.245-.384h4.19c.135 0 .245.172.245.384v28.566c0 .212-.11.384-.246.384Z"
                                                     clip-rule="evenodd">
-
                                                 </path>
                                                 <path stroke="#232323" stroke-width=".5"
                                                     d="M8.44 30.667H4.251c-.135 0-.245-.172-.245-.384V1.717c0-.212.11-.384.245-.384h4.19c.135 0 .245.172.245.384v28.566c0 .212-.11.384-.246.384">
-
                                                 </path>
                                                 <path fill="#232323" fill-rule="evenodd" stroke="#232323"
                                                     stroke-width=".5"
                                                     d="M27.83 30.667h-4.19c-.135 0-.245-.172-.245-.384V1.717c0-.212.11-.384.245-.384h4.19c.135 0 .245.172.245.384v28.566c0 .212-.11.384-.246.384Z"
                                                     clip-rule="evenodd">
-
                                                 </path>
                                             </svg>
                                             <p class="text-center">CURTAINS
-
                                             </p>
                                         </div>
                                         <div
@@ -2188,64 +2827,48 @@
                                                 viewBox="0 0 32 32">
                                                 <rect width="26.067" height="24.91" x="2.967" y="5.456" fill="#F4EFEC"
                                                     stroke="#232323" stroke-width=".6">
-
                                                 </rect>
                                                 <rect width="11.333" height="22.667" x="16.572" y="6.667"
                                                     fill="#F4EFEC">
-
                                                 </rect>
                                                 <rect width="11.252" height="23.151" x="16.793" y="6.336"
                                                     stroke="#232323" stroke-width=".6">
-
                                                 </rect>
                                                 <path stroke="#232323" stroke-width=".6"
                                                     d="M16.493 6.916h10.864v21.991m-10.864 0h10.865">
-
                                                 </path>
                                                 <rect width="11.333" height="22.667" x="3.905" y="6.667" fill="#F4EFEC">
-
                                                 </rect>
                                                 <path stroke="#232323" stroke-linecap="round" stroke-width=".6"
                                                     d="m3.93 6.323.711.592">
-
                                                 </path>
                                                 <path stroke="#232323" stroke-width=".6" d="M15.506 6.916H4.642v21.991">
-
                                                 </path>
                                                 <path stroke="#232323" stroke-linecap="round" stroke-width=".6"
                                                     d="m4.641 28.907-.74.66">
-
                                                 </path>
                                                 <path stroke="#232323" stroke-width=".6" d="M4.642 28.907h10.864">
-
                                                 </path>
                                                 <rect width="11.252" height="23.151" x="3.954" y="6.336"
                                                     stroke="#232323" stroke-width=".6">
-
                                                 </rect>
                                                 <path stroke="#232323" stroke-linecap="round" stroke-width=".6"
                                                     d="m28.126 6.253-.768.662m0 21.992.768.66">
-
                                                 </path>
                                                 <rect width="28" height="18.063" x="2" y="1.333" fill="#F4EFEC"
                                                     stroke="#232323" stroke-width=".4" rx="1">
-
                                                 </rect>
                                                 <line x1="2" x2="30" y1="17.261" y2="17.261" stroke="#232323"
                                                     stroke-width=".4">
-
                                                 </line>
                                                 <line x1="2" x2="30" y1="15.325" y2="15.325" stroke="#232323"
                                                     stroke-width=".4">
-
                                                 </line>
                                                 <line x1="2" x2="30" y1="13.39" y2="13.39" stroke="#232323"
                                                     stroke-width=".4">
-
                                                 </line>
                                             </svg>
                                             <p class="text-center">ROMAN BLINDS
-
                                             </p>
                                         </div>
                                         <div
@@ -2254,71 +2877,60 @@
                                                 viewBox="0 0 32 32">
                                                 <rect width="24.897" height="26.786" x="3.694" y="3.581" fill="#F4EFEC"
                                                     stroke="#232323" stroke-width=".6">
-
                                                 </rect>
                                                 <rect width="11.333" height="24" x="16.572" y="5.333" fill="#F4EFEC">
-
                                                 </rect>
                                                 <rect width="10.732" height="24.897" x="16.914" y="4.525"
                                                     stroke="#232323" stroke-width=".6">
-
                                                 </rect>
                                                 <path stroke="#232323" stroke-width=".7" d="M16.614 5.17h10.388v23.608">
-
                                                 </path>
                                                 <path stroke="#232323" stroke-width=".6" d="M16.614 28.778h10.388">
-
                                                 </path>
                                                 <rect width="11.333" height="24" x="4.572" y="5.333" fill="#F4EFEC">
-
                                                 </rect>
                                                 <path stroke="#232323" stroke-linecap="round" stroke-width=".7"
                                                     d="m4.601 4.533.68.637">
-
                                                 </path>
                                                 <path stroke="#232323" stroke-width=".7" d="M15.67 5.17H5.282v23.608">
-
                                                 </path>
                                                 <path stroke="#232323" stroke-linecap="round" stroke-width=".6"
                                                     d="m5.282 28.778-.708.708">
-
                                                 </path>
                                                 <path stroke="#232323" stroke-width=".6" d="M5.282 28.778H15.67">
-
                                                 </path>
                                                 <rect width="10.732" height="24.897" x="4.638" y="4.525"
                                                     stroke="#232323" stroke-width=".6">
-
                                                 </rect>
                                                 <path stroke="#232323" stroke-linecap="round" stroke-width=".7"
                                                     d="m27.736 4.458-.734.711">
-
                                                 </path>
                                                 <path stroke="#232323" stroke-linecap="round" stroke-width=".6"
                                                     d="m27.002 28.778.735.708">
-
                                                 </path>
                                                 <rect width="28.566" height="13.634" x="1.965" y="1.983" fill="#F4EFEC"
                                                     stroke="#232323" stroke-width=".4" rx="1">
-
                                                 </rect>
                                                 <path fill="#F4EFEC" stroke="#232323" stroke-width=".4"
                                                     d="M1.516 2.333a.8.8 0 0 1 .8-.8H30.18a.8.8 0 0 1 .8.8v.597a.8.8 0 0 1-.8.8H2.316a.8.8 0 0 1-.8-.8v-.597Z">
-
                                                 </path>
                                                 <rect width="1.298" height="2.597" x=".667" y="1.333" fill="#232323">
-
                                                 </rect>
                                                 <rect width="1.298" height="2.597" x="30.531" y="1.333" fill="#232323">
-
                                                 </rect>
                                             </svg>
                                             <p class="text-center">ROLLER BLINDS
-
                                             </p>
                                         </div>
                                     </div>
                                 </div>
+                            </li>
+
+
+
+
+
+
 
 
                             </li>

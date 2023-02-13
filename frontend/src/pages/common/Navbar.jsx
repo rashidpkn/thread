@@ -62,12 +62,12 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/productBuilder'}>Shop Now</Link>
-                <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
-                  <div className={`flex  gap-5 bg-white relative z-[99]`}>
-                    <h1>Shop Our Curtains</h1>
+                <div className="fixed left-0 top-[110px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
+                  <div className={`flex  items-center gap-5 bg-white relative z-[99] text-black pt-10`}>
+                    <h1 className='text-2xl'>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
-                  <div className={`flex justify-center gap-5 items-center h-full w-full pb-5`}>
+                  <div className={`flex justify-center gap-5 items-center  w-full `}>
                     <Curtain submenu={2} path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
                     <Curtain submenu={2} path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'https://www.vistafashions.com/main/images/gallery/roman-blinds/roman-blinds08.jpg'} />
                   </div>
@@ -76,12 +76,12 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/curtains'}>Curtain Style</Link>
-                <div className="fixed left-0 top-[110px] h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white px-[10%] ">
-                  <div className={` flex gap-5 bg-white relative z-[99]`}>
-                    <h1>Shop Our Curtains</h1>
+                <div className="fixed left-0 top-[110px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
+                  <div className={` flex items-center gap-5 bg-white relative z-[99] text-black pt-10`}>
+                    <h1 className='text-2xl'>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
-                  <div className={`flex justify-center gap-5 items-center h-full w-full pb-5`}>
+                  <div className={`flex justify-center gap-5 items-center w-full`}>
                     <Curtain submenu={4} path={'/PencilPleatCurtains'} title={'Pencil Pleat Curtains'} backgroundImage={'/image/common/nav1.jpg'} />
                     <Curtain submenu={4} path={'/EyeletCurtains'} title={'Eyelet Curtains'} backgroundImage={'/image/common/nav2.jpg'} />
                     <Curtain submenu={4} path={'/Goblet'} title={'Goblet Curtains'} backgroundImage={'/image/common/nav3.jpg'} />
