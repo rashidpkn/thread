@@ -63,7 +63,7 @@ function CheckOut() {
         </Canvas>
         </div>
         <div className="space-y-3 text-lg font-medium relative left-8 lg:left-16">
-          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Fabric          </p>  <p className='lg:ml-16 flex justify-center items-center gap-3'><div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }}></div> {name}</p>   </div>
+          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Fabric          </p>  <p className='lg:ml-16 flex justify-center items-center gap-3'>{color && <div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }}></div> }{name}</p>   </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Item            </p>  <p className='lg:ml-16'>{item}</p>  </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Installation    </p>  <p className='lg:ml-16'>{installation}</p>  </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Is Pole         </p>  <p className='lg:ml-16'>{isPole ? 'Yes' : 'No'}</p>  </div>
@@ -78,20 +78,20 @@ function CheckOut() {
 
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Making Price    </p>  <p className='lg:ml-16'>{price}</p>  </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Accessories     </p>  <p className='lg:ml-16'>{price}</p>  </div>
-          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Boxed &  Postage</p>  <p className='lg:ml-16'>{price + 30}</p>  </div>
+          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Boxed &  Postage</p>  <p className='lg:ml-16'>{30}</p>  </div>
         </div>
       </div>
 
-      <div className="mt-10 flex flex-col justify-center items-center py-10">
+      <div className="mt-10 flex flex-col justify-center items-center ">
         <form onSubmit={e=>{
           e.preventDefault()
-          axios.post(`${backendIP}/pay`, { email, amount: 0.5 }).then(res => {
+          axios.post(`${backendIP}/pay`, { email, amount: price }).then(res => {
             const { client_secret } = res.data
             if (client_secret) {
               navigate(`/payment/${client_secret}`)
             }
           })
-        }} className='w-96 lg:w-[500px] gap-y-3 flex flex-col items-center'  >
+        }} className='w-96 lg:w-[500px] gap-y-3 flex flex-col items-center px-[5%]'  >
 
           <div className="flex w-full gap-[10%]">
             <div className="flex flex-col gap-2 w-[60%]">

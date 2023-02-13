@@ -13,7 +13,7 @@ function MobileMenu() {
     const { showMenu, menu } = useSelector(state => state.util.productBuilder)
     const dispatch = useDispatch()
     return (
-        <div className={`${!showMenu && 'hidden' } ${menu === 1 || menu===5 ? 'h-[calc(100vh-5rem)] ' : ''} lg:hidden  bg-[#E1B980] text-[#2b2b2b] fixed rounded-t-3xl bottom-0  w-full flex-shrink-0`}>
+        <div className={`${!showMenu && 'hidden' } ${menu === 1 || menu===5 ? 'h-[calc(100vh-5rem)] ' : ''} lg:hidden  bg-[#E1B980] text-[#2b2b2b] fixed z-50 rounded-t-3xl bottom-0  w-full flex-shrink-0`}>
             <div className="flex justify-center">
                 
             </div>

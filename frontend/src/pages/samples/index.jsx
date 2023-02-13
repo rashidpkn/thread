@@ -100,7 +100,7 @@ function Samples() {
 
                 </div>
 
-                <div className="w-full lg:w-[calc(95%-21rem)]  flex flex-wrap justify-center gap-10">
+                <div className="w-full lg:w-[calc(95%-21rem)]  flex flex-wrap justify-center gap-3 lg:gap-10">
 
                     <div className="h-10 w-full flex justify-between items-center">
                         <p className='text-lg font-light text-[#232323]'>{fabric.length} Fabrics</p>
@@ -118,11 +118,11 @@ function Samples() {
                     </div>
                     {
                         fabrics.map(e => (
-                            <div key={e.id} className="w-[270px] h-[400px] relative" >
+                            <div key={e.id} className="w-[170px] lg:w-[270px] h-[270px] lg:h-[400px] relative" >
                                 <img className='h-full w-full absolute -z-10' src="/image/samples/book1.png" alt="" loading={'lazy'} />
                                 <img src={e.magnifyFabricPath} className='h-full w-full absolute -z-20' alt="" loading={'lazy'} />
                                 <div className="absolute bottom-[4.5rem] w-full h-10 flex justify-center items-center ">
-                                    <button className='h-full w-1/2 border-2 border-white hover:border-black bg-black/20 hover:bg-white/50 text-white hover:text-black duration-500'
+                                    <button className='h-full w-[90%] lg:w-1/2 border-2 border-white hover:border-black bg-black/20 hover:bg-white/50 text-white hover:text-black duration-500'
                                         onClick={() => {
                                             if (cart.length === 10) {
                                                 window.alert("Your maximum number of cart item is 10")
@@ -138,7 +138,7 @@ function Samples() {
                                 </div>
                                 <div className="absolute bottom-5 w-full h-12 flex justify-between items-center px-5 ">
                                     <p className='font-medium'>{e.name}</p>
-                                    <img className='h-full bottom-2 relative' src="/image/common/logo.svg" alt="" />
+                                    <img className='h-full bottom-2 hidden lg:inline-block relative' src="/image/common/logo.svg" alt="" />
                                 </div>
                                 <div className="absolute top-5 right-6 ">
                                     <p> £ &nbsp; {e.price} </p>

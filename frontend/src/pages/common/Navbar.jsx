@@ -52,22 +52,28 @@ function Navbar() {
 
         </div>
 
-        <div className='shadow-md w-full text-[#B68D40] text-lg  bg-white '>
-          <nav className='h-24 w-full hidden lg:flex justify-between items-center px-10 '>
+        <div className='shadow-md w-full text-[#B68D40] text-[16px]  bg-white '>
+          <nav className='h-[75px] w-full hidden lg:flex justify-between items-center px-10 '>
             <a href="https://my-thread.co.uk">
               <img src="/image/common/logo.svg" width={100} alt="" />
             </a>
 
-            <ul className='flex justify-center items-center gap-12  h-full font-inter'>
+            <ul className='flex justify-center items-center   h-full font-inter gap-[50px]'>
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/productBuilder'}>Shop Now</Link>
+<<<<<<< HEAD
                 <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-200 w-full bg-white  px-[10%]">
                   <div className={` flex flex-col gap-5`}>
                     <h1>Shop Our Curtains</h1>
+=======
+                <div className="fixed left-0 top-[110px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
+                  <div className={`flex  items-center gap-5 bg-white relative z-[99] text-black pt-10`}>
+                    <h1 className='text-2xl'>Shop Our Curtains</h1>
+>>>>>>> 3b82871f8ffbf31c086c2e5bfa222889189f84cb
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
-                  <div className={`flex justify-center gap-5 items-center h-full w-full pb-5`}>
+                  <div className={`flex justify-center gap-5 items-center  w-full `}>
                     <Curtain submenu={2} path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
                     <Curtain submenu={2} path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'https://www.vistafashions.com/main/images/gallery/roman-blinds/roman-blinds08.jpg'} />
                   </div>
@@ -76,12 +82,18 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/curtains'}>Curtain Style</Link>
+<<<<<<< HEAD
                 <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-200 w-full bg-white px-[10%]">
                   <div className={` flex flex-col gap-5`}>
                     <h1>Shop Our Curtains</h1>
+=======
+                <div className="fixed left-0 top-[110px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
+                  <div className={` flex items-center gap-5 bg-white relative z-[99] text-black pt-10`}>
+                    <h1 className='text-2xl'>Shop Our Curtains</h1>
+>>>>>>> 3b82871f8ffbf31c086c2e5bfa222889189f84cb
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
-                  <div className={`flex justify-center gap-5 items-center h-full w-full pb-5`}>
+                  <div className={`flex justify-center gap-5 items-center w-full`}>
                     <Curtain submenu={4} path={'/PencilPleatCurtains'} title={'Pencil Pleat Curtains'} backgroundImage={'/image/common/nav1.jpg'} />
                     <Curtain submenu={4} path={'/EyeletCurtains'} title={'Eyelet Curtains'} backgroundImage={'/image/common/nav2.jpg'} />
                     <Curtain submenu={4} path={'/Goblet'} title={'Goblet Curtains'} backgroundImage={'/image/common/nav3.jpg'} />
@@ -95,7 +107,7 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/order-samples'}> Order Samples </Link>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('https://res.cloudinary.com/madebystitched/image/upload/w_1700/Carmen/IMG_3174.jpg')" }}>
+                <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('https://res.cloudinary.com/madebystitched/image/upload/w_1700/Carmen/IMG_3174.jpg')" }}>
                   <h2 className='text-4xl  font-medium'>Curtain + Blind Fabric Samples</h2>
                   <p className='text-sm '>
                     Take your pick from our large selection of eco-friendly fabrics all available in a range of classic <br />
@@ -130,7 +142,7 @@ function Navbar() {
               {cart.length !==0 && 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <p className=''>Your Sample <p className='inline-flex justify-center items-center h-6 w-6 rounded-full bg-[#CD6600] text-white'>{cart.length}</p></p>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white text-black group-hover:pt-[5%] px-[5%]  flex">
+                <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white text-black group-hover:pt-[5%] px-[5%]  flex">
                   <div className="w-1/2 space-y-10">
                     <p className='text-4xl font-normal'>Sample pack</p>
                     <p>Select up to 8 fabric samples and we'll deliver them for free!</p>
@@ -168,7 +180,7 @@ function Navbar() {
           </nav>
         </div>
 
-        <nav className='h-20 w-full flex lg:hidden justify-between items-center px-5'>
+        <nav className='h-20 w-full flex lg:hidden justify-between items-center px-5 bg-white'>
           <MenuOutlined className='cursor-pointer' onClick={() => setShowMenu(!showMenu)} />
           <a href="https://my-thread.co.uk">
             <img src="/image/common/logo.svg" width={100} alt="" />
@@ -182,9 +194,13 @@ function Navbar() {
         {
           showMenu && <ul className="flex lg:hidden flex-col w-full p-2 gap-3 ">
             <li className='cursor-pointer'><Link to={'/productBuilder'}> Shop Now </Link></li>
-            <li className='cursor-pointer'>Order Samples</li>
+            <li className='cursor-pointer'><Link to={'/order-samples'}>Order Samples</Link></li>
             <li className='cursor-pointer'><Link to={'/about-us'}> About Us </Link></li>
             <li className='cursor-pointer'><Link to={'/contact-us'}> Contact Us </Link></li>
+            {
+              cart.length !== 0 && <li> <Link to={'/samples-checkout'}>Your Sample <p className='inline-flex justify-center items-center h-6 w-6 rounded-full bg-[#CD6600] text-white'>{cart.length}</p></Link></li>
+            }
+            
           </ul>
         }
       </div>
@@ -200,9 +216,9 @@ const Curtain = ({ backgroundImage, title, path,submenu }) => {
   const navigate = useNavigate()
   return (
 
-    <div onClick={() => { navigate(path) }} className={`group-hover:h-[400px] w-1/${submenu} relative rounded-xl duration-200 overflow-hidden`} style={{ background: !backgroundImage && '#7285a5' }} onMouseEnter={() => setZoom(true)} onMouseLeave={() => setZoom(false)}>
+    <div onClick={() => { navigate(path) }} className={`group-hover:h-[360px] w-1/${submenu} relative rounded-xl duration-200 overflow-hidden`} style={{ background: !backgroundImage && '#7285a5' }} onMouseEnter={() => setZoom(true)} onMouseLeave={() => setZoom(false)}>
       {
-        backgroundImage && <img src={backgroundImage} className='w-full h-full ' alt=''/>
+        backgroundImage && <img src={backgroundImage} className='w-full h-[360px] ' alt=''/>
       }
       <div className="absolute bottom-0 right-0">
         <PlusSVG zoom={zoom} />
