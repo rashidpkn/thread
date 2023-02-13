@@ -52,17 +52,17 @@ function Navbar() {
 
         </div>
 
-        <div className='shadow-md w-full text-[#B68D40] text-lg  bg-white '>
-          <nav className='h-24 w-full hidden lg:flex justify-between items-center px-10 '>
+        <div className='shadow-md w-full text-[#B68D40] text-[16px]  bg-white '>
+          <nav className='h-[75px] w-full hidden lg:flex justify-between items-center px-10 '>
             <a href="https://my-thread.co.uk">
               <img src="/image/common/logo.svg" width={100} alt="" />
             </a>
 
-            <ul className='flex justify-center items-center   h-full font-inter gap-12'>
+            <ul className='flex justify-center items-center   h-full font-inter gap-[50px]'>
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/productBuilder'}>Shop Now</Link>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
+                <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
                   <div className={`flex  gap-5 bg-white relative z-[99]`}>
                     <h1>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
@@ -76,7 +76,7 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/curtains'}>Curtain Style</Link>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white px-[10%] ">
+                <div className="fixed left-0 top-[110px] h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white px-[10%] ">
                   <div className={` flex gap-5 bg-white relative z-[99]`}>
                     <h1>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
@@ -95,7 +95,7 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/order-samples'}> Order Samples </Link>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('https://res.cloudinary.com/madebystitched/image/upload/w_1700/Carmen/IMG_3174.jpg')" }}>
+                <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('https://res.cloudinary.com/madebystitched/image/upload/w_1700/Carmen/IMG_3174.jpg')" }}>
                   <h2 className='text-4xl  font-medium'>Curtain + Blind Fabric Samples</h2>
                   <p className='text-sm '>
                     Take your pick from our large selection of eco-friendly fabrics all available in a range of classic <br />
@@ -130,7 +130,7 @@ function Navbar() {
               {cart.length !==0 && 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <p className=''>Your Sample <p className='inline-flex justify-center items-center h-6 w-6 rounded-full bg-[#CD6600] text-white'>{cart.length}</p></p>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white text-black group-hover:pt-[5%] px-[5%]  flex">
+                <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white text-black group-hover:pt-[5%] px-[5%]  flex">
                   <div className="w-1/2 space-y-10">
                     <p className='text-4xl font-normal'>Sample pack</p>
                     <p>Select up to 8 fabric samples and we'll deliver them for free!</p>
