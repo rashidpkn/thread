@@ -8,16 +8,16 @@ import Curtains from './components/Curtains'
 import RollerBlinds from './components/RollerBlinds'
 import RomanBlinds from './components/RomanBlinds'
 // import {FaHome, FaHeart, FaShoppingCart, FaUserAlt } from'react-icons/fa';
-import {GoogleLogout} from 'react-google-login'
+import { GoogleLogout } from 'react-google-login'
 import { setEmail, setLoginStatus } from '../../redux/slice/user'
 
 function Navbar() {
   const dispatch = useDispatch()
   const [showMenu, setShowMenu] = useState(false)
   const [showAccount, setShowAccount] = useState(false)
-  const {cart} = useSelector(state=>state.sample)
+  const { cart } = useSelector(state => state.sample)
   const navigate = useNavigate()
-  const {loginStatus} = useSelector(state=>state.user)
+  const { loginStatus } = useSelector(state => state.user)
   return (
     <>
       <div className="sticky top-0 z-20">
@@ -35,16 +35,16 @@ function Navbar() {
             <div className="absolute z-20 top-9 right-0 bg-[#2b2b2b] w-48 rounded-bl-2xl flex flex-col justify-center items-center px-7 py-5 text-white gap-2">
               {
                 loginStatus ? <h3><GoogleLogout
-                clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
-                buttonText="Logout"
-                onLogoutSuccess={()=>{
-                  navigate('/login')
-                  dispatch(setLoginStatus(false))
-                  dispatch(setEmail(''))
-                }}
+                  clientId='154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
+                  buttonText="Logout"
+                  onLogoutSuccess={() => {
+                    navigate('/login')
+                    dispatch(setLoginStatus(false))
+                    dispatch(setEmail(''))
+                  }}
                 /></h3> : <h3><Link to={'/login'}> Login </Link></h3>
               }
-              
+
               <div className="w-full h-[1px] bg-white"></div>
               <h3><Link to={'/cart'}> Saved </Link></h3>
             </div>
@@ -98,26 +98,38 @@ function Navbar() {
                 <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('https://res.cloudinary.com/madebystitched/image/upload/w_1700/Carmen/IMG_3174.jpg')" }}>
                   <h2 className='text-4xl  font-medium'>Curtain + Blind Fabric Samples</h2>
                   <p className='text-sm '>
-                    Take your pick from our large selection of eco-friendly fabrics all available in a range of classic <br />
+                    ORDER YOUR PACK from our large selection of eco-friendly fabrics all available in a range of classic <br />
                     heading and lining styles, including blackout and thermal. Choose up to eight free samples and <br />
                     we'll pop them in the post.
                   </p>
                   <div className="flex gap-5 text-black">
-                    <div className="h-40 w-40 border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-5">
-                      <p>ALL FABRICS</p>
-                    </div>
-                    <div className="h-40 w-40 border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-2">
-                      <Curtains/>
-                      <p>CURTAINS</p>
-                    </div>
-                    <div className="h-40 w-40 border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-2">
-                      <RomanBlinds/>
-                      <p>ROMAN BLINDS</p>
-                    </div>
-                    <div className="h-40 w-40 border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-2">
-                      <RollerBlinds/>
-                      <p>ROLLER BLINDS</p>
-                    </div>
+                    <Link to={'/order-samples'}>
+                      <div className="h-40 w-40 border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-5">
+                        <p>ALL FABRICS</p>
+                      </div>
+                    </Link>
+
+                    <Link to={'/order-samples'}>
+                      <div className="h-40 w-40 border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-2">
+                        <Curtains />
+                        <p>CURTAINS</p>
+                      </div>
+                    </Link>
+
+                    <Link to={'/order-samples'}>
+                      <div className="h-40 w-40 border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-2">
+                        <RomanBlinds />
+                        <p>ROMAN BLINDS</p>
+                      </div>
+                    </Link>
+
+                    <Link to={'/order-samples'}>
+                      <div className="h-40 w-40 border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-2">
+                        <RollerBlinds />
+                        <p>ROLLER BLINDS</p>
+                      </div>
+                    </Link>
+
                   </div>
                 </div>
               </li>
@@ -125,42 +137,42 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link to={'/about-us'}> About Us </Link></li>
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link to={'/contact-us'}> Contact Us </Link></li>
-              
-              
-              {cart.length !==0 && 
-              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
-                <p className=''>Your Sample <p className='inline-flex justify-center items-center h-6 w-6 rounded-full bg-[#CD6600] text-white'>{cart.length}</p></p>
-                <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white text-black group-hover:pt-[5%] px-[5%]  flex">
-                  <div className="w-1/2 space-y-10">
-                    <p className='text-4xl font-normal'>Sample pack</p>
-                    <p>Select up to 8 fabric samples and we'll deliver them for free!</p>
-                    <button className='border px-10 py-3 border-black bg-black text-white'
-                      onClick={()=>{
-                        if(cart.length){
-                          navigate('/samples-checkout')
-                        }else{
+
+
+              {cart.length !== 0 &&
+                <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
+                  <p className=''>Your Sample <p className='inline-flex justify-center items-center h-6 w-6 rounded-full bg-[#CD6600] text-white'>{cart.length}</p></p>
+                  <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white text-black group-hover:pt-[5%] px-[5%]  flex">
+                    <div className="w-1/2 space-y-10">
+                      <p className='text-4xl font-normal'>Sample pack</p>
+                      <p>Select up to 8 fabric samples and we'll deliver them for free!</p>
+                      <button className='border px-10 py-3 border-black bg-black text-white'
+                        onClick={() => {
+                          if (cart.length) {
+                            navigate('/samples-checkout')
+                          } else {
                             window.alert('Please Select Any Fabrics')
-                        }
-                    }}
-                    >TAKE YOUR PICK</button>
-                  </div>
-                  <div className="w-1/2 flex justify-start gap-5 flex-wrap h-fit">
-                    {
-                      cart.map(e=> <div className="relative w-28 h-28 ">
-                        <img src={e.magnifyFabricPath} className='w-full h-full rounded-full  border border-black' alt=''/>
-                        <div className="delete absolute bg-[#1e1e1e] h-7 w-7 rounded-full top-1 right-1 flex justify-center items-center text-white" onClick={()=>{
-                          dispatch(setCart(cart.filter(ev=>ev.id!==e.id)))
-                        }}>
-                          <Delete fontSize='small'/>
-                        </div>
+                          }
+                        }}
+                      >ORDER YOUR PACK</button>
+                    </div>
+                    <div className="w-1/2 flex justify-start gap-5 flex-wrap h-fit">
+                      {
+                        cart.map(e => <div className="relative w-28 h-28 ">
+                          <img src={e.magnifyFabricPath} className='w-full h-full rounded-full  border border-black' alt='' />
+                          <div className="delete absolute bg-[#1e1e1e] h-7 w-7 rounded-full top-1 right-1 flex justify-center items-center text-white" onClick={() => {
+                            dispatch(setCart(cart.filter(ev => ev.id !== e.id)))
+                          }}>
+                            <Delete fontSize='small' />
+                          </div>
                         </div>)
-                    }
-                    {
-                      [...Array(10-cart.length)].map(e=><div className="w-28 h-28 border border-black flex justify-center items-center text-5xl font-light">+</div>)
-                    }
+                      }
+                      {
+                        [...Array(10 - cart.length)].map(e => <div className="w-28 h-28 border border-black flex justify-center items-center text-5xl font-light">+</div>)
+                      }
+                    </div>
                   </div>
-                </div>
-                </li> }
+                </li>}
             </ul>
             <Link to={'/cart'}>
               <Cart />
@@ -188,7 +200,7 @@ function Navbar() {
             {
               cart.length !== 0 && <li> <Link to={'/samples-checkout'}>Your Sample <p className='inline-flex justify-center items-center h-6 w-6 rounded-full bg-[#CD6600] text-white'>{cart.length}</p></Link></li>
             }
-            
+
           </ul>
         }
       </div>
@@ -199,14 +211,14 @@ function Navbar() {
 
 export default Navbar
 
-const Curtain = ({ backgroundImage, title, path,submenu }) => {
+const Curtain = ({ backgroundImage, title, path, submenu }) => {
   const [zoom, setZoom] = useState(false)
   const navigate = useNavigate()
   return (
 
     <div onClick={() => { navigate(path) }} className={`group-hover:h-[360px] w-1/${submenu} relative rounded-xl duration-200 overflow-hidden`} style={{ background: !backgroundImage && '#7285a5' }} onMouseEnter={() => setZoom(true)} onMouseLeave={() => setZoom(false)}>
       {
-        backgroundImage && <img src={backgroundImage} className='w-full h-[360px] ' alt=''/>
+        backgroundImage && <img src={backgroundImage} className='w-full h-[360px] ' alt='' />
       }
       <div className="absolute bottom-0 right-0">
         <PlusSVG zoom={zoom} />

@@ -15,7 +15,7 @@ function Samples() {
     const { cart } = useSelector(state => state.sample)
     const navigate = useNavigate()
     const [showFilters, setShowFilters] = useState({
-        yourSamples: false,
+        yourSamples: true,
         style: false,
         price: false,
         fabrics: false,
@@ -78,6 +78,7 @@ function Samples() {
                                     [...Array(10 - cart.length)].map(e => <div className="w-14 h-14 border border-black flex justify-center items-center text-3xl font-light">+</div>)
                                 }
                             </div>
+                            <button className='h-14 w-full bg-black text-white' >Log in to see my Samples</button>
                             <button className='h-14 w-full bg-black text-white' onClick={()=>{
                                 if(cart.length){
                                     navigate('/samples-checkout')
