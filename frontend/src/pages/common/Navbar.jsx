@@ -62,15 +62,9 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/productBuilder'}>Shop Now</Link>
-<<<<<<< HEAD
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-200 w-full bg-white  px-[10%]">
-                  <div className={` flex flex-col gap-5`}>
-                    <h1>Shop Our Curtains</h1>
-=======
                 <div className="fixed left-0 top-[110px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
                   <div className={`flex  items-center gap-5 bg-white relative z-[99] text-black pt-10`}>
                     <h1 className='text-2xl'>Shop Our Curtains</h1>
->>>>>>> 3b82871f8ffbf31c086c2e5bfa222889189f84cb
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
                   <div className={`flex justify-center gap-5 items-center  w-full `}>
@@ -82,15 +76,9 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/curtains'}>Curtain Style</Link>
-<<<<<<< HEAD
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-200 w-full bg-white px-[10%]">
-                  <div className={` flex flex-col gap-5`}>
-                    <h1>Shop Our Curtains</h1>
-=======
                 <div className="fixed left-0 top-[110px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
                   <div className={` flex items-center gap-5 bg-white relative z-[99] text-black pt-10`}>
                     <h1 className='text-2xl'>Shop Our Curtains</h1>
->>>>>>> 3b82871f8ffbf31c086c2e5bfa222889189f84cb
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
                   <div className={`flex justify-center gap-5 items-center w-full`}>
