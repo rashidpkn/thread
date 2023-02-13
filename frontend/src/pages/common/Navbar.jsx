@@ -58,26 +58,26 @@ function Navbar() {
               <img src="/image/common/logo.svg" width={100} alt="" />
             </a>
 
-            <ul className='flex justify-center items-center gap-12  h-full font-inter'>
+            <ul className='flex justify-center items-center   h-full font-inter gap-12'>
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/productBuilder'}>Shop Now</Link>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%]">
-                  <div className={`hidden group-hover:flex flex-col gap-5`}>
+                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
+                  <div className={`flex  gap-5 bg-white relative z-[99]`}>
                     <h1>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
                   <div className={`flex justify-center gap-5 items-center h-full w-full pb-5`}>
-                    <Curtain submenu={2} path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
-                    <Curtain submenu={2} path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'https://www.vistafashions.com/main/images/gallery/roman-blinds/roman-blinds08.jpg'} />
+                    <Curtain submenu={3} path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
+                    <Curtain submenu={3} path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'https://www.vistafashions.com/main/images/gallery/roman-blinds/roman-blinds08.jpg'} />
                   </div>
                 </div>
               </li>
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/curtains'}>Curtain Style</Link>
-                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white px-[10%]">
-                  <div className={` hidden group-hover:flex flex-col gap-5`}>
+                <div className="fixed left-0 top-32  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white px-[10%] ">
+                  <div className={` flex gap-5 bg-white relative z-[99]`}>
                     <h1>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
@@ -204,9 +204,9 @@ const Curtain = ({ backgroundImage, title, path,submenu }) => {
   const navigate = useNavigate()
   return (
 
-    <div onClick={() => { navigate(path) }} className={`group-hover:h-[400px] w-1/${submenu} relative rounded-xl duration-200 overflow-hidden`} style={{ background: !backgroundImage && '#7285a5' }} onMouseEnter={() => setZoom(true)} onMouseLeave={() => setZoom(false)}>
+    <div onClick={() => { navigate(path) }} className={`group-hover:h-[360px] w-1/${submenu} relative rounded-xl duration-200 overflow-hidden`} style={{ background: !backgroundImage && '#7285a5' }} onMouseEnter={() => setZoom(true)} onMouseLeave={() => setZoom(false)}>
       {
-        backgroundImage && <img src={backgroundImage} className='w-full h-full ' alt=''/>
+        backgroundImage && <img src={backgroundImage} className='w-full h-[360px] ' alt=''/>
       }
       <div className="absolute bottom-0 right-0">
         <PlusSVG zoom={zoom} />
