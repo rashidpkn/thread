@@ -10,8 +10,7 @@ router.post('/order-sample',async(req,res)=>{
         from:'info@my-thread.co.uk',
         cc:'info@my-thread.co.uk',
         subject:'Your Order Sample is on the way',
-        html:`
-        First Name : ${fName} <br/>
+        html:`First Name : ${fName} <br/>
         Last Name : ${lName} <br/>
         Phone No : ${phoneNo} <br/>
         Email : ${email} <br/>

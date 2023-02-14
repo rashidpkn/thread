@@ -1,4 +1,4 @@
-import { MenuOutlined, LocalPhone, Email, SupportAgent, Close, Delete } from '@mui/icons-material'
+import { MenuOutlined,  Email, SupportAgent, Close, Delete } from '@mui/icons-material'
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
@@ -10,6 +10,13 @@ import RomanBlinds from './components/RomanBlinds'
 // import {FaHome, FaHeart, FaShoppingCart, FaUserAlt } from'react-icons/fa';
 import { GoogleLogout } from 'react-google-login'
 import { setEmail, setLoginStatus } from '../../redux/slice/user'
+
+
+//icon
+import orderSampleIcon from '../asset/common/order-sample.svg'
+import cartIcon from '../asset/common/cart.svg'
+
+
 
 function Navbar() {
   const dispatch = useDispatch()
@@ -182,13 +189,32 @@ function Navbar() {
 
         <nav className='h-20 w-full flex lg:hidden justify-between items-center px-5 bg-white'>
           <MenuOutlined className='cursor-pointer' onClick={() => setShowMenu(!showMenu)} />
+
+
           <a href="https://my-thread.co.uk">
             <img src="/image/common/logo.svg" width={100} alt="" />
           </a>
 
-          <div className="flex gap-3">
-            <LocalPhone />
-            <Email />
+          <div className="flex gap-5 items-center">
+            
+            <div className="flex justify-center items-center relative">
+              <span className='h-5 w-5 bg-[#cd6500] rounded-full absolute -top-2 -right-3 flex justify-center items-center text-white'>{cart.length}</span>
+              <img src={orderSampleIcon} className='h-7 w-7' alt="" onClick={() => {
+                          if (cart.length) {
+                            navigate('/samples-checkout')
+                          } else {
+                            navigate('/order-samples')
+                            window.alert('Please Select Any Fabrics')
+                          }
+                        }} />
+            </div>
+            <div className="flex justify-center items-center relative">
+              <span className='h-5 w-5 bg-[#cd6500] rounded-full absolute -top-2 -right-3 flex justify-center items-center text-white'>0</span>
+              <img src={cartIcon} className='h-7 w-7' alt="" />
+            </div>
+
+            {/* <LocalPhone />
+            <Email /> */}
           </div>
         </nav>
         {
