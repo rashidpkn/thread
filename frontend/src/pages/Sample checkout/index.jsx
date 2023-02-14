@@ -1,5 +1,8 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import backendIP from '../../backendIP'
 import { setCart } from '../../redux/slice/sample'
 import Footer from '../common/Footer'
 import Navbar from '../common/Navbar'
@@ -7,6 +10,15 @@ import Navbar from '../common/Navbar'
 function SampleCheckout() {
     const { cart } = useSelector(state => state.sample)
     const dispatch = useDispatch()
+    const [data, setData] = useState({
+        fName:'',
+        lName:'',
+        phoneNo:'',
+        zipCode:'',
+        address:'',
+        email:'',
+    })
+    const navigate = useNavigate()
     return (
         <div>
             <Navbar />
@@ -38,34 +50,45 @@ function SampleCheckout() {
                 </div>
 
                 <div className="mt-10 flex flex-col justify-center items-center py-10">
-                    <form className="w-96 lg:w-[500px] gap-y-3 flex flex-col items-center">
+                    <form className="w-96 lg:w-[500px] gap-y-3 flex flex-col items-center" onSubmit={e=>{
+                        e.preventDefault()
+                        axios.post(`${backendIP}/email/order-sample`,{...data,fabrics:cart}).then(res=>{
+                            if(res.data===true){
+                                window.alert("Your Order is on the way")
+                                navigate('/productbuilder')
+                                dispatch(setCart([]))
+                            }else(
+                                window.alert("Somthing is error , Please try Later")
+                            )
+                        })
+                    }}>
                         <div className="flex w-full gap-[10%]"><div className="flex flex-col gap-2 w-[60%]">
                             <label for="">First Name</label>
-                            <input required="" type="text" className="w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2" />
+                            <input onChange={e=>{setData({...data,fName:e.target.value})}} required="" type="text" className="w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2" />
                         </div>
                             <div className="flex flex-col gap-2 w-[30%]">
                                 <label for="">Last Name</label>
-                                <input required="" type="text" className="w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2" />
+                                <input onChange={e=>{setData({...data,lName:e.target.value})}} required="" type="text" className="w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2" />
                             </div>
                         </div>
                         <div className="flex w-full gap-[10%]">
                             <div className="flex flex-col gap-2 w-[60%]">
                                 <label for="">Phone Number</label>
-                                <input required="" type="text" className="w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2" />
+                                <input onChange={e=>{setData({...data,phoneNo:e.target.value})}} required="" type="text" className="w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2" />
                             </div>
                             <div className="flex flex-col gap-2 w-[30%]">
                                 <label for="">Zip Code</label>
-                                <input required="" type="text" className="w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2" />
+                                <input onChange={e=>{setData({...data,zipCode:e.target.value})}} required="" type="text" className="w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2" />
                             </div>
                         </div>
                         <div className="flex flex-col gap-2 w-full">
                             <label for="">Address</label>
-                            <textarea required="" type="text" className="w-full h-24 rounded-lg border border-[#B68D40] outline-none p-2">
+                            <textarea onChange={e=>{setData({...data,address:e.target.value})}} required="" type="text" className="w-full h-24 rounded-lg border border-[#B68D40] outline-none p-2">
                             </textarea>
                         </div>
                         <div className="flex flex-col gap-2 w-full">
                             <label for="">Email</label>
-                            <input required="" type="email" className="w-full h-12 rounded-lg border border-[#B68D40] outline-none p-2" />
+                            <input onChange={e=>{setData({...data,email:e.target.value})}} required="" type="email" className="w-full h-12 rounded-lg border border-[#B68D40] outline-none p-2" />
                         </div>
                         <button className="h-12 w-48 rounded-md bg-[#B68D40] text-lg font-semibold" type="submit"> Confirm Your Order </button>
                     </form>

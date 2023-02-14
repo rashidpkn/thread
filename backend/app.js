@@ -7,6 +7,7 @@ var cors = require('cors')
 var users = require('./routes/users');
 var pay = require('./routes/pay');
 var product = require('./routes/product')
+var email = require('./routes/email')
 
 
 const { join } = require('path');
@@ -33,6 +34,7 @@ app.use(express.static(path.join(__dirname,'build')))
 app.use('/user', users);
 app.use('/pay',pay)
 app.use('/product',product)
+app.use('/email',email)
 
 app.get('*', (req,res) =>{res.sendFile(path.join(__dirname,'/build/index.html'));});
 module.exports = app;

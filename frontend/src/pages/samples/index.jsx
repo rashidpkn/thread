@@ -124,19 +124,25 @@ function Samples() {
                                 <img className='h-full w-full absolute -z-10' src="/image/samples/book1.png" alt="" loading={'lazy'} />
                                 <img src={e.magnifyFabricPath} className='h-full w-full absolute -z-20' alt="" loading={'lazy'} />
                                 <div className="absolute bottom-[4.5rem] w-full h-10 flex justify-center items-center ">
-                                    <button className='h-full w-[90%] lg:w-1/2 border-2 border-white hover:border-black bg-black/20 hover:bg-white/50 text-white hover:text-black duration-500'
+                                   <button className='h-full w-[90%] lg:w-3/4 border-2 border-white hover:border-black bg-black/20 hover:bg-white/50 text-white hover:text-black duration-500'
                                         onClick={() => {
-                                            if (cart.length === 10) {
+                                            if (cart.find(ev => ev.id === e.id)) {
+                                                
+                                                dispatch(setCart(cart.filter(evt => evt !== e && e )))
+                                                
+                                            }
+                                            else if (cart.length === 10) {
                                                 window.alert("Your maximum number of cart item is 10")
 
-                                            } else if (cart.find(ev => ev.id === e.id)) {
-                                                window.alert("You are already added this sample")
-                                            }
+                                            } 
                                             else {
                                                 dispatch(setCart([...cart, e]))
                                             }
                                         }}
-                                    >ADD SAMPLE</button>
+                                    >
+                                        {cart.find(ev => ev.id === e.id) ? 'REMOVE SAMPLE' : 'ADD SAMPLE'}
+                                        </button>
+
                                 </div>
                                 <div className="absolute bottom-5 w-full h-12 flex justify-between items-center px-5 ">
                                     <p className='font-medium'>{e.name}</p>
