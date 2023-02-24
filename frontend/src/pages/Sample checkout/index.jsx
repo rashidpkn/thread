@@ -77,7 +77,7 @@ function SampleCheckout() {
                                 <input onChange={e=>{setData({...data,phoneNo:e.target.value})}} required="" type="text" className="w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2" />
                             </div>
                             <div className="flex flex-col gap-2 w-[30%]">
-                                <label for="">Zip Code</label>
+                                <label for="">Post Code</label>
                                 <input onChange={e=>{setData({...data,zipCode:e.target.value})}} required="" type="text" className="w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2" />
                             </div>
                         </div>
