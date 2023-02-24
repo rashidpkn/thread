@@ -22,7 +22,7 @@ function Login() {
     const onSuccess = (res) => {
 
         dispatch(setLoginStatus(true))
-
+        console.log(res)
         if (savedChange === true) {
             navigate('/estimate')
             dispatch(setSavedChange(false))
