@@ -20,16 +20,16 @@ function Login() {
     const { savedChange } = useSelector(state => state.util.estimate)
 
     const onSuccess = (res) => {
-
-        dispatch(setLoginStatus(true))
         console.log(res)
-        if (savedChange === true) {
-            navigate('/estimate')
-            dispatch(setSavedChange(false))
-        } else {
-            navigate('/cart')
-        }
-        dispatch(setEmail(res.profileObj.email))
+        window.alert('Hello')
+        // dispatch(setLoginStatus(true))
+        // if (savedChange === true) {
+        //     navigate('/estimate')
+        //     dispatch(setSavedChange(false))
+        // } else {
+        //     navigate('/cart')
+        // }
+        // dispatch(setEmail(res.profileObj.email))
     };
 
     const onFailure = (err) => {
@@ -86,9 +86,7 @@ function Login() {
                     <GoogleLogin
                         buttonText="Sign in with Google"
                         onSuccess={onSuccess}
-                        onFailure={onFailure}
-                        cookiePolicy={'single_host_origin'}
-                        isSignedIn={true}
+                        onFailure={onFailure}                 
                     />
                     {/* <button className=' bg-blue-400 text-white p-2 rounded-md flex items-center mt-5'> <div className="h-12 w-12 bg-white rounded-md"> <img src={google} alt="" /> </div> <p className='px-8 font-medium text-lg'>Sign up with Google</p></button> */}
                 </div>

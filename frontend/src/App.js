@@ -23,13 +23,17 @@ import TriplePleat from './pages/Curtains/pages/triplePleat'
 import Contact from './pages/ContactUs'
 import Samples from './pages/samples'
 import SampleCheckout from './pages/Sample checkout'
+import { useGoogleLogin } from '@react-oauth/google'
 
 
 
 function App() {
   const {loginStatus} = useSelector(state=>state.user)
 
-
+//   const login = useGoogleLogin({
+//     onSuccess: (codeResponse) => setUser(codeResponse),
+//     onError: (error) => console.log('Login Failed:', error)
+// });
 
   
 
