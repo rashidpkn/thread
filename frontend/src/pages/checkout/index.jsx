@@ -112,7 +112,7 @@ function CheckOut() {
               <input required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
             </div>
             <div className="flex flex-col gap-2 w-[30%]">
-              <label htmlFor="">Zip Code</label>
+              <label htmlFor="">Post Code</label>
               <input required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
             </div>
           </div>
