@@ -24,7 +24,7 @@ function CheckOut() {
   const { width, height, roomName, item, installation, isPole, } = useSelector(state => state.fabric.measure)
   const { panel, look } = useSelector(state => state.fabric.style)
   const { lining, poleAndTrack } = useSelector(state => state.fabric.feature)
-  const { glide, corded } = useSelector(state => state.fabric.feature.accessories)
+  const { glide, corded,accessoriesPrice } = useSelector(state => state.fabric.feature.accessories)
   const { price, wallColor } = useSelector(state => state.fabric)
 
   const [email, setEmail] = useState('')
@@ -77,9 +77,9 @@ function CheckOut() {
           {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-40 lg:w-64 text-xl'>corded          </p>  <p className='lg:ml-16'>{corded}</p>  </div>}
 
           <div className="flex">  <p className='w-64 text-xl'>Making Price    </p>  <p className='ml-16'>{Math.floor(price)}</p>  </div>
-          {/* {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-64 text-xl'>Accessories Price     </p>  <p className='ml-16'>{Math.floor(price)}</p>  </div>} */}
+          {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-64 text-xl'>Accessories Price     </p>  <p className='ml-16'>{Math.floor(accessoriesPrice)}</p>  </div>}
           <div className="flex">  <p className='w-64 text-xl'>Boxed &  Postage</p>  <p className='ml-16'>{30}</p>  </div>
-          <div className="flex">  <p className='w-64 text-xl'>Total Price     </p>  <p className='ml-16'>{Math.floor(price + 30)}</p>  </div>
+          <div className="flex">  <p className='w-64 text-xl'>Total Price     </p>  <p className='ml-16'>{Math.floor(price + 30 + accessoriesPrice)}</p>  </div>
           
         </div>
       </div>

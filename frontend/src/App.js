@@ -9,7 +9,7 @@ import SignUp from './pages/signup'
 
 
 // import { GoogleLogin } from 'react-google-login';
-import { gapi } from 'gapi-script';
+
 import CheckOut2 from './pages/checkout-2'
 import Cart from './pages/cart'
 import { useSelector } from 'react-redux'
@@ -25,21 +25,11 @@ import Samples from './pages/samples'
 import SampleCheckout from './pages/Sample checkout'
 
 
-const clientId = '154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
-
 
 function App() {
   const {loginStatus} = useSelector(state=>state.user)
 
-  useEffect(() => {
-    const initClient = () => {
-      gapi.client.init({
-        clientId: clientId,
-        scope: ''
-      });
-    };
-    gapi.load('client:auth2', initClient);
-  });
+
 
   
 

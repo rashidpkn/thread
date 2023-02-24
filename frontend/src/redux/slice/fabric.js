@@ -37,8 +37,9 @@ const initialState = {
         poleAndTrack: "I don't need one",
         accessories: {
             glide: 0,
-            corded: '0cm-0cm'
-        }
+            corded: '0cm-0cm',
+            accessoriesPrice:0,
+        },
 
     },
     price: 125.08
@@ -76,6 +77,7 @@ const fabric = createSlice({
         setPole(state, { payload }) { state.feature.poleAndTrack = payload },
         setGlide(state, { payload }) { state.feature.accessories.glide = payload },
         setCorded(state, { payload }) { state.feature.accessories.corded = payload },
+        setAccessoriesPrice(state,{payload}){state.feature.accessories.accessoriesPrice=payload},
         setPrice(state, action) {
 
             const { width, height } = state.measure
@@ -177,6 +179,8 @@ const fabric = createSlice({
 
 export const { setPrice, setFabric, setWallColor, setRoom, setRoomName, setIsPole, setHeight,
     setWidth, setLining, setPole, setGlide, setCorded, setPanel, setLook,
-    setItem, setInstallation } = fabric.actions
+    setItem, setInstallation,setAccessoriesPrice
+
+} = fabric.actions
 
 export default fabric.reducer
