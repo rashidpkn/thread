@@ -39,7 +39,7 @@ function Style() {
   const dispatch = useDispatch()
   const { panel, look } = useSelector(state => state.fabric.style)
   return (
-    <div className='space-y-5'>
+    <div className='space-y-3'>
 
       {/* <div className="p-5 w-full flex items-center justify-center gap-5">
         <p className='font-medium'>Choose Your Style</p>

@@ -35,13 +35,14 @@ function Estimate() {
                     <div className="flex">  <p className='w-64 text-xl'>Panel           </p>  <p className='ml-16'>{panel}</p>  </div>
                     <div className="flex">  <p className='w-64 text-xl'>Style           </p>  <p className='ml-16'>{look}</p>  </div>
                     <div className="flex">  <p className='w-64 text-xl'>Lining          </p>  <p className='ml-16'>{lining}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Pole or Track   </p>  <p className='ml-16'>{poleAndTrack}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Glide           </p>  <p className='ml-16'>{glide} CM</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>corded          </p>  <p className='ml-16'>{corded}</p>  </div>
+                    <div className="flex">  <p className='w-64 text-xl'>Accessories  </p>  <p className='ml-16'>{poleAndTrack}</p>  </div>
+                    {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Glide           </p>  <p className='lg:ml-16'>{glide} CM</p>  </div>}
+                    {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-40 lg:w-64 text-xl'>corded          </p>  <p className='lg:ml-16'>{corded}</p>  </div>}
 
-                    <div className="flex">  <p className='w-64 text-xl'>Making Price    </p>  <p className='ml-16'>{price}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Accessories     </p>  <p className='ml-16'>{price}</p>  </div>
+                    <div className="flex">  <p className='w-64 text-xl'>Making Price    </p>  <p className='ml-16'>{Math.floor(price)}</p>  </div>
+                    {/* {poleAndTrack==='Pole' && <div className="flex">  <p className='w-64 text-xl'>Accessories Price     </p>  <p className='ml-16'>{Math.floor(price)}</p>  </div> } */}
                     <div className="flex">  <p className='w-64 text-xl'>Boxed &  Postage</p>  <p className='ml-16'>{ 30}</p>  </div>
+                    <div className="flex">  <p className='w-64 text-xl'>Total Price     </p>  <p className='ml-16'>{ Math.floor(price+30)}</p>  </div>
                 </div>
                 <div class="w-96  border border-[#b68d40] rounded-3xl h-10 flex justify-center items-center  font-bold text-[#686161]">
 

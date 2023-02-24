@@ -1,11 +1,11 @@
-import React, {  useState,Suspense } from 'react'
+import React, { useState, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 // import { NavigateBeforeOutlined, NavigateNextOutlined, ShoppingCart } from '@mui/icons-material'
 // import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
-import {  PerspectiveCamera } from '@react-three/drei'
+import { PerspectiveCamera } from '@react-three/drei'
 
 import Navbar from '../common/Navbar'
-import {  useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import axios from 'axios'
 import backendIP from '../../backendIP'
@@ -25,7 +25,7 @@ function CheckOut() {
   const { panel, look } = useSelector(state => state.fabric.style)
   const { lining, poleAndTrack } = useSelector(state => state.fabric.feature)
   const { glide, corded } = useSelector(state => state.fabric.feature.accessories)
-  const { price,wallColor } = useSelector(state => state.fabric)
+  const { price, wallColor } = useSelector(state => state.fabric)
 
   const [email, setEmail] = useState('')
   const navigate = useNavigate()
@@ -36,34 +36,34 @@ function CheckOut() {
       <div className="gap-y-5 flex flex-col items-center justify-center">
         <h2 className='text-2xl text-center mt-5 font-medium'>Checkout</h2>
         <div className="h-72 w-96">
-        <Canvas>
-          <PerspectiveCamera makeDefault position={[0, 0, 14]} />
-          
-          <ambientLight intensity={0.5}/>
-          <directionalLight position={[-1,5,2]}/>
-          <Suspense fallback={null}>
+          <Canvas>
+            <PerspectiveCamera makeDefault position={[0, 0, 14]} />
 
-            <Room wallColor={wallColor}/>
-            {
-              look === 'Double' &&  <Double />
-            }
-            {
-              look === 'Eyelet' && <Eyelet/>
-            }
-            {
-              look === 'Pencil' && <Pencil/>
-            }
-            {
-              look === 'Goblet' && <Goblet/>
-            }
-            {
-              look === 'Triple' && <Triple />
-            }
-          </Suspense>
-        </Canvas>
+            <ambientLight intensity={0.5} />
+            <directionalLight position={[-1, 5, 2]} />
+            <Suspense fallback={null}>
+
+              <Room wallColor={wallColor} />
+              {
+                look === 'Double' && <Double />
+              }
+              {
+                look === 'Eyelet' && <Eyelet />
+              }
+              {
+                look === 'Pencil' && <Pencil />
+              }
+              {
+                look === 'Goblet' && <Goblet />
+              }
+              {
+                look === 'Triple' && <Triple />
+              }
+            </Suspense>
+          </Canvas>
         </div>
         <div className="space-y-3 text-lg font-medium relative left-8 lg:left-16">
-          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Fabric          </p>  <p className='lg:ml-16 flex justify-center items-center gap-3'>{color && <div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }}></div> }{name}</p>   </div>
+          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Fabric          </p>  <p className='lg:ml-16 flex justify-center items-center gap-3'>{color && <div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }}></div>}{name}</p>   </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Item            </p>  <p className='lg:ml-16'>{item}</p>  </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Installation    </p>  <p className='lg:ml-16'>{installation}</p>  </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Is Pole         </p>  <p className='lg:ml-16'>{isPole ? 'Yes' : 'No'}</p>  </div>
@@ -72,18 +72,20 @@ function CheckOut() {
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Panel           </p>  <p className='lg:ml-16'>{panel}</p>  </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Style           </p>  <p className='lg:ml-16'>{look}</p>  </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Lining          </p>  <p className='lg:ml-16'>{lining}</p>  </div>
-          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Pole or Track   </p>  <p className='lg:ml-16'>{poleAndTrack}</p>  </div>
-          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Glide           </p>  <p className='lg:ml-16'>{glide} CM</p>  </div>
-          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>corded          </p>  <p className='lg:ml-16'>{corded}</p>  </div>
+          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Accessories   </p>  <p className='lg:ml-16'>{poleAndTrack}</p>  </div>
+          {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Glide           </p>  <p className='lg:ml-16'>{glide} CM</p>  </div>}
+          {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-40 lg:w-64 text-xl'>corded          </p>  <p className='lg:ml-16'>{corded}</p>  </div>}
 
-          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Making Price    </p>  <p className='lg:ml-16'>{price}</p>  </div>
-          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Accessories     </p>  <p className='lg:ml-16'>{price}</p>  </div>
-          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Boxed &  Postage</p>  <p className='lg:ml-16'>{30}</p>  </div>
+          <div className="flex">  <p className='w-64 text-xl'>Making Price    </p>  <p className='ml-16'>{Math.floor(price)}</p>  </div>
+          {/* {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-64 text-xl'>Accessories Price     </p>  <p className='ml-16'>{Math.floor(price)}</p>  </div>} */}
+          <div className="flex">  <p className='w-64 text-xl'>Boxed &  Postage</p>  <p className='ml-16'>{30}</p>  </div>
+          <div className="flex">  <p className='w-64 text-xl'>Total Price     </p>  <p className='ml-16'>{Math.floor(price + 30)}</p>  </div>
+          
         </div>
       </div>
 
       <div className="mt-10 flex flex-col justify-center items-center ">
-        <form onSubmit={e=>{
+        <form onSubmit={e => {
           e.preventDefault()
           axios.post(`${backendIP}/pay`, { email, amount: price }).then(res => {
             const { client_secret } = res.data
@@ -130,7 +132,7 @@ function CheckOut() {
 
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="">Email</label>
-            <input onChange={e=>{setEmail(e.target.value)}} required type="email" className='w-full h-12 rounded-lg border border-[#B68D40] outline-none p-2' />
+            <input onChange={e => { setEmail(e.target.value) }} required type="email" className='w-full h-12 rounded-lg border border-[#B68D40] outline-none p-2' />
           </div>
 
           <button className='h-12 w-48 rounded-md bg-[#B68D40] text-lg font-semibold' type='submit'> Confirm Payment </button>

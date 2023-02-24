@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setHeight, setInstallation, setIsPole, setItem, setPrice, setRoom, setRoomName, setWidth } from '../../../../redux/slice/fabric'
 import { setMenu } from '../../../../redux/slice/util'
@@ -25,12 +25,21 @@ function Measure() {
   const dispatch = useDispatch()
   const { room, roomName, item, installation, height, width } = useSelector(state => state.fabric.measure)
 
+  useEffect(() => {
+    if(item==='Curtain'){
+        dispatch(setInstallation('Curtain Flat'))
+    }else{
+      dispatch(setInstallation('Blind Inside'))
+    }
+    // eslint-disable-next-line
+  }, [item])
+  
 
 
 
   const [selector, setSelector] = useState(1)
   return (
-    <div className='space-y-5'>
+    <div className='space-y-3'>
         <p className='font-medium text-center'>Input Your Measurements</p>
       <div className="flex justify-center gap-5">
         {/* <button onClick={() => setSelector(1)} className={`${selector === 1 ? 'text-[#B68D40]' : 'hidden'}  `} >Curtain/Blinds</button> */}
@@ -54,7 +63,7 @@ function Measure() {
           {
             item === 'Curtain' && <div className="space-y-3">
               <p className='text-center font-medium'>What kind of window to you have?</p>
-              <div className="flex justify-center gap-5">
+              <div className="flex justify-center gap-3">
                 <div onClick={() => { dispatch(setInstallation('Curtain Flat')) }} className={` w-24 h-24 rounded-md flex justify-center items-center relative`}> 
                 <img className='w-full' src={installation === 'Curtain Flat' ? Flat : dFlat} alt="" /> 
                 <p className='absolute -bottom-6 text-center'>Flat</p>
@@ -68,16 +77,16 @@ function Measure() {
           }
 
           {
-            item === 'Blind' && <div className="space-y-7">
+            item === 'Blind' && <div className="space-y-3">
               <p className='text-center font-medium'>How will your blinds be installed?</p>
-              <div className="flex justify-center gap-5">
+              <div className="flex justify-center gap-7">
                 <div onClick={() => { dispatch(setInstallation('Blind Inside')) }} className={`w-24 h-24 rounded-md flex justify-center items-center relative`}> 
                 <img className='w-full' src={installation === 'Blind Inside' ? Inside : dInside} alt="" /> 
                 <p className='absolute -bottom-6 text-center'>Inside Blind</p>
                 </div>
                 <div onClick={() => { dispatch(setInstallation('Blind OutSide')) }} className={`w-24 h-24 rounded-md flex justify-center items-center relative`}> 
                 <img className='w-full' src={installation === 'Blind OutSide' ? OutSide : dOutSide} alt="" /> 
-                <p className='absolute -bottom-12 text-center'>Outside Blinds</p>
+                <p className='absolute -bottom-12 text-center'>Outside Blind</p>
                 </div>
               </div>
             </div>
