@@ -9,6 +9,7 @@ function Estimate() {
     const {panel,type} = useSelector(state=>state.fabric.style)
     const {lining} = useSelector(state=>state.fabric.feature)
     const {price} = useSelector(state=>state.fabric)
+    const { accessoriesPrice } = useSelector(state => state.fabric.feature.accessories)
 
     return (
         <div className='space-y-5   pb-10'>
@@ -16,14 +17,16 @@ function Estimate() {
                 <h2 className='text-2xl text-center'>Estimate</h2>
             </div>
             <div className="px-10">
-                <div className="flex ">  <p className='w-40'>Fabric          </p>    <p className='flex justify-center items-center gap-3'><div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }}></div> {name}</p> </div>
+                <div className="flex ">  <p className='w-40'>Fabric          </p>    <p className='flex justify-center items-center gap-3'>{color && <div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }} />} {name}</p> </div>
                 <div className="flex ">  <p className='w-40'>Measurements    </p>    <p>{`${width} W ${height} H (${roomName})`}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Panel          </p>     <p>{panel}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Style           </p>    <p>{type}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Features        </p>    <p>{lining}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Making Price    </p>    <p>{price}</p>  </div>
-                <div className="flex ">  <p className='w-40'>Accessories     </p>    <p>{price}</p>  </div>
+                <div className="flex ">  <p className='w-40'>Accessories     </p>    <p>{accessoriesPrice}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Boxed &  Postage</p>    <p>{ 30}</p>  </div>
+                <div className="flex ">  <p className='w-40'>Total Price</p>    <p>{Math.floor(price + 30 + accessoriesPrice)}</p>  </div>
+
             </div>
             <div className="flex justify-center items-center gap-10">
                 <Link to={'/login'}>

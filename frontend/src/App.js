@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import CheckOut from './pages/checkout'
 import Estimate from './pages/estimate'
@@ -8,7 +8,7 @@ import ProductBuilder from './pages/productBuilder'
 import SignUp from './pages/signup'
 
 
-// import { GoogleLogin } from 'react-google-login';
+
 
 import CheckOut2 from './pages/checkout-2'
 import Cart from './pages/cart'
@@ -23,17 +23,13 @@ import TriplePleat from './pages/Curtains/pages/triplePleat'
 import Contact from './pages/ContactUs'
 import Samples from './pages/samples'
 import SampleCheckout from './pages/Sample checkout'
-import { useGoogleLogin } from '@react-oauth/google'
+
 
 
 
 function App() {
   const {loginStatus} = useSelector(state=>state.user)
 
-//   const login = useGoogleLogin({
-//     onSuccess: (codeResponse) => setUser(codeResponse),
-//     onError: (error) => console.log('Login Failed:', error)
-// });
 
   
 

@@ -8,8 +8,7 @@ import Curtains from './components/Curtains'
 import RollerBlinds from './components/RollerBlinds'
 import RomanBlinds from './components/RomanBlinds'
 // import {FaHome, FaHeart, FaShoppingCart, FaUserAlt } from'react-icons/fa';
-import { GoogleLogout } from 'react-google-login'
-import { setEmail, setLoginStatus } from '../../redux/slice/user'
+import {  setLogout } from '../../redux/slice/user'
 
 
 //icon
@@ -41,15 +40,10 @@ function Navbar() {
           {showAccount &&
             <div className="absolute z-20 top-9 right-0 bg-[#2b2b2b] w-48 rounded-bl-2xl flex flex-col justify-center items-center px-7 py-5 text-white gap-2">
               {
-                loginStatus ? <h3><GoogleLogout
-                  clientId='154908846260-7j286oakf35rhd8hqe8q9u5fb707hlub.apps.googleusercontent.com'
-                  buttonText="Logout"
-                  onLogoutSuccess={() => {
-                    navigate('/login')
-                    dispatch(setLoginStatus(false))
-                    dispatch(setEmail(''))
-                  }}
-                /></h3> : <h3><Link to={'/login'}> Login </Link></h3>
+                loginStatus ? <h3 onClick={() => {
+                  navigate('/login')
+                  dispatch(setLogout())
+                }}>Logout</h3> : <h3><Link to={'/login'}> Login </Link></h3>
               }
 
               <div className="w-full h-[1px] bg-white"></div>
@@ -102,7 +96,7 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/order-samples'}> Order Samples </Link>
-                <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('https://res.cloudinary.com/madebystitched/image/upload/w_1700/Carmen/IMG_3174.jpg')" }}>
+                <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('/image/common/mega-menu.jpg')" }}>
                   <h2 className='text-4xl  font-medium'>Curtain + Blind Fabric Samples</h2>
                   <p className='text-sm '>
                     ORDER YOUR PACK from our large selection of eco-friendly fabrics all available in a range of classic <br />

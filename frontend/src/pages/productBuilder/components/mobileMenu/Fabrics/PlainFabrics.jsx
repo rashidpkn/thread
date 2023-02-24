@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setFabric, setPrice } from '../../../../../redux/slice/fabric'
-import { setMenu, setShow3D, setShowMenu } from '../../../../../redux/slice/util'
+import {  setShowMenu } from '../../../../../redux/slice/util'
 import { fabric } from './Custom'
 
 function PlainFabrics() {

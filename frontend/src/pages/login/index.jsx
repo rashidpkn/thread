@@ -11,6 +11,7 @@ import axios from 'axios'
 import backendIP from '../../backendIP'
 import { setSavedChange } from '../../redux/slice/util'
 import { GoogleLogin } from '@react-oauth/google';
+import jwt_decode from "jwt-decode";
 
 function Login() {
     const navigate = useNavigate()
@@ -20,16 +21,15 @@ function Login() {
     const { savedChange } = useSelector(state => state.util.estimate)
 
     const onSuccess = (res) => {
-        console.log(res)
-        window.alert('Hello')
-        // dispatch(setLoginStatus(true))
-        // if (savedChange === true) {
-        //     navigate('/estimate')
-        //     dispatch(setSavedChange(false))
-        // } else {
-        //     navigate('/cart')
-        // }
-        // dispatch(setEmail(res.profileObj.email))
+        
+        dispatch(setLoginStatus(true))
+        if (savedChange === true) {
+            navigate('/estimate')
+            dispatch(setSavedChange(false))
+        } else {
+            navigate('/cart')
+        }
+        dispatch(setEmail(jwt_decode(res.credential).email))
     };
 
     const onFailure = (err) => {

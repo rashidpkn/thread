@@ -3,9 +3,8 @@ import { ShoppingCart } from '@mui/icons-material'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import {  useSelector } from 'react-redux'
 
-import { setMenu } from '../../../redux/slice/util'
 
 import { Double } from './model/Double'
 import { Eyelet } from './model/Eyelet'
