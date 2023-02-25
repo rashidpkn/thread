@@ -5,7 +5,8 @@ const stripe = require('stripe')('sk_live_51KLtjzCHExkLfEQ3ynMphEWNk8jncPM6NYBY2
 
 
 router.post('/',async (req,res)=>{
-    const {email,amount} = req.body
+    try {
+        const {email,amount} = req.body
     const paymentIntent = await stripe.paymentIntents.create({
         amount:amount*100,
         currency:'usd',
@@ -14,6 +15,10 @@ router.post('/',async (req,res)=>{
     })
     res.json({'client_secret': paymentIntent['client_secret']})
     console.log('Done')
+    } catch (error) {
+        console.log(error.message)
+    }
+    
 })
 
 

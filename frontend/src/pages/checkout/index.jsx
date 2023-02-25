@@ -6,7 +6,7 @@ import { PerspectiveCamera } from '@react-three/drei'
 
 import Navbar from '../common/Navbar'
 import { useNavigate } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import backendIP from '../../backendIP'
 import { Double } from '../productBuilder/components/model/Double'
@@ -15,11 +15,10 @@ import { Pencil } from '../productBuilder/components/model/Pencil'
 import { Goblet } from '../productBuilder/components/model/Goblet'
 import { Triple } from '../productBuilder/components/model/Triple'
 import { Room } from '../productBuilder/components/Room'
-
+import { setFname,setLname,setPhone,setZipCode,setAddress } from '../../redux/slice/user'
 
 
 function CheckOut() {
-
   const { name, color } = useSelector(state => state.fabric.fabricType)
   const { width, height, roomName, item, installation, isPole, } = useSelector(state => state.fabric.measure)
   const { panel, look } = useSelector(state => state.fabric.style)
@@ -29,7 +28,7 @@ function CheckOut() {
 
   const [email, setEmail] = useState('')
   const navigate = useNavigate()
-
+  const dispatch = useDispatch()
   return (
     <div>
       <Navbar />
@@ -98,22 +97,22 @@ function CheckOut() {
           <div className="flex w-full gap-[10%]">
             <div className="flex flex-col gap-2 w-[60%]">
               <label htmlFor="">First Name</label>
-              <input required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
+              <input onChange={e=>dispatch(setFname(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
             </div>
             <div className="flex flex-col gap-2 w-[30%]">
               <label htmlFor="">Last Name</label>
-              <input required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
+              <input onChange={e=>dispatch(setLname(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
             </div>
           </div>
 
           <div className="flex w-full gap-[10%]">
             <div className="flex flex-col gap-2 w-[60%]">
               <label htmlFor="">Phone Number</label>
-              <input required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
+              <input onChange={e=>dispatch(setPhone(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
             </div>
             <div className="flex flex-col gap-2 w-[30%]">
               <label htmlFor="">Post Code</label>
-              <input required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
+              <input onChange={e=>dispatch(setZipCode(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
             </div>
           </div>
 
@@ -121,7 +120,7 @@ function CheckOut() {
 
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="">Address</label>
-            <textarea required type="text" className='w-full h-24 rounded-lg border border-[#B68D40] outline-none p-2' />
+            <textarea onChange={e=>dispatch(setAddress(e.target.value))} required type="text" className='w-full h-24 rounded-lg border border-[#B68D40] outline-none p-2' />
           </div>
 
           {/* <div className="w-full h-12 bg-[#B68D40]/30 rounded-md">

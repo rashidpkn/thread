@@ -10,8 +10,11 @@ import {
 
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Navbar from '../common/Navbar';
+import { useSelector } from 'react-redux';
+import axios from 'axios';
+import backendIP from '../../backendIP';
 
 function Payment() {
     const { clientSecret } = useParams()
@@ -44,7 +47,15 @@ const PaymentCard = () => {
     const [message, setMessage] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
 
+    const {fname,lname,phone,address,zipCode} = useSelector(state=>state.user)
+    const fabric = useSelector(state=>state.fabric)
+    const navigate =  useNavigate()
+
+
+   
+
     useEffect(() => {
+        
         if (!stripe) {
             return;
         }
@@ -61,6 +72,12 @@ const PaymentCard = () => {
             switch (paymentIntent.status) {
                 case "succeeded":
                     setMessage("Payment succeeded!");
+                    axios.post(`${backendIP}/email/order-fabric`,{fname,lname,phone,address,zipCode,fabric}).then(res=>{
+                        if(res.data){
+                            window.alert('Your Order is successfull')
+                            navigate('/')
+                        }
+                    })
                     break;
                 case "processing":
                     setMessage("Your payment is processing.");
@@ -73,6 +90,7 @@ const PaymentCard = () => {
                     break;
             }
         });
+        // eslint-disable-next-line
     }, [stripe]);
 
     const handleSubmit = async (e) => {
