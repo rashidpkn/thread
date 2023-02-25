@@ -86,7 +86,7 @@ function CheckOut() {
       <div className="mt-10 flex flex-col justify-center items-center ">
         <form onSubmit={e => {
           e.preventDefault()
-          axios.post(`${backendIP}/pay`, { email, amount: price }).then(res => {
+          axios.post(`${backendIP}/pay`, { email, amount: (Math.floor(price + 30 + accessoriesPrice)) }).then(res => {
             const { client_secret } = res.data
             if (client_secret) {
               navigate(`/payment/${client_secret}`)
