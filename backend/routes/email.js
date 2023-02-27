@@ -69,6 +69,23 @@ router.post('/order-fabric',async(req,res)=>{
 
 })
 
+router.post('/message',(req,res)=>{
+    const {name,email,subject,message} = req.body
+    sgMail.send({
+        to:email,
+        from:'info@my-thread.co.uk',
+        cc:'info@my-thread.co.uk',
+        subject:`${subject} - ${name}`,
+        html:message
+    }).then(resp => {
+        console.log(resp[0].statusCode)
+        res.send(true)
+        console.log('Mail has been forwarded')
+    }).catch(err => {
+        res.send(false)
+        console.log(err.message)
+    })
 
+})
 
 module.exports = router
