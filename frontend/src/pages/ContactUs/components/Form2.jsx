@@ -19,10 +19,10 @@ function Form2() {
                 </div>
                 <div className="lg:h-[650px] w-full lg:w-1/2 bg-[#E1B980] p-10 lg:p-20 flex flex-col justify-center gap-10 text-black">
                     <p className='text-3xl font-medium'>Contact Us</p>
-                    <p>Address : 198 West 21th <br /> Street, Suite 721 New York NY <br /> 10016</p>
-                    <p>Phone : +123456789</p>
-                    <p>Email : info@example.com</p>
-                    <p>Website : example.com</p>
+                    <p>Address : Thomas House, Easy Blinds & Curtains, <br /> 84 Eccleston Square, Pimlico, <br /> London SW1V 1PX, <br /> United Kingdom</p>
+                    <p>Phone : 0203 633 8622</p>
+                    <p>Email : info@my-thread.co.uk</p>
+                    <p>Website : my-thread.co.uk</p>
                 </div>
             </div>
         </div>

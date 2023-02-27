@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner1 from './components/Banner1'
-import PhoneNoAndEmail from './components/PhoneNoAndEmail'
+// import PhoneNoAndEmail from './components/PhoneNoAndEmail'
 // import Form from './components/form'
 import Navbar from '../common/Navbar'
 import Footer from '../common/Footer'
@@ -11,7 +11,7 @@ function Contact() {
     <div>
       <Navbar />
       <Banner1/>
-      <PhoneNoAndEmail/>
+      {/* <PhoneNoAndEmail/> */}
       {/* <Form /> */}
       <Form2 />
       <Footer />
