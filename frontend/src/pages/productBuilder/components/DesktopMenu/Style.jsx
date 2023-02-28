@@ -5,24 +5,24 @@ import { setLook, setPanel, setPrice } from '../../../../redux/slice/fabric'
 import { setMenu, setShow3D } from '../../../../redux/slice/util'
 
 
-import Single from '../../../asset/panel/Single.png'
-import Pair from '../../../asset/panel/Pair.png'
+import Single from '../../../asset/panel/Single.svg'
+import Pair from '../../../asset/panel/Pair.svg'
 
-import dSingle from '../../../asset/panel/dSingle.png'
-import dPair from '../../../asset/panel/dPair.png'
+import dSingle from '../../../asset/panel/dSingle.svg'
+import dPair from '../../../asset/panel/dPair.svg'
 
 
-import Double from '../../../asset/look/Double.png'
-import Eyelet from '../../../asset/look/Eyelet.png'
-import Goblet from '../../../asset/look/Goblet.png'
-import Pencil from '../../../asset/look/Pencil.png'
-import Triple from '../../../asset/look/Triple.png'
+import Double from '../../../asset/look/Double.svg'
+import Eyelet from '../../../asset/look/Eyelet.svg'
+import Goblet from '../../../asset/look/Goblet.svg'
+import Pencil from '../../../asset/look/Pencil.svg'
+import Triple from '../../../asset/look/Triple.svg'
 
-import dDouble from '../../../asset/look/dDouble.png'
-import dEyelet from '../../../asset/look/dEyelet.png'
-import dGoblet from '../../../asset/look/dGoblet.png'
-import dPencil from '../../../asset/look/dPencil.png'
-import dTriple from '../../../asset/look/dTriple.png'
+import dDouble from '../../../asset/look/dDouble.svg'
+import dEyelet from '../../../asset/look/dEyelet.svg'
+import dGoblet from '../../../asset/look/dGoblet.svg'
+import dPencil from '../../../asset/look/dPencil.svg'
+import dTriple from '../../../asset/look/dTriple.svg'
 
 
 
