@@ -179,10 +179,10 @@ function Navbar() {
                 </li>}
             </ul>
             <div className="flex gap-5">
+              <button onClick={()=>{setShowAccount(!showAccount)}}>Account</button >
               <Link to={'/cart'}>
                 <Cart />
               </Link>
-              <button onClick={()=>{setShowAccount(!showAccount)}}>Account</button >
             </div>
 
           </nav>
