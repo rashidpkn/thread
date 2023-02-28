@@ -24,7 +24,7 @@ function Estimate() {
             <Navbar />
             <div className="gap-y-5 flex flex-col items-center justify-center">
                 <h2 className='text-2xl text-center mt-5 font-medium'>Estimate</h2>
-                <div className="px-10 space-y-3 text-lg font-medium relative left-16">
+                <div className="px-10 space-y-3 text-lg  relative left-16">
                     <div className="flex">  <p className='w-64 text-xl'>Fabric          </p>  <p className='ml-16 flex justify-center items-center gap-3'>
                         {color && <div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }} />} {name}</p>  </div>
                     <div className="flex">  <p className='w-64 text-xl'>Item            </p>  <p className='ml-16'>{item}</p>  </div>
@@ -42,7 +42,7 @@ function Estimate() {
                     <div className="flex">  <p className='w-64 text-xl'>Making Price    </p>  <p className='ml-16'>{Math.floor(price)}</p>  </div>
                     {poleAndTrack==='Pole' && <div className="flex">  <p className='w-64 text-xl'>Accessories Price     </p>  <p className='ml-16'>{Math.floor(accessoriesPrice)}</p>  </div> }
                     <div className="flex">  <p className='w-64 text-xl'>Boxed &  Postage</p>  <p className='ml-16'>{ 30}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Total Price     </p>  <p className='ml-16'>{ Math.floor(price+30 + accessoriesPrice)}</p>  </div>
+                    <div className="flex font-medium">  <p className='w-64 text-xl'>Total Price     </p>  <p className='ml-16'>{ Math.floor(price+30 + accessoriesPrice)}</p>  </div>
                 </div>
                 <div class="w-96  border border-[#b68d40] rounded-3xl h-10 flex justify-center items-center  font-bold text-[#686161]">
 

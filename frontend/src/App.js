@@ -34,7 +34,7 @@ function App() {
   
 
   return (
-    <div className="">
+    <div className="font-inter">
       <Routes>
         <Route path='/productBuilder' element={<ProductBuilder />} />
         <Route path='/checkout' element={<CheckOut />} />
