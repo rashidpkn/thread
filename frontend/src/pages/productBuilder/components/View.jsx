@@ -2,8 +2,8 @@
 import { ShoppingCart } from '@mui/icons-material'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import React, { Suspense } from 'react'
-import {  useSelector } from 'react-redux'
+import React, { Suspense, useState } from 'react'
+import { useSelector } from 'react-redux'
 
 
 import { Double } from './model/Double'
@@ -30,7 +30,7 @@ function View({ show }) {
 
   const { name } = useSelector(state => state.fabric.fabricType)
   const { magnifyFabricPath, magnifyWavyFabricPath } = useSelector(state => state.fabric.fabricType)
-
+  const [bigImage, setBigImage] = useState(img)
   return (
     <div className={`${!true && 'hidden lg:inline-block'}  h-[calc(100vh-5rem)] lg:overflow-hidden lg:h-full w-full lg:w-3/5  flex-shrink-0 relative`}>
       <div className="z-10 bg-white absolute top-5 right-5 w-28 h-10 rounded-full border flex justify-center items-center gap-3 text-lg font-medium text-[#B68D40]"> <ShoppingCart fontSize="large" />  <p>{price}</p></div>
@@ -58,13 +58,13 @@ function View({ show }) {
       } */}
 
       <div className="view h-full w-full bg-[#2b2b2b] flex justify-center items-center flex-col gap-5 p-5 lg:p-0" >
-        {show3D===false ?
+        {show3D === false ?
           <>
             <div className="lg:hidden">
-              <Magnifier src={img} className='object-contain' />
+              <Magnifier src={bigImage} className='object-contain' />
             </div>
             <div className="hidden lg:block">
-              <Magnifier src={img} className='h-full w-full' />
+              <Magnifier src={bigImage} className='h-full w-full' />
             </div>
             {/* <img src={img}  className='lg:object-cover object-contain lg:w-full lg:h-full' />  */}
 
@@ -72,12 +72,18 @@ function View({ show }) {
               {/* <p>Selected Fabric</p> */}
               <h6 className='text-center '>{name}</h6>
               <div className="flex justify-center items-center gap-3 h-20">
+
+              <div className="w-20 h-full ">
+                  <img onClick={()=>setBigImage(img)}  src={img} className='h-full w-full rounded-lg' alt='' />
+                </div>
+
                 <div className="w-20 h-full ">
-                  <Magnifier src={magnifyFabricPath} className='h-full w-full rounded-lg' />
+                  <img onClick={()=>setBigImage(magnifyFabricPath)}  src={magnifyFabricPath} className='h-full w-full rounded-lg' alt='' />
                 </div>
                 <div className="w-20 h-full ">
-                  <Magnifier src={magnifyWavyFabricPath} className='h-full w-full rounded-lg' />
+                  <img onClick={()=>setBigImage(magnifyWavyFabricPath)}  src={magnifyWavyFabricPath} className='h-full w-full rounded-lg' alt='' />
                 </div>
+                
               </div>
             </div>
           </>
@@ -120,7 +126,7 @@ function View({ show }) {
         }
 
       </div>
-      <Selector />
+      <Selector setBigImage={setBigImage} />
     </div>
   )
 }
@@ -128,22 +134,33 @@ function View({ show }) {
 export default View
 
 
-const Selector = () => {
+const Selector = ({ setBigImage }) => {
   // const dispatch = useDispatch()
   // const { showMenu } = useSelector(state => state.util.productBuilder)
   const { name } = useSelector(state => state.fabric.fabricType)
-  const { magnifyFabricPath, magnifyWavyFabricPath } = useSelector(state => state.fabric.fabricType)
+  const { magnifyFabricPath, magnifyWavyFabricPath, img } = useSelector(state => state.fabric.fabricType)
   return (
     <div className="z-10 hidden lg:block absolute right-1  bottom-1   bg-[#2b2b2b]/70 rounded-lg text-white text-center py-3 px-4 space-y-3">
       {/* <p>Selected Fabric</p> */}
       <h6 className='text-center'>{name}</h6>
       <div className="flex gap-3 h-20">
+        
         <div className="w-20 h-full ">
-          <Magnifier src={magnifyFabricPath} className='h-full w-full rounded-lg' />
+          {/* <Magnifier src={magnifyWavyFabricPath} className='h-full w-full rounded-lg' /> */}
+          <img onClick={() => setBigImage(img)} src={img} className='h-full w-full rounded-lg' alt="" />
         </div>
+
         <div className="w-20 h-full ">
-          <Magnifier src={magnifyWavyFabricPath} className='h-full w-full rounded-lg' />
+          <img onClick={() => setBigImage(magnifyFabricPath)} src={magnifyFabricPath} className='h-full w-full rounded-lg' alt="" />
+          {/* <Magnifier src={magnifyFabricPath} className='h-full w-full rounded-lg' /> */}
         </div>
+
+        <div className="w-20 h-full ">
+          {/* <Magnifier src={magnifyWavyFabricPath} className='h-full w-full rounded-lg' /> */}
+          <img onClick={() => setBigImage(magnifyWavyFabricPath)} src={magnifyWavyFabricPath} className='h-full w-full rounded-lg' alt="" />
+        </div>
+
+
       </div>
     </div>
   )

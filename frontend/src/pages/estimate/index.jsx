@@ -29,7 +29,7 @@ function Estimate() {
                         {color && <div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }} />} {name}</p>  </div>
                     <div className="flex">  <p className='w-64 text-xl'>Item            </p>  <p className='ml-16'>{item}</p>  </div>
                     <div className="flex">  <p className='w-64 text-xl'>Installation    </p>  <p className='ml-16'>{installation}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Is Pole         </p>  <p className='ml-16'>{isPole ? 'Yes' : 'No'}</p>  </div>
+                    <div className="flex">  <p className='w-64 text-xl'>Pole         </p>  <p className='ml-16'>{isPole ? 'Yes' : 'No'}</p>  </div>
 
                     <div className="flex">  <p className='w-64 text-xl'>Measurements    </p>  <p className='ml-16'>{`${width} W ${height} H (${roomName})`}</p>  </div>
                     <div className="flex">  <p className='w-64 text-xl'>Panel           </p>  <p className='ml-16'>{panel}</p>  </div>

@@ -39,11 +39,9 @@ function Style() {
   const dispatch = useDispatch()
   const { panel, look } = useSelector(state => state.fabric.style)
   return (
-    <div className='space-y-3'>
+    <div className='space-y-5'>
 
-      {/* <div className="p-5 w-full flex items-center justify-center gap-5">
-        <p className='font-medium'>Choose Your Style</p>
-      </div> */}
+      
 
       <p className='text-center font-medium'>Single or Pair panel?</p>
       <div className="flex justify-center gap-5">
@@ -52,7 +50,7 @@ function Style() {
         <div onClick={() => dispatch(setPanel('Pair'))} className={` w-24 h-24 rounded-md flex justify-center items-center relative`}>  <img className='w-full' src={panel === 'Pair' ? Pair : dPair} alt="" /> <p className='absolute -bottom-6 text-center'>Pair</p> </div>
 
       </div>
-      <p className='text-center font-medium'>What looks are you going for ?</p>
+      <p className='text-center font-medium'>What look are you going for ?</p>
       <div className="flex justify-center gap-5 flex-wrap">
         
         <div onClick={() => { dispatch(setLook('Double')); dispatch(setPrice()); }} className={` w-24 h-24 rounded-md flex justify-center items-center relative`} ><img className='w-full' src={look === 'Double' ? Double : dDouble} alt="" />

@@ -50,7 +50,7 @@ const ItemCard = ({ name, item, installation, isPole, width, height, roomName, p
             <div className="flex">  <p className='w-36 text-xl'>Fabric          </p>  <p className='ml-8 flex justify-center items-center gap-3'><div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }}></div> {name}</p>  </div>
             <div className="flex">  <p className='w-36 text-xl'>Item            </p>  <p className='ml-8'>{item}</p>  </div>
             <div className="flex">  <p className='w-36 text-xl'>Installation    </p>  <p className='ml-8'>{installation}</p>  </div>
-            <div className="flex">  <p className='w-36 text-xl'>Is Pole         </p>  <p className='ml-8'>{isPole ? 'Yes' : 'No'}</p>  </div>
+            <div className="flex">  <p className='w-36 text-xl'>Pole         </p>  <p className='ml-8'>{isPole ? 'Yes' : 'No'}</p>  </div>
 
             <div className="flex">  <p className='w-36 text-xl'>Measurements    </p>  <p className='ml-8'>{`${width} W ${height} H (${roomName})`}</p>  </div>
             <div className="flex">  <p className='w-36 text-xl'>Panel           </p>  <p className='ml-8'>{panel}</p>  </div>

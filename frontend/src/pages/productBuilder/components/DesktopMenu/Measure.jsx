@@ -106,18 +106,18 @@ function Measure() {
         selector === 2 && <div className="space-y-5">
           <p className='text-center font-medium'>The layer on the inside of the curtain, for insulation or a weightier look.</p>
           <div className="flex justify-center flex-wrap gap-3 px-2">
-            <button onClick={() => dispatch(setRoom('Bedroom'))} className={` ${room === 'Bedroom' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Bedroom</button>
-            <button onClick={() => dispatch(setRoom('Study'))} className={` ${room === 'Study' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Study</button>
-            <button onClick={() => dispatch(setRoom('Bathroom'))} className={` ${room === 'Bathroom' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Bathroom</button>
-            <button onClick={() => dispatch(setRoom('Balcony'))} className={` ${room === 'Balcony' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Balcony</button>
-            <button onClick={() => dispatch(setRoom('Living Room'))} className={` ${room === 'Living Room' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Living Room</button>
-            <button onClick={() => dispatch(setRoom('Dining Room'))} className={` ${room === 'Dining Room' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Dining Room</button>
-            <button onClick={() => dispatch(setRoom('Kitchen'))} className={` ${room === 'Kitchen' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Kitchen</button>
-            <button onClick={() => dispatch(setRoom('Other Rooms'))} className={` ${room === 'Other Rooms' && 'border-2'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Other Rooms</button>
+            <button onClick={() => dispatch(setRoom('Bedroom'))} className={` ${room === 'Bedroom' && 'border-[3px]'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Bedroom</button>
+            <button onClick={() => dispatch(setRoom('Study'))} className={` ${room === 'Study' && 'border-[3px]'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Study</button>
+            <button onClick={() => dispatch(setRoom('Bathroom'))} className={` ${room === 'Bathroom' && 'border-[3px]'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Bathroom</button>
+            <button onClick={() => dispatch(setRoom('Balcony'))} className={` ${room === 'Balcony' && 'border-[3px]'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Balcony</button>
+            <button onClick={() => dispatch(setRoom('Living Room'))} className={` ${room === 'Living Room' && 'border-[3px]'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Living Room</button>
+            <button onClick={() => dispatch(setRoom('Dining Room'))} className={` ${room === 'Dining Room' && 'border-[3px]'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Dining Room</button>
+            <button onClick={() => dispatch(setRoom('Kitchen'))} className={` ${room === 'Kitchen' && 'border-[3px]'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Kitchen</button>
+            <button onClick={() => dispatch(setRoom('Other Rooms'))} className={` ${room === 'Other Rooms' && 'border-[3px]'} h-10 px-2 border border-[#b68d40] rounded-md hover:text-[#B68D40]`}>Other Rooms</button>
           </div>
           <p className='text-center font-medium'>Give this window a name!</p>
           <div className="flex justify-center px-10">
-            <input onChange={e => dispatch(setRoomName(e.target.value))} disabled={room === 'Other Rooms' ? false : true} value={roomName} className='bg-[#122620]/30 h-12 pl-2 w-full rounded-md' placeholder='Bedrooms' type="text" />
+            <input onChange={e => dispatch(setRoomName(e.target.value))} disabled={room === 'Other Rooms' ? false : true} value={roomName} className='bg-[#122620]/30 h-12 pl-2 w-full rounded-md text-lg font-medium text-black placeholder:text-black' placeholder='Bedrooms' type="text" />
           </div>
 
           <div className="flex  justify-between items-center mt-10">

@@ -1,4 +1,4 @@
-import { MenuOutlined,  Email, SupportAgent, Close, Delete } from '@mui/icons-material'
+import { MenuOutlined, Close, Delete } from '@mui/icons-material'
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
@@ -8,7 +8,7 @@ import Curtains from './components/Curtains'
 import RollerBlinds from './components/RollerBlinds'
 import RomanBlinds from './components/RomanBlinds'
 // import {FaHome, FaHeart, FaShoppingCart, FaUserAlt } from'react-icons/fa';
-import {  setLogout } from '../../redux/slice/user'
+import { setLogout } from '../../redux/slice/user'
 
 
 //icon
@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <>
       <div className="sticky top-0 z-20">
-        <div className="hidden lg:flex h-9 bg-[#2b2b2b]  justify-between items-center text-white px-5 font-inter relative">
+        {/* <div className="hidden lg:flex h-9 bg-[#2b2b2b]  justify-between items-center text-white px-5 font-inter relative">
           <h1>Make a free appointment</h1>
 
           <ul className="flex gap-5">
@@ -37,21 +37,24 @@ function Navbar() {
             <li className='cursor-pointer' onClick={() => { setShowAccount(!showAccount) }}>My Account</li>
           </ul>
 
-          {showAccount &&
-            <div className="absolute z-20 top-9 right-0 bg-[#2b2b2b] w-48 rounded-bl-2xl flex flex-col justify-center items-center px-7 py-5 text-white gap-2">
-              {
-                loginStatus ? <h3 onClick={() => {
-                  navigate('/login')
-                  dispatch(setLogout())
-                }}>Logout</h3> : <h3><Link to={'/login'}> Login </Link></h3>
-              }
+          
 
-              <div className="w-full h-[1px] bg-white"></div>
-              <h3><Link to={'/cart'}> Saved </Link></h3>
-            </div>
-          }
+        </div> */}
 
-        </div>
+        {showAccount &&
+          <div className="absolute z-20 top-[74px] right-0 bg-[#2b2b2b] w-48 rounded-bl-2xl flex flex-col justify-center items-center px-7 py-5 text-white gap-2">
+            {
+              loginStatus ? <h3 onClick={() => {
+                navigate('/login')
+                dispatch(setLogout())
+              }}>Logout</h3> : <h3><Link to={'/login'}> Login </Link></h3>
+            }
+
+            <div className="w-full h-[1px] bg-white"></div>
+            <h3><Link to={'/cart'}> Saved </Link></h3>
+          </div>
+        }
+
 
         <div className='shadow-md w-full text-[#B68D40] text-[16px]  bg-white '>
           <nav className='h-[75px] w-full hidden lg:flex justify-between items-center px-10 '>
@@ -63,22 +66,22 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/productBuilder'}>Shop Now</Link>
-                <div className="fixed left-0 top-[110px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
-                  <div className={`flex  items-center gap-5 bg-white relative z-[99] text-black pt-10`}>
+                <div className="fixed left-0 top-[74px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
+                  <div className={`flex  items-center justify-center gap-5 bg-white relative z-[99] text-black pt-10`}>
                     <h1 className='text-2xl'>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
                   <div className={`flex justify-center gap-5 items-center  w-full `}>
                     <Curtain submenu={2} path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
-                    <Curtain submenu={2} path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'https://www.vistafashions.com/main/images/gallery/roman-blinds/roman-blinds08.jpg'} />
+                    <Curtain submenu={2} path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'/image/common/megamenu-blinds.jpeg'} />
                   </div>
                 </div>
               </li>
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/curtains'}>Curtain Style</Link>
-                <div className="fixed left-0 top-[110px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
-                  <div className={` flex items-center gap-5 bg-white relative z-[99] text-black pt-10`}>
+                <div className="fixed left-0 top-[74px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
+                  <div className={` flex items-center justify-center gap-5 bg-white relative z-[99] text-black pt-10`}>
                     <h1 className='text-2xl'>Shop Our Curtains</h1>
                     <p>Our curtains are made to measure at the highest quality specification.</p>
                   </div>
@@ -96,7 +99,7 @@ function Navbar() {
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                 <Link to={'/order-samples'}> Order Samples </Link>
-                <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('/image/common/mega-menu.jpg')" }}>
+                <div className="fixed left-0 top-[74px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('/image/common/mega-menu.jpg')" }}>
                   <h2 className='text-4xl  font-medium'>Curtain + Blind Fabric Samples</h2>
                   <p className='text-sm '>
                     ORDER YOUR PACK from our large selection of eco-friendly fabrics all available in a range of classic <br />
@@ -143,7 +146,7 @@ function Navbar() {
               {cart.length !== 0 &&
                 <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
                   <p className=''>Your Sample <p className='inline-flex justify-center items-center h-6 w-6 rounded-full bg-[#CD6600] text-white'>{cart.length}</p></p>
-                  <div className="fixed left-0 top-[110px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white text-black group-hover:pt-[5%] px-[5%]  flex">
+                  <div className="fixed left-0 top-[74px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white text-black group-hover:pt-[5%] px-[5%]  flex">
                     <div className="w-1/2 space-y-10">
                       <p className='text-4xl font-normal'>Sample pack</p>
                       <p>Select up to 8 fabric samples and we'll deliver them for free!</p>
@@ -175,9 +178,13 @@ function Navbar() {
                   </div>
                 </li>}
             </ul>
-            <Link to={'/cart'}>
-              <Cart />
-            </Link>
+            <div className="flex gap-5">
+              <Link to={'/cart'}>
+                <Cart />
+              </Link>
+              <button onClick={()=>{setShowAccount(!showAccount)}}>Account</button >
+            </div>
+
           </nav>
         </div>
 
@@ -190,17 +197,17 @@ function Navbar() {
           </a>
 
           <div className="flex gap-5 items-center">
-            
+
             <div className="flex justify-center items-center relative">
               <span className='h-5 w-5 bg-[#cd6500] rounded-full absolute -top-2 -right-3 flex justify-center items-center text-white'>{cart.length}</span>
               <img src={orderSampleIcon} className='h-7 w-7' alt="" onClick={() => {
-                          if (cart.length) {
-                            navigate('/samples-checkout')
-                          } else {
-                            navigate('/order-samples')
-                            window.alert('Please Select Any Fabrics')
-                          }
-                        }} />
+                if (cart.length) {
+                  navigate('/samples-checkout')
+                } else {
+                  navigate('/order-samples')
+                  window.alert('Please Select Any Fabrics')
+                }
+              }} />
             </div>
             <div className="flex justify-center items-center relative">
               <span className='h-5 w-5 bg-[#cd6500] rounded-full absolute -top-2 -right-3 flex justify-center items-center text-white'>0</span>

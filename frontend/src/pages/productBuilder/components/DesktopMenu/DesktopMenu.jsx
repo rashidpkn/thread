@@ -11,7 +11,7 @@ function DesktopMenu() {
   return (
     <div className="DeskTop hidden lg:block Menu bg-white h-full w-2/5">
       <DesktopMenuSelector />
-      <div className="w-full py-10 px-20 bg-[#E1B980] h-[calc(100%-44px)]">
+      <div className="w-full py-5 px-20 bg-[#E1B980] h-[calc(100%-44px)]">
         {menu === 1 && <Fabrics />}
         {menu === 2 && <Measure />}
         {menu === 3 && <Style />}

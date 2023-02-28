@@ -65,7 +65,7 @@ function CheckOut() {
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Fabric          </p>  <p className='lg:ml-16 flex justify-center items-center gap-3'>{color && <div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }}></div>}{name}</p>   </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Item            </p>  <p className='lg:ml-16'>{item}</p>  </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Installation    </p>  <p className='lg:ml-16'>{installation}</p>  </div>
-          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Is Pole         </p>  <p className='lg:ml-16'>{isPole ? 'Yes' : 'No'}</p>  </div>
+          <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Pole         </p>  <p className='lg:ml-16'>{isPole ? 'Yes' : 'No'}</p>  </div>
 
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Measurements    </p>  <p className='lg:ml-16'>{`${width} W ${height} H (${roomName})`}</p>  </div>
           <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Panel           </p>  <p className='lg:ml-16'>{panel}</p>  </div>
