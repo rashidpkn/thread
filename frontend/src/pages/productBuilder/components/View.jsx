@@ -2,7 +2,7 @@
 import { ShoppingCart } from '@mui/icons-material'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import React, { Suspense, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 
 
@@ -31,6 +31,11 @@ function View({ show }) {
   const { name } = useSelector(state => state.fabric.fabricType)
   const { magnifyFabricPath, magnifyWavyFabricPath } = useSelector(state => state.fabric.fabricType)
   const [bigImage, setBigImage] = useState(img)
+
+  useEffect(() => {
+      setBigImage(img)
+  }, [name])
+  
   return (
     <div className={`${!true && 'hidden lg:inline-block'}  h-[calc(100vh-5rem)] lg:overflow-hidden lg:h-full w-full lg:w-3/5  flex-shrink-0 relative`}>
       <div className="z-10 bg-white absolute top-5 right-5 w-28 h-10 rounded-full border flex justify-center items-center gap-3 text-lg font-medium text-[#B68D40]"> <ShoppingCart fontSize="large" />  <p>{price}</p></div>
