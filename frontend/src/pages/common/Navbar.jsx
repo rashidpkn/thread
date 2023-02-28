@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { setCart } from '../../redux/slice/sample'
 import Cart from '../asset/icon/Cart'
 import Curtains from './components/Curtains'
-import RollerBlinds from './components/RollerBlinds'
+// import RollerBlinds from './components/RollerBlinds'
 import RomanBlinds from './components/RomanBlinds'
 // import {FaHome, FaHeart, FaShoppingCart, FaUserAlt } from'react-icons/fa';
 import { setLogout } from '../../redux/slice/user'
@@ -127,12 +127,12 @@ function Navbar() {
                       </div>
                     </Link>
 
-                    <Link to={'/order-samples'}>
+                    {/* <Link to={'/order-samples'}>
                       <div className="h-40 w-40 border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-2">
                         <RollerBlinds />
                         <p>ROLLER BLINDS</p>
                       </div>
-                    </Link>
+                    </Link> */}
 
                   </div>
                 </div>
@@ -179,7 +179,7 @@ function Navbar() {
                 </li>}
             </ul>
             <div className="flex gap-5">
-              <button onClick={()=>{setShowAccount(!showAccount)}}>Account</button >
+              <button onClick={() => { setShowAccount(!showAccount) }}>Account</button >
               <Link to={'/cart'}>
                 <Cart />
               </Link>
