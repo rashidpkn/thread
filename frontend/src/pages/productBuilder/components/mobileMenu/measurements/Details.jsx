@@ -7,8 +7,8 @@ function Details() {
     const { item } = useSelector(state => state.fabric.measure)
   return (
     <div className='space-y-5 '>
-            <div className=" space-y-5">
-                <h2 className='text-2xl text-center'>Get your <br /> Measurement</h2>
+            <div className=" space-y-5 pt-10">
+                {/* <h2 className='text-2xl text-center'>Get your <br /> Measurement</h2> */}
                 <h3 className='text-lg text-center'>Measurements is Added !</h3>
             </div>
             <div className="flex justify-center">

@@ -58,7 +58,7 @@ function Navbar() {
 
         <div className='shadow-md w-full text-[#B68D40] text-[16px]  bg-white '>
           <nav className='h-[110px] w-full hidden lg:flex justify-between items-center px-10 '>
-            <a href="https://my-thread.co.uk">
+            <a href="https://my-thread.co.uk" >
               <img src="/image/common/logo.svg" width={100} alt="" />
             </a>
 
@@ -192,7 +192,7 @@ function Navbar() {
           <MenuOutlined className='cursor-pointer' onClick={() => setShowMenu(!showMenu)} />
 
 
-          <a href="https://my-thread.co.uk">
+          <a href="https://my-thread.co.uk" className='relative left-[25px]'>
             <img src="/image/common/logo.svg" width={100} alt="" />
           </a>
 

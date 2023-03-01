@@ -2270,7 +2270,7 @@ export const fabric =[
     },
     {
         id: 158,
-        name: 'Great Oak Dove Low Res',
+        name: 'Great Oak Dove ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2284,7 +2284,7 @@ export const fabric =[
     },
     {
         id: 159,
-        name: 'Great Oak Duckegg Low Res',
+        name: 'Great Oak Duckegg ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2298,7 +2298,7 @@ export const fabric =[
     },
     {
         id: 160,
-        name: 'Great Oak Ebony Low Res',
+        name: 'Great Oak Ebony ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2312,7 +2312,7 @@ export const fabric =[
     },
     {
         id: 161,
-        name: 'Great Oak Flint Low Res',
+        name: 'Great Oak Flint ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2326,7 +2326,7 @@ export const fabric =[
     },
     {
         id: 162,
-        name: 'Great Oak Lemongrass Low Res',
+        name: 'Great Oak Lemongrass ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2340,7 +2340,7 @@ export const fabric =[
     },
     {
         id: 163,
-        name: 'Great Oak Messai Low Res',
+        name: 'Great Oak Messai ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2354,7 +2354,7 @@ export const fabric =[
     },
     {
         id: 164,
-        name: 'Great Oak Midnight Low Res',
+        name: 'Great Oak Midnight ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2368,7 +2368,7 @@ export const fabric =[
     },
     {
         id: 165,
-        name: 'Great Oak Paprika Low Res',
+        name: 'Great Oak Paprika ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2382,7 +2382,7 @@ export const fabric =[
     },
     {
         id: 166,
-        name: 'Great Oak Pewter Low Res',
+        name: 'Great Oak Pewter ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2396,7 +2396,7 @@ export const fabric =[
     },
     {
         id: 167,
-        name: 'Great Oak Sand Low Res',
+        name: 'Great Oak Sand ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2410,7 +2410,7 @@ export const fabric =[
     },
     {
         id: 168,
-        name: 'Great Oak Willow Low Res',
+        name: 'Great Oak Willow ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2494,7 +2494,7 @@ export const fabric =[
     },
     {
         id: 174,
-        name: 'Oak Leaf Duchegg Low Res',
+        name: 'Oak Leaf Duchegg ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2508,7 +2508,7 @@ export const fabric =[
     },
     {
         id: 175,
-        name: 'Oak Leaf Lemongrass Low Res',
+        name: 'Oak Leaf Lemongrass ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2522,7 +2522,7 @@ export const fabric =[
     },
     {
         id: 176,
-        name: 'Oak Leaf Midnight Low Res',
+        name: 'Oak Leaf Midnight ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2536,7 +2536,7 @@ export const fabric =[
     },
     {
         id: 177,
-        name: 'Oak Leaf Paprika Low Res',
+        name: 'Oak Leaf Paprika ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2550,7 +2550,7 @@ export const fabric =[
     },
     {
         id: 178,
-        name: 'Oak Leaf Pewter Low Res',
+        name: 'Oak Leaf Pewter ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2564,7 +2564,7 @@ export const fabric =[
     },
     {
         id: 179,
-        name: 'Oak Leaf Sand Low Res',
+        name: 'Oak Leaf Sand ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2578,7 +2578,7 @@ export const fabric =[
     },
     {
         id: 180,
-        name: 'Oak Leaf Willow Low Res',
+        name: 'Oak Leaf Willow ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2592,7 +2592,7 @@ export const fabric =[
     },
     {
         id: 181,
-        name: 'Oak Leaf Rose Low Res',
+        name: 'Oak Leaf Rose ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2690,7 +2690,7 @@ export const fabric =[
     },
     {
         id: 188,
-        name: 'Pencil Stripe Duckegg Low Res',
+        name: 'Pencil Stripe Duckegg ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2704,7 +2704,7 @@ export const fabric =[
     },
     {
         id: 189,
-        name: 'Pencil Stripe midnight Low Res',
+        name: 'Pencil Stripe midnight ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2718,7 +2718,7 @@ export const fabric =[
     },
     {
         id: 190,
-        name: 'Pencil Stripe Ocean Low Res',
+        name: 'Pencil Stripe Ocean ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2732,7 +2732,7 @@ export const fabric =[
     },
     // {
     //     id: 187,
-    //     name: 'Pencil Stripe Pewter Low Res',
+    //     name: 'Pencil Stripe Pewter ',
     //     color: '',
     //     patternNumber: '01',
     //     fabricInitialPrice: 0,
@@ -2745,7 +2745,7 @@ export const fabric =[
     // },
     {
         id: 191,
-        name: 'Pencil Stripe Sand Low Res',
+        name: 'Pencil Stripe Sand ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2787,7 +2787,7 @@ export const fabric =[
     },
     {
         id: 194,
-        name: 'Rowing Stripe Duckegg Low Res',
+        name: 'Rowing Stripe Duckegg ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2801,7 +2801,7 @@ export const fabric =[
     },
     // {
     //     id: 192,
-    //     name: 'Rowing Stripe Flint Low Res',
+    //     name: 'Rowing Stripe Flint ',
     //     color: '',
     //     patternNumber: '01',
     //     fabricInitialPrice: 0,
@@ -2814,7 +2814,7 @@ export const fabric =[
     // },
     {
         id: 195,
-        name: 'Rowing Stripe Midnight Low Res',
+        name: 'Rowing Stripe Midnight ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2828,7 +2828,7 @@ export const fabric =[
     },
     {
         id: 196,
-        name: 'Rowing Stripe Oatmeal Low Res',
+        name: 'Rowing Stripe Oatmeal ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2842,7 +2842,7 @@ export const fabric =[
     },
     {
         id: 197,
-        name: 'Rowing Stripe Pewter Low Res',
+        name: 'Rowing Stripe Pewter ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
@@ -2856,7 +2856,7 @@ export const fabric =[
     },
     {
         id: 198,
-        name: 'Rowing Stripe Sand Low Res',
+        name: 'Rowing Stripe Sand ',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,

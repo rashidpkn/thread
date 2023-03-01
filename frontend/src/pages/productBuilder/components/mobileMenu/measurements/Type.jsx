@@ -21,9 +21,8 @@ function Type({ setSelector }) {
   const dispatch = useDispatch()
   return (
     <div className='space-y-5 relative h-full'>
-      <h2 className='text-2xl text-center'>Now lets get some <br /> measurements in</h2>
 
-      <p className='text-center font-medium'>What are you measuring for?</p>
+      <p className='text-center font-medium pt-10'>What are you measuring for?</p>
       <div className="flex justify-center gap-5">
 
         <div onClick={() => { dispatch(setItem('Curtain')) }} className={`w-24 h-24 rounded-md relative`}>

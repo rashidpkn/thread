@@ -8,9 +8,9 @@ function Rooms({setSelector}) {
   const dispatch = useDispatch()
   return (
     <div className='space-y-5 relative h-full'>
-        <h2 className='text-2xl text-center'>Now lets get some <br /> measurements in</h2>
+        {/* <h2 className='text-2xl text-center'>Now lets get some <br /> measurements in</h2> */}
         <div className="space-y-5">
-            <p className='text-center'>What type of room is this?</p>
+            <p className='text-center pt-10'>What type of room is this?</p>
             <div className="flex justify-center  flex-wrap">
                     <div className={`${room==='Bedroom'     && 'border border-[#2b2b2b]  rounded-xl'} p-1`}> <button onClick={()=>dispatch(setRoom('Bedroom'))}     className={` bg-[#2b2b2b] text-white w-32 h-10 rounded-xl`}>Bedroom</button></div>
                     <div className={`${room==='Study'       && 'border border-[#2b2b2b]  rounded-xl'} p-1`}> <button onClick={()=>dispatch(setRoom('Study'))}       className={` bg-[#2b2b2b] text-white w-32 h-10 rounded-xl`}>Study</button></div>

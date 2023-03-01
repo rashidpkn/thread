@@ -27,7 +27,7 @@ function Features() {
 
       {
         selector === 1 && <div className="space-y-5">
-          <p className='text-center font-medium'>The layer on the inside of the curtain, for insulation or a weightier look.</p>
+          <p className='text-center font-medium'>The layer on the inside of the {item==='Curtain' ? 'curtain' :'blind' }, for insulation or a weightier look.</p>
           <div className="flex flex-col gap-5 items-center">
             <button onClick={() => dispatch(setLining('Unlined'))}                       className={`${lining === 'Unlined'                       ? 'bg-[#2B2B2B] text-white' : '' } h-7 w-72 border border-[#2B2B2B] rounded-lg`}>Unlined</button>
             <button onClick={() => dispatch(setLining('Bonded Fleece Blackout Lining'))} className={`${lining === 'Bonded Fleece Blackout Lining' ? 'bg-[#2B2B2B] text-white' : '' } h-7 w-72 border border-[#2B2B2B] rounded-lg`}>Blackout Lined</button>
@@ -46,7 +46,7 @@ function Features() {
       {
         selector === 2 && <div className="space-y-5">
           
-          <p className='text-justify font-medium px-5'>Pole used to suspend curtains above windows/Tracks are discreet and designed to blend with a wall.</p>
+          <p className='text-justify font-medium px-5'>Pole used to suspend {item==='Curtain' ? 'curtain' :'blind' } above windows/Tracks are discreet and designed to blend with a wall.</p>
 
           <div className="flex justify-center gap-3  flex-wrap">
             <div className="flex items-center gap-3"> <input onClick={() => dispatch(setPole("I don't need one"))} defaultChecked className={`p-1 border h-5 w-5`} type="radio" name="pole" id="no" /> <label htmlFor="no">I don't need one</label> </div>

@@ -142,11 +142,22 @@ function Measure() {
           <div className="flex  justify-center gap-5">
             <div className="flex flex-col gap-3">
               <label htmlFor="">Height CM</label>
-              <input value={height} min={100} max={305} placeholder='100 CM to 305 CM' onChange={e => { dispatch(setHeight(Number(height < 100 ? 100 : e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
+              <input value={height} min={100} max={305} onBlur={e=>{
+                            if(Number(e.target.value)<100 || Number(e.target.value)>305 ){
+                                window.alert("Please Provide Height between 100 and 305")
+                            }
+                           }} 
+                           placeholder='100 CM to 305 CM' onChange={e => { dispatch(setHeight(Number( e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
             </div>
             <div className="flex flex-col gap-3">
               <label htmlFor="">Width CM</label>
-              <input value={width} min={75} max={480} placeholder='75 CM to 480 CM' onChange={e => { dispatch(setWidth(Number(width < 75 ? 75 : e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
+              <input value={width} min={75} max={480}
+               onBlur={e=>{
+                if(Number(e.target.value)<100 || Number(e.target.value)>305 ){
+                    window.alert("Please Provide Width between 75 and 480")
+                }
+               }} 
+               placeholder='75 CM to 480 CM' onChange={e => { dispatch(setWidth(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-28 rounded-md' type="number" />
             </div>
 
           </div>

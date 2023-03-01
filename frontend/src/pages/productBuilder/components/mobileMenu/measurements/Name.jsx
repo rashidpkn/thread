@@ -15,8 +15,8 @@ function Name({setSelector}) {
   
   return (
     <div className='space-y-5 relative h-full'>
-        <h2 className='text-2xl text-center'>Now lets get some <br /> measurements in</h2>
-        <div className="flex flex-col gap-5 items-center">
+        {/* <h2 className='text-2xl text-center'>Now lets get some <br /> measurements in</h2> */}
+        <div className="flex flex-col gap-5 items-center pt-10">
             <p className='text-center'>Give Window a Name ?</p>
             <input ref={Mobilename} onChange={e=>dispatch(setRoomName(e.target.value))} disabled={room=== 'Other Rooms' ? false : true} value={roomName} className='bg-[#122620]/30 h-12 pl-2    text-lg font-medium text-black placeholder:text-black' placeholder='Bedrooms' type="text" />
         </div>

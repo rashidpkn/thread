@@ -8,8 +8,8 @@ function Pole({ setSelector }) {
     const dispatch = useDispatch()
     return (
         <div className='space-y-3 relative h-full'>
-            <h2 className='text-2xl text-center'>Now lets get some <br /> measurements in</h2>
-            <div className="flex flex-col gap-3 items-center">
+            
+            <div className="flex flex-col gap-3 items-center pt-10">
                 <p className='text-center'>Do you have a pole or track installed ?</p>
                 {/* <div className="flex justify-center gap-5">
                 <div onClick={()=>{dispatch(setIsPole(false) )}} className={`${isPole === false && 'border border-[#B68D40]  rounded-xl'} p-1`}><button className='px-[18px] py-[16px] rounded-lg bg-[#B68D40]'>No </button></div>
@@ -24,11 +24,19 @@ function Pole({ setSelector }) {
                 <div className="flex  justify-center gap-5">
                     <div className="flex flex-col">
                         <label htmlFor="">Height CM</label>
-                        <input value={height} min={100} max={480} placeholder='100 CM to 480 CM' onChange={e => {dispatch(setHeight(Number(height<100?100:e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
+                        <input  min={100} max={480} placeholder='100 CM to 305 CM' onBlur={e=>{
+                            if(Number(e.target.value)<100 || Number(e.target.value)>305 ){
+                                window.alert("Please Provide Height between 100 and 305")
+                            }
+                        }} onChange={e => {dispatch(setHeight(Number(e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
                     </div>
                     <div className="flex flex-col">
                         <label htmlFor="">Width CM</label>
-                        <input value={width} min={75} max={480} placeholder='75 CM to 480 CM' onChange={e => {dispatch(setWidth(Number(width<75?75:e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
+                        <input  min={75} max={480} placeholder='75 CM to 480 CM' onBlur={e=>{
+                            if(Number(e.target.value)<75 || Number(e.target.value)>480 ){
+                                window.alert("Please Provide Height between 100 and 480")
+                            }
+                        }}  onChange={e => {dispatch(setWidth(Number(e.target.value)));dispatch(setPrice())}} className='bg-[#122620]/30 h-12 pl-2 w-24' type="number" />
                     </div>
 
                 </div>
