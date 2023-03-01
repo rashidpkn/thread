@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const router = Router()
 const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey('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')
+sgMail.setApiKey('Please Provide SOme api key')
 
 router.post('/order-sample',async(req,res)=>{
     const {email,fName,lName,phoneNo,zipCode,address,fabrics} = req.body
