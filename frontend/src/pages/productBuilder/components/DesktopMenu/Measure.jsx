@@ -142,7 +142,7 @@ function Measure() {
           <div className="flex  justify-center gap-5">
             <div className="flex flex-col gap-3">
               <label htmlFor="">Height CM</label>
-              <input value={height} min={100} max={305} onBlur={e=>{
+              <input  min={100} max={305} onBlur={e=>{
                             if(Number(e.target.value)<100 || Number(e.target.value)>305 ){
                                 window.alert("Please Provide Height between 100 and 305")
                             }
@@ -151,9 +151,9 @@ function Measure() {
             </div>
             <div className="flex flex-col gap-3">
               <label htmlFor="">Width CM</label>
-              <input value={width} min={75} max={480}
+              <input  min={75} max={480}
                onBlur={e=>{
-                if(Number(e.target.value)<100 || Number(e.target.value)>305 ){
+                if(Number(e.target.value)<100 || Number(e.target.value)>480 ){
                     window.alert("Please Provide Width between 75 and 480")
                 }
                }} 
