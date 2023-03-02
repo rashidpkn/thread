@@ -12,8 +12,24 @@ import { fabric } from '../productBuilder/components/mobileMenu/Fabrics/Custom'
 
 function Samples() {
     const dispatch = useDispatch()
-    const {loginStatus} = useSelector(state=>state.user)
+    const { loginStatus } = useSelector(state => state.user)
     const { cart } = useSelector(state => state.sample)
+    const colors = [
+        {color:'#000000',name:'black'},
+        {color:'#6AA0E9',name:'blue'},
+        {color:'#7AB479',name:'green'},
+        {color:'#594A44',name:'brown'},
+        {color:'#DFE6E6',name:'grey'},
+        {color:'#F2E1D2',name:'peach'},
+        {color:'#E77F5A',name:'orange'},
+        {color:'#F8AAAB',name:'pink'},
+        {color:'#9D6BBB',name:'purple'},
+        {color:'#AB3636',name:'red'},
+        {color:'#F2F5F5',name:'silver'},
+        {color:'#FFFFFF',name:'white'},
+        {color:'#FFD500',name:'yellow'},
+    ]
+    const [color, setColor] = useState('all')
     const navigate = useNavigate()
     const [showFilters, setShowFilters] = useState({
         yourSamples: true,
@@ -58,6 +74,9 @@ function Samples() {
                         <p className='text-lg font-light text-[#232323]'>Filter by</p>
                     </div>
 
+
+
+
                     <img src="https://www.stitched.co.uk/css/assets/svg/horizontal-line-MRUTD5ZJ-d940d8a676e01f8f6b6dc401cae34870.svg?vsn=d" className='w-full' alt="" />
                     <button className='text-lg ' onClick={() => { setShowFilters({ ...showFilters, yourSamples: !showFilters.yourSamples }) }}>YOUR SAMPLES</button>
                     {
@@ -71,7 +90,7 @@ function Samples() {
                                         <div className="delete absolute bg-[#1e1e1e] h-7 w-7 rounded-full -top-1 -right-1 flex justify-center items-center" onClick={() => {
                                             dispatch(setCart(cart.filter(ev => ev.id !== e.id)))
                                         }}>
-                                            <Delete fontSize='small' className='text-white'/>
+                                            <Delete fontSize='small' className='text-white' />
                                         </div>
                                     </div>)
                                 }
@@ -79,16 +98,27 @@ function Samples() {
                                     [...Array(10 - cart.length)].map(e => <div className="w-14 h-14 border border-black flex justify-center items-center text-3xl font-light">+</div>)
                                 }
                             </div>
-                             {loginStatus && <Link to={'/login'}> <button className='h-14 w-full bg-black text-white' >Log in to see my Samples</button> </Link>}
-                            <button className='h-14 w-full bg-black text-white' onClick={()=>{
-                                if(cart.length){
+                            {loginStatus && <Link to={'/login'}> <button className='h-14 w-full bg-black text-white' >Log in to see my Samples</button> </Link>}
+                            <button className='h-14 w-full bg-black text-white' onClick={() => {
+                                if (cart.length) {
                                     navigate('/samples-checkout')
-                                }else{
+                                } else {
                                     window.alert('Please Select Any Fabrics')
                                 }
                             }}>ORDER YOUR PACK</button>
                         </div>
                     }
+
+
+                    <button className='text-lg '>Colors</button>
+                    <img src="https://www.stitched.co.uk/css/assets/svg/horizontal-line-MRUTD5ZJ-d940d8a676e01f8f6b6dc401cae34870.svg?vsn=d" className='w-full' alt="" />
+                    <div className="flex flex-wrap gap-3 justify-between px-5">
+                    <button className={`h-20 w-20 rounded-full border-black ${color==='all'?'border-[3px]':'border'}`} onClick={()=>setColor('all')}>ALL</button>
+                        {
+                            colors.map(e=><button onClick={()=>{setColor(e.name)}} style={{background:e.color}} className={`h-20 w-20 rounded-full border-black ${color===e.name?'border-[3px]':'border'}`}>{e.name}</button>)
+                        }
+                    </div>
+
 
                     <img src="https://www.stitched.co.uk/css/assets/svg/horizontal-line-MRUTD5ZJ-d940d8a676e01f8f6b6dc401cae34870.svg?vsn=d" className='w-full' alt="" />
                     <button className='text-lg ' onClick={() => { setShowFilters({ ...showFilters, fabrics: !showFilters.fabrics }) }}>FABRICS</button>
@@ -100,9 +130,11 @@ function Samples() {
                         </div>
                     }
 
+
+
                 </div>
 
-                <div className="w-full lg:w-[calc(95%-21rem)]  flex flex-wrap justify-center gap-3 lg:gap-10">
+                <div className="w-full lg:w-[calc(95%-21rem)]  flex flex-wrap justify-center gap-3 lg:gap-10 h-screen overflow-y-scroll">
 
                     <div className="h-10 w-full flex justify-between items-center">
                         <p className='text-lg font-light text-[#232323]'>{fabric.length} Fabrics</p>
@@ -119,29 +151,29 @@ function Samples() {
 
                     </div>
                     {
-                        fabrics.map(e => (
-                            <div key={e.id} className="w-[170px] lg:w-[270px] h-[270px] lg:h-[400px] relative" >
+                        fabrics.map(e =>  (
+                            (color==='all' ? true : color===e.colorName) && <div key={e.id} className="w-[170px] lg:w-[270px] h-[270px] lg:h-[400px] relative" >
                                 <img className='h-full w-full absolute -z-10' src="/image/samples/book1.png" alt="" loading={'lazy'} />
                                 <img src={e.magnifyFabricPath} className='h-full w-full absolute -z-20' alt="" loading={'lazy'} />
                                 <div className="absolute bottom-[4.5rem] w-full h-10 flex justify-center items-center ">
-                                   <button className='h-full w-[90%] lg:w-3/4 border-2 border-white hover:border-black bg-black/20 hover:bg-white/50 text-white hover:text-black duration-500'
+                                    <button className='h-full w-[90%] lg:w-3/4 border-2 border-white hover:border-black bg-black/20 hover:bg-white/50 text-white hover:text-black duration-500'
                                         onClick={() => {
                                             if (cart.find(ev => ev.id === e.id)) {
-                                                
-                                                dispatch(setCart(cart.filter(evt => evt !== e && e )))
-                                                
+
+                                                dispatch(setCart(cart.filter(evt => evt !== e && e)))
+
                                             }
                                             else if (cart.length === 10) {
                                                 window.alert("Your maximum number of cart item is 10")
 
-                                            } 
+                                            }
                                             else {
                                                 dispatch(setCart([...cart, e]))
                                             }
                                         }}
                                     >
                                         {cart.find(ev => ev.id === e.id) ? 'REMOVE SAMPLE' : 'ADD SAMPLE'}
-                                        </button>
+                                    </button>
 
                                 </div>
                                 <div className="absolute bottom-5 w-full h-12 flex justify-between items-center px-5 ">

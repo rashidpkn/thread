@@ -12,6 +12,8 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_black_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Black.jpg',
+        colorName:'black',
+
     },
     {
         id: 2,
@@ -26,6 +28,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_blue_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Blue.jpg',
+        colorName:'blue',
     },
     {
         id: 3,
@@ -40,6 +43,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_blush_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Blush.jpg',
+        colorName:'peach',
     },
     {
         id: 4,
@@ -54,6 +58,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_charcoal_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Charcoal.jpg',
+        colorName:'brown',
     },
     {
         id: 5,
@@ -68,6 +73,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_cream_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Cream.jpg',
+        colorName:'peach',
     },
     {
         id: 6,
@@ -82,6 +88,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_grape_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Grape.jpg',
+        colorName:'brown',
     },
     {
         id: 7,
@@ -96,6 +103,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_grey_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Grey.jpg',
+        colorName:'grey',
     },
     {
         id: 8,
@@ -110,6 +118,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_honey_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Honey.jpg',
+        colorName:'yellow',
     },
     {
         id: 9,
@@ -124,6 +133,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_indigo_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Indigo.jpg',
+        colorName:'blue',
     },
     {
         id: 10,
@@ -138,6 +148,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_ivory_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Ivory.jpg',
+        colorName:'peach',
     },
     {
         id: 11,
@@ -152,6 +163,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_mink_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Mink.jpg',
+        colorName:'peach',
     },
     {
         id: 12,
@@ -166,6 +178,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_pink_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Pink.jpg',
+        colorName:'pink',
     },
     {
         id: 13,
@@ -180,6 +193,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_smoke_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Smoke.jpg',
+        colorName:'grey',
     },
     {
         id: 14,
@@ -194,6 +208,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_snow_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Snow.jpg',
+        colorName:'grey',
     },
     {
         id: 15,
@@ -208,6 +223,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/azurite_teal_2.jpg',
         wavy:true,
         img:'magnify/Azurite_Teal.jpg',
+        colorName:'green',
     },
     {
         id: 16,
@@ -222,6 +238,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/parker_charcoal_2.jpg',
         wavy:true,
         img:'magnify/Parker_Charcoal.jpg',
+        colorName:'brown',
     },
     {
         id: 17,
@@ -236,6 +253,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/parker_cream_2.jpg',
         wavy:true,
         img:'magnify/Parker_Cream.jpg',
+        colorName:'brown',
     },
     {
         id: 18,
@@ -250,6 +268,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/parker_flint_2.jpg',
         wavy:true,
         img:'magnify/parker_flint_1_1.jpg',
+        colorName:'',
     },
     {
         id: 19,
@@ -264,6 +283,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/parker_grey_2.jpg',
         wavy:true,
         img:'magnify/PARKER_GREY.jpg',
+        colorName:'grey',
     },
     {
         id: 20,
@@ -278,6 +298,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/parker_pewter_2.jpg',
         wavy:true,
         img:'magnify/parker_pewter_1_1.jpg',
+        colorName:'brown',
     },
     {
         id: 21,
@@ -292,6 +313,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/parker_platinum_2.jpg',
         wavy:true,
         img:'magnify/parker_platinum_1_1.jpg',
+        colorName:'silver',
     },
     {
         id: 22,
@@ -306,6 +328,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/parker_steel_2.jpg',
         wavy:true,
         img:'magnify/parker_steel_1_1.jpg',
+        colorName:'grey',
     },
     {
         id: 23,
@@ -320,6 +343,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/sahara_cream_2.jpg',
         wavy:true,
         img:'magnify/sahara_cream_1_1.jpg',
+        colorName:'peach',
     },
     {
         id: 24,
@@ -334,6 +358,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/sahara_grey_2.jpg',
         wavy:true,
         img:'magnify/sahara_grey_1_1.jpg',
+        colorName:'grey',
     },
     {
         id: 25,
@@ -348,6 +373,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/sahara_seafoam_2.jpg',
         wavy:true,
         img:'magnify/sahara_seafoam_1_1.jpg',
+        colorName:'grey',
     },
     {
         id: 26,
@@ -362,6 +388,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/sahara_natural_2.jpg',
         wavy:true,
         img:'magnify/sahara_natural_1_1.jpg',
+        colorName:'peach',
     },
     {
         id: 27,
@@ -376,6 +403,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/sahara_flax_2.jpg',
         wavy:true,
         img:'magnify/sahara_flax_1_1.jpg',
+        colorName:'peach',
     },
     {
         id: 28,
@@ -390,6 +418,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/sahara_blue_2.jpg',
         wavy:true,
         img:'magnify/sahara_blue_1_1.jpg',
+        colorName:'blue',
     },
     {
         id: 29,
@@ -404,6 +433,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_blush_2.jpg',
         wavy:true,
         img:'magnify/savoy_blush_3.jpg',
+        colorName:'red',
     },
     {
         id: 30,
@@ -418,6 +448,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_charcoal_2.jpg',
         wavy:true,
         img:'magnify/savoy_charcoal_3.jpg',
+        colorName:'black',
     },
     {
         id: 31,
@@ -432,6 +463,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_cherry_2.jpg',
         wavy:true,
         img:'magnify/savoy_cherry_3.jpg',
+        colorName:'red',
     },
     {
         id: 32,
@@ -446,6 +478,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_duckegg_2.jpg',
         wavy:true,
         img:'magnify/savoy_duckegg_3.jpg',
+        colorName:'silver',
     },
     {
         id: 33,
@@ -460,6 +493,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_grape_2.jpg',
         wavy:true,
         img:'magnify/savoy_grape_3.jpg',
+        colorName:'purple',
     },
     {
         id: 34,
@@ -474,6 +508,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_grey.jpg',
         wavy:true,
         img:'magnify/savoy_grey_4_2.jpg',
+        colorName:'grey',
     },
     {
         id: 35,
@@ -488,6 +523,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_honey_2.jpg',
         wavy:true,
         img:'/magnify/savoy_honey_3.jpg',
+        colorName:'yellow',
     },
     {
         id: 36,
@@ -502,6 +538,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_indigo_2.jpg',
         wavy:true,
         img:'magnify/savoy_indigo_3.jpg',
+        colorName:'blue',
     },
     {
         id: 37,
@@ -516,6 +553,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_ink_2.jpg',
         wavy:true,
         img:'magnify/savoy_ink_3.jpg',
+        colorName:'blue',
     },
     {
         id: 38,
@@ -530,6 +568,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_kingfisher_2.jpg',
         wavy:true,
         img:'magnify/savoy_kingfisher_3.jpg',
+        colorName:'blue',
     },
     {
         id: 39,
@@ -544,6 +583,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_lemon_2.jpg',
         wavy:true,
         img:'magnify/savoy_lemon_3.jpg',
+        colorName:'yellow',
     },
     {
         id: 40,
@@ -558,6 +598,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_moss_2.jpg',
         wavy:true,
         img:'magnify/savoy_moss_3.jpg',
+        colorName:'green',
     },
     {
         id: 41,
@@ -572,6 +613,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_slate_2.jpg',
         wavy:true,
         img:'magnify/savoy_slate_3.jpg',
+        colorName:'black',
     },
     {
         id: 42,
@@ -586,6 +628,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_taupe_2.jpg',
         wavy:true,
         img:'magnify/savoy_taupe_2.jpg',
+        colorName:'silver',
     },
     {
         id: 43,
@@ -600,6 +643,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/savoy_teal_2.jpg',
         wavy:true,
         img:'magnify/savoy_teal_3.jpg',
+        colorName:'',
     },
     {
         id: 44,
@@ -614,6 +658,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/cosmos_flint_wov_jac_2.jpg',
         wavy:true,
         img:'/fabric_image/COSMOS FLINT.jpg',
+        colorName:'green',
     },
     {
         id: 45,
@@ -628,6 +673,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/cosmos_ink_wov_jac_2.jpg',
         wavy:true,
         img:'/fabric_image/COSMOS INK.jpg',
+        colorName:'grey',
     },
     {
         id: 46,
@@ -642,6 +688,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jacob_charcoal_2.jpg',
         wavy:true,
         img:'magnify/jacob_charcoal_3.jpg',
+        colorName:'blue',
     },
     {
         id: 47,
@@ -656,6 +703,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jacob_cornflour_2.jpg',
         wavy:true,
         img:'magnify/jacob_cornflower.jpg',
+        colorName:'grey',
     },
     {
         id: 48,
@@ -670,6 +718,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jacob_driftwood_2.jpg',
         wavy:true,
         img:'magnify/jacob_driftwood_3.jpg',
+        colorName:'blue',
     },
     {
         id: 49,
@@ -684,6 +733,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jacob_grey_2.jpg',
         wavy:true,
         img:'magnify/jacob_grey_3.jpg',
+        colorName:'peach',
     },
     {
         id: 50,
@@ -698,6 +748,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jacob_ink_2.jpg',
         wavy:true,
         img:'magnify/jacob_ink_3.jpg',
+        colorName:'blue',
     },
     {
         id: 51,
@@ -712,6 +763,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jacob_mink_2.jpg',
         wavy:true,
         img:'magnify/jacob_mink_3.jpg',
+        colorName:'peach',
     },
 
     {
@@ -727,6 +779,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ilaria_cornflower_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
+        colorName:'blue',
     },
     {
         id: 53,
@@ -741,6 +794,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ilaria_flint_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
+        colorName:'brown',
     },
     {
         id: 54,
@@ -755,6 +809,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/Ilaria_Hessian_Wavy.jpg',
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
+        colorName:'peach',
     },
     {
         id: 55,
@@ -769,6 +824,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ilaria_ice_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
+        colorName:'blue',
     },
     {
         id: 56,
@@ -783,6 +839,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ilaria_orange_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
+        colorName:'orange',
     },
     {
         id: 57,
@@ -797,6 +854,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ilaria_pebble_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
+        colorName:'brown',
     },
     {
         id: 58,
@@ -811,6 +869,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ilaria_porcelain_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
+        colorName:'peach',
     },
     {
         id: 59,
@@ -825,6 +884,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jovonna_blush_2.jpg',
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
+        colorName:'pink',
     },
     {
         id: 60,
@@ -839,6 +899,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jovonna_honey_2.jpg',
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
+        colorName:'yellow',
     },
     {
         id: 61,
@@ -853,6 +914,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jovonna_ivory_2.jpg',
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
+        colorName:'grey',
     },
     {
         id: 62,
@@ -867,6 +929,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jovonna_lemon_2.jpg',
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
+        colorName:'yellow',
     },
     {
         id: 63,
@@ -881,6 +944,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jovonna_marine_2.jpg',
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
+        colorName:'blue',
     },
     {
         id: 64,
@@ -895,6 +959,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jovonna_pewter_2.jpg',
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
+        colorName:'brown',
     },
     {
         id: 65,
@@ -909,6 +974,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jovonna_silver_2.jpg',
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
+        colorName:'grey',
     },
     {
         id: 66,
@@ -923,6 +989,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jovonna_sky_2.jpg',
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
+        colorName:'blue',
     },
     {
         id: 67,
@@ -937,6 +1004,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/jovonna_spruce_2.jpg',
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
+        colorName:'green',
     },
     {
         id: 68,
@@ -951,6 +1019,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_blush_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'peach',
     },
     {
         id: 69,
@@ -965,6 +1034,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_chalk_2.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'silver',
     },
     {
         id: 70,
@@ -979,6 +1049,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_cornflower_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'blue',
     },
     {
         id: 71,
@@ -993,6 +1064,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_denim_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'blue',
     },
     {
         id: 72,
@@ -1007,6 +1079,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_gold_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'yellow',
     },
     {
         id: 73,
@@ -1021,6 +1094,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_grey_mist_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'grey',
     },
     {
         id: 74,
@@ -1035,6 +1109,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_linen_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'peach',
     },
     {
         id: 75,
@@ -1049,6 +1124,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_mulberry_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'red',
     },
     {
         id: 76,
@@ -1063,6 +1139,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_pewter_2.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'silver',
     },
     {
         id: 77,
@@ -1077,6 +1154,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_pistachio_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'green',
     },
     {
         id: 78,
@@ -1091,6 +1169,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/asana_willow_2.jpg',
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
+        colorName:'green',
     },
     {
         id: 79,
@@ -1105,6 +1184,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/suvita_blush_2.jpg',
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
+        colorName:'pink',
     },
     {
         id: 80,
@@ -1119,6 +1199,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/suvita_burnt_orange_2.jpg',
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
+        colorName:'red',
     },
     {
         id: 81,
@@ -1133,6 +1214,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/suvita_buttermilk_2.jpg',
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
+        colorName:'green',
     },
     {
         id: 82,
@@ -1147,6 +1229,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/suvita_chalk_2.jpg',
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
+        colorName:'grey',
     },
     {
         id: 83,
@@ -1161,6 +1244,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/suvita_cobblestone_2.jpg',
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
+        colorName:'peach',
     },
     {
         id: 84,
@@ -1175,6 +1259,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/suvita_cornflower_2.jpg',
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
+        colorName:'blue',
     },
     {
         id: 85,
@@ -1189,6 +1274,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/suvita_midnight_2.jpg',
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
+        colorName:'blue',
     },
     {
         id: 86,
@@ -1203,6 +1289,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/suvita_pebble_2.jpg',
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
+        colorName:'peach',
     },
     {
         id: 87,
@@ -1217,6 +1304,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/emerson_frost_2.jpg',
         wavy:true,
         img:'magnify/emerson_frost_1_1.jpg',
+        colorName:'grey',
     },
     {
         id: 88,
@@ -1231,6 +1319,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/emerson_marine_2_1.jpg',
         wavy:true,
         img:'magnify/emerson_marine_1_1.jpg',
+        colorName:'green',
     },
     {
         id: 89,
@@ -1245,6 +1334,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/emerson_mist_2.jpg',
         wavy:true,
         img:'magnify/emerson_mist_1.jpg',
+        colorName:'peach',
     },
     {
         id: 90,
@@ -1259,6 +1349,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/emerson_pebble_2.jpg',
         wavy:true,
         img:'magnify/emerson_pebble_1_1.jpg',
+        colorName:'peach',
     },
     {
         id:  91,
@@ -1273,6 +1364,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/emerson_sahara_2.jpg',
         wavy:true,
         img:'magnify/emerson_sahara_1_1.jpg',
+        colorName:'yellow',
     },
     {
         id: 92,
@@ -1287,6 +1379,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/emerson_smoke_2.jpg',
         wavy:true,
         img:'magnify/emerson_smoke_1_1.jpg',
+        colorName:'black' ,
     },
     {
         id: 93,
@@ -1301,6 +1394,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/emerson_zinc_2.jpg',
         wavy:true,
         img:'magnify/emerson_zinc_1_1.jpg',
+        colorName:'grey',
     },
 
 
@@ -1317,6 +1411,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/acanthium_autumn_2.jpg',
         wavy:true,
         img:'/fabric_image/ACANTHIUM AUTUMN.jpg',
+        colorName:'peach',
     },
     
     {
@@ -1332,6 +1427,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/acanthium_garnet_2_1.jpg',
         wavy:true,
         img:'/fabric_image/ACANTHIUM GARNET.jpg',
+        colorName:'peach',
     },
     {
         id: 96,
@@ -1346,6 +1442,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/acanthium_ochre_2.jpg',
         wavy:true,
         img:'/fabric_image/ACANTHIUM OCHRE.jpg',
+        colorName:'silver',
     },
     {
         id: 97,
@@ -1360,6 +1457,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/aviary_begonia_2.jpg',
         wavy:true,
         img:'/fabric_image/AVIARY BEGONIA.jpg',
+        colorName:'white',
     },
     {
         id: 98,
@@ -1374,6 +1472,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/aviary_lagoon_2.jpg',
         wavy:true,
         img:'/fabric_image/AVIARY LAGOON.jpg',
+        colorName:'blue',
     },
     
     {
@@ -1389,6 +1488,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/aztec_smoke_2.jpg',
         wavy:true,
         img:'/fabric_image/AZTEC SMOKE.jpg',
+        colorName:'grey',
     },
     {
         id: 100,
@@ -1403,6 +1503,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/caicos_begonia_2.jpg',
         wavy:true,
         img:'/fabric_image/CAICOS BEGONIA.jpg',
+        colorName:'red',
     },
     {
         id: 101,
@@ -1417,6 +1518,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/calcon_chambray_2_.jpg',
         wavy:true,
         img:'/fabric_image/CAICOS CHAMBRAY.jpg',
+        colorName:'blue',
     },
     {
         id: 102,
@@ -1431,6 +1533,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/calcon_hesslan_2_.jpg',
         wavy:true,
         img:'/fabric_image/CAICOS HESSIAN.jpg',
+        colorName:'silver',
     },
     {
         id: 103,
@@ -1445,6 +1548,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/calcos_kiwi_2_.jpg',
         wavy:true,
         img:'/fabric_image/CAICOS KIWI.jpg',
+        colorName:'yellow',
     },
     {
         id: 104,
@@ -1459,6 +1563,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/calcos_manadrin_2_.jpg',
         wavy:true,
         img:'/fabric_image/CAICOS MANDARIN.jpg',
+        colorName:'',
     },
     {
         id: 105,
@@ -1473,6 +1578,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/carlina_dusk_2.jpg',
         wavy:true,
         img:'/fabric_image/CARLINA DUSK.jpg',
+        colorName:'blue',
     },
     {
         id: 106,
@@ -1487,6 +1593,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/carlina_ochre_2.jpg',
         wavy:true,
         img:'/fabric_image/CARLINA OCHRE.jpg',
+        colorName:'blue',
     },
     {
         id: 107,
@@ -1501,6 +1608,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/carlina_teal_2.jpg',
         wavy:true,
         img:'/fabric_image/CARLINA TEAL.jpg',
+        colorName:'green',
     },
     {
         id: 108,
@@ -1515,6 +1623,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/cotswold_jade_2.jpg',
         wavy:true,
         img:'/fabric_image/COTSWOLD JADE.jpg',
+        colorName:'blue',
     },
     {
         id: 109,
@@ -1529,6 +1638,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/cotswold_jewel_2.jpg',
         wavy:true,
         img:'/fabric_image/COTSWOLD JEWEL.jpg',
+        colorName:'green',
     },
     {
         id: 110,
@@ -1543,6 +1653,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ETCHED_VINE_EAU_DE_NIL_wavy.jpg',
         wavy:true,
         img:'/fabric_image/ETCHED VINE EAU DE NIL.jpg',
+        colorName:'blue',
     },
     {
         id: 111,
@@ -1557,6 +1668,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/etched_vine_feather_2.jpg',
         wavy:true,
         img:'/fabric_image/ETCHED VINE FEATHER.jpg',
+        colorName:'silver',
     },
     {
         id: 112,
@@ -1571,6 +1683,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/etched_vine_sandstone_2.jpg',
         wavy:true,
         img:'/fabric_image/ETCHED VINE SANDSTONE.jpg',
+        colorName:'peach',
     },
     {
         id: 113,
@@ -1585,6 +1698,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/heritage_fern_2.jpg',
         wavy:true,
         img:'/fabric_image/HERITAGE FERN.jpg',
+        colorName:'grey',
     },
     {
         id: 114,
@@ -1599,6 +1713,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/heritage_midnight_2.jpg',
         wavy:true,
         img:'/fabric_image/HERITAGE MIDNIGHT.jpg',
+        colorName:'blue',
     },
     {
         id: 115,
@@ -1613,6 +1728,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/kelmscott_jade_2.jpg',
         wavy:true,
         img:'/fabric_image/KELMSCOTT JADE.jpg',
+        colorName:'blue',
     },
     {
         id: 116,
@@ -1627,6 +1743,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/kelmscott_jewel.jpg',
         wavy:true,
         img:'/fabric_image/KELMSCOTT JEWEL.jpg',
+        colorName:'green',
     },
     {
         id: 117,
@@ -1641,6 +1758,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/maldives_lagoon_2.jpg',
         wavy:true,
         img:'/fabric_image/MALDIVES LAGOON.jpg',
+        colorName:'blue',
     },
     {
         id: 118,
@@ -1655,6 +1773,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/maldives_reef_2_.jpg',
         wavy:true,
         img:'/fabric_image/MALDIVES REEF.jpg',
+        colorName:'green',
     },
     {
         id: 119,
@@ -1669,6 +1788,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/manila_cranberry_2_1.jpg',
         wavy:true,
         img:'/fabric_image/MANILA CRANBERRY.jpg',
+        colorName:'red',
     },
     {
         id: 120,
@@ -1683,6 +1803,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/manila_lagoon_2_1.jpg',
         wavy:true,
         img:'/fabric_image/MANILA LAGOON.jpg',
+        colorName:'yellow',
     },
     {
         id: 121,
@@ -1697,6 +1818,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/manilla_zinc_2.jpg',
         wavy:true,
         img:'/fabric_image/MANILA ZINC.jpg',
+        colorName:'green',
     },
     {
         id: 122,
@@ -1711,6 +1833,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/navajo_indigo_2.jpg',
         wavy:true,
         img:'/fabric_image/NAVAJO INDIGO.jpg',
+        colorName:'',
     },
     {
         id: 123,
@@ -1725,6 +1848,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/navajo_teal_2.jpg',
         wavy:true,
         img:'/fabric_image/NAVAJO TEAL.jpg',
+        colorName:'blue',
     },
     {
         id: 124,
@@ -1739,6 +1863,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/parchment_feather_2.jpg',
         wavy:true,
         img:'/fabric_image/PARCHMENT FERN.jpg',
+        colorName:'blue',
     },
     {
         id: 125,
@@ -1753,6 +1878,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/parchment_fern_2.jpg',
         wavy:true,
         img:'/fabric_image/PARCHMENT FERN.jpg',
+        colorName:'silver',
     },
     {
         id: 126,
@@ -1767,6 +1893,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/parchment_wedgewood_2.jpg',
         wavy:true,
         img:'/fabric_image/PARCHMENT WEDGEWOOD.jpg',
+        colorName:'blue',
     },
     {
         id: 127,
@@ -1781,6 +1908,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/pomegranate_trail_ochre_2.jpg',
         wavy:true,
         img:'/fabric_image/POMEGRANATE OCHRE.jpg',
+        colorName:'white',
     },
     {
         id: 128,
@@ -1795,6 +1923,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/pomegranate_trail_scarlet_2.jpg',
         wavy:true,
         img:'/fabric_image/POMEGRANATE SCARLET.jpg',
+        colorName:'red',
     },
     {
         id: 129,
@@ -1809,6 +1938,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/pyramids_noir_4.jpg',
         wavy:true,
         img:'/fabric_image/PYRAMIDS PVC NOIR.jpg',
+        colorName:'white',
     },
     {
         id: 130,
@@ -1823,6 +1953,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/pyramids_ochre_2_1.jpg',
         wavy:true,
         img:'/fabric_image/PYRAMIDS PVC OCHRE.jpg',
+        colorName:'white',
     },
     // {
     //     id: 131,
@@ -1876,6 +2007,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/wild_meadow_magenta_wavy.jpg',
         wavy:true,
         img:'/fabric_image/WILD MEADOW MAGENTA.jpg',
+        colorName:'silver',
     },
     {
         id: 132,
@@ -1890,6 +2022,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/wild_meadow_ruby_wavy.jpg',
         wavy:true,
         img:'/fabric_image/WILD MEADOW RUBY.jpg',
+        colorName:'white',
     },
     {
         id: 133,
@@ -1904,6 +2037,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/acanthium_foxglove_2_1.jpg',
         wavy:true,
         img:'magnify/acanthium_foxglove_5.jpg',
+        colorName:'peach',
     },
     {
         id: 134,
@@ -1918,7 +2052,9 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/aztec_ochre_2_1.jpg',
         wavy:true,
         // img:'/fabric_image/AZTEC OCHRE.jpg',
+        colorName:'',
         img:'magnify/aztec_ochre_3.jpg',
+        colorName:'yellow',
     },
     {
         id: 135,
@@ -1933,6 +2069,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/aztec_salsa_2.jpg',
         wavy:true,
         img:'/fabric_image/AZTEC SALSA.jpg',
+        colorName:'red',
     },
 
 
@@ -1956,6 +2093,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/andante_chalk_2.jpg',
         wavy:true,
         img:'/fabric_image/ANDANTE CHALK.jpg',
+        colorName:'grey',
     },
     {
         id: 137,
@@ -1970,6 +2108,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/andante_glacier_2.jpg',
         wavy:true,
         img:'magnify/glacier_andante_1.jpg',
+        colorName:'brown',
     },
     {
         id: 138,
@@ -1984,6 +2123,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/andante_menta_2.jpg',
         wavy:true,
         img:'/fabric_image/ANDANTE MENTA.jpg',
+        colorName:'silver',
     },
     {
         id: 139,
@@ -1998,6 +2138,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/andante_porcelain_2.jpg',
         wavy:true,
         img:'/fabric_image/ANDANTE PORCELAIN.jpg',
+        colorName:'grey',
     },
     {
         id: 140,
@@ -2012,6 +2153,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/andante_stone_2_1.jpg',
         wavy:true,
         img:'/fabric_image/ANDANTE STONE.jpg',
+        colorName:'brown',
     },
     {
         id: 141,
@@ -2026,6 +2168,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/andante_zinc_2.jpg',
         wavy:true,
         img:'/fabric_image/ANDANTE ZINK.jpg',
+        colorName:'grey',
     },
     {
         id: 142,
@@ -2040,6 +2183,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/atrium_lapis_2.jpg',
         wavy:true,
         img:'/fabric_image/ATRIUM LAPIS.jpg',
+        colorName:'blue',
     },
     {
         id: 143,
@@ -2054,6 +2198,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/atrium_ochre_2.jpg',
         wavy:true,
         img:'/fabric_image/ATRIUM OCHRE.jpg',
+        colorName:'yellow',
     },
     {
         id: 144,
@@ -2068,6 +2213,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/atrium_pine_2.jpg',
         wavy:true,
         img:'/fabric_image/ATRIUM PINE.jpg',
+        colorName:'pine',
     },
     {
         id: 145,
@@ -2082,6 +2228,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/blooma_poppy_2.jpg',
         wavy:true,
         img:'/fabric_image/BLOOMA POPPY.jpg',
+        colorName:'green',
     },
     {
         id: 146,
@@ -2096,6 +2243,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/blooma_spruce_2.jpg',
         wavy:true,
         img:'/fabric_image/BLOOMA SPRUCE.jpg',
+        colorName:'white',
     },
     {
         id: 147,
@@ -2110,6 +2258,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/chervil_blue_mist_2.jpg',
         wavy:true,
         img:'/fabric_image/CHERVIL BLUE MIST.jpg',
+        colorName:'peach',
     },
     {
         id: 148,
@@ -2124,6 +2273,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/chervil_clay_2.jpg',
         wavy:true,
         img:'/fabric_image/CHERVIL CLAY.jpg',
+        colorName:'peach',
     },
     {
         id: 149,
@@ -2138,6 +2288,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/chervil_dove_2.jpg',
         wavy:true,
         img:'/fabric_image/CHERVIL DOVE.jpg',
+        colorName:'grey',
     },
     {
         id: 150,
@@ -2152,6 +2303,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/chervil_fern_2.jpg',
         wavy:true,
         img:'/fabric_image/CHERVIL FERN.jpg',
+        colorName:'green',
     },
 
     // Doblicate key
@@ -2183,6 +2335,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ditto_clay_2_1.jpg',
         wavy:true,
         img:'/fabric_image/DITTO CLAY.jpg',
+        colorName:'peach',
     },
     {
         id: 152,
@@ -2197,6 +2350,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ditto_saffron_2_1.jpg',
         wavy:true,
         img:'/fabric_image/DITTO SAFFRON.jpg',
+        colorName:'yellow',
     },
     {
         id: 153,
@@ -2211,6 +2365,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ditto_slate_2_1.jpg',
         wavy:true,
         img:'/fabric_image/DITTO SLATE.jpg',
+        colorName:'purple',
     },
     {
         id: 154,
@@ -2225,6 +2380,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/fernia_denim_2.jpg',
         wavy:true,
         img:'/fabric_image/FERNIA DENIM.jpg',
+        colorName:'green',
     },
     {
         id: 155,
@@ -2239,6 +2395,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/fernia_dove_2.jpg',
         wavy:true,
         img:'/fabric_image/FERNIA DOVE.jpg',
+        colorName:'grey',
     },
     {
         id: 156,
@@ -2253,6 +2410,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/fernia_fern_2.jpg',
         wavy:true,
         img:'/fabric_image/FERNIA FERN.jpg',
+        colorName:'green',
     },
     {
         id: 157,
@@ -2267,6 +2425,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/fernia_mustard_2.jpg',
         wavy:true,
         img:'/fabric_image/FERNIA MUSTARD.jpg',
+        colorName:'yellow',
     },
     {
         id: 158,
@@ -2281,6 +2440,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/GREAT-OAK-DOVE-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/great_oak_dove_low_res.jpg',
+        colorName:'peach',
     },
     {
         id: 159,
@@ -2295,6 +2455,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/GREAT-OAK-DUCKEGG-wavy.webp',
         wavy:true,
         img:'magnify/great_oak_duckegg_low_res.jpg',
+        colorName:'blue',
     },
     {
         id: 160,
@@ -2309,6 +2470,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/great_oak_ebony_low_res.jpg',
         wavy:true,
         img:'magnify/great_oak_ebony_low_res.jpg',
+        colorName:'brown',
     },
     {
         id: 161,
@@ -2323,6 +2485,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/great_oak_flint_low_res.jpg',
         wavy:true,
         img:'magnify/great_oak_flint_low_res.jpg',
+        colorName:'peach',
     },
     {
         id: 162,
@@ -2337,6 +2500,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/great_oak_lemongrass_low_res.jpg',
         wavy:true,
         img:'magnify/great_oak_lemongrass_low_res.jpg',
+        colorName:'green',
     },
     {
         id: 163,
@@ -2351,6 +2515,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/GREAT-OAK-MESSAI-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/GREAT-OAK-MESSAI-LOW-RES_91_11zon.jpg',
+        colorName:'red',
     },
     {
         id: 164,
@@ -2365,6 +2530,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/GREAT-OAK-MIDNIGHT-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/great_oak_midnight_low_res.jpg',
+        colorName:'blue',
     },
     {
         id: 165,
@@ -2379,6 +2545,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/great_oak_paprika_low_res.jpg',
         wavy:true,
         img:'magnify/great_oak_paprika_low_res.jpg',
+        colorName:'orange',
     },
     {
         id: 166,
@@ -2393,6 +2560,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/GREAT-OAK-PEWTER-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/great_oak_pewter_low_res.jpg',
+        colorName:'',
     },
     {
         id: 167,
@@ -2407,6 +2575,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/GREAT-OAK-SAND-LOW-RES-wavy.webp',
         wavy:true,
         img:'magnify/great_oak_sand_low_res.jpg',
+        colorName:'yellow',
     },
     {
         id: 168,
@@ -2421,6 +2590,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/GREAT-OAK-WILLOW-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/great_oak_willow_low_res.jpg',
+        colorName:'green',
     },
     {
         id: 169,
@@ -2435,6 +2605,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/greenhouse_pots_mist_2.jpg',
         wavy:true,
         img:'/fabric_image/GREENHOUSE POTS MIST.jpg',
+        colorName:'green',
     },
     {
         id: 170,
@@ -2449,6 +2620,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/greenhouse_pots_ochre_2.jpg',
         wavy:true,
         img:'/fabric_image/GREENHOUSE POTS OCHRE.jpg',
+        colorName:'yellow',
     },
     {
         id: 171,
@@ -2463,6 +2635,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/hedgerow_charcoal_wavy.jpg',
         wavy:true,
         img:'/fabric_image/HEDGEROW CHARCOAL.jpg',
+        colorName:'silver',
     },
     {
         id: 172,
@@ -2477,6 +2650,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/hedgerow_magenta_wavy.jpg',
         wavy:true,
         img:'/fabric_image/HEDGEROW MAGENTA.jpg',
+        colorName:'green',
     },
     {
         id: 173,
@@ -2491,6 +2665,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/hedgerow_pistachio_wavy.jpg',
         wavy:true,
         img:'/fabric_image/HEDGEROW PISTACHIO.jpg',
+        colorName:'green',
     },
     {
         id: 174,
@@ -2505,6 +2680,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/OAK-LEAF-DUCKEGG-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/oak_leaf_duckegg_low_res.jpg',
+        colorName:'white',
     },
     {
         id: 175,
@@ -2519,6 +2695,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/OAK-LEAF-LEMONGRASS-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/oak_leaf_lemongrass_low_res.jpg',
+        colorName:'green',
     },
     {
         id: 176,
@@ -2533,6 +2710,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/OAK-LEAF-MIDNIGHT-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/oak_leaf_midnight_low_res.jpg',
+        colorName:'black',
     },
     {
         id: 177,
@@ -2547,6 +2725,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/OAK-LEAF-PAPRIKA-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/oak_leaf_paprika_low_res.jpg',
+        colorName:'orange',
     },
     {
         id: 178,
@@ -2561,6 +2740,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/OAK-LEAF-PEWTER-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/oak_leaf_pewter_low_res.jpg',
+        colorName:'grey',
     },
     {
         id: 179,
@@ -2575,6 +2755,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/OAK-LEAF-SAND-LOW-RES-wavy.jpeg',
         wavy:true,
         img:'magnify/oak_leaf_sand_low_res.jpg',
+        colorName:'yellow',
     },
     {
         id: 180,
@@ -2589,6 +2770,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/oak_leaf_willow_low_res.jpg',
         wavy:true,
         img:'magnify/oak_leaf_sand_low_res.jpg',
+        colorName:'yellow',
     },
     {
         id: 181,
@@ -2603,6 +2785,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/oak_leaf_rose_low_res.jpg',
         wavy:true,
         img:'magnify/oak_leaf_rose_low_res.jpg',
+        colorName:'pink',
     },
     {
         id: 182,
@@ -2617,6 +2800,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/kemble_cloud_2.jpg',
         wavy:true,
         img:'/fabric_image/KEMBLE CLOUD.jpg',
+        colorName:'brown',
     },
     {
         id: 183,
@@ -2631,6 +2815,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/kemble_filigree_2.jpg',
         wavy:true,
         img:'/fabric_image/KEMBLE FILIGREE.jpg',
+        colorName:'peach',
     },
     {
         id: 184,
@@ -2645,6 +2830,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/kemble_sapphire_2.jpg',
         wavy:true,
         img:'/fabric_image/KEMBLE SAPPHIRE.jpg',
+        colorName:'black',
     },
     {
         id: 185,
@@ -2659,6 +2845,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/palm_house_moonlight_2.jpg',
         wavy:true,
         img:'/fabric_image/PALM HOUSE MOONLIGHT.jpg',
+        colorName:'blue',
     },
     {
         id: 186,
@@ -2673,6 +2860,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/palm_house_ochre_2.jpg',
         wavy:true,
         img:'/fabric_image/PALM HOUSE OCHRE.jpg',
+        colorName:'yellow',
     },
     {
         id: 187,
@@ -2687,6 +2875,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/palm_house_spruce_2.jpg',
         wavy:true,
         img:'/fabric_image/PALM HOUSE SPRUCE.jpg',
+        colorName:'green',
     },
     {
         id: 188,
@@ -2701,6 +2890,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/PENCIL_STRIPE_DUCKEGG_LOW_RES-wavy.jpeg',
         wavy:true,
         img:'magnify/pencil_stripe_duckegg_low_res.jpg',
+        colorName:'green',
     },
     {
         id: 189,
@@ -2715,6 +2905,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/PENCIL_STRIPE_MIDNIGHT_LOW_RES-wavy.jpeg',
         wavy:true,
         img:'magnify/pencil_stripe_midnight_low_res.jpg',
+        colorName:'blue',
     },
     {
         id: 190,
@@ -2729,6 +2920,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/PENCIL_STRIPE_OCEAN_LOW_RES-wavy.jpeg',
         wavy:true,
         img:'magnify/pencil_stripe_ocean_low_res_1.jpg',
+        colorName:'blue',
     },
     // {
     //     id: 187,
@@ -2742,6 +2934,7 @@ export const fabric =[
     //     magnifyWavyFabricPath: 'magnify/PENCIL_STRIPE_PEWTER_LOW_RES.webp',
     //     wavy:true,
     //     img:'/fabric_image/',
+
     // },
     {
         id: 191,
@@ -2756,6 +2949,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/PENCIL_STRIPE_SAND_LOW_RES.jpeg',
         wavy:true,
         img:'magnify/pencil_stripe_sand_low_res.jpg',
+        colorName:'yellow',
     },
     {
         id: 192,
@@ -2770,6 +2964,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/rainforest_lagoon_2.jpg',
         wavy:true,
         img:'/fabric_image/RAINFOREST LAGOON.jpg',
+        colorName:'green',
     },
     {
         id: 193,
@@ -2784,6 +2979,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/rainforest_marine_2.jpg',
         wavy:true,
         img:'magnify/rainforest_marine.jpg',
+        colorName:'green',
     },
     {
         id: 194,
@@ -2798,6 +2994,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/Rowing_stripe-DUCKEGG_LOW_RES-wavy.jpeg',
         wavy:true,
         img:'magnify/rowing_stripe-duckegg_low_res.jpg',
+        colorName:'blue',
     },
     // {
     //     id: 192,
@@ -2825,6 +3022,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/Rowing_stripe-MIDNIGHT_LOW_RES-wavy.jpeg',
         wavy:true,
         img:'magnify/midnight_-_tweaked_colour_1_1.jpg',
+        colorName:'black',
     },
     {
         id: 196,
@@ -2839,6 +3037,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/Rowing-stripe-OATMEAL_LOW_RES-wavy.jpeg',
         wavy:true,
         img:'magnify/rowing_stripe_-_oatmeal_low_res.jpg',
+        colorName:'peach',
     },
     {
         id: 197,
@@ -2853,6 +3052,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/Rowing_stripe-PEWTER_LOW_RES-wavy.jpeg',
         wavy:true,
         img:'magnify/rowing_stripe_-_pewter_low_res.jpg',
+        colorName:'',
     },
     {
         id: 198,
@@ -2867,6 +3067,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/Rowing_stripe-SAND_LOW_RES-wavy.jpeg',
         wavy:true,
         img:'magnify/rowing_stripe_-_sand_low_res.jpg',
+        colorName:'yellow',
     },
     {
         id: 199,
@@ -2881,6 +3082,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/victorian_glasshouse_mist_2.jpg',
         wavy:true,
         img:'/fabric_image/VICTORIAN GLASSHOUSE MIST.jpg',
+        colorName:'green',
     },
     {
         id: 200,
@@ -2895,6 +3097,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/victorian_glasshouse_moonlight_2.jpg',
         wavy:true,
         img:'/fabric_image/VICTORIAN GLASSHOUSE MOONLIGHT.jpg',
+        colorName:'blue',
     },
     {
         id: 201,
@@ -2909,6 +3112,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/victorian_glasshouse_spruce_2.jpg',
         wavy:true,
         img:'/fabric_image/VICTORIAN GLASSHOUSE SPRUCE.jpg',
+        colorName:'green',
     },
     {
         id: 202,
@@ -2923,6 +3127,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/charnwood_charnwood_flint_2.jpg',
         wavy:true,
         img:'/fabric_image/CHARNWOOD FLINT.jpg',
+        colorName:'peach',
     },
     {
         id: 203,
@@ -2937,6 +3142,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/charnwood_charnwood_midnight_2.jpg',
         wavy:true,
         img:'magnify/charnwood_charnwood_midnight_1.jpg',
+        colorName:'blue',
     },
     {
         id: 204,
@@ -2951,6 +3157,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/country_journal_denim_2.jpg',
         wavy:true,
         img:'/fabric_image/COUNTRY JOURNAL DENIM.jpg',
+        colorName:'peach',
     },
     {
         id: 205,
@@ -2965,6 +3172,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/country_journal_dove_2.jpg',
         wavy:true,
         img:'/fabric_image/COUNTRY JOURNAL DOVE.jpg',
+        colorName:'peach',
     },
     {
         id: 206,
@@ -2979,6 +3187,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/country_journal_fern_2.jpg',
         wavy:true,
         img:'/fabric_image/COUNTRY JOURNAL FERN.jpg',
+        colorName:'grey',
     },
     {
         id: 207,
@@ -2993,6 +3202,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/country_journal_haze_2.jpg',
         wavy:true,
         img:'/fabric_image/COUNTRY JOURNAL HAZE.jpg',
+        colorName:'grey',
     },
     {
         id: 208,
@@ -3007,6 +3217,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/country_journal_rosa_2.jpg',
         wavy:true,
         img:'/fabric_image/COUNTRY JOURNAL ROSA.jpg',
+        colorName:'peach',
     },
     {
         id: 209,
@@ -3021,6 +3232,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/facet_blueprint_2.jpg',
         wavy:true,
         img:'/fabric_image/FACET BLUEPRINT.jpg',
+        colorName:'blue',
     },
     {
         id: 210,
@@ -3035,6 +3247,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/facet_steel_2.jpg',
         wavy:true,
         img:'/fabric_image/FACET STEEL.jpg',
+        colorName:'blue',
     },
     {
         id: 211,
@@ -3049,6 +3262,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/facet_stone_2.jpg',
         wavy:true,
         img:'/fabric_image/FACET STONE.jpg',
+        colorName:'brown',
     },
     {
         id: 212,
@@ -3063,6 +3277,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/luxor_cream_2.jpg',
         wavy:true,
         img:'/fabric_image/LUXOR CREAM.jpg',
+        colorName:'peach',
     },
     {
         id: 213,
@@ -3077,6 +3292,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/luxor_steel_2.jpg',
         wavy:true,
         img:'/fabric_image/LUXOR STEEL.jpg',
+        colorName:'blue',
     },
     {
         id: 214,
@@ -3091,6 +3307,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/portico_lapis_2.jpg',
         wavy:true,
         img:'magnify/portico_lapis_1.jpg',
+        colorName:'peach',
     },
     {
         id: 215,
@@ -3105,6 +3322,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/portico_ochre_2.jpg',
         wavy:true,
         img:'magnify/portico_ochre_1.jpg',
+        colorName:'yellow',
     },
     {
         id: 216,
@@ -3119,6 +3337,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/portico_pewter_2.jpg',
         wavy:true,
         img:'magnify/portico_pewter_1.jpg',
+        colorName:'brown',
     },
 
 
@@ -3139,6 +3358,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/arcadia_blueprint_2.jpg',
         wavy:true,
         img:'/fabric_image/ARCADIA BLUEPRINT.jpg',
+        colorName:'black',
     },
     {
         id: 218,
@@ -3153,6 +3373,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/arcadia_stone_2.jpg',
         wavy:true,
         img:'/fabric_image/ARCADIA STONE.jpg',
+        colorName:'peach',
     },
     {
         id: 219,
@@ -3167,6 +3388,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/brackenhill_indigo_2.jpg',
         wavy:true,
         img:'/fabric_image/BRACKENHILL INDIGO.jpg',
+        colorName:'yellow',
     },
     {
         id: 220,
@@ -3181,6 +3403,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/brackenhill_jade_2.jpg',
         wavy:true,
         img:'/fabric_image/BRACKENHILL JADE.jpg',
+        colorName:'green',
     },
     {
         id: 221,
@@ -3195,6 +3418,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/fia_clay_2.jpg',
         wavy:true,
         img:'/fabric_image/FIA CLAY.jpg',
+        colorName:'grey',
     },
     {
         id: 222,
@@ -3209,6 +3433,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/fia_denim_2.jpg',
         wavy:true,
         img:'/fabric_image/FIA DENIM.jpg',
+        colorName:'grey',
     },
     {
         id: 223,
@@ -3223,6 +3448,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/fia_dove_2.jpg',
         wavy:true,
         img:'/fabric_image/FIA DOVE.jpg',
+        colorName:'blue',
     },
     {
         id: 224,
@@ -3237,6 +3463,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/fia_fern_2.jpg',
         wavy:true,
         img:'/fabric_image/FIA FERN.jpg',
+        colorName:'green',
     },
     {
         id: 225,
@@ -3251,6 +3478,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/fia_rosa_2_1.jpg',
         wavy:true,
         img:'/fabric_image/FIA ROSE.jpg',
+        colorName:'red',
     },
     {
         id: 226,
@@ -3265,6 +3493,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/heathcliff_arctic_2.jpg',
         wavy:true,
         img:'/fabric_image/HEATHCLIFF ARCTIC.jpg',
+        colorName:'brown',
     },
     {
         id: 227,
@@ -3279,6 +3508,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/heathcliff_indigo_2.jpg',
         wavy:true,
         img:'/fabric_image/HEATHCLIFF INDIGO.jpg',
+        colorName:'blue',
     },
     {
         id: 228,
@@ -3293,6 +3523,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/laurie_linen_2.jpg',
         wavy:true,
         img:'/fabric_image/LAURIE LINEN.jpg',
+        colorName:'peach',
     },
     {
         id: 229,
@@ -3307,6 +3538,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/laurie_wedgewood_2.jpg',
         wavy:true,
         img:'/fabric_image/LAURIE WEDGEWOOD.jpg',
+        colorName:'peach',
     },
     // {
     //     id: 227,
@@ -3320,6 +3552,7 @@ export const fabric =[
     //     magnifyWavyFabricPath: 'magnify/sackville_stripe_denim_2.jpg',
     //     wavy:true,
     //     img:'/fabric_image/',
+
     // },
     // {
     //     id: 228,
@@ -3346,6 +3579,7 @@ export const fabric =[
     //     magnifyWavyFabricPath: 'magnify/sackville_stripe_mustard_2.jpg',
     //     wavy:true,
     //     img:'/fabric_image/',
+
     // },
     {
         id: 230,
@@ -3360,6 +3594,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/tiverton_carmine_2.jpg',
         wavy:true,
         img:'/fabric_image/TIVERTON CARMINE.jpg',
+        colorName:'red',
     },
     {
         id: 231,
@@ -3374,6 +3609,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/tiverton_flint_2.jpg',
         wavy:true,
         img:'/fabric_image/TIVERTON FLINT.jpg',
+        colorName:'yellow',
     },
     {
         id: 232,
@@ -3388,6 +3624,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/tiverton_indigo_2.jpg',
         wavy:true,
         img:'/fabric_image/TIVERTON INDIGO.jpg',
+        colorName:'blue',
     },
     {
         id: 233,
@@ -3402,6 +3639,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/tiverton_sand_2.jpg',
         wavy:true,
         img:'/fabric_image/TIVERTON SAND.jpg',
+        colorName:'yellow',
     },
 
 
@@ -3418,6 +3656,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/harpen_linen_2_1.jpg',
         wavy:true,
         img:'/fabric_image/HARPER LINEN.jpg',
+        colorName:'peach',
     },
     {
         id: 235,
@@ -3432,6 +3671,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/harper_eau_de_nil_2.jpg',
         wavy:true,
         img:'/fabric_image/HARPER EAU DE NIL.jpg',
+        colorName:'blue',
     },
     {
         id: 236,
@@ -3446,6 +3686,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/harper_feather_2.jpg',
         wavy:true,
         img:'/fabric_image/HARPER FEATHER.jpg',
+        colorName:'peach',
     },
     {
         id: 237,
@@ -3460,6 +3701,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/harper_wedgewood_2.jpg',
         wavy:true,
         img:'/fabric_image/HARPER WEDGEWOOD.jpg',
+        colorName:'green',
     },
     // {
     //     id: 239,
@@ -3487,6 +3729,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/sumi_blush_2.jpg',
         wavy:true,
         img:'/fabric_image/SUMI BLUSH.jpg',
+        colorName:'peach',
     },
     {
         id: 239,
@@ -3501,6 +3744,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/sumi_delft_2.jpg',
         wavy:true,
         img:'/fabric_image/SUMI DELFT.jpg',
+        colorName:'blue',
     },
     {
         id: 240,
@@ -3515,6 +3759,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/sumi_duckegg_2.jpg',
         wavy:true,
         img:'/fabric_image/SUMI DUCKEGG.jpg',
+        colorName:'green',
     },
     {
         id: 241,
@@ -3529,6 +3774,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/sumi_saffron_2.jpg',
         wavy:true,
         img:'/fabric_image/SUMI SAFFRON.jpg',
+        colorName:'peach',
     },
     {
         id: 242,
@@ -3543,6 +3789,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/mosaic_midnight_2.jpg',
         wavy:true,
         img:'/fabric_image/MOSAIC MIDNIGHT.jpg',
+        colorName:'blue',
     },
     {
         id: 243,
@@ -3557,6 +3804,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/mosaic_graphite_2.jpg',
         wavy:true,
         img:'/fabric_image/MOSAIC GRAPHITE.jpg',
+        colorName:'gray',
     },
     {
         id: 244,
@@ -3571,6 +3819,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/mosaic_putty_2.jpg',
         wavy:true,
         img:'/fabric_image/MOSAIC PUTTY.jpg',
+        colorName:'grey',
     },
     {
         id: 245,
@@ -3585,6 +3834,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/galerie_lagoon_2_.jpg',
         wavy:true,
         img:'/fabric_image/GALERIE LAGOON.jpg',
+        colorName:'green',
     },
     {
         id: 246,
@@ -3599,6 +3849,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/galerie_marine_2_.jpg',
         wavy:true,
         img:'/fabric_image/GALERIE MARINE.jpg',
+        colorName:'blue',
     },
     {
         id: 247,
@@ -3613,6 +3864,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/galerie_pearl_2.jpg',
         wavy:true,
         img:'/fabric_image/GALERIE PEARL.jpg',
+        colorName:'',
     },
     {
         id: 248,
@@ -3627,6 +3879,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/chantilly_stone_2_2.jpg',
         wavy:true,
         img:'/fabric_image/CHANTILLY STONE.jpg',
+        colorName:'',
     },
     {
         id: 249,
@@ -3641,6 +3894,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/chantilly_wedgewood_2_2.jpg',
         wavy:true,
         img:'/fabric_image/CHANTILLY WEDGEWOOD.jpg',
+        colorName:'',
     },
     {
         id: 250,
@@ -3655,6 +3909,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/bougainvillea_fuchsia_2_2.jpg',
         wavy:true,
         img:'/fabric_image/BOUGAINVILLEA FUCHSIA.jpg',
+        colorName:'peach',
     },
     {
         id: 251,
@@ -3669,6 +3924,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/bougainvillea_paprika_2_2.jpg',
         wavy:true,
         img:'/fabric_image/BOUGAINVILLEA PAPRIKA.jpg',
+        colorName:'peach',
     },
     // {
     //     id: 253,
@@ -3722,6 +3978,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/tiffany_autumn_2.jpg',
         wavy:true,
         img:'/fabric_image/TIFFANY AUTUMN.jpg',
+        colorName:'brown',
     },
     {
         id: 253,
@@ -3736,6 +3993,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/tiffany_jewel_2.jpg',
         wavy:true,
         img:'/fabric_image/TIFFANY JEWEL.jpg',
+        colorName:'',
     },
     {
         id: 254,
@@ -3750,6 +4008,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/tiffany_mulberry_2.jpg',
         wavy:true,
         img:'/fabric_image/TIFFANY MULBERRY.jpg',
+        colorName:'',
     },
     {
         id: 255,
@@ -3764,6 +4023,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/tiffany_prussian_2.jpg',
         wavy:true,
         img:'/fabric_image/TIFFANY PRUSSIAN.jpg',
+        colorName:'',
     },
     {
         id: 256,
@@ -3778,6 +4038,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/tiffany_sand_2.jpg',
         wavy:true,
         img:'/fabric_image/TIFFANY SAND.jpg',
+        colorName:'',
     },
     {
         id: 257,
@@ -3792,6 +4053,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/whitwell_flint_2.jpg',
         wavy:true,
         img:'/fabric_image/WHITWELL FLINT.jpg',
+        colorName:'',
     },
     {
         id: 258,
@@ -3806,6 +4068,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/whitwell_linen_2.jpg',
         wavy:true,
         img:'/fabric_image/WHITWELL LINEN.jpg',
+        colorName:'',
     },
     {
         id: 259,
@@ -3820,6 +4083,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/whitwell_verdigris_2.jpg',
         wavy:true,
         img:'/fabric_image/WHITWELL VERDIGRIS.jpg',
+        colorName:'',
     },
     {
         id: 260,
@@ -3834,6 +4098,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/cottage_garden_cornsilk_2.jpg',
         wavy:true,
         img:'/fabric_image/COTTAGE GARDEN CORNSILK.jpg',
+        colorName:'',
     },
     {
         id: 261,
@@ -3848,6 +4113,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/cottage_garden_rosella_2.jpg',
         wavy:true,
         img:'/fabric_image/COTTAGE GARDEN ROSELLA.jpg',
+        colorName:'',
     },
     {
         id: 262,
@@ -3862,6 +4128,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/monseratt_lagoon_2.jpg',
         wavy:true,
         img:'/fabric_image/MONTSERRAT LAGOON.jpg',
+        colorName:'',
     },
     {
         id: 263,
@@ -3876,6 +4143,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ophelia_glacier_2.jpg',
         wavy:true,
         img:'/fabric_image/OPHELIA GLACIER.jpg',
+        colorName:'',
     },
     {
         id: 264,
@@ -3890,6 +4158,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ophelia_henna_2.jpg',
         wavy:true,
         img:'/fabric_image/OPHELIA HENNA.jpg',
+        colorName:'',
     },
     {
         id: 265,
@@ -3904,6 +4173,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/ophelia_thyme_2.jpg',
         wavy:true,
         img:'/fabric_image/OPHELIA THYME.jpg',
+        colorName:'',
     },
     {
         id: 266,
@@ -3918,6 +4188,7 @@ export const fabric =[
         magnifyWavyFabricPath: 'magnify/camille_cloud_2_1.jpg',
         wavy:true,
         img:'/fabric_image/CAMILLE CLOUD.jpg',
+        colorName:'',
     },
     {
         id: 267,
@@ -3931,7 +4202,8 @@ export const fabric =[
         magnifyFabricPath: 'magnify/camille_stone.jpg',
         magnifyWavyFabricPath: 'magnify/camille_stone_2.jpg',
         wavy:true,
-        img:'/fabric_image/CAMILLE STONE.jpg'
+        img:'/fabric_image/CAMILLE STONE.jpg',
+        colorName:'',
     }
 ]
 
