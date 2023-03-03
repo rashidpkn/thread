@@ -15,28 +15,30 @@ function Samples() {
     const { loginStatus } = useSelector(state => state.user)
     const { cart } = useSelector(state => state.sample)
     const colors = [
-        {color:'#000000',name:'black'},
-        {color:'#6AA0E9',name:'blue'},
-        {color:'#7AB479',name:'green'},
-        {color:'#594A44',name:'brown'},
-        {color:'#DFE6E6',name:'grey'},
-        {color:'#F2E1D2',name:'peach'},
-        {color:'#E77F5A',name:'orange'},
-        {color:'#F8AAAB',name:'pink'},
-        {color:'#9D6BBB',name:'purple'},
-        {color:'#AB3636',name:'red'},
-        {color:'#F2F5F5',name:'silver'},
-        {color:'#FFFFFF',name:'white'},
-        {color:'#FFD500',name:'yellow'},
+        { color: '#000000', name: 'black' },
+        { color: '#6AA0E9', name: 'blue' },
+        { color: '#7AB479', name: 'green' },
+        { color: '#594A44', name: 'brown' },
+        { color: '#DFE6E6', name: 'grey' },
+        { color: '#F2E1D2', name: 'peach' },
+        { color: '#E77F5A', name: 'orange' },
+        { color: '#F8AAAB', name: 'pink' },
+        { color: '#9D6BBB', name: 'purple' },
+        { color: '#AB3636', name: 'red' },
+        { color: '#F2F5F5', name: 'silver' },
+        { color: '#FFFFFF', name: 'white' },
+        { color: '#FFD500', name: 'yellow' },
     ]
     const [color, setColor] = useState('all')
     const navigate = useNavigate()
     const [showFilters, setShowFilters] = useState({
         yourSamples: true,
-        style: false,
-        price: false,
-        fabrics: false,
+        style: true,
+        price: true,
+        fabrics: true,
+        color: true
     })
+    const [showMobileFilter, setShowMobileFilter] = useState(false)
     const [fabrics, setFabrics] = useState(fabric.sort((a, b) => a.price - b.price))
     const [sortState, setSortState] = useState('lowToHigh');
     const [patterns, setPatterns] = useState('')
@@ -69,7 +71,7 @@ function Samples() {
             <Navbar />
             <div className="p-[3%] flex flex-col lg:flex-row w-full h-full gap-4 font-inter">
 
-                <div className="w-full lg:w-80 h-auto  block space-y-5">
+                <div className={`w-full lg:w-80 h-auto ${showMobileFilter ? 'block' : 'hidden'}  lg:block space-y-5 py-[5%]`}>
                     <div className="w-full h-10 ">
                         <p className='text-lg font-light text-[#232323]'>Filter by</p>
                     </div>
@@ -106,14 +108,17 @@ function Samples() {
                     }
 
 
-                    <button className='text-lg '>Colors</button>
                     <img src="https://www.stitched.co.uk/css/assets/svg/horizontal-line-MRUTD5ZJ-d940d8a676e01f8f6b6dc401cae34870.svg?vsn=d" className='w-full' alt="" />
-                    <div className="flex flex-wrap gap-3 justify-between px-5">
-                    <button className={`h-20 w-20 rounded-full border-black ${color==='all'?'border-[3px]':'border'}`} onClick={()=>setColor('all')}>ALL</button>
-                        {
-                            colors.map(e=><button onClick={()=>{setColor(e.name)}} style={{background:e.color}} className={`h-20 w-20 rounded-full border-black ${color===e.name?'border-[3px]':'border'}`}>{e.name}</button>)
-                        }
-                    </div>
+                    <button className='text-lg ' onClick={() => { setShowFilters({ ...showFilters, color: !showFilters.color }) }}>Colors</button>
+                    {
+                        showFilters.color && <div className="flex flex-wrap gap-3 justify-between px-5">
+                            <button className={`h-20 w-20 rounded-full border-black ${color === 'all' ? 'border-[3px]' : 'border'}`} onClick={() => setColor('all')}>ALL</button>
+                            {
+                                colors.map(e => <button onClick={() => { setColor(e.name) }} style={{ background: e.color }} className={`h-20 w-20 rounded-full border-black ${color === e.name ? 'border-[3px]' : 'border'}`}>{e.name}</button>)
+                            }
+                        </div>
+                    }
+
 
 
                     <img src="https://www.stitched.co.uk/css/assets/svg/horizontal-line-MRUTD5ZJ-d940d8a676e01f8f6b6dc401cae34870.svg?vsn=d" className='w-full' alt="" />
@@ -125,12 +130,23 @@ function Samples() {
                             <button className='h-12 px-5 border' onClick={() => { setPatterns('00') }}>Plain Fabrics</button>
                         </div>
                     }
-
+                    <div className="flex gap-5 lg:hidden">
+                        <button className='h-14 bg-black text-white w-36 border' onClick={()=>{setShowMobileFilter(false);window.scrollTo(0,0)}}>Apply</button>
+                        <button className='h-14 bg-white text-black w-36 border' onClick={()=>{setShowMobileFilter(false);window.scrollTo(0,0)}}>Clear</button>
+                        <button className='h-14 bg-white text-black w-36 border' onClick={()=>{setShowMobileFilter(false);window.scrollTo(0,0)}}>Close</button>
+                    </div>
 
 
                 </div>
 
-                <div className="w-full lg:w-[calc(95%-21rem)]  flex flex-wrap justify-center gap-3 lg:gap-10">
+                {
+                    !showMobileFilter && <div className="p-[5%] bg-white lg:hidden flex justify-center items-center">
+                        <button className='bg-black text-white h-12 w-full' onClick={()=>{setShowMobileFilter(!showMobileFilter)}}>Show filters</button>
+                    </div>
+                }
+
+
+                {!showMobileFilter && <div className="w-full lg:w-[calc(95%-21rem)]  flex flex-wrap justify-center gap-3 lg:gap-10">
 
                     <div className="h-10 w-full flex justify-between items-center">
                         <p className='text-lg font-light text-[#232323]'>{fabric.length} Fabrics</p>
@@ -147,8 +163,8 @@ function Samples() {
 
                     </div>
                     {
-                        fabrics.map(e =>  (
-                            (color==='all' ? true : color===e.colorName) && <div key={e.id} className="w-[170px] lg:w-[270px] h-[270px] lg:h-[400px] relative" >
+                        fabrics.map(e => (
+                            (color === 'all' ? true : color === e.colorName) && <div key={e.id} className="w-[170px] lg:w-[270px] h-[270px] lg:h-[400px] relative" >
                                 <img className='h-full w-full absolute -z-10' src="/image/samples/book1.png" alt="" loading={'lazy'} />
                                 <img src={e.magnifyFabricPath} className='h-full w-full absolute -z-20' alt="" loading={'lazy'} />
                                 <div className="absolute bottom-[4.5rem] w-full h-10 flex justify-center items-center ">
@@ -184,7 +200,7 @@ function Samples() {
                         )
                     }
 
-                </div>
+                </div>}
             </div>
             <Footer />
         </div>
