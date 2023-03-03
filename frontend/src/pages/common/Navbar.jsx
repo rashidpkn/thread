@@ -14,6 +14,7 @@ import { setLogout } from '../../redux/slice/user'
 //icon
 import orderSampleIcon from '../asset/common/order-sample.svg'
 import cartIcon from '../asset/common/cart.svg'
+import AllFabrics from './components/AllFabrics'
 
 
 
@@ -109,6 +110,7 @@ function Navbar() {
                   <div className="flex gap-5 text-black">
                     <Link to={'/order-samples'}>
                       <div className="h-40 w-40 border border-black bg-white hover:bg-[#D7C7BE] duration-200 flex flex-col justify-center items-center gap-5">
+                        <AllFabrics/>
                         <p>ALL FABRICS</p>
                       </div>
                     </Link>

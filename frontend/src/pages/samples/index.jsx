@@ -67,16 +67,12 @@ function Samples() {
     return (
         <div>
             <Navbar />
-            <div className="p-[3%] flex w-full h-full gap-4 font-inter">
+            <div className="p-[3%] flex flex-col lg:flex-row w-full h-full gap-4 font-inter">
 
-                <div className="w-80 h-auto  hidden lg:block space-y-5">
+                <div className="w-full lg:w-80 h-auto  block space-y-5">
                     <div className="w-full h-10 ">
                         <p className='text-lg font-light text-[#232323]'>Filter by</p>
                     </div>
-
-
-
-
                     <img src="https://www.stitched.co.uk/css/assets/svg/horizontal-line-MRUTD5ZJ-d940d8a676e01f8f6b6dc401cae34870.svg?vsn=d" className='w-full' alt="" />
                     <button className='text-lg ' onClick={() => { setShowFilters({ ...showFilters, yourSamples: !showFilters.yourSamples }) }}>YOUR SAMPLES</button>
                     {
@@ -134,7 +130,7 @@ function Samples() {
 
                 </div>
 
-                <div className="w-full lg:w-[calc(95%-21rem)]  flex flex-wrap justify-center gap-3 lg:gap-10 h-screen overflow-y-scroll">
+                <div className="w-full lg:w-[calc(95%-21rem)]  flex flex-wrap justify-center gap-3 lg:gap-10">
 
                     <div className="h-10 w-full flex justify-between items-center">
                         <p className='text-lg font-light text-[#232323]'>{fabric.length} Fabrics</p>

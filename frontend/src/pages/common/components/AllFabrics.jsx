@@ -1,0 +1,9 @@
+import React from 'react'
+
+function AllFabrics() {
+  return (
+    <svg className='w-[60px]' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><rect width="27.191" height=".554" x="2.735" y="2.369" fill="#232323"></rect><ellipse cx="2.628" cy="2.632" fill="#232323" rx=".628" ry=".632"></ellipse><ellipse cx="29.372" cy="2.632" fill="#232323" rx=".628" ry=".632"></ellipse><rect width="20.173" height="19.04" x="5.863" y="4.427" fill="#F4EFEC" stroke="#232323" strokeWidth=".6"></rect><rect width="8" height="17.333" x="16.572" y="5.333" fill="#F4EFEC"></rect><rect width="8.067" height="16.733" x="16.967" y="5.633" stroke="#232323" strokeWidth=".6"></rect><rect width="8" height="17.333" x="7.239" y="5.333" fill="#F4EFEC"></rect><path stroke="#232323" strokeLinecap="round" strokeWidth=".7" d="m6.547 5.025.555.456m.001 16.932-.578.508"></path><rect width="8.733" height="16.733" x="6.3" y="5.633" stroke="#232323" strokeWidth=".6"></rect><path stroke="#232323" strokeLinecap="round" strokeWidth=".7" d="m25.395 4.971-.599.51m0 16.932.6.508"></path><path fill="#232323" fillRule="evenodd" d="M8.44 30.667H4.251c-.135 0-.245-.172-.245-.384V1.717c0-.212.11-.384.245-.384h4.19c.135 0 .245.172.245.384v28.566c0 .212-.11.384-.246.384Z" clipRule="evenodd"></path><path stroke="#232323" strokeWidth=".5" d="M8.44 30.667H4.251c-.135 0-.245-.172-.245-.384V1.717c0-.212.11-.384.245-.384h4.19c.135 0 .245.172.245.384v28.566c0 .212-.11.384-.246.384"></path><path fill="#232323" fillRule="evenodd" stroke="#232323" strokeWidth=".5" d="M27.83 30.667h-4.19c-.135 0-.245-.172-.245-.384V1.717c0-.212.11-.384.245-.384h4.19c.135 0 .245.172.245.384v28.566c0 .212-.11.384-.246.384Z" clipRule="evenodd"></path></svg>
+  )
+}
+
+export default AllFabrics
