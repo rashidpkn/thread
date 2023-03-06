@@ -131,9 +131,9 @@ function Samples() {
                         </div>
                     }
                     <div className="flex gap-5 lg:hidden">
-                        <button className='h-14 bg-black text-white w-36 border' onClick={()=>{setShowMobileFilter(false);window.scrollTo(0,0)}}>Apply</button>
-                        <button className='h-14 bg-white text-black w-36 border' onClick={()=>{setShowMobileFilter(false);window.scrollTo(0,0)}}>Clear</button>
-                        <button className='h-14 bg-white text-black w-36 border' onClick={()=>{setShowMobileFilter(false);window.scrollTo(0,0)}}>Close</button>
+                        <button className='h-14 bg-black text-white w-36 border' onClick={() => { setShowMobileFilter(false); window.scrollTo(0, 0) }}>Apply</button>
+                        <button className='h-14 bg-white text-black w-36 border' onClick={() => { setShowMobileFilter(false); window.scrollTo(0, 0) }}>Clear</button>
+                        <button className='h-14 bg-white text-black w-36 border' onClick={() => { setShowMobileFilter(false); window.scrollTo(0, 0) }}>Close</button>
                     </div>
 
 
@@ -141,7 +141,7 @@ function Samples() {
 
                 {
                     !showMobileFilter && <div className="p-[5%] bg-white lg:hidden flex justify-center items-center">
-                        <button className='bg-black text-white h-12 w-full' onClick={()=>{setShowMobileFilter(!showMobileFilter)}}>Show filters</button>
+                        <button className='bg-black text-white h-12 w-full' onClick={() => { setShowMobileFilter(!showMobileFilter) }}>Show filters</button>
                     </div>
                 }
 

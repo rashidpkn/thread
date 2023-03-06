@@ -221,7 +221,7 @@ function Navbar() {
           </div>
         </nav>
         {
-          showMenu && <ul className="flex lg:hidden flex-col w-full p-2 gap-3 ">
+          showMenu && <ul className="flex lg:hidden flex-col w-full p-2 gap-3 bg-white">
             <li className='cursor-pointer'><Link to={'/productBuilder'}> Shop Now </Link></li>
             <li className='cursor-pointer'><Link to={'/order-samples'}>Order Samples</Link></li>
             <li className='cursor-pointer'><Link to={'/about-us'}> About Us </Link></li>
