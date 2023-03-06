@@ -11,7 +11,7 @@ function Mesurement() {
     return (
         <div className="h-[30rem]">
             {
-                selector === 0 && <Intro setSelector={setSelector}/>
+                selector === 0 && <Intro setSelector={setSelector} />
             }
             {
                 selector === 1 && <Type setSelector={setSelector} />
@@ -23,14 +23,12 @@ function Mesurement() {
                 selector === 3 && <Name setSelector={setSelector} />
             }
             {
-                selector === 4 && <Pole setSelector={setSelector}/>
+                selector === 4 && <Pole setSelector={setSelector} />
             }
             {
                 selector === 5 && <Details />
             }
         </div>
-
-
     )
 }
 

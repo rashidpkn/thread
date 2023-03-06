@@ -6,11 +6,11 @@ function Details() {
     const dispatch = useDispatch()
     const { item } = useSelector(state => state.fabric.measure)
   return (
-    <div className='space-y-5 '>
-            <div className=" space-y-5 pt-10">
-                {/* <h2 className='text-2xl text-center'>Get your <br /> Measurement</h2> */}
+    <div className='space-y-5 pt-10'>
+            {/* <div className=" space-y-5 pt-10">
+                <h2 className='text-2xl text-center'>Get your <br /> Measurement</h2>
                 <h3 className='text-lg text-center'>Measurements is Added !</h3>
-            </div>
+            </div> */}
             <div className="flex justify-center">
               {item==='Blind' ? 
               <button  className='bg-[#2b2b2b] text-white px-[20px] py-[14px] rounded-2xl' onClick={()=>dispatch(setMenu(4))}>Choose Accessories</button> 

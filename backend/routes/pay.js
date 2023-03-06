@@ -9,7 +9,7 @@ router.post('/',async (req,res)=>{
         const {email,amount} = req.body
     const paymentIntent = await stripe.paymentIntents.create({
         amount:amount*100,
-        currency:'usd',
+        currency:'eur',
         metadata:{integration_check: 'accept_a_payment'},
         receipt_email:email
     })

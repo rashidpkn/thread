@@ -15,7 +15,7 @@ import { Pencil } from '../productBuilder/components/model/Pencil'
 import { Goblet } from '../productBuilder/components/model/Goblet'
 import { Triple } from '../productBuilder/components/model/Triple'
 import { Room } from '../productBuilder/components/Room'
-import { setFname,setLname,setPhone,setZipCode,setAddress } from '../../redux/slice/user'
+import { setFname, setLname, setPhone, setZipCode, setAddress } from '../../redux/slice/user'
 
 
 function CheckOut() {
@@ -23,7 +23,7 @@ function CheckOut() {
   const { width, height, roomName, item, installation, isPole, } = useSelector(state => state.fabric.measure)
   const { panel, look } = useSelector(state => state.fabric.style)
   const { lining, poleAndTrack } = useSelector(state => state.fabric.feature)
-  const { glide, corded,accessoriesPrice } = useSelector(state => state.fabric.feature.accessories)
+  const { glide, corded, accessoriesPrice } = useSelector(state => state.fabric.feature.accessories)
   const { price, wallColor } = useSelector(state => state.fabric)
 
   const [email, setEmail] = useState('')
@@ -75,11 +75,11 @@ function CheckOut() {
           {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Glide           </p>  <p className='lg:ml-16'>{glide} CM</p>  </div>}
           {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-40 lg:w-64 text-xl'>corded          </p>  <p className='lg:ml-16'>{corded}</p>  </div>}
 
-          <div className="flex">  <p className='w-64 text-xl'>Making Price    </p>  <p className='ml-16'>{Math.floor(price)}</p>  </div>
-          {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-64 text-xl'>Accessories Price     </p>  <p className='ml-16'>{Math.floor(accessoriesPrice)}</p>  </div>}
-          <div className="flex">  <p className='w-64 text-xl'>Boxed &  Postage</p>  <p className='ml-16'>{30}</p>  </div>
-          <div className="flex">  <p className='w-64 text-xl'>Total Price     </p>  <p className='ml-16'>{Math.floor(price + 30 + accessoriesPrice)}</p>  </div>
-          
+          <div className="flex">  <p className='w-64 text-xl'>Making Price    </p>  <p className='ml-16'>£{Math.floor(price)}</p>  </div>
+          {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-64 text-xl'>Accessories Price     </p>  <p className='ml-16'>£{Math.floor(accessoriesPrice)}</p>  </div>}
+          <div className="flex">  <p className='w-64 text-xl'>Boxed &  Postage</p>  <p className='ml-16'>£{30}</p>  </div>
+          <div className="flex">  <p className='w-64 text-xl'>Total Price     </p>  <p className='ml-16'>£{Math.floor(price + 30 + accessoriesPrice)}</p>  </div>
+
         </div>
       </div>
 
@@ -97,22 +97,22 @@ function CheckOut() {
           <div className="flex w-full gap-[10%]">
             <div className="flex flex-col gap-2 w-[60%]">
               <label htmlFor="">First Name</label>
-              <input onChange={e=>dispatch(setFname(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
+              <input onChange={e => dispatch(setFname(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
             </div>
             <div className="flex flex-col gap-2 w-[30%]">
               <label htmlFor="">Last Name</label>
-              <input onChange={e=>dispatch(setLname(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
+              <input onChange={e => dispatch(setLname(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
             </div>
           </div>
 
           <div className="flex w-full gap-[10%]">
             <div className="flex flex-col gap-2 w-[60%]">
               <label htmlFor="">Phone Number</label>
-              <input onChange={e=>dispatch(setPhone(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
+              <input onChange={e => dispatch(setPhone(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
             </div>
             <div className="flex flex-col gap-2 w-[30%]">
               <label htmlFor="">Post Code</label>
-              <input onChange={e=>dispatch(setZipCode(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
+              <input onChange={e => dispatch(setZipCode(e.target.value))} required type="text" className='w-full h-8 rounded-lg border border-[#B68D40] outline-none pl-2' />
             </div>
           </div>
 
@@ -120,7 +120,7 @@ function CheckOut() {
 
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="">Address</label>
-            <textarea onChange={e=>dispatch(setAddress(e.target.value))} required type="text" className='w-full h-24 rounded-lg border border-[#B68D40] outline-none p-2' />
+            <textarea onChange={e => dispatch(setAddress(e.target.value))} required type="text" className='w-full h-24 rounded-lg border border-[#B68D40] outline-none p-2' />
           </div>
 
           {/* <div className="w-full h-12 bg-[#B68D40]/30 rounded-md">
