@@ -443,7 +443,8 @@
         [type=reset],
         [type=submit],
         button {
-            -webkit-appearance: button
+            /* -webkit-appearance: button */
+            appearance: button
         }
 
         button {
@@ -1481,10 +1482,10 @@
             padding-top: 100px;
         }
 
-        .card__title {
-            /* padding-top: 120px;
-            padding-left: 130px; */
-        }
+        /* .card__title {
+            padding-top: 120px;
+            padding-left: 130px;
+        } */
 
         @media (max-width:767px) {
             .card__title {
@@ -1651,7 +1652,7 @@
             }
         }
 
-        .mobile-footer-icon {}
+
 
         .circle-icon {
             position: absolute;
@@ -2013,7 +2014,8 @@ Remove the inheritance of text transform in Edge and Firefox.
         [type='button'],
         [type='reset'],
         [type='submit'] {
-            -webkit-appearance: button;
+            /* -webkit-appearance: button; */
+            appearance: button;
             /* 1 */
             background-color: transparent;
             /* 2 */
@@ -2185,8 +2187,6 @@ Make sure disabled buttons don't get the pointer cursor.
         object {
             display: block;
             /* 1 */
-            vertical-align: middle;
-            /* 2 */
         }
 
         /*
