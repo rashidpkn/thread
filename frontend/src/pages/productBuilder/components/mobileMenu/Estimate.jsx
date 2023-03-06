@@ -22,10 +22,10 @@ function Estimate() {
                 <div className="flex ">  <p className='w-40'>Panel          </p>     <p>{panel}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Style           </p>    <p>{type}</p>  </div>
                 <div className="flex ">  <p className='w-40'>Features        </p>    <p>{lining}</p>  </div>
-                <div className="flex ">  <p className='w-40'>Making Price    </p>    <p>£ {price}</p>  </div>
-                <div className="flex ">  <p className='w-40'>Accessories     </p>    <p>£ {accessoriesPrice}</p>  </div>
-                <div className="flex ">  <p className='w-40'>Boxed &  Postage</p>    <p>£ { 30}</p>  </div>
-                <div className="flex ">  <p className='w-40'>Total Price</p>    <p>£ {Math.floor(price + 30 + accessoriesPrice)}</p>  </div>
+                <div className="flex ">  <p className='w-40'>Making Price    </p>    <p>£ &nbsp; {price}</p>  </div>
+                <div className="flex ">  <p className='w-40'>Accessories     </p>    <p>£ &nbsp; {accessoriesPrice}</p>  </div>
+                <div className="flex ">  <p className='w-40'>Boxed &  Postage</p>    <p>£ &nbsp; { 30}</p>  </div>
+                <div className="flex ">  <p className='w-40'>Total Price</p>    <p>£ &nbsp; {Math.floor(price + 30 + accessoriesPrice)}</p>  </div>
 
             </div>
             <div className="flex justify-center items-center gap-10">

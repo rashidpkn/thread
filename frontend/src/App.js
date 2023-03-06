@@ -10,7 +10,6 @@ import SignUp from './pages/signup'
 
 
 
-import CheckOut2 from './pages/checkout-2'
 import Cart from './pages/cart'
 import { useSelector } from 'react-redux'
 import AboutUs from './pages/AboutUs'
@@ -38,7 +37,7 @@ function App() {
       <Routes>
         <Route path='/productBuilder' element={<ProductBuilder />} />
         <Route path='/checkout' element={<CheckOut />} />
-        <Route path='/checkout-2' element={<CheckOut2 />} />
+
         {/* <Route path='/signup' element={loginStatus ? <Navigate to={'/cart'} /> : <SignUp/>} /> */}
         <Route path='/signup' element={<SignUp/>} />
         <Route path='/estimate' element={<Estimate />} />
