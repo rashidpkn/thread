@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const router = Router()
-const stripe = require('stripe')('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')
+const stripe = require('stripe')('API KEYS')
 
 
 
