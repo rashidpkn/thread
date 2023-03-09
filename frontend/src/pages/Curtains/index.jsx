@@ -11,12 +11,12 @@ const Curtains = () => {
         {
             "img": "/image/resources/Velvet_Citrine.jpg",
             "heading": "Eyelet",
-            "para": "Velvet - Citrine (longer lead time)"
+            "para": "Velvet - Citrine"
         },
         {
             "img": "/image/resources/Velvet_Teal.jpg",
             "heading": "Eyelet",
-            "para": "Velvet - Teal (longer lead time)"
+            "para": "Velvet - Teal"
         },
         {
             "img": "/image/resources/Cotton_Weave_Star.jpg",
@@ -26,7 +26,7 @@ const Curtains = () => {
         {
             "img": "/image/resources/Velvet_Silver_Pearl.jpg",
             "heading": "Eyelet",
-            "para": "Velvet - Silver Pearl longer lead ti.."
+            "para": "Velvet - Silver Pearl"
         },
         {
             "img": "/image/resources/Cotton_Weave_Apricot.jpg",

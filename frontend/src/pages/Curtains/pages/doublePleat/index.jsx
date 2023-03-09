@@ -30,7 +30,7 @@ const DoublePleatCurtain = () => {
         {
             "img": "/image/resources/double/img-05.png",
             "heading": "Double Pleat",
-            "para": "The Nudes Vintage - Oatmeal (lo..."
+            "para": "The Nudes Vintage - Oatmeal "
         },
         {
             "img": "/image/resources/double/img-06.png",
@@ -40,7 +40,7 @@ const DoublePleatCurtain = () => {
         {
             "img": "/image/resources/double/img-07.png",
             "heading": "Double Pleat",
-            "para": "The Nudes Rustic - Fossil (longe..."
+            "para": "The Nudes Rustic - Fossil"
         },  
         {
             "img": "/image/resources/double/img-08.png",

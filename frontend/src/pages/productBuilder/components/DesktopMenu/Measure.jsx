@@ -26,21 +26,21 @@ function Measure() {
   const { room, roomName, item, installation, height, width } = useSelector(state => state.fabric.measure)
 
   useEffect(() => {
-    if(item==='Curtain'){
-        dispatch(setInstallation('Flat'))
-    }else{
+    if (item === 'Curtain') {
+      dispatch(setInstallation('Flat'))
+    } else {
       dispatch(setInstallation('Inside'))
     }
     // eslint-disable-next-line
   }, [item])
-  
+
 
 
 
   const [selector, setSelector] = useState(1)
   return (
     <div className='space-y-3'>
-        <p className='font-medium text-center'>Input Your Measurements</p>
+      <p className='font-medium text-center'>Input Your Measurements</p>
       <div className="flex justify-center gap-5">
         {/* <button onClick={() => setSelector(1)} className={`${selector === 1 ? 'text-[#B68D40]' : 'hidden'}  `} >Curtain/Blinds</button> */}
         <button onClick={() => setSelector(2)} className={`${selector === 2 ? 'text-[#B68D40]' : 'hidden'}  `} >Room Name</button>
@@ -64,13 +64,13 @@ function Measure() {
             item === 'Curtain' && <div className="space-y-3">
               <p className='text-center font-medium'>What kind of window to you have?</p>
               <div className="flex justify-center gap-3">
-                <div onClick={() => { dispatch(setInstallation('Flat')) }} className={` w-24 h-24 rounded-md flex justify-center items-center relative`}> 
-                <img className='w-full' src={installation === 'Flat' ? Flat : dFlat} alt="" /> 
-                <p className='absolute -bottom-6 text-center'>Flat</p>
+                <div onClick={() => { dispatch(setInstallation('Flat')) }} className={` w-24 h-24 rounded-md flex justify-center items-center relative`}>
+                  <img className='w-full' src={installation === 'Flat' ? Flat : dFlat} alt="" />
+                  <p className='absolute -bottom-6 text-center'>Flat</p>
                 </div>
-                <div onClick={() => { dispatch(setInstallation('Bay')) }} className={` w-24 h-24 rounded-md flex justify-center items-center relative`}> 
-                <img className='w-full' src={installation === 'Bay' ? Bay : dBay} alt="" /> 
-                <p className='absolute -bottom-6 text-center'>Bay</p>
+                <div onClick={() => { dispatch(setInstallation('Bay')) }} className={` w-24 h-24 rounded-md flex justify-center items-center relative`}>
+                  <img className='w-full' src={installation === 'Bay' ? Bay : dBay} alt="" />
+                  <p className='absolute -bottom-6 text-center'>Bay</p>
                 </div>
               </div>
             </div>
@@ -80,13 +80,13 @@ function Measure() {
             item === 'Blind' && <div className="space-y-3">
               <p className='text-center font-medium'>How will your blinds be installed?</p>
               <div className="flex justify-center gap-7">
-                <div onClick={() => { dispatch(setInstallation('Inside')) }} className={`w-24 h-24 rounded-md flex justify-center items-center relative`}> 
-                <img className='w-full' src={installation === 'Inside' ? Inside : dInside} alt="" /> 
-                <p className='absolute -bottom-6 text-center'>Inside</p>
+                <div onClick={() => { dispatch(setInstallation('Inside')) }} className={`w-24 h-24 rounded-md flex justify-center items-center relative`}>
+                  <img className='w-full' src={installation === 'Inside' ? Inside : dInside} alt="" />
+                  <p className='absolute -bottom-6 text-center'>Inside</p>
                 </div>
-                <div onClick={() => { dispatch(setInstallation('Outside')) }} className={`w-24 h-24 rounded-md flex justify-center items-center relative`}> 
-                <img className='w-full' src={installation === 'Outside' ? OutSide : dOutSide} alt="" /> 
-                <p className='absolute -bottom-6 text-center'>Outside</p>
+                <div onClick={() => { dispatch(setInstallation('Outside')) }} className={`w-24 h-24 rounded-md flex justify-center items-center relative`}>
+                  <img className='w-full' src={installation === 'Outside' ? OutSide : dOutSide} alt="" />
+                  <p className='absolute -bottom-6 text-center'>Outside</p>
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@ function Measure() {
           </div> */}
           <div className="flex  justify-between items-center mt-10">
             <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => dispatch(setMenu(1))}> <KeyboardBackspace /> Back</button>
-            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={()=>  setSelector(2)      }>Next <ArrowRightAlt/></button>
+            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => setSelector(2)}>Next <ArrowRightAlt /></button>
           </div>
         </div>
       }
@@ -122,7 +122,7 @@ function Measure() {
 
           <div className="flex  justify-between items-center mt-10">
             <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => setSelector(1)}> <KeyboardBackspace /> Back</button>
-            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={()=>  setSelector(3)}>Next <ArrowRightAlt/></button>
+            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => setSelector(3)}>Next <ArrowRightAlt /></button>
           </div>
 
 
@@ -142,31 +142,31 @@ function Measure() {
           <div className="flex  justify-center gap-5">
             <div className="flex flex-col gap-3">
               <label htmlFor="">Height CM</label>
-              <input  min={100} max={305} 
-                           placeholder='100 CM to 305 CM' onChange={e => { dispatch(setHeight(Number( e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md text-black placeholder:text-black' type="number" />
+              <input min={100} max={305}
+                onChange={e => { dispatch(setHeight(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md text-black placeholder:text-black' type="number" />
             </div>
             <div className="flex flex-col gap-3">
               <label htmlFor="">Width CM</label>
-              <input  min={75} max={480}
-               
-               placeholder='75 CM to 480 CM' onChange={e => { dispatch(setWidth(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md text-black placeholder:text-black' type="number" />
+              <input min={75} max={480}
+
+                onChange={e => { dispatch(setWidth(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md text-black placeholder:text-black' type="number" />
             </div>
 
           </div>
-          
+
           <div className="flex  justify-between items-center mt-10">
             <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => setSelector(2)}> <KeyboardBackspace /> Back</button>
-            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => { 
-                    if( (Number(height)<100 || Number(height)>305)){
-                        window.alert("Please Provide height between 100 - 480")
-                    }
-                    else if(Number(width)<75 || Number(width)>480){
-                        window.alert("Please Provide width between 75 - 480")
-                    }
-                    else{
-                      item==='Blind' ?dispatch(setMenu(4)) :dispatch(setMenu(3)) 
-                    }
-                }}> Next <ArrowRightAlt/></button>
+            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => {
+              if ((Number(height) < 100 || Number(height) > 305)) {
+                window.alert("Please Provide height between 100 - 480")
+              }
+              else if (Number(width) < 75 || Number(width) > 480) {
+                window.alert("Please Provide width between 75 - 480")
+              }
+              else {
+                item === 'Blind' ? dispatch(setMenu(4)) : dispatch(setMenu(3))
+              }
+            }}> Next <ArrowRightAlt /></button>
           </div>
 
         </div>

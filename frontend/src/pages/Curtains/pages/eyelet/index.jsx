@@ -10,7 +10,7 @@ const EyeletCurtain = () => {
         {
             "img": "/image/resources/eyelet/img-01.png",
             "heading": "Eyelet",
-            "para": "Velvet - Teal (longer lead time)"
+            "para": "Velvet - Teal "
         },
         {
             "img": "/image/resources/eyelet/img-02.png",
@@ -25,7 +25,7 @@ const EyeletCurtain = () => {
         {
             "img": "/image/resources/eyelet/img-04.png",
             "heading": "Eyelet",
-            "para": "Velvet - Silver Pearl (longer lead time)..."
+            "para": "Velvet - Silver Pearl"
         },
         {
             "img": "/image/resources/eyelet/img-05.png",
@@ -35,12 +35,12 @@ const EyeletCurtain = () => {
         {
             "img": "/image/resources/eyelet/img-06.png",
             "heading": "Eyelet",
-            "para": "Velvet - Citrine (longer lead time)"
+            "para": "Velvet - Citrine "
         },
         {
             "img": "/image/resources/eyelet/img-07.png",
             "heading": "Eyelet",
-            "para": "The Nudes Rustic - Fossil (longe..."
+            "para": "The Nudes Rustic - Fossil"
         },
         {
             "img": "/image/resources/eyelet/img-08.png",
@@ -60,7 +60,7 @@ const EyeletCurtain = () => {
         {
             "img": "/image/resources/eyelet/img-11.png",
             "heading": "Eyelet",
-            "para": "The Nudes Rustic - Fossil (longer le"
+            "para": "The Nudes Rustic - Fossil"
         }
     ]
     return (
