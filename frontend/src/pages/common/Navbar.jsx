@@ -70,7 +70,7 @@ function Navbar() {
                 <div className="fixed left-0 top-[100px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
                   <div className={`flex  items-center justify-center gap-5 bg-white relative z-[99] text-black pt-10`}>
                     <h1 className='text-2xl'>Shop Our Curtains</h1>
-                    <p>Our curtains are made to measure at the highest quality specification.</p>
+                    <p>Custom-Made Curtains Crafted with Unmatched Precision & Quality Just for You!</p>
                   </div>
                   <div className={`flex justify-center gap-5 items-center  w-full `}>
                     <Curtain submenu={2} path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
@@ -84,7 +84,7 @@ function Navbar() {
                 <div className="fixed left-0 top-[100px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
                   <div className={` flex items-center justify-center gap-5 bg-white relative z-[99] text-black pt-10`}>
                     <h1 className='text-2xl'>Shop Our Curtains</h1>
-                    <p>Our curtains are made to measure at the highest quality specification.</p>
+                    <p>Custom-Made Curtains Crafted with Unmatched Precision & Quality Just for You!</p>
                   </div>
                   <div className={`flex justify-center gap-5 items-center w-full`}>
                     <Curtain submenu={4} path={'/PencilPleatCurtains'} title={'Pencil Pleat Curtains'} backgroundImage={'/image/common/nav1.jpg'} />
