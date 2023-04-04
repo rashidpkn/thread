@@ -3,8 +3,8 @@ const SectionThree = ({curtainsImages}) => {
 
     return (
         // <div className="flex flex-wrap items-center justify-center p-10">
-        <div className="flex flex-col w-full h-full p-5 text-gray-500 md:p-16 md:flex-row md:flex-wrap md:items-center md:justify-center">
-            <div className="flex flex-col items-center justify-center w-full p-5 text-gray-500 h-80 md:w-1/3">
+        <div className="flex flex-col w-full h-full p-5  md:p-16 md:flex-row md:flex-wrap md:items-center md:justify-center">
+            <div className="flex flex-col items-center justify-center w-full p-5  h-80 md:w-1/3">
                 <p className="p-5 bg-gray-100 border-2 border-gray-400">Customise your curtains,<br/> measure up, and get a<br/> quick quote in our online <br/>studio <br/></p>
                 
                 <div className="">

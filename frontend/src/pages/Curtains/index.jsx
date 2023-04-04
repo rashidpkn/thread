@@ -1,4 +1,4 @@
-import SectionOne from "./components/sectionOne";
+
 
 import SectionTwo from "./components/sectionTwo";
 import SectionThree from "./components/sectionThree";
@@ -62,7 +62,7 @@ const Curtains = () => {
     return (
         <div>
             <Navbar />
-            <SectionOne />
+            
             <SectionTwo />
             <SectionThree curtainsImages={curtainsImages}/>
             <Footer />
