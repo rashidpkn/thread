@@ -3,10 +3,10 @@ import React from 'react'
 function SectionOne() {
   return (
     <>
-      <div className='flex flex-col  w-full h-full p-10 md:flex-row'>
+      <div className='flex flex-col  w-full h-full p-10 md:flex-row text-black'>
         <div className="flex flex-col items-center w-full leftsection">
           <div className="w-5/6 pt-10 heading">
-            <h1 className='text-5xl font-bold text-[#4A4A4A]'>Goblet Curtains</h1>
+            <h1 className='text-5xl font-bold '>Goblet Curtains</h1>
           </div>
           <div className="w-5/6 mt-10 space-y-10">
             <p>Introducing Thread Curtains UK's exquisite Goblet Pleat Curtains, an elegant addition to any home seeking a sophisticated touch of luxury. Crafted with the finest materials and available in a wide range of colors, these curtains not only add a splash of style to your living space, but also provide the perfect balance of privacy and light filtration.</p>

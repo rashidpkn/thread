@@ -5,10 +5,10 @@ function SectionOne() {
 
   return (
     <>
-      <div className='flex flex-col w-full h-full p-10 md:flex-row text-justify'>
+      <div className='flex flex-col w-full h-full p-10 md:flex-row text-justify text-black'>
         <div className="flex flex-col items-center w-full leftsection">
           <div className="w-5/6 pt-10 heading">
-            <h1 className='text-5xl font-medium text-[#4A4A4A]'>Eyelet Curtains</h1>
+            <h1 className='text-5xl font-medium '>Eyelet Curtains</h1>
           </div>
 
 
