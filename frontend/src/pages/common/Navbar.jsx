@@ -66,7 +66,7 @@ function Navbar() {
             <ul className='flex justify-center items-center   h-full font-inter gap-[50px]'>
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
-                <Link className='font-medium' to={'/productBuilder'}>SHOP NOW</Link>
+                <Link  to={'/productBuilder'}>SHOP NOW</Link>
                 <div className="fixed left-0 top-[100px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
                   <div className={`flex  items-center justify-center gap-5 bg-white relative z-[99] text-black pt-10`}>
                     <h1 className='text-2xl'>Shop Our Curtains</h1>
@@ -80,7 +80,7 @@ function Navbar() {
               </li>
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
-                <Link className='font-medium' to={'/curtains'}>CURTAIN STYLE</Link>
+                <Link  to={'/curtains'}>CURTAIN STYLE</Link>
                 <div className="fixed left-0 top-[100px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
                   <div className={` flex items-center justify-center gap-5 bg-white relative z-[99] text-black pt-10`}>
                     <h1 className='text-2xl'>Shop Our Curtains</h1>
@@ -99,7 +99,7 @@ function Navbar() {
 
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
-                <Link className='font-medium' to={'/order-samples'}> ORDER SAMPLE</Link>
+                <Link  to={'/order-samples'}> ORDER SAMPLE</Link>
                 <div className="fixed left-0 top-[100px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('/image/common/mega-menu.jpg')" }}>
                   <h2 className='text-4xl  font-medium'>Curtain + Blind Fabric Samples</h2>
                   <p className='text-sm '>
@@ -141,8 +141,8 @@ function Navbar() {
               </li>
 
 
-              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link className='font-medium' to={'/about-us'}> ABOUT US </Link></li>
-              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link className='font-medium' to={'/contact-us'}> CONTACT US </Link></li>
+              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link  to={'/about-us'}> ABOUT US </Link></li>
+              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link  to={'/contact-us'}> CONTACT US </Link></li>
 
 
               {cart.length !== 0 &&
