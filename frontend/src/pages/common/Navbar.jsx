@@ -57,7 +57,7 @@ function Navbar() {
         }
 
 
-        <div className='shadow-md w-full text-[#B68D40] text-[16px]  bg-white '>
+        <div className='shadow-md w-full text-black text-[16px]  bg-white '>
           <nav className='h-[110px] w-full hidden lg:flex justify-between items-center px-10 '>
             <a href="https://my-thread.co.uk" >
               <img src="/image/common/logo.svg" width={100} alt="" />
@@ -66,7 +66,7 @@ function Navbar() {
             <ul className='flex justify-center items-center   h-full font-inter gap-[50px]'>
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
-                <Link to={'/productBuilder'}>Shop Now</Link>
+                <Link className='font-semibold' to={'/productBuilder'}>Shop Now</Link>
                 <div className="fixed left-0 top-[100px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
                   <div className={`flex  items-center justify-center gap-5 bg-white relative z-[99] text-black pt-10`}>
                     <h1 className='text-2xl'>Shop Our Curtains</h1>
@@ -74,13 +74,13 @@ function Navbar() {
                   </div>
                   <div className={`flex justify-center gap-5 items-center  w-full `}>
                     <Curtain submenu={2} path={'/productBuilder'} title={'Customise Curtains'} backgroundImage={'/image/common/nav4.png'} />
-                    <Curtain submenu={2} path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'/image/common/megamenu-blinds.jpeg'} />
+                    <Curtain submenu={2} path={'/productBuilder'} title={'Customise Blinds'} backgroundImage={'/image/common/megamenu-blinds.png'} />
                   </div>
                 </div>
               </li>
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
-                <Link to={'/curtains'}>Curtain Style</Link>
+                <Link className='font-semibold' to={'/curtains'}>Curtain Style</Link>
                 <div className="fixed left-0 top-[100px] space-y-10 h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white  px-[10%] ">
                   <div className={` flex items-center justify-center gap-5 bg-white relative z-[99] text-black pt-10`}>
                     <h1 className='text-2xl'>Shop Our Curtains</h1>
@@ -99,7 +99,7 @@ function Navbar() {
 
 
               <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'>
-                <Link to={'/order-samples'}> Order Samples </Link>
+                <Link className='font-semibold' to={'/order-samples'}> Order Samples </Link>
                 <div className="fixed left-0 top-[100px]  h-0 group-hover:h-[550px] overflow-hidden duration-500 w-full bg-white group-hover:pt-[5%] px-[10%] bg-no-repeat bg-cover space-y-10 text-white" style={{ backgroundImage: "url('/image/common/mega-menu.jpg')" }}>
                   <h2 className='text-4xl  font-medium'>Curtain + Blind Fabric Samples</h2>
                   <p className='text-sm '>
@@ -141,8 +141,8 @@ function Navbar() {
               </li>
 
 
-              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link to={'/about-us'}> About Us </Link></li>
-              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link to={'/contact-us'}> Contact Us </Link></li>
+              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link className='font-semibold' to={'/about-us'}> About Us </Link></li>
+              <li className='cursor-pointer hover:underline underline-offset-1 h-full group flex justify-center items-center'><Link className='font-semibold' to={'/contact-us'}> Contact Us </Link></li>
 
 
               {cart.length !== 0 &&
