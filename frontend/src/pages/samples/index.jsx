@@ -41,7 +41,7 @@ function Samples() {
     const [showMobileFilter, setShowMobileFilter] = useState(false)
     const [fabrics, setFabrics] = useState(fabric.sort((a, b) => a.price - b.price))
     const [sortState, setSortState] = useState('lowToHigh');
-    const [patterns, setPatterns] = useState('')
+    const [patterns, setPatterns] = useState('all')
 
     useEffect(() => {
         if (patterns === '01') {
@@ -78,7 +78,7 @@ function Samples() {
                     <img src="https://www.stitched.co.uk/css/assets/svg/horizontal-line-MRUTD5ZJ-d940d8a676e01f8f6b6dc401cae34870.svg?vsn=d" className='w-full' alt="" />
                     <button className='text-lg ' onClick={() => { setShowFilters({ ...showFilters, yourSamples: !showFilters.yourSamples }) }}>YOUR SAMPLES</button>
                     {
-                        showFilters.yourSamples && <div className=" space-y-5">
+                        showFilters.yourSamples && <div className=" space-y-5 ">
 
                             {/* <button className='h-14 w-full bg-black text-white'>Login in to see my sample</button> */}
                             <div className="flex gap-5 flex-wrap">
@@ -96,7 +96,7 @@ function Samples() {
                                     [...Array(10 - cart.length)].map(e => <div className="w-14 h-14 border border-black flex justify-center items-center text-3xl font-light">+</div>)
                                 }
                             </div>
-                            {loginStatus && <Link to={'/login'}> <button className='h-14 w-full bg-black text-white' >Log in to see my Samples</button> </Link>}
+                            {loginStatus && <Link to={'/login'}> <button className='h-14 w-full bg-black text-white mt-5' >Log in to see my Samples</button> </Link>}
                             <button className='h-14 w-full bg-black text-white' onClick={() => {
                                 if (cart.length) {
                                     navigate('/samples-checkout')
@@ -111,7 +111,7 @@ function Samples() {
                     <img src="https://www.stitched.co.uk/css/assets/svg/horizontal-line-MRUTD5ZJ-d940d8a676e01f8f6b6dc401cae34870.svg?vsn=d" className='w-full' alt="" />
                     <button className='text-lg ' onClick={() => { setShowFilters({ ...showFilters, color: !showFilters.color }) }}>Colors</button>
                     {
-                        showFilters.color && <div className="flex flex-wrap gap-3 justify-between px-5">
+                        showFilters.color && <div className="flex flex-wrap gap-5  px-5">
                             <button className={`h-20 w-20 rounded-full border-black ${color === 'all' ? 'border-[3px]' : 'border'}`} onClick={() => setColor('all')}>ALL</button>
                             {
                                 colors.map(e => <button onClick={() => { setColor(e.name) }} style={{ background: e.color }} className={`h-20 w-20 rounded-full border-black ${color === e.name ? 'border-[3px]' : 'border'}`}>{e.name}</button>)
@@ -125,9 +125,9 @@ function Samples() {
                     <button className='text-lg ' onClick={() => { setShowFilters({ ...showFilters, fabrics: !showFilters.fabrics }) }}>FABRICS</button>
                     {
                         showFilters.fabrics && <div className="flex flex-wrap gap-5">
-                            <button className='h-12 px-5 border' onClick={() => { setPatterns('all') }}>All</button>
-                            <button className='h-12 px-5 border' onClick={() => { setPatterns('01') }}>Pattern Fabrics</button>
-                            <button className='h-12 px-5 border' onClick={() => { setPatterns('00') }}>Plain Fabrics</button>
+                            <button className={` h-12 px-5 border ${patterns==='all' && 'border-2 border-black'} `} onClick={() => { setPatterns('all'); setShowMobileFilter(false) }}>All</button>
+                            <button className={` h-12 px-5 border ${patterns==='01' &&  'border-2 border-black'} `} onClick={() => { setPatterns('01') ; setShowMobileFilter(false)}}>Pattern Fabrics</button>
+                            <button className={` h-12 px-5 border ${patterns==='00' &&  'border-2 border-black'} `} onClick={() => { setPatterns('00') ; setShowMobileFilter(false)}}>Plain Fabrics</button>
                         </div>
                     }
                     <div className="flex gap-5 lg:hidden">
