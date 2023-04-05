@@ -193,7 +193,7 @@ function Samples() {
                                     <img className='h-full bottom-2 hidden lg:inline-block relative' src="/image/common/logo.svg" alt="" />
                                 </div>
                                 <div className="absolute top-5 right-6 ">
-                                    <p> £ &nbsp; {e.price} </p>
+                                    <p> £{e.price} </p>
                                 </div>
                             </div>
                         )

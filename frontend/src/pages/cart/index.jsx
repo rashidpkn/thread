@@ -60,8 +60,8 @@ const ItemCard = ({ name, item, installation, isPole, width, height, roomName, p
             <div className="flex">  <p className='w-36 text-xl'>Glide           </p>  <p className='ml-8'>{glide} CM</p>  </div>
             <div className="flex">  <p className='w-36 text-xl'>corded          </p>  <p className='ml-8'>{corded}</p>  </div>
 
-            <div className="flex">  <p className='w-36 text-xl'>Making Price    </p>  <p className='ml-8'>£ &nbsp; {price}</p>  </div>
-            <div className="flex">  <p className='w-36 text-xl'>Boxed &  Postage</p>  <p className='ml-8'>£ &nbsp; {30}</p>  </div>
+            <div className="flex">  <p className='w-36 text-xl'>Making Price    </p>  <p className='ml-8'>£{price}</p>  </div>
+            <div className="flex">  <p className='w-36 text-xl'>Boxed &  Postage</p>  <p className='ml-8'>£{30}</p>  </div>
             <div className="flex justify-center items-center"> <button className='h-12 w-36 bg-[#b68d40] rounded-2xl text-white' onClick={() => navigate('/checkout')}>Checkout</button></div>
 
         </div>
