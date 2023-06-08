@@ -1,79 +1,186 @@
-import { BookmarkBorderOutlined } from '@mui/icons-material'
-import axios from 'axios'
-import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { Link, useNavigate } from 'react-router-dom'
-import backendIP from '../../backendIP'
-import { setSavedChange } from '../../redux/slice/util'
+import React, { useState } from 'react'
 import Navbar from '../common/Navbar'
+import Footer from '../common/Footer'
+import { Link, useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { BookmarkBorderOutlined } from '@mui/icons-material'
+import bg from './bg.png'
+import axios from 'axios'
+import backendIP from '../../backendIP'
+import { setEmail, setFname, setLname } from '../../redux/slice/user'
 
 function Estimate() {
-    const { name, color } = useSelector(state => state.fabric.fabricType)
-    const { width, height, roomName, item, installation, isPole, } = useSelector(state => state.fabric.measure)
-    const { panel, look } = useSelector(state => state.fabric.style)
-    const { lining, poleAndTrack } = useSelector(state => state.fabric.feature)
-    const { glide, corded,accessoriesPrice } = useSelector(state => state.fabric.feature.accessories)
-    const { price } = useSelector(state => state.fabric)
-
-    const {loginStatus,email} = useSelector(state=>state.user)
     const dispatch = useDispatch()
+    const { name } = useSelector(state => state.fabric.fabricType)
+    const { item, installation, height, width, roomName } = useSelector(state => state.fabric.measure)
+    const { panel, look } = useSelector(state => state.fabric.style)
+    const { poleAndTrack, lining } = useSelector(state => state.fabric.feature)
+    const { accessoriesPrice } = useSelector(state => state.fabric.feature.accessories)
+    const { price, installationNeeded } = useSelector(state => state.fabric)
+    const { isLiveInDubai } = useSelector(state => state.util.productBuilder)   
+    const {email} = useSelector(state=>state.user) 
+
     const navigate = useNavigate()
 
+    const payNow = () => {
+        axios.post(`${backendIP}/pay`, { 
+            email, 
+            amount: (Math.floor(Math.floor(price + (installationNeeded ? 250 : 0) + (price > 300 ? 0 : isLiveInDubai ? 30 : 50) + accessoriesPrice))) 
+        }).then(res => {
+            const { client_secret } = res.data
+            if (client_secret) {
+                navigate(`/payment/${client_secret}`)
+            }
+        })
+    }
+
     return (
-        <div>
+        <>
             <Navbar />
-            <div className="gap-y-5 flex flex-col items-center justify-center">
-                <h2 className='text-2xl text-center mt-5 font-medium'>Estimate</h2>
-                <div className="px-10 space-y-3 text-lg  relative left-16">
-                    <div className="flex">  <p className='w-64 text-xl'>Fabric          </p>  <p className='ml-16 flex justify-center items-center gap-3'>
-                        {color && <div className='h-8 w-8 rounded-full ' style={{ backgroundColor: color }} />} {name}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Item            </p>  <p className='ml-16'>{item}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Installation    </p>  <p className='ml-16'>{installation}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Pole         </p>  <p className='ml-16'>{isPole ? 'Yes' : 'No'}</p>  </div>
+            <div className="overflow-y-hidden top-0 left-0  z-50 font-light bg-cover " style={{ background: `url(${bg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                <div className="min-h-[calc(100vh-110px)]  w-full h-full  flex justify-center items-center backdrop-blur-lg">
+                    <div className="bg-[#5C8984]/70 rounded-2xl backdrop-blur-[24px] p-10 flex lg:gap-[100px] justify-center text-white flex-wrap">
+                        <div className="w-[370px]">
+                            <p className='text-base font-bold font-inter text-center'>Estimate</p>
 
-                    <div className="flex">  <p className='w-64 text-xl'>Measurements    </p>  <p className='ml-16'>{`${width} W ${height} H (${roomName})`}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Panel           </p>  <p className='ml-16'>{panel}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Style           </p>  <p className='ml-16'>{look}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Lining          </p>  <p className='ml-16'>{lining}</p>  </div>
-                    <div className="flex">  <p className='w-64 text-xl'>Accessories  </p>  <p className='ml-16'>{poleAndTrack}</p>  </div>
-                    {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-40 lg:w-64 text-xl'>Glide           </p>  <p className='lg:ml-16'>{glide} CM</p>  </div>}
-                    {poleAndTrack === 'Pole' && <div className="flex">  <p className='w-40 lg:w-64 text-xl'>corded          </p>  <p className='lg:ml-16'>{corded}</p>  </div>}
+                            <div className="flex justify-between mt-6">
+                                <p>Fabric</p>
+                                <p>{name}</p>
+                            </div>
 
-                    <div className="flex">  <p className='w-64 text-xl'>Making Price    </p>  <p className='ml-16'>£{Math.floor(price)}</p>  </div>
-                    {poleAndTrack==='Pole' && <div className="flex">  <p className='w-64 text-xl'>Accessories Price     </p>  <p className='ml-16'>£{Math.floor(accessoriesPrice)}</p>  </div> }
-                    <div className="flex">  <p className='w-64 text-xl'>Boxed &  Postage</p>  <p className='ml-16'>£{ 30}</p>  </div>
-                    <div className="flex font-medium">  <p className='w-64 text-xl'>Total Price     </p>  <p className='ml-16'>£{ Math.floor(price+30 + accessoriesPrice)}</p>  </div>
-                </div>
-                <div class="w-96  border border-[#b68d40] rounded-3xl h-10 flex justify-center items-center  font-bold text-[#686161]">
+                            <div className="flex justify-between mt-3">
+                                <p>Item</p>
+                                <p>{item}</p>
+                            </div>
 
-                    <button class="flex items-center justify-center w-1/2 h-full text-sm rounded-3xl  text-white bg-[#b68d40]">
-                        <Link to={'/checkout'}>
-                            Buy Now
-                        </Link>
-                    </button>
-                    <button class="flex items-center justify-center w-1/2 text-sm" onClick={()=>{
-                            if(loginStatus){
-                                axios.post(`${backendIP}/product/save`,{email,name,roomName,item,installation,isPole,height,width,panel,look,lining,poleAndTrack,glide,corded,price}).then(res=>{
-                                    if(res.data.status){
-                                        window.alert("Product is added to Cart")
-                                        navigate('/cart')
-                                    }else{
-                                        window.alert(res.data.reason)
-                                    }
-                                })
-                            }else{
-                                dispatch(setSavedChange(true))
-                                navigate('/login')
 
+                            <div className="flex justify-between mt-3">
+                                <p>Installation</p>
+                                <p>{installation}</p>
+                            </div>
+
+                            <div className="flex justify-between mt-3">
+                                <p>Pole</p>
+                                <p>{poleAndTrack ? 'Yes' : 'No'}</p>
+                            </div>
+
+                            <div className="flex justify-between mt-3">
+                                <p>Measurements</p>
+                                <p>{width} W {height} H ({roomName})</p>
+                            </div>
+
+                            {item === 'Curtain' && <>
+                                <div className="flex justify-between mt-3">
+                                    <p>Panel</p>
+                                    <p>{panel}</p>
+                                </div>
+
+                                <div className="flex justify-between mt-3">
+                                    <p>Style</p>
+                                    <p>{look}</p>
+                                </div>
+                            </>
                             }
+
+                            <div className="flex justify-between mt-3">
+                                <p>Lining</p>
+                                <p>{lining}</p>
+                            </div>
+
+                            <div className="w-full h-[2px] border-dashed border mt-6"></div>
+
+
+                            <div className="flex justify-between mt-6">
+                                <p>Making Price</p>
+                                <p>AED {price}</p>
+                            </div>
+
+                            <div className="flex justify-between mt-3">
+                                <p>Accessories</p>
+                                <p>AED {accessoriesPrice}</p>
+                            </div>
+                            <div className="flex justify-between mt-3">
+                                <p>Boxed & Postage</p>
+                                <p>AED {price > 300 ? 0 : isLiveInDubai ? 30 : 50}</p>
+                            </div>
+
+                            <div className="flex justify-between mt-3">
+                                <p>Installation</p>
+                                <p>AED  {installationNeeded ? 250 : 0} </p>
+                            </div>
+
+                            <div className="w-full h-[2px] border-dashed border mt-6"></div>
+
+                            <div className="flex justify-between mt-3">
+                                <p>Total Price</p>
+                                {/* <p className='font-medium' >AED {Math.floor(price + (installationNeeded ? 250 : 0) + (price > 300 ? 0 : isLiveInDubai ? 30 : 50) + accessoriesPrice)}</p> */}
+                                <p className='font-medium' >AED {1}</p>
+                            </div>
+                            <Link to={'/login'}>
+                                <p className='mt-6'><BookmarkBorderOutlined /> Save for later</p>
+                            </Link>
+
+                        </div>
+                        <form className="w-[370px]" onSubmit={e => {
+                            e.preventDefault()
+                            payNow()
                         }}>
-                       
-                        <BookmarkBorderOutlined /> save for later
-                        
-                    </button>
+                            <p className='text-base font-bold font-inter text-center'>Payment</p>
+
+                            <div className="flex  justify-between mt-6">
+                                <div className="flex flex-col">
+                                    <label htmlFor="fName">First Name</label>
+                                    <input type="text" id='fName' className='w-44 h-8 rounded outline-none bg-white text-black pl-2' onChange={e=>{dispatch(setFname(e.target.value))}} required placeholder='George' />
+                                </div>
+                                <div className="flex flex-col">
+                                    <label htmlFor="lName">Last Name</label>
+                                    <input type="text" id='lName' className='w-36 h-8 rounded outline-none bg-white text-black pl-2' onChange={e=>{dispatch(setLname(e.target.value))}} required placeholder='Wilson' />
+                                </div>
+                            </div>
+
+                            <div className="flex w-[370px] justify-between mt-6">
+
+                                <div className="">
+                                    <label htmlFor="phone">Phone Number</label>
+                                    <div className="flex gap-1">
+                                        <input type="text" defaultValue={'+44'} className='w-12 h-8 outline-none rounded bg-white text-black text-center' required />
+                                        <input type="tel" className='w-32 h-8 outline-none rounded bg-white text-black pl-2' required />
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col">
+                                    <label htmlFor="">Post Code</label>
+                                    <input type="text" className='w-36 h-8 outline-none rounded bg-white text-black pl-2' required placeholder='E1 7AA' />
+                                </div>
+
+                            </div>
+
+                            <div className="mt-6">
+                                <label htmlFor="address">Address</label>
+                                <textarea name="" id="address" cols="30" rows="10" className='w-full h-[87px] outline-none rounded bg-white text-black p-2' required></textarea>
+                            </div>
+
+                            <div className="mt-6">
+                                <label htmlFor="address">Email</label>
+                                <input type='email' className='w-full h-8 outline-none rounded bg-white text-black p-2' required value={email} onChange={e => {
+                                    
+                                    dispatch(setEmail(e.target.value))
+                                    }} />
+                            </div>
+
+                            
+
+                            <div className="flex justify-center w-full items-center mt-6">
+
+                                <button className='px-4 py-1 rounded-lg bg-white text-[#5C8984] flex justify-center items-center hover:shadow-2xl duration-200 hover:scale-110'>Continue to Pay</button>
+
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+            <Footer />
+        </>
     )
 }
 

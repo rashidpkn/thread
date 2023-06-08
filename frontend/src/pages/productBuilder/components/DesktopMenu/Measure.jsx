@@ -95,8 +95,8 @@ function Measure() {
             <button className='h-12 px-3 bg-[#B68D40] rounded-md text-white' onClick={() => setSelector(2)}>Name your room</button>
           </div> */}
           <div className="flex  justify-between items-center mt-10">
-            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => dispatch(setMenu(1))}> <KeyboardBackspace /> Back</button>
-            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => setSelector(2)}>Next <ArrowRightAlt /></button>
+            <button className='px-4 py-1 rounded-lg bg-white text-[#5C8984] flex justify-center items-center hover:shadow-2xl duration-200 hover:scale-110' onClick={() => dispatch(setMenu(1))}> <KeyboardBackspace /> Back</button>
+            <button className='px-4 py-1 rounded-lg bg-white text-[#5C8984] flex justify-center items-center hover:shadow-2xl duration-200 hover:scale-110' onClick={() => setSelector(2)}>Next <ArrowRightAlt /></button>
           </div>
         </div>
       }
@@ -121,8 +121,8 @@ function Measure() {
           </div>
 
           <div className="flex  justify-between items-center mt-10">
-            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => setSelector(1)}> <KeyboardBackspace /> Back</button>
-            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => setSelector(3)}>Next <ArrowRightAlt /></button>
+            <button className='px-4 py-1 rounded-lg bg-white text-[#5C8984] flex justify-center items-center hover:shadow-2xl duration-200 hover:scale-110' onClick={() => setSelector(1)}> <KeyboardBackspace /> Back</button>
+            <button className='px-4 py-1 rounded-lg bg-white text-[#5C8984] flex justify-center items-center hover:shadow-2xl duration-200 hover:scale-110' onClick={() => setSelector(3)}>Next <ArrowRightAlt /></button>
           </div>
 
 
@@ -143,20 +143,20 @@ function Measure() {
             <div className="flex flex-col gap-3">
               <label htmlFor="">Height CM</label>
               <input min={100} max={305}
-                onChange={e => { dispatch(setHeight(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md text-black placeholder:text-black' type="number" />
+                onChange={e => { dispatch(setHeight(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md text-black placeholder:text-black/50' placeholder='200 CM' type="number" />
             </div>
             <div className="flex flex-col gap-3">
               <label htmlFor="">Width CM</label>
               <input min={75} max={480}
 
-                onChange={e => { dispatch(setWidth(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md text-black placeholder:text-black' type="number" />
+                onChange={e => { dispatch(setWidth(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md text-black placeholder:text-black/50' placeholder='250 CM' type="number" />
             </div>
 
           </div>
 
           <div className="flex  justify-between items-center mt-10">
-            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => setSelector(2)}> <KeyboardBackspace /> Back</button>
-            <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => {
+            <button className='px-4 py-1 rounded-lg bg-white text-[#5C8984] flex justify-center items-center hover:shadow-2xl duration-200 hover:scale-110' onClick={() => setSelector(2)}> <KeyboardBackspace /> Back</button>
+            <button className='px-4 py-1 rounded-lg bg-white text-[#5C8984] flex justify-center items-center hover:shadow-2xl duration-200 hover:scale-110' onClick={() => {
               if ((Number(height) < 100 || Number(height) > 305)) {
                 window.alert("Please Provide height between 100 - 480")
               }

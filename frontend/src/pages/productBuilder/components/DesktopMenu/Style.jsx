@@ -90,8 +90,8 @@ function Style() {
       </div>
 
       <div className="flex  justify-between items-center mt-10">
-        <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => dispatch(setMenu(2))}> <KeyboardBackspace /> Back</button>
-        <button className='px-4 py-1 rounded-lg bg-[#2B2B2B] text-white flex justify-center items-center' onClick={() => dispatch(setMenu(4))}>Next <ArrowRightAlt /></button>
+        <button className='px-4 py-1 rounded-lg bg-white text-[#5C8984] flex justify-center items-center hover:shadow-2xl duration-200 hover:scale-110' onClick={() => dispatch(setMenu(2))}> <KeyboardBackspace /> Back</button>
+        <button className='px-4 py-1 rounded-lg bg-white text-[#5C8984] flex justify-center items-center hover:shadow-2xl duration-200 hover:scale-110' onClick={() => dispatch(setMenu(4))}>Next <ArrowRightAlt /></button>
       </div>
     </div>
   )

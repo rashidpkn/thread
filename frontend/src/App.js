@@ -22,6 +22,7 @@ import TriplePleat from './pages/Curtains/pages/triplePleat'
 import Contact from './pages/ContactUs'
 import Samples from './pages/samples'
 import SampleCheckout from './pages/Sample checkout'
+import ThankYou from './pages/thankyou'
 
 
 
@@ -44,6 +45,7 @@ function App() {
         {/* <Route path='/login' element={loginStatus ? <Navigate to={'/cart'} /> : <Login/>} /> */}
         <Route path='/login' element={ <Login/>} />
         <Route path='/payment/:clientSecret' element={<Payment />} />
+        <Route path='/thank-you' element={<ThankYou />} />
         <Route path='/cart' element={loginStatus ? <Cart /> : <Navigate to={'/login'} />  } />
 
         <Route path="/curtains" element={<Curtains/>}/>
