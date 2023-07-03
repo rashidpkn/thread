@@ -117,7 +117,7 @@ function Measure() {
           </div>
           <p className='text-center font-medium'>Give this window a name!</p>
           <div className="flex justify-center px-10">
-            <input onChange={e => dispatch(setRoomName(e.target.value))} disabled={room === 'Other Rooms' ? false : true} value={roomName} className='bg-[#122620]/30 h-12 pl-2 w-full rounded-md text-lg font-medium text-black placeholder:text-black' placeholder='Bedrooms' type="text" />
+            <input onChange={e => dispatch(setRoomName(e.target.value))} disabled={room === 'Other Rooms' ? false : true} value={roomName} className='bg-[#122620]/30 h-12 pl-2 w-full rounded-md text-lg font-medium text-white' placeholder='Bedrooms' type="text" />
           </div>
 
           <div className="flex  justify-between items-center mt-10">
@@ -143,13 +143,13 @@ function Measure() {
             <div className="flex flex-col gap-3">
               <label htmlFor="">Height CM</label>
               <input min={100} max={305}
-                onChange={e => { dispatch(setHeight(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md text-black placeholder:text-black/50' placeholder='200 CM' type="number" />
+                onChange={e => { dispatch(setHeight(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md ' placeholder='200 CM' type="number" />
             </div>
             <div className="flex flex-col gap-3">
               <label htmlFor="">Width CM</label>
               <input min={75} max={480}
 
-                onChange={e => { dispatch(setWidth(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md text-black placeholder:text-black/50' placeholder='250 CM' type="number" />
+                onChange={e => { dispatch(setWidth(Number(e.target.value))); dispatch(setPrice()) }} className='bg-[#122620]/30 h-12 pl-2 w-40 rounded-md ' placeholder='250 CM' type="number" />
             </div>
 
           </div>

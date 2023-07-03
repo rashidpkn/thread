@@ -92,29 +92,29 @@ function Estimate() {
 
                             <div className="flex justify-between mt-6">
                                 <p>Making Price</p>
-                                <p>AED {price}</p>
+                                <p>£ {price}</p>
                             </div>
 
                             <div className="flex justify-between mt-3">
                                 <p>Accessories</p>
-                                <p>AED {accessoriesPrice}</p>
+                                <p>£ {accessoriesPrice}</p>
                             </div>
                             <div className="flex justify-between mt-3">
                                 <p>Boxed & Postage</p>
-                                <p>AED {price > 300 ? 0 : isLiveInDubai ? 30 : 50}</p>
+                                <p>£ {price > 300 ? 0 : isLiveInDubai ? 30 : 50}</p>
                             </div>
 
                             <div className="flex justify-between mt-3">
                                 <p>Installation</p>
-                                <p>AED  {installationNeeded ? 250 : 0} </p>
+                                <p>£  {installationNeeded ? 250 : 0} </p>
                             </div>
 
                             <div className="w-full h-[2px] border-dashed border mt-6"></div>
 
                             <div className="flex justify-between mt-3">
                                 <p>Total Price</p>
-                                {/* <p className='font-medium' >AED {Math.floor(price + (installationNeeded ? 250 : 0) + (price > 300 ? 0 : isLiveInDubai ? 30 : 50) + accessoriesPrice)}</p> */}
-                                <p className='font-medium' >AED {1}</p>
+                                <p className='font-medium' >£ {Math.floor(price + (installationNeeded ? 250 : 0) + (price > 300 ? 0 : isLiveInDubai ? 30 : 50) + accessoriesPrice)}</p>
+                                {/* <p className='font-medium' >£ {1}</p> */}
                             </div>
                             <Link to={'/login'}>
                                 <p className='mt-6'><BookmarkBorderOutlined /> Save for later</p>
