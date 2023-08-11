@@ -13,6 +13,7 @@ import dBay from '../../../../asset/measurment/dBay.png'
 import dFlat from '../../../../asset/measurment/dFlat.png'
 import dInside from '../../../../asset/measurment/dInside.png'
 import dOutSide from '../../../../asset/measurment/dOutside.png'
+import { setMenu } from '../../../../../redux/slice/util'
 
 
 
@@ -80,7 +81,7 @@ function Type({ setSelector }) {
 
 
       <div className="absolute bottom-5 w-full h-12 flex justify-between items-center px-10">
-        <button className="cursor-pointer flex justify-center items-center gap-1" onClick={() => { setSelector(0) }}><KeyboardBackspace /> Back</button>
+        <button className="cursor-pointer flex justify-center items-center gap-1" onClick={() => { dispatch(setMenu(1)) }}><KeyboardBackspace /> Back</button>
         <div className="cursor-pointer h-10 w-32 bg-[#2b2b2b] text-white flex justify-center items-center rounded-xl" onClick={() => { setSelector(2) }}>Next</div>
       </div>
     </div>

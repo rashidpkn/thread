@@ -17,7 +17,7 @@ function Form2() {
                     <p className='text-2xl font-medium'>Get in touch</p>
                     <div className="flex justify-between">
                         <input className='h-12 border pl-3 w-[45%] outline-none' type="text" placeholder='Name' onChange={e=>{setData({...data,name:e.target.value})}} />
-                        <input className='h-12 border pl-3 w-[45%] outline-none' type="text" placeholder='Email'onChange={e=>{setData({...data,email:e.target.value})}} />
+                        <input className='h-12 border pl-3 w-[45%] outline-none' type="text" placeholder='E mail'onChange={e=>{setData({...data,email:e.target.value})}} />
                     </div>
                     <div className="flex">
                         <input className='h-12 border pl-3 w-full outline-none' type="text" placeholder='Subject' onChange={e=>{setData({...data,subject:e.target.value})}} />
@@ -36,7 +36,7 @@ function Form2() {
                     <p className='text-3xl font-medium'>Contact Us</p>
                     <p>Address : Thomas House, Easy Blinds & Curtains, <br /> 84 Eccleston Square, Pimlico, <br /> London SW1V 1PX, <br /> United Kingdom</p>
                     <p>Phone : 0203 633 8622</p>
-                    <p>Email : info@my-thread.co.uk</p>
+                    <p>E mail : info@my-thread.co.uk</p>
                     <p>Website : my-thread.co.uk</p>
                 </div>
             </div>

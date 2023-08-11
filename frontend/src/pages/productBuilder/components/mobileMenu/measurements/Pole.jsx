@@ -2,25 +2,17 @@ import { KeyboardBackspace } from '@mui/icons-material'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setHeight, setIsPole, setPrice, setWidth } from '../../../../../redux/slice/fabric'
+import { setMenu } from '../../../../../redux/slice/util'
 
 function Pole({ setSelector }) {
-    const {  height, width } = useSelector(state => state.fabric.measure)
+    const {  height, width,item } = useSelector(state => state.fabric.measure)
     const dispatch = useDispatch()
     return (
         <div className='space-y-3 relative h-full'>
             
             <div className="flex flex-col gap-3 items-center pt-10">
-                <p className='text-center'>Do you have a pole or track installed ?</p>
-                {/* <div className="flex justify-center gap-5">
-                <div onClick={()=>{dispatch(setIsPole(false) )}} className={`${isPole === false && 'border border-[#B68D40]  rounded-xl'} p-1`}><button className='px-[18px] py-[16px] rounded-lg bg-[#B68D40]'>No </button></div>
-                <div onClick={()=>{dispatch(setIsPole(true)  )}} className={`${isPole === true  && 'border border-[#B68D40]  rounded-xl'} p-1`}><button className='px-[18px] py-[16px] rounded-lg bg-[#B68D40]'>Yes</button></div>
-            </div> */}
-                    <div className="can-toggle flex justify-center items-center right-12">
-                        <input id="a" onChange={e=>e.target.checked ? dispatch(setIsPole(true)) : dispatch(setIsPole(false)) } defaultChecked={true} type="checkbox" />
-                        <label htmlFor="a">
-                            <div className="can-toggle__switch" data-checked="Yes" data-unchecked="No"></div>
-                        </label>
-                    </div>
+                
+                <p className='text-center font-medium'>Enter Height and Width</p>
                 <div className="flex  justify-center gap-5">
                     <div className="flex flex-col">
                         <label htmlFor="">Height CM</label>
@@ -44,7 +36,7 @@ function Pole({ setSelector }) {
                         window.alert("Please Provide width between 75 - 480")
                     }
                     else{
-                        setSelector(5) 
+                        item==='Blind' ? dispatch(setMenu(4)) : dispatch(setMenu(3))
                     }
                 }}
                 >Next</div>

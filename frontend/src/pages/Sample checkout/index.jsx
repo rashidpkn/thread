@@ -101,7 +101,7 @@ function SampleCheckout() {
                             </textarea>
                         </div>
                         <div className="flex flex-col gap-2 w-full">
-                            <label for="">E-mail</label>
+                            <label for="">E mail</label>
                             <input onChange={e => { setData({ ...data, email: e.target.value }) }} required="" type="email" className="w-full h-12 rounded-lg border border-[#B68D40] outline-none p-2" />
                         </div>
                         <button className="h-12 w-48 rounded-md bg-[#B68D40] text-lg font-semibold" type="submit"> Confirm Your Order </button>

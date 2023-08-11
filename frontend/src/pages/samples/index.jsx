@@ -9,6 +9,7 @@ import { setCart } from '../../redux/slice/sample'
 import Footer from '../common/Footer'
 import Navbar from '../common/Navbar'
 import { fabric } from '../productBuilder/components/mobileMenu/Fabrics/Custom'
+import Magnifier from 'react-magnifier'
 
 function Samples() {
     const dispatch = useDispatch()
@@ -164,9 +165,10 @@ function Samples() {
                     </div>
                     {
                         fabrics.map(e => (
-                            (color === 'all' ? true : color === e.colorName) && <div key={e.id} className="w-[170px] lg:w-[270px] h-[270px] lg:h-[400px] relative" >
-                                <img className='h-full w-full absolute -z-10' src="/image/samples/book1.png" alt="" loading={'lazy'} />
-                                <img src={e.magnifyFabricPath} className='h-full w-full absolute -z-20' alt="" loading={'lazy'} />
+                            (color === 'all' ? true : color === e.colorName) && <div key={e.id} className="w-[170px] lg:w-[270px] h-[270px] lg:h-[400px] relative border p-2 rounded-md" >
+                                {/* <img className='h-full w-full absolute -z-10' src="/image/samples/book1.png" alt="" loading={'lazy'} /> */}
+                                <Magnifier src={e.magnifyFabricPath} className='h-full w-full absolute ' alt="" loading={'lazy'} />
+                                {/* <img src={e.magnifyFabricPath} className='h-full w-full absolute -z-20' alt="" loading={'lazy'} /> */}
                                 <div className="absolute bottom-[4.5rem] w-full h-10 flex justify-center items-center ">
                                     <button className='h-full w-[90%] lg:w-3/4 border-2 border-white hover:border-black bg-black/20 hover:bg-white/50 text-white hover:text-black duration-500'
                                         onClick={() => {

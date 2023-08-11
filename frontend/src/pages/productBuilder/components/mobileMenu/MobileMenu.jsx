@@ -28,7 +28,6 @@ function MobileMenu() {
                     <button onClick={()=>dispatch(setMenu(2))} className={`${menu === 2 ? 'bg-[#2b2b2b]' : 'bg-[#2b2b2b]/70'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>2</button>
                     <button onClick={()=>dispatch(setMenu(3))} className={`${menu === 3 ? 'bg-[#2b2b2b]' : 'bg-[#2b2b2b]/70'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>3</button>
                     <button onClick={()=>dispatch(setMenu(4))} className={`${menu === 4 ? 'bg-[#2b2b2b]' : 'bg-[#2b2b2b]/70'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>4</button>
-                    <button onClick={()=>dispatch(setMenu(5))} className={`${menu === 5 ? 'bg-[#2b2b2b]' : 'bg-[#2b2b2b]/70'}  h-[30px] w-[30px] rounded-full flex justify-center items-center`}>5</button>
                 </div>
                 <div className="bg-white/50 h-[1px] w-36 relative bottom-4" />
             </div>

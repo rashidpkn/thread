@@ -40,11 +40,9 @@ function Measure() {
   const [selector, setSelector] = useState(1)
   return (
     <div className='space-y-3'>
-      <p className='font-medium text-center'>Input Your Measurements</p>
       <div className="flex justify-center gap-5">
-        {/* <button onClick={() => setSelector(1)} className={`${selector === 1 ? 'text-[#B68D40]' : 'hidden'}  `} >Curtain/Blinds</button> */}
-        <button onClick={() => setSelector(2)} className={`${selector === 2 ? 'text-[#B68D40]' : 'hidden'}  `} >Room Name</button>
-        <button onClick={() => setSelector(3)} className={`${selector === 3 ? 'text-[#B68D40]' : 'hidden'}  `} >Measurment</button>
+        {/* <button onClick={() => setSelector(2)} className={`${selector === 2 ? 'text-[#B68D40]' : 'hidden'}  `} >Room Name</button> */}
+        {/* <button onClick={() => setSelector(3)} className={`${selector === 3 ? 'text-[#B68D40]' : 'hidden'}  `} >Measurment</button> */}
       </div>
       {
         selector === 1 && <div className="space-y-10">
@@ -131,13 +129,6 @@ function Measure() {
 
       {
         selector === 3 && <div className="space-y-5">
-          <p className='text-center font-medium'>Do you have a pole or track installed ?</p>
-          <div className="can-toggle flex justify-center items-center right-12">
-            <input id="a" onChange={e => e.target.checked ? dispatch(setIsPole(true)) : dispatch(setIsPole(false))} defaultChecked={true} type="checkbox" />
-            <label htmlFor="a">
-              <div className="can-toggle__switch" data-checked="Yes" data-unchecked="No"></div>
-            </label>
-          </div>
           <p className='text-center font-medium'>Enter Height and Width</p>
           <div className="flex  justify-center gap-5">
             <div className="flex flex-col gap-3">

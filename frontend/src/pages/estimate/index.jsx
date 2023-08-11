@@ -25,7 +25,7 @@ function Estimate() {
     const payNow = () => {
         axios.post(`${backendIP}/pay`, { 
             email, 
-            amount: (Math.floor(Math.floor(price + (installationNeeded ? 250 : 0) + (price > 300 ? 0 : isLiveInDubai ? 30 : 50) + accessoriesPrice))) 
+            amount: Math.floor(price + (installationNeeded ? 250 : 0) + 30 + accessoriesPrice)*130/100
         }).then(res => {
             const { client_secret } = res.data
             if (client_secret) {
@@ -101,7 +101,7 @@ function Estimate() {
                             </div>
                             <div className="flex justify-between mt-3">
                                 <p>Boxed & Postage</p>
-                                <p>£ {price > 300 ? 0 : isLiveInDubai ? 30 : 50}</p>
+                                <p>£ 30</p>
                             </div>
 
                             <div className="flex justify-between mt-3">
@@ -109,12 +109,16 @@ function Estimate() {
                                 <p>£  {installationNeeded ? 250 : 0} </p>
                             </div>
 
+                            <div className="flex justify-between mt-3">
+                                <p>VAT <small>(20%)</small> </p>
+                                <p>£  {Math.floor(price + (installationNeeded ? 250 : 0) + 30 + accessoriesPrice)*20/100 } </p>
+                            </div>
+
                             <div className="w-full h-[2px] border-dashed border mt-6"></div>
 
                             <div className="flex justify-between mt-3">
-                                <p>Total Price</p>
-                                <p className='font-medium' >£ {Math.floor(price + (installationNeeded ? 250 : 0) + (price > 300 ? 0 : isLiveInDubai ? 30 : 50) + accessoriesPrice)}</p>
-                                {/* <p className='font-medium' >£ {1}</p> */}
+                                <p>Total Price <small>Inc VAT</small></p>
+                                <p className='font-medium' >£ {Math.floor(price + (installationNeeded ? 250 : 0) + 30 + accessoriesPrice)*130/100}</p>
                             </div>
                             <Link to={'/login'}>
                                 <p className='mt-6'><BookmarkBorderOutlined /> Save for later</p>
@@ -161,7 +165,7 @@ function Estimate() {
                             </div>
 
                             <div className="mt-6">
-                                <label htmlFor="address">Email</label>
+                                <label htmlFor="address">E mail</label>
                                 <input type='email' className='w-full h-8 outline-none rounded bg-white text-black p-2' required value={email} onChange={e => {
                                     
                                     dispatch(setEmail(e.target.value))
