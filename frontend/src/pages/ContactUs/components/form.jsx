@@ -64,7 +64,7 @@ const Form = () => {
      }} >
   <div className="flex flex-col items-center justify-center w-full p-5 py-20 bg-[#3f7355]  min-h-1/2 lg:min-h-full gap-14">
         <input   placeholder='Your Name'  className='outline-none border-b bg-transparent w-full text-white text-2xl px-1 max-w-[643px]' type="text" />
-        <input  placeholder='Your E mail' className='outline-none border-b bg-transparent w-full text-white text-2xl px-1 max-w-[643px]' type="text" />
+        <input  placeholder='Your E-mail' className='outline-none border-b bg-transparent w-full text-white text-2xl px-1 max-w-[643px]' type="text" />
         <input placeholder='Your Phone' className='outline-none border-b bg-transparent w-full text-white text-2xl px-1 max-w-[643px]' type="text" />
         <textarea  className='outline-none border-b bg-transparent text-white text-2xl px-1 w-full max-w-[643px]' placeholder='Write us a message'></textarea>
         <div className="w-full max-w-[643px] flex gap-14  justify-center item-center">

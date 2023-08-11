@@ -63,9 +63,9 @@ function Login() {
                 }}>
 
                     <div className="space-y-2">
-                        <label htmlFor="">E mail</label>
+                        <label htmlFor="">E-mail</label>
                         <div className="">
-                            <input value={email} onChange={e => { dispatch(setEmail(e.target.value)) }} required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='E mail' type="email" />
+                            <input value={email} onChange={e => { dispatch(setEmail(e.target.value)) }} required className='h-12 w-full rounded-md border outline-none border-[#BABCBB] pl-3' placeholder='E-mail' type="email" />
                         </div>
                     </div>
 

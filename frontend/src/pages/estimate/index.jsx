@@ -165,7 +165,7 @@ function Estimate() {
                             </div>
 
                             <div className="mt-6">
-                                <label htmlFor="address">E mail</label>
+                                <label htmlFor="address">E-mail</label>
                                 <input type='email' className='w-full h-8 outline-none rounded bg-white text-black p-2' required value={email} onChange={e => {
                                     
                                     dispatch(setEmail(e.target.value))

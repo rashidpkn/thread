@@ -98,7 +98,7 @@ function SignUp() {
 
           <div className="flex justify-between gap-[10%] flex-wrap">
             <div className="w-full lg:w-[50%] space-y-2">
-              <label className='text-lg' htmlFor="">E mail</label>
+              <label className='text-lg' htmlFor="">E-mail</label>
               <input value={email} onChange={e => dispatch(setEmail(e.target.value))} required className='h-10 w-full rounded-xl border outline-none border-[#BABCBB] pl-3' type={'email'} />
             </div>
             <div className="w-full lg:w-[40%] space-y-2">

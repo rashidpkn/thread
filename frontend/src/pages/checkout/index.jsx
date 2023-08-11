@@ -130,7 +130,7 @@ function CheckOut() {
                 </div> */}
 
           <div className="flex flex-col gap-2 w-full">
-            <label htmlFor="">E mail</label>
+            <label htmlFor="">E-mail</label>
             <input onChange={e => { setEmail(e.target.value) }} required type="email" className='w-full h-12 rounded-lg border border-[#B68D40] outline-none p-2' />
           </div>
 

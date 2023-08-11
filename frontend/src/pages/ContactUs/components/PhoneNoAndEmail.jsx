@@ -10,7 +10,7 @@ function PhoneNoAndEmail() {
                   <h6 className='text-[#527BFF] pt-3'>0203 633 8622</h6>
                   </div>
                   <div className="justify-center w-1/2 text-center email">
-                    <h6 className='text-lg font-medium'>E mail</h6>
+                    <h6 className='text-lg font-medium'>E-mail</h6>
                     <h6 className='text-[#527BFF] pt-3'>info@my-thread.co.uk</h6>
                   </div>   
               </div>
