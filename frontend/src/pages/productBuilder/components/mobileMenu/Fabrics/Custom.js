@@ -13,7 +13,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Black.jpg',
         colorName:'black',
-
+        composition:'100% Polyester',
     },
     {
         id: 2,
@@ -29,6 +29,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Blue.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 3,
@@ -44,6 +45,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Blush.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 4,
@@ -59,6 +61,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Charcoal.jpg',
         colorName:'brown',
+        composition:'100% Polyester',
     },
     {
         id: 5,
@@ -74,6 +77,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Cream.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 6,
@@ -89,6 +93,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Grape.jpg',
         colorName:'brown',
+        composition:'100% Polyester',
     },
     {
         id: 7,
@@ -104,6 +109,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Grey.jpg',
         colorName:'grey',
+        composition:'100% Polyester',
     },
     {
         id: 8,
@@ -119,6 +125,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Honey.jpg',
         colorName:'yellow',
+        composition:'100% Polyester',
     },
     {
         id: 9,
@@ -134,6 +141,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Indigo.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 10,
@@ -149,6 +157,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Ivory.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 11,
@@ -164,6 +173,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Mink.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 12,
@@ -179,6 +189,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Pink.jpg',
         colorName:'pink',
+        composition:'100% Polyester',
     },
     {
         id: 13,
@@ -194,6 +205,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Smoke.jpg',
         colorName:'grey',
+        composition:'100% Polyester',
     },
     {
         id: 14,
@@ -209,6 +221,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Snow.jpg',
         colorName:'grey',
+        composition:'100% Polyester',
     },
     {
         id: 15,
@@ -224,6 +237,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Azurite_Teal.jpg',
         colorName:'green',
+        composition:'100% Polyester',
     },
     {
         id: 16,
@@ -239,6 +253,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Parker_Charcoal.jpg',
         colorName:'brown',
+        composition:'95% Polyester 5% Nylon',
     },
     {
         id: 17,
@@ -254,6 +269,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/Parker_Cream.jpg',
         colorName:'brown',
+        composition:'',
     },
     {
         id: 18,
@@ -269,6 +285,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/parker_flint_1_1.jpg',
         colorName:'',
+        composition:'95% Polyester 5% Nylon',
     },
     {
         id: 19,
@@ -284,6 +301,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/PARKER_GREY.jpg',
         colorName:'grey',
+        composition:'95% Polyester 5% Nylon',
     },
     {
         id: 20,
@@ -299,6 +317,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/parker_pewter_1_1.jpg',
         colorName:'brown',
+        composition:'95% Polyester 5% Nylon',
     },
     {
         id: 21,
@@ -314,6 +333,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/parker_platinum_1_1.jpg',
         colorName:'silver',
+        composition:'95% Polyester 5% Nylon',
     },
     {
         id: 22,
@@ -329,6 +349,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/parker_steel_1_1.jpg',
         colorName:'grey',
+        composition:'95% Polyester 5% Nylon',
     },
     {
         id: 23,
@@ -344,6 +365,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/sahara_cream_1_1.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 24,
@@ -359,6 +381,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/sahara_grey_1_1.jpg',
         colorName:'grey',
+        composition:'100% Polyester',
     },
     {
         id: 25,
@@ -374,6 +397,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/sahara_seafoam_1_1.jpg',
         colorName:'grey',
+        composition:'100% Polyester',
     },
     {
         id: 26,
@@ -389,6 +413,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/sahara_natural_1_1.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 27,
@@ -404,6 +429,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/sahara_flax_1_1.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 28,
@@ -419,6 +445,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/sahara_blue_1_1.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 29,
@@ -434,6 +461,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_blush_3.jpg',
         colorName:'red',
+        composition:'100% Polyester',
     },
     {
         id: 30,
@@ -449,6 +477,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_charcoal_3.jpg',
         colorName:'black',
+        composition:'100% Polyester',
     },
     {
         id: 31,
@@ -464,6 +493,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_cherry_3.jpg',
         colorName:'red',
+        composition:'100% Polyester',
     },
     {
         id: 32,
@@ -479,6 +509,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_duckegg_3.jpg',
         colorName:'silver',
+        composition:'100% Polyester',
     },
     {
         id: 33,
@@ -494,6 +525,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_grape_3.jpg',
         colorName:'purple',
+        composition:'100% Polyester',
     },
     {
         id: 34,
@@ -509,6 +541,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_grey_4_2.jpg',
         colorName:'grey',
+        composition:'100% Polyester',
     },
     {
         id: 35,
@@ -524,6 +557,7 @@ export const fabric =[
         wavy:true,
         img:'/magnify/savoy_honey_3.jpg',
         colorName:'yellow',
+        composition:'100% Polyester',
     },
     {
         id: 36,
@@ -539,6 +573,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_indigo_3.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 37,
@@ -554,6 +589,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_ink_3.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 38,
@@ -569,6 +605,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_kingfisher_3.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 39,
@@ -584,6 +621,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_lemon_3.jpg',
         colorName:'yellow',
+        composition:'100% Polyester',
     },
     {
         id: 40,
@@ -599,6 +637,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_moss_3.jpg',
         colorName:'green',
+        composition:'100% Polyester',
     },
     {
         id: 41,
@@ -614,6 +653,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_slate_3.jpg',
         colorName:'black',
+        composition:'100% Polyester',
     },
     {
         id: 42,
@@ -629,6 +669,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_taupe_2.jpg',
         colorName:'silver',
+        composition:'100% Polyester',
     },
     {
         id: 43,
@@ -644,6 +685,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/savoy_teal_3.jpg',
         colorName:'',
+        composition:'100% Polyester',
     },
     {
         id: 44,
@@ -659,6 +701,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COSMOS FLINT.jpg',
         colorName:'green',
+        composition:'100% Polyester',
     },
     {
         id: 45,
@@ -674,6 +717,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COSMOS INK.jpg',
         colorName:'grey',
+        composition:'100% Polyester',
     },
     {
         id: 46,
@@ -689,6 +733,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/jacob_charcoal_3.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 47,
@@ -704,6 +749,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/jacob_cornflower.jpg',
         colorName:'grey',
+        composition:'100% Polyester',
     },
     {
         id: 48,
@@ -719,6 +765,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/jacob_driftwood_3.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 49,
@@ -734,6 +781,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/jacob_grey_3.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 50,
@@ -749,6 +797,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/jacob_ink_3.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 51,
@@ -764,6 +813,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/jacob_mink_3.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
 
     {
@@ -780,6 +830,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
         colorName:'blue',
+        composition:'50% Organic Cotton 50% Recycled Polyester',
     },
     {
         id: 53,
@@ -795,6 +846,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
         colorName:'brown',
+        composition:'50% Organic Cotton 50% Recycled Polyester',
     },
     {
         id: 54,
@@ -810,6 +862,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
         colorName:'peach',
+        composition:'50% Organic Cotton 50% Recycled Polyester',
     },
     {
         id: 55,
@@ -825,6 +878,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
         colorName:'blue',
+        composition:'50% Organic Cotton 50% Recycled Polyester',
     },
     {
         id: 56,
@@ -840,6 +894,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
         colorName:'orange',
+        composition:'50% Organic Cotton 50% Recycled Polyester',
     },
     {
         id: 57,
@@ -855,6 +910,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
         colorName:'brown',
+        composition:'50% Organic Cotton 50% Recycled Polyester',
     },
     {
         id: 58,
@@ -870,6 +926,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ILARIA.jpg',
         colorName:'peach',
+        composition:'50% Organic Cotton 50% Recycled Polyester',
     },
     {
         id: 59,
@@ -885,6 +942,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
         colorName:'pink',
+        composition:'52% Recycled Polyester 48% Cotton',
     },
     {
         id: 60,
@@ -900,6 +958,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
         colorName:'yellow',
+        composition:'52% Recycled Polyester 48% Cotton',
     },
     {
         id: 61,
@@ -915,6 +974,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
         colorName:'grey',
+        composition:'52% Recycled Polyester 48% Cotton',
     },
     {
         id: 62,
@@ -930,6 +990,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
         colorName:'yellow',
+        composition:'52% Recycled Polyester 48% Cotton',
     },
     {
         id: 63,
@@ -945,6 +1006,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
         colorName:'blue',
+        composition:'52% Recycled Polyester 48% Cotton',
     },
     {
         id: 64,
@@ -960,6 +1022,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
         colorName:'brown',
+        composition:'52% Recycled Polyester 48% Cotton',
     },
     {
         id: 65,
@@ -975,6 +1038,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
         colorName:'grey',
+        composition:'52% Recycled Polyester 48% Cotton',
     },
     {
         id: 66,
@@ -990,6 +1054,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
         colorName:'blue',
+        composition:'52% Recycled Polyester 48% Cotton',
     },
     {
         id: 67,
@@ -1005,6 +1070,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/JOVONNA.jpg',
         colorName:'green',
+        composition:'52% Recycled Polyester 48% Cotton',
     },
     {
         id: 68,
@@ -1020,6 +1086,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'peach',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 69,
@@ -1035,6 +1102,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'silver',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 70,
@@ -1050,6 +1118,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'blue',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 71,
@@ -1065,6 +1134,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'blue',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 72,
@@ -1080,6 +1150,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'yellow',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 73,
@@ -1095,6 +1166,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'grey',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 74,
@@ -1110,6 +1182,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'peach',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 75,
@@ -1125,6 +1198,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'red',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 76,
@@ -1140,6 +1214,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'silver',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 77,
@@ -1155,6 +1230,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'green',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 78,
@@ -1170,6 +1246,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ASANA.jpg',
         colorName:'green',
+        composition:'50% Recycled Polyester 50% Cotton',
     },
     {
         id: 79,
@@ -1185,6 +1262,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
         colorName:'pink',
+        composition:'76% Recycled Polyester 24% Cotton',
     },
     {
         id: 80,
@@ -1200,6 +1278,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
         colorName:'red',
+        composition:'76% Recycled Polyester 24% Cotton',
     },
     {
         id: 81,
@@ -1215,6 +1294,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
         colorName:'green',
+        composition:'76% Recycled Polyester 24% Cotton',
     },
     {
         id: 82,
@@ -1230,6 +1310,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
         colorName:'grey',
+        composition:'76% Recycled Polyester 24% Cotton',
     },
     {
         id: 83,
@@ -1245,6 +1326,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
         colorName:'peach',
+        composition:'76% Recycled Polyester 24% Cotton',
     },
     {
         id: 84,
@@ -1260,6 +1342,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
         colorName:'blue',
+        composition:'76% Recycled Polyester 24% Cotton',
     },
     {
         id: 85,
@@ -1275,6 +1358,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
         colorName:'blue',
+        composition:'76% Recycled Polyester 24% Cotton',
     },
     {
         id: 86,
@@ -1290,6 +1374,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUVITA.jpg',
         colorName:'peach',
+        composition:'76% Recycled Polyester 24% Cotton',
     },
     {
         id: 87,
@@ -1305,6 +1390,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/emerson_frost_1_1.jpg',
         colorName:'grey',
+        composition:'65% Viscose 35% Polyester',
     },
     {
         id: 88,
@@ -1320,6 +1406,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/emerson_marine_1_1.jpg',
         colorName:'green',
+        composition:'65% Viscose 35% Polyester',
     },
     {
         id: 89,
@@ -1335,6 +1422,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/emerson_mist_1.jpg',
         colorName:'peach',
+        composition:'65% Viscose 35% Polyester',
     },
     {
         id: 90,
@@ -1350,6 +1438,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/emerson_pebble_1_1.jpg',
         colorName:'peach',
+        composition:'65% Viscose 35% Polyester',
     },
     {
         id:  91,
@@ -1365,6 +1454,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/emerson_sahara_1_1.jpg',
         colorName:'yellow',
+        composition:'65% Viscose 35% Polyester',
     },
     {
         id: 92,
@@ -1380,6 +1470,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/emerson_smoke_1_1.jpg',
         colorName:'black' ,
+        composition:'65% Viscose 35% Polyester',
     },
     {
         id: 93,
@@ -1395,6 +1486,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/emerson_zinc_1_1.jpg',
         colorName:'grey',
+        composition:'65% Viscose 35% Polyester',
     },
 
 
@@ -1412,6 +1504,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ACANTHIUM AUTUMN.jpg',
         colorName:'peach',
+        composition:'100% Cotton',
     },
     
     {
@@ -1428,6 +1521,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ACANTHIUM GARNET.jpg',
         colorName:'peach',
+        composition:'100% Cotton',
     },
     {
         id: 96,
@@ -1443,6 +1537,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ACANTHIUM OCHRE.jpg',
         colorName:'silver',
+        composition:'100% Cotton',
     },
     {
         id: 97,
@@ -1458,6 +1553,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/AVIARY BEGONIA.jpg',
         colorName:'white',
+        composition:'100% Cotton',
     },
     {
         id: 98,
@@ -1473,6 +1569,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/AVIARY LAGOON.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     
     {
@@ -1489,6 +1586,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/AZTEC SMOKE.jpg',
         colorName:'grey',
+        composition:'100% Cotton',
     },
     {
         id: 100,
@@ -1504,6 +1602,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CAICOS BEGONIA.jpg',
         colorName:'red',
+        composition:'100% Cotton',
     },
     {
         id: 101,
@@ -1519,6 +1618,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CAICOS CHAMBRAY.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 102,
@@ -1534,6 +1634,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CAICOS HESSIAN.jpg',
         colorName:'silver',
+        composition:'100% Cotton',
     },
     {
         id: 103,
@@ -1549,6 +1650,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CAICOS KIWI.jpg',
         colorName:'yellow',
+        composition:'100% Cotton',
     },
     {
         id: 104,
@@ -1564,6 +1666,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CAICOS MANDARIN.jpg',
         colorName:'',
+        composition:'100% Cotton',
     },
     {
         id: 105,
@@ -1579,6 +1682,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CARLINA DUSK.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 106,
@@ -1594,6 +1698,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CARLINA OCHRE.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 107,
@@ -1609,6 +1714,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CARLINA TEAL.jpg',
         colorName:'green',
+        composition:'100% Cotton',
     },
     {
         id: 108,
@@ -1624,6 +1730,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COTSWOLD JADE.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 109,
@@ -1639,6 +1746,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COTSWOLD JEWEL.jpg',
         colorName:'green',
+        composition:'100% Cotton',
     },
     {
         id: 110,
@@ -1654,6 +1762,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ETCHED VINE EAU DE NIL.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 111,
@@ -1669,6 +1778,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ETCHED VINE FEATHER.jpg',
         colorName:'silver',
+        composition:'100% Cotton',
     },
     {
         id: 112,
@@ -1684,6 +1794,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ETCHED VINE SANDSTONE.jpg',
         colorName:'peach',
+        composition:'100% Cotton',
     },
     {
         id: 113,
@@ -1699,6 +1810,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HERITAGE FERN.jpg',
         colorName:'grey',
+        composition:'100% Cotton',
     },
     {
         id: 114,
@@ -1714,6 +1826,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HERITAGE MIDNIGHT.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 115,
@@ -1729,6 +1842,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/KELMSCOTT JADE.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 116,
@@ -1744,6 +1858,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/KELMSCOTT JEWEL.jpg',
         colorName:'green',
+        composition:'100% Cotton',
     },
     {
         id: 117,
@@ -1759,6 +1874,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/MALDIVES LAGOON.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 118,
@@ -1774,6 +1890,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/MALDIVES REEF.jpg',
         colorName:'green',
+        composition:'100% Cotton',
     },
     {
         id: 119,
@@ -1789,6 +1906,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/MANILA CRANBERRY.jpg',
         colorName:'red',
+        composition:'100% Cotton',
     },
     {
         id: 120,
@@ -1804,6 +1922,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/MANILA LAGOON.jpg',
         colorName:'yellow',
+        composition:'100% Cotton',
     },
     {
         id: 121,
@@ -1819,6 +1938,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/MANILA ZINC.jpg',
         colorName:'green',
+        composition:'100% Cotton',
     },
     {
         id: 122,
@@ -1834,6 +1954,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/NAVAJO INDIGO.jpg',
         colorName:'',
+        composition:'100% Cotton',
     },
     {
         id: 123,
@@ -1849,6 +1970,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/NAVAJO TEAL.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 124,
@@ -1864,6 +1986,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/PARCHMENT FERN.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 125,
@@ -1879,6 +2002,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/PARCHMENT FERN.jpg',
         colorName:'silver',
+        composition:'100% Cotton',
     },
     {
         id: 126,
@@ -1894,6 +2018,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/PARCHMENT WEDGEWOOD.jpg',
         colorName:'blue',
+        composition:'100% Cotton',
     },
     {
         id: 127,
@@ -1909,6 +2034,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/POMEGRANATE OCHRE.jpg',
         colorName:'white',
+        composition:'100% Cotton',
     },
     {
         id: 128,
@@ -1924,6 +2050,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/POMEGRANATE SCARLET.jpg',
         colorName:'red',
+        composition:'100% Cotton',
     },
     {
         id: 129,
@@ -1939,6 +2066,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/PYRAMIDS PVC NOIR.jpg',
         colorName:'white',
+        composition:'100% Cotton',
     },
     {
         id: 130,
@@ -1954,46 +2082,8 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/PYRAMIDS PVC OCHRE.jpg',
         colorName:'white',
+        composition:'100% Cotton',
     },
-    // {
-    //     id: 131,
-    //     name: 'Scandi Birds Capri',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'B',
-    //     fabricPath: 'patterns/Scandi Birds_capri_45_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/scandi_birds_capri.jpg',
-    //     magnifyWavyFabricPath: 'magnify/scandi_birds_capri_2.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-    // },
-    // {
-    //     id: 132,
-    //     name: 'Scandi Birds Kiwi',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'B',
-    //     fabricPath: 'patterns/Scandi Birds_kiwi_46_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/scandi_birds_kiwi.jpg',
-    //     magnifyWavyFabricPath: 'magnify/scandi_birds_kiwi_2.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-    // },
-    // {
-    //     id: 133,
-    //     name: 'Scandi Birds Mustard',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'B',
-    //     fabricPath: 'patterns/Scandi Birds_mustard_2_47_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/scandi_birds_mustard.jpg',
-    //     magnifyWavyFabricPath: 'magnify/scandi_birds_mustard_2.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-    // },
     {
         id: 131,
         name: 'Wild Meadow Magenta',
@@ -2008,6 +2098,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/WILD MEADOW MAGENTA.jpg',
         colorName:'silver',
+        composition:'100% Cotton',
     },
     {
         id: 132,
@@ -2023,6 +2114,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/WILD MEADOW RUBY.jpg',
         colorName:'white',
+        composition:'100% Cotton',
     },
     {
         id: 133,
@@ -2038,6 +2130,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/acanthium_foxglove_5.jpg',
         colorName:'peach',
+        composition:'100% Cotton',
     },
     {
         id: 134,
@@ -2051,10 +2144,9 @@ export const fabric =[
         magnifyFabricPath: 'magnify/aztec_ochre_3.jpg',
         magnifyWavyFabricPath: 'magnify/aztec_ochre_2_1.jpg',
         wavy:true,
-        // img:'/fabric_image/AZTEC OCHRE.jpg',
-        colorName:'',
         img:'magnify/aztec_ochre_3.jpg',
         colorName:'yellow',
+        composition:'100% Cotton',
     },
     {
         id: 135,
@@ -2070,16 +2162,8 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/AZTEC SALSA.jpg',
         colorName:'red',
+        composition:'100% Cotton',
     },
-
-
-
-
-
-
-
-
-    
     {
         id: 136,
         name: 'Andante Chalk',
@@ -2094,6 +2178,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ANDANTE CHALK.jpg',
         colorName:'grey',
+        composition:'64% Polyester 36% Cotton',
     },
     {
         id: 137,
@@ -2109,6 +2194,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/glacier_andante_1.jpg',
         colorName:'brown',
+        composition:'64% Polyester 36% Cotton',
     },
     {
         id: 138,
@@ -2124,6 +2210,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ANDANTE MENTA.jpg',
         colorName:'silver',
+        composition:'64% Polyester 36% Cotton',
     },
     {
         id: 139,
@@ -2139,6 +2226,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ANDANTE PORCELAIN.jpg',
         colorName:'grey',
+        composition:'64% Polyester 36% Cotton',
     },
     {
         id: 140,
@@ -2154,6 +2242,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ANDANTE STONE.jpg',
         colorName:'brown',
+        composition:'64% Polyester 36% Cotton',
     },
     {
         id: 141,
@@ -2169,6 +2258,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ANDANTE ZINK.jpg',
         colorName:'grey',
+        composition:'64% Polyester 36% Cotton',
     },
     {
         id: 142,
@@ -2184,6 +2274,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ATRIUM LAPIS.jpg',
         colorName:'blue',
+        composition:'100% BCI Cotton',
     },
     {
         id: 143,
@@ -2199,6 +2290,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ATRIUM OCHRE.jpg',
         colorName:'yellow',
+        composition:'100% BCI Cotton',
     },
     {
         id: 144,
@@ -2214,6 +2306,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ATRIUM PINE.jpg',
         colorName:'pine',
+        composition:'100% BCI Cotton',
     },
     {
         id: 145,
@@ -2229,6 +2322,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/BLOOMA POPPY.jpg',
         colorName:'green',
+        composition:'100% Cotton Half Panama',
     },
     {
         id: 146,
@@ -2244,6 +2338,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/BLOOMA SPRUCE.jpg',
         colorName:'white',
+        composition:'100% Cotton Half Panama',
     },
     {
         id: 147,
@@ -2259,6 +2354,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CHERVIL BLUE MIST.jpg',
         colorName:'peach',
+        composition:'100% BCI Cotton',
     },
     {
         id: 148,
@@ -2274,6 +2370,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CHERVIL CLAY.jpg',
         colorName:'peach',
+        composition:'100% BCI Cotton',
     },
     {
         id: 149,
@@ -2289,6 +2386,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CHERVIL DOVE.jpg',
         colorName:'grey',
+        composition:'100% BCI Cotton',
     },
     {
         id: 150,
@@ -2304,24 +2402,10 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CHERVIL FERN.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
 
-    // Doblicate key
-
-    // {
-    //     id: 150,
-    //     name: 'Chervil Mustard',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'C',
-    //     price:35,
-    //     fabricPath: 'patterns/Chervil_Mustard_1_66_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/chervil_mustard_1_1.jpg',
-    //     magnifyWavyFabricPath: 'magnify/chervil_mustard_2.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/CHERVIL MUSTARD.jpg',
-    // },
+    
     {
         id: 151,
         name: 'Ditto Clay',
@@ -2336,6 +2420,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/DITTO CLAY.jpg',
         colorName:'peach',
+        composition:'100% Cotton Half Panama',
     },
     {
         id: 152,
@@ -2351,6 +2436,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/DITTO SAFFRON.jpg',
         colorName:'yellow',
+        composition:'100% Cotton Half Panama',
     },
     {
         id: 153,
@@ -2366,6 +2452,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/DITTO SLATE.jpg',
         colorName:'purple',
+        composition:'100% Cotton Half Panama',
     },
     {
         id: 154,
@@ -2381,6 +2468,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FERNIA DENIM.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
     {
         id: 155,
@@ -2396,6 +2484,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FERNIA DOVE.jpg',
         colorName:'grey',
+        composition:'100% BCI Cotton',
     },
     {
         id: 156,
@@ -2411,6 +2500,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FERNIA FERN.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
     {
         id: 157,
@@ -2426,6 +2516,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FERNIA MUSTARD.jpg',
         colorName:'yellow',
+        composition:'100% BCI Cotton',
     },
     {
         id: 158,
@@ -2441,6 +2532,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/great_oak_dove_low_res.jpg',
         colorName:'peach',
+        composition:'100% BCI Cotton',
     },
     {
         id: 159,
@@ -2456,6 +2548,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/great_oak_duckegg_low_res.jpg',
         colorName:'blue',
+        composition:'100% BCI Cotton',
     },
     {
         id: 160,
@@ -2471,6 +2564,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/great_oak_ebony_low_res.jpg',
         colorName:'brown',
+        composition:'100% BCI Cotton',
     },
     {
         id: 161,
@@ -2486,6 +2580,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/great_oak_flint_low_res.jpg',
         colorName:'peach',
+        composition:'100% BCI Cotton',
     },
     {
         id: 162,
@@ -2501,6 +2596,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/great_oak_lemongrass_low_res.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
     {
         id: 163,
@@ -2516,6 +2612,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/GREAT-OAK-MESSAI-LOW-RES_91_11zon.jpg',
         colorName:'red',
+        composition:'100% BCI Cotton',
     },
     {
         id: 164,
@@ -2531,6 +2628,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/great_oak_midnight_low_res.jpg',
         colorName:'blue',
+        composition:'100% BCI Cotton',
     },
     {
         id: 165,
@@ -2546,6 +2644,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/great_oak_paprika_low_res.jpg',
         colorName:'orange',
+        composition:'100% BCI Cotton',
     },
     {
         id: 166,
@@ -2561,6 +2660,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/great_oak_pewter_low_res.jpg',
         colorName:'',
+        composition:'100% BCI Cotton',
     },
     {
         id: 167,
@@ -2576,6 +2676,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/great_oak_sand_low_res.jpg',
         colorName:'yellow',
+        composition:'100% BCI Cotton',
     },
     {
         id: 168,
@@ -2591,6 +2692,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/great_oak_willow_low_res.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
     {
         id: 169,
@@ -2606,6 +2708,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/GREENHOUSE POTS MIST.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
     {
         id: 170,
@@ -2621,6 +2724,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/GREENHOUSE POTS OCHRE.jpg',
         colorName:'yellow',
+        composition:'100% BCI Cotton',
     },
     {
         id: 171,
@@ -2636,6 +2740,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HEDGEROW CHARCOAL.jpg',
         colorName:'silver',
+        composition:'',
     },
     {
         id: 172,
@@ -2651,6 +2756,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HEDGEROW MAGENTA.jpg',
         colorName:'green',
+        composition:'',
     },
     {
         id: 173,
@@ -2666,6 +2772,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HEDGEROW PISTACHIO.jpg',
         colorName:'green',
+        composition:'',
     },
     {
         id: 174,
@@ -2681,6 +2788,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/oak_leaf_duckegg_low_res.jpg',
         colorName:'white',
+        composition:'100% BCI Cotton',
     },
     {
         id: 175,
@@ -2696,6 +2804,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/oak_leaf_lemongrass_low_res.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
     {
         id: 176,
@@ -2711,6 +2820,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/oak_leaf_midnight_low_res.jpg',
         colorName:'black',
+        composition:'100% BCI Cotton',
     },
     {
         id: 177,
@@ -2726,6 +2836,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/oak_leaf_paprika_low_res.jpg',
         colorName:'orange',
+        composition:'100% BCI Cotton',
     },
     {
         id: 178,
@@ -2741,6 +2852,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/oak_leaf_pewter_low_res.jpg',
         colorName:'grey',
+        composition:'100% BCI Cotton',
     },
     {
         id: 179,
@@ -2756,6 +2868,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/oak_leaf_sand_low_res.jpg',
         colorName:'yellow',
+        composition:'100% BCI Cotton',
     },
     {
         id: 180,
@@ -2771,6 +2884,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/oak_leaf_sand_low_res.jpg',
         colorName:'yellow',
+        composition:'100% BCI Cotton',
     },
     {
         id: 181,
@@ -2786,6 +2900,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/oak_leaf_rose_low_res.jpg',
         colorName:'pink',
+        composition:'100% BCI Cotton',
     },
     {
         id: 182,
@@ -2801,6 +2916,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/KEMBLE CLOUD.jpg',
         colorName:'brown',
+        composition:'100% BCI Cotton',
     },
     {
         id: 183,
@@ -2816,6 +2932,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/KEMBLE FILIGREE.jpg',
         colorName:'peach',
+        composition:'100% BCI Cotton',
     },
     {
         id: 184,
@@ -2831,6 +2948,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/KEMBLE SAPPHIRE.jpg',
         colorName:'black',
+        composition:'100% BCI Cotton',
     },
     {
         id: 185,
@@ -2846,6 +2964,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/PALM HOUSE MOONLIGHT.jpg',
         colorName:'blue',
+        composition:'100% BCI Cotton',
     },
     {
         id: 186,
@@ -2861,6 +2980,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/PALM HOUSE OCHRE.jpg',
         colorName:'yellow',
+        composition:'100% BCI Cotton',
     },
     {
         id: 187,
@@ -2876,6 +2996,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/PALM HOUSE SPRUCE.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
     {
         id: 188,
@@ -2891,6 +3012,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/pencil_stripe_duckegg_low_res.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
     {
         id: 189,
@@ -2906,6 +3028,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/pencil_stripe_midnight_low_res.jpg',
         colorName:'blue',
+        composition:'100% BCI Cotton',
     },
     {
         id: 190,
@@ -2921,21 +3044,8 @@ export const fabric =[
         wavy:true,
         img:'magnify/pencil_stripe_ocean_low_res_1.jpg',
         colorName:'blue',
+        composition:'100% BCI Cotton',
     },
-    // {
-    //     id: 187,
-    //     name: 'Pencil Stripe Pewter ',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'C',
-    //     fabricPath: 'patterns/PENCIL_STRIPE_PEWTER_LOW_RES _143_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/pencil_stripe_pewter_low_res_.jpg',
-    //     magnifyWavyFabricPath: 'magnify/PENCIL_STRIPE_PEWTER_LOW_RES.webp',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-
-    // },
     {
         id: 191,
         name: 'Pencil Stripe Sand ',
@@ -2950,6 +3060,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/pencil_stripe_sand_low_res.jpg',
         colorName:'yellow',
+        composition:'100% BCI Cotton',
     },
     {
         id: 192,
@@ -2965,6 +3076,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/RAINFOREST LAGOON.jpg',
         colorName:'green',
+        composition:'100% Cotton',
     },
     {
         id: 193,
@@ -2980,6 +3092,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/rainforest_marine.jpg',
         colorName:'green',
+        composition:'100% Cotton',
     },
     {
         id: 194,
@@ -2995,20 +3108,9 @@ export const fabric =[
         wavy:true,
         img:'magnify/rowing_stripe-duckegg_low_res.jpg',
         colorName:'blue',
+        composition:'100% BCI Cotton',
     },
-    // {
-    //     id: 192,
-    //     name: 'Rowing Stripe Flint ',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'C',
-    //     fabricPath: 'patterns/Rowing_stripe-FLINT LOW_RES_156_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/rowing_stripe_-_flint_low_res.jpg',
-    //     magnifyWavyFabricPath: 'magnify/Rowing_stripe-FLINT-LOW_RES-wavy.jpeg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-    // },
+    
     {
         id: 195,
         name: 'Rowing Stripe Midnight ',
@@ -3023,6 +3125,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/midnight_-_tweaked_colour_1_1.jpg',
         colorName:'black',
+        composition:'100% BCI Cotton',
     },
     {
         id: 196,
@@ -3038,6 +3141,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/rowing_stripe_-_oatmeal_low_res.jpg',
         colorName:'peach',
+        composition:'100% BCI Cotton',
     },
     {
         id: 197,
@@ -3053,6 +3157,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/rowing_stripe_-_pewter_low_res.jpg',
         colorName:'',
+        composition:'100% BCI Cotton',
     },
     {
         id: 198,
@@ -3068,6 +3173,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/rowing_stripe_-_sand_low_res.jpg',
         colorName:'yellow',
+        composition:'100% BCI Cotton',
     },
     {
         id: 199,
@@ -3083,6 +3189,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/VICTORIAN GLASSHOUSE MIST.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
     {
         id: 200,
@@ -3098,6 +3205,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/VICTORIAN GLASSHOUSE MOONLIGHT.jpg',
         colorName:'blue',
+        composition:'100% BCI Cotton',
     },
     {
         id: 201,
@@ -3113,6 +3221,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/VICTORIAN GLASSHOUSE SPRUCE.jpg',
         colorName:'green',
+        composition:'100% BCI Cotton',
     },
     {
         id: 202,
@@ -3128,6 +3237,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CHARNWOOD FLINT.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 203,
@@ -3143,6 +3253,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/charnwood_charnwood_midnight_1.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 204,
@@ -3158,6 +3269,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COUNTRY JOURNAL DENIM.jpg',
         colorName:'peach',
+        composition:'84% Cotton 16% Polyester',
     },
     {
         id: 205,
@@ -3173,6 +3285,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COUNTRY JOURNAL DOVE.jpg',
         colorName:'peach',
+        composition:'84% Cotton 16% Polyester',
     },
     {
         id: 206,
@@ -3188,6 +3301,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COUNTRY JOURNAL FERN.jpg',
         colorName:'grey',
+        composition:'84% Cotton 16% Polyester',
     },
     {
         id: 207,
@@ -3203,6 +3317,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COUNTRY JOURNAL HAZE.jpg',
         colorName:'grey',
+        composition:'84% Cotton 16% Polyester',
     },
     {
         id: 208,
@@ -3218,6 +3333,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COUNTRY JOURNAL ROSA.jpg',
         colorName:'peach',
+        composition:'84% Cotton 16% Polyester',
     },
     {
         id: 209,
@@ -3233,6 +3349,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FACET BLUEPRINT.jpg',
         colorName:'blue',
+        composition:'54% Polyester 46% Cotton',
     },
     {
         id: 210,
@@ -3248,6 +3365,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FACET STEEL.jpg',
         colorName:'blue',
+        composition:'54% Polyester 46% Cotton',
     },
     {
         id: 211,
@@ -3263,6 +3381,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FACET STONE.jpg',
         colorName:'brown',
+        composition:'54% Polyester 46% Cotton',
     },
     {
         id: 212,
@@ -3278,6 +3397,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/LUXOR CREAM.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 213,
@@ -3293,6 +3413,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/LUXOR STEEL.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 214,
@@ -3308,6 +3429,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/portico_lapis_1.jpg',
         colorName:'peach',
+        composition:'100% Cotton',
     },
     {
         id: 215,
@@ -3323,6 +3445,7 @@ export const fabric =[
         wavy:true,
         img:'magnify/portico_ochre_1.jpg',
         colorName:'yellow',
+        composition:'100% Cotton',
     },
     {
         id: 216,
@@ -3338,13 +3461,8 @@ export const fabric =[
         wavy:true,
         img:'magnify/portico_pewter_1.jpg',
         colorName:'brown',
+        composition:'100% Cotton',
     },
-
-
-
-
-
-
     {
         id: 217,
         name: 'Arcadia Blueprint',
@@ -3359,6 +3477,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ARCADIA BLUEPRINT.jpg',
         colorName:'black',
+        composition:'100% Polyester',
     },
     {
         id: 218,
@@ -3374,6 +3493,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/ARCADIA STONE.jpg',
         colorName:'peach',
+        composition:'100% Polyester',
     },
     {
         id: 219,
@@ -3389,6 +3509,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/BRACKENHILL INDIGO.jpg',
         colorName:'yellow',
+        composition:'37% Polyester 63% Viscose',
     },
     {
         id: 220,
@@ -3404,6 +3525,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/BRACKENHILL JADE.jpg',
         colorName:'green',
+        composition:'37% Polyester 63% Viscose',
     },
     {
         id: 221,
@@ -3419,6 +3541,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FIA CLAY.jpg',
         colorName:'grey',
+        composition:'84% Polyester 16% Cotton',
     },
     {
         id: 222,
@@ -3434,6 +3557,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FIA DENIM.jpg',
         colorName:'grey',
+        composition:'84% Polyester 16% Cotton',
     },
     {
         id: 223,
@@ -3449,6 +3573,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FIA DOVE.jpg',
         colorName:'blue',
+        composition:'84% Polyester 16% Cotton',
     },
     {
         id: 224,
@@ -3464,6 +3589,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FIA FERN.jpg',
         colorName:'green',
+        composition:'84% Polyester 16% Cotton',
     },
     {
         id: 225,
@@ -3479,6 +3605,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/FIA ROSE.jpg',
         colorName:'red',
+        composition:'84% Polyester 16% Cotton',
     },
     {
         id: 226,
@@ -3494,6 +3621,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HEATHCLIFF ARCTIC.jpg',
         colorName:'brown',
+        composition:'100% Polyester',
     },
     {
         id: 227,
@@ -3509,6 +3637,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HEATHCLIFF INDIGO.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 228,
@@ -3524,6 +3653,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/LAURIE LINEN.jpg',
         colorName:'peach',
+        composition:'46% Polyester 33% Cotton 21% Viscose',
     },
     {
         id: 229,
@@ -3539,48 +3669,8 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/LAURIE WEDGEWOOD.jpg',
         colorName:'peach',
+        composition:'46% Polyester 33% Cotton 21% Viscose',
     },
-    // {
-    //     id: 227,
-    //     name: 'Sackville Stripe Denim',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'E',
-    //     fabricPath: 'patterns/Sackville Stripe_Denim_1_35_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/sackville_stripe_denim_1_1.jpg',
-    //     magnifyWavyFabricPath: 'magnify/sackville_stripe_denim_2.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-
-    // },
-    // {
-    //     id: 228,
-    //     name: 'Sackville Stripe Dove',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'E',
-    //     fabricPath: 'patterns/Sackville Stripe_Dove_1_36_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/sackville_stripe_dove_1_1.jpg',
-    //     magnifyWavyFabricPath: 'magnify/sackville_stripe_dove_2.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-    // },
-    // {
-    //     id: 229,
-    //     name: 'Sackville Stripe Mustard',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'E',
-    //     fabricPath: 'patterns/Sackville Stripe_Mustard_1_37_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/sackville_stripe_mustard_1_1.jpg',
-    //     magnifyWavyFabricPath: 'magnify/sackville_stripe_mustard_2.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-
-    // },
     {
         id: 230,
         name: 'Tiverton Carmine',
@@ -3595,6 +3685,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/TIVERTON CARMINE.jpg',
         colorName:'red',
+        composition:'100% Polyester',
     },
     {
         id: 231,
@@ -3610,6 +3701,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/TIVERTON FLINT.jpg',
         colorName:'yellow',
+        composition:'100% Polyester',
     },
     {
         id: 232,
@@ -3625,6 +3717,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/TIVERTON INDIGO.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 233,
@@ -3640,6 +3733,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/TIVERTON SAND.jpg',
         colorName:'yellow',
+        composition:'100% Polyester',
     },
 
 
@@ -3657,6 +3751,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HARPER LINEN.jpg',
         colorName:'peach',
+        composition:'56% Polyester 44% Cotton',
     },
     {
         id: 235,
@@ -3672,6 +3767,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HARPER EAU DE NIL.jpg',
         colorName:'blue',
+        composition:'56% Polyester 44% Cotton',
     },
     {
         id: 236,
@@ -3687,6 +3783,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HARPER FEATHER.jpg',
         colorName:'peach',
+        composition:'56% Polyester 44% Cotton',
     },
     {
         id: 237,
@@ -3702,20 +3799,8 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/HARPER WEDGEWOOD.jpg',
         colorName:'green',
+        composition:'56% Polyester 44% Cotton',
     },
-    // {
-    //     id: 239,
-    //     name: 'Mackintosh 3300',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'F',
-    //     fabricPath: 'patterns/Mackintosh 3300_Col 100_46_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/mackintosh_3300_col_100_right_way_up_2020.jpg',
-    //     magnifyWavyFabricPath: 'magnify/mackintosh_3300_col_100_right_way_up_2020.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-    // },
     {
         id: 238,
         name: 'Sumi Blush',
@@ -3730,6 +3815,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUMI BLUSH.jpg',
         colorName:'peach',
+        composition:'61% Polyester 39% Cotton',
     },
     {
         id: 239,
@@ -3745,6 +3831,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUMI DELFT.jpg',
         colorName:'blue',
+        composition:'61% Polyester 39% Cotton',
     },
     {
         id: 240,
@@ -3760,6 +3847,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUMI DUCKEGG.jpg',
         colorName:'green',
+        composition:'61% Polyester 39% Cotton',
     },
     {
         id: 241,
@@ -3775,6 +3863,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/SUMI SAFFRON.jpg',
         colorName:'peach',
+        composition:'61% Polyester 39% Cotton',
     },
     {
         id: 242,
@@ -3790,6 +3879,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/MOSAIC MIDNIGHT.jpg',
         colorName:'blue',
+        composition:'100% Polyester',
     },
     {
         id: 243,
@@ -3805,6 +3895,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/MOSAIC GRAPHITE.jpg',
         colorName:'gray',
+        composition:'100% Polyester',
     },
     {
         id: 244,
@@ -3820,6 +3911,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/MOSAIC PUTTY.jpg',
         colorName:'grey',
+        composition:'100% Polyester',
     },
     {
         id: 245,
@@ -3835,6 +3927,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/GALERIE LAGOON.jpg',
         colorName:'green',
+        composition:'51% Viscose 28% Polyester Linen 21% Polyester',
     },
     {
         id: 246,
@@ -3850,6 +3943,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/GALERIE MARINE.jpg',
         colorName:'blue',
+        composition:'51% Viscose 28% Polyester Linen 21% Polyester',
     },
     {
         id: 247,
@@ -3865,6 +3959,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/GALERIE PEARL.jpg',
         colorName:'',
+        composition:'51% Viscose 28% Polyester Linen 21% Polyester',
     },
     {
         id: 248,
@@ -3880,6 +3975,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CHANTILLY STONE.jpg',
         colorName:'',
+        composition:'59% Polyester 25% Linen 16% Viscose',
     },
     {
         id: 249,
@@ -3895,6 +3991,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CHANTILLY WEDGEWOOD.jpg',
         colorName:'',
+        composition:'59% Polyester 25% Linen 16% Viscose',
     },
     {
         id: 250,
@@ -3910,6 +4007,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/BOUGAINVILLEA FUCHSIA.jpg',
         colorName:'peach',
+        composition:'67% Polyester 31% Cotton 2% Linen',
     },
     {
         id: 251,
@@ -3925,46 +4023,8 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/BOUGAINVILLEA PAPRIKA.jpg',
         colorName:'peach',
+        composition:'67% Polyester 31% Cotton 2% Linen',
     },
-    // {
-    //     id: 253,
-    //     name: 'Orange Grove Mist',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'G',
-    //     fabricPath: 'patterns/Orange Grove_Mist_1_62_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/orange_grove_mist_1.jpg',
-    //     magnifyWavyFabricPath: 'magnify/orange_grove_mist_2.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-    // },
-    // {
-    //     id: 254,
-    //     name: 'Orange Grove Ochre',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'G',
-    //     fabricPath: 'patterns/Orange Grove_Ochre_1_63_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/orange_grove_ochre_1.jpg',
-    //     magnifyWavyFabricPath: 'magnify/orange_grove_ochre_2.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-    // },
-    // {
-    //     id: 255,
-    //     name: 'Orange Grove Spruce',
-    //     color: '',
-    //     patternNumber: '01',
-    //     fabricInitialPrice: 0,
-    //     group: 'G',
-    //     fabricPath: 'patterns/Orange Grove_Spruce_1_64_11zon.jpg',
-    //     magnifyFabricPath: 'magnify/orange_grove_spruce_1.jpg',
-    //     magnifyWavyFabricPath: 'magnify/orange_grove_spruce_2.jpg',
-    //     wavy:true,
-    //     img:'/fabric_image/',
-    // },
         {
         id: 252,
         name: 'Tiffany Autumn',
@@ -3979,6 +4039,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/TIFFANY AUTUMN.jpg',
         colorName:'brown',
+        composition:'53% Cotton 47% Viscose',
     },
     {
         id: 253,
@@ -3994,6 +4055,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/TIFFANY JEWEL.jpg',
         colorName:'',
+        composition:'53% Cotton 47% Viscose',
     },
     {
         id: 254,
@@ -4009,6 +4071,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/TIFFANY MULBERRY.jpg',
         colorName:'',
+        composition:'53% Cotton 47% Viscose',
     },
     {
         id: 255,
@@ -4024,6 +4087,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/TIFFANY PRUSSIAN.jpg',
         colorName:'',
+        composition:'53% Cotton 47% Viscose',
     },
     {
         id: 256,
@@ -4039,6 +4103,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/TIFFANY SAND.jpg',
         colorName:'',
+        composition:'53% Cotton 47% Viscose',
     },
     {
         id: 257,
@@ -4054,6 +4119,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/WHITWELL FLINT.jpg',
         colorName:'',
+        composition:'',
     },
     {
         id: 258,
@@ -4069,6 +4135,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/WHITWELL LINEN.jpg',
         colorName:'',
+        composition:'',
     },
     {
         id: 259,
@@ -4084,6 +4151,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/WHITWELL VERDIGRIS.jpg',
         colorName:'',
+        composition:'',
     },
     {
         id: 260,
@@ -4099,6 +4167,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COTTAGE GARDEN CORNSILK.jpg',
         colorName:'',
+        composition:'55% Polyester 45% Cotton Viscose Embroidery',
     },
     {
         id: 261,
@@ -4114,6 +4183,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/COTTAGE GARDEN ROSELLA.jpg',
         colorName:'',
+        composition:'55% Polyester 45% Cotton Viscose Embroidery',
     },
     {
         id: 262,
@@ -4129,6 +4199,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/MONTSERRAT LAGOON.jpg',
         colorName:'',
+        composition:'',
     },
     {
         id: 263,
@@ -4144,6 +4215,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/OPHELIA GLACIER.jpg',
         colorName:'',
+        composition:'37% Polyester 37% Cotton 26% Viscose',
     },
     {
         id: 264,
@@ -4159,6 +4231,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/OPHELIA HENNA.jpg',
         colorName:'',
+        composition:'37% Polyester 37% Cotton 26% Viscose',
     },
     {
         id: 265,
@@ -4174,6 +4247,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/OPHELIA THYME.jpg',
         colorName:'',
+        composition:'37% Polyester 37% Cotton 26% Viscose',
     },
     {
         id: 266,
@@ -4189,6 +4263,7 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CAMILLE CLOUD.jpg',
         colorName:'',
+        composition:'60% Polyester 30% Cotton 10% Linen',
     },
     {
         id: 267,
@@ -4204,9 +4279,6 @@ export const fabric =[
         wavy:true,
         img:'/fabric_image/CAMILLE STONE.jpg',
         colorName:'',
+        composition:'60% Polyester 30% Cotton 10% Linen',
     }
 ]
-
-
-
-
