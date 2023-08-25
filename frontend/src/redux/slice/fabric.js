@@ -6,17 +6,20 @@ import { priceList1, priceList10, priceList11, priceList12, priceList13, priceLi
 
 const initialState = {
     fabricType: {
-        id: 93,
+        id: 94,
         name: 'Acanthium Autumn',
         color: '',
         patternNumber: '01',
         fabricInitialPrice: 0,
         group: 'B',
+        price:30,
         fabricPath: 'patterns/Acanthium_Autumn.jpg',
         magnifyFabricPath: 'magnify/acanthium_autumn_1.jpg',
         magnifyWavyFabricPath: 'magnify/acanthium_autumn_2.jpg',
-        wavy: true,
-        img: '/fabric_image/ACANTHIUM AUTUMN.jpg'
+        wavy:true,
+        img:'/fabric_image/ACANTHIUM AUTUMN.jpg',
+        colorName:'peach',
+        composition:'100% Cotton',
     },
     wallColor: 'fff',
     measure: {
