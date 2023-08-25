@@ -76,7 +76,7 @@ function View({ show }) {
             <div className="lg:hidden w-full  bg-[#E1B980] rounded-lg text-[#2b2b2b] text-center py-3 px-4 space-y-3">
               {/* <p>Selected Fabric</p> */}
               <h6 className='text-center '>{name}</h6>
-              <p className='text-center'>({composition})</p>
+              {composition && <p className='text-center text-sm'>({composition})</p>}
               <div className="flex justify-center items-center gap-3 h-20">
 
               <div className="w-20 h-full ">
@@ -147,9 +147,8 @@ const Selector = ({ setBigImage }) => {
   const { magnifyFabricPath, magnifyWavyFabricPath, img } = useSelector(state => state.fabric.fabricType)
   return (
     <div className="z-10 hidden lg:block absolute right-1  bottom-1   bg-[#2b2b2b]/70 rounded-lg text-white text-center py-3 px-4 space-y-3">
-      {/* <p>Selected Fabric</p> */}
       <h6 className='text-center'>{name}</h6>
-      <p className='text-center text-sm'>({composition})</p>
+      {composition && <p className='text-center text-sm'>({composition})</p>}
       <div className="flex gap-3 h-20">
         
         <div className="w-20 h-full ">
