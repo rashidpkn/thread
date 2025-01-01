@@ -39,7 +39,7 @@ function Footer() {
               <div className="w-12 h-12"><a href="https://www.youtube.com/channel/UCcUjybZ6g0zCWxApaa2PQHA"><img src="/image/common/youtube.png" alt=''/></a></div>
               <div className="w-12 h-12"><a href="https://www.instagram.com/mythreadcurtains/"><img src="/image/common/insta.png" alt=''/></a></div>
             </div>
-            <span className='text-center'>© 2023 Thread & Co. All Rights Reserved.</span>
+            <span className='text-center'>© {new Date().getFullYear()} Thread & Co. All Rights Reserved.</span>
             <div className=""></div>
         </div>
       </div>
